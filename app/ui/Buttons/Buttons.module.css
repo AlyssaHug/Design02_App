@@ -1,0 +1,46 @@
+.button {
+    width: 142px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.primary {
+    background-color: #83be6c;
+    color: #090f19;
+}
+
+.close {
+    background-color: #4b5961;
+    color: #fefdfd;
+}
+
+.popup {
+    background-color: #b2d4e6;
+    color: #090f19;
+}
+
+.view {
+    color: #090f19;
+    background-color: #acd39d;
+}
+
+.outline {
+    color: #4b5961;
+    border: 2px solid #4b5961;
+    border-radius: 12px;
+}
+.long {
+    width: 258px;
+    height: 36px;
+    flex-shrink: 0;
+}
+.dark {
+    color: #fefdfd;
+    background-color: #48693b;
+}
+.light {
+    color: #fefdfd;
+    background-color: #83be6c;
+}

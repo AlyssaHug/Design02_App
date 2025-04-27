@@ -1,0 +1,26 @@
+import classNames from "classnames";
+import styles from "@/app/ui/Button/Button.module.css";
+
+// icon: icon
+// onClick: function
+
+export default function Button({ type, color, icon, size, value, onClick }) {
+    const buttonClasses = classNames(styles.button, {
+        [styles.view]: type === "view",
+        [styles.outline]: type === "outline",
+        [styles.primary]: type === "primary",
+        [styles.close]: type === "close",
+        [styles.popup]: type === "popup",
+        [styles.long]: size === "long",
+        [styles.dark]: color === "dark",
+        [styles.light]: color === "light",
+    });
+
+    return (
+        <input
+            className={buttonClasses}
+            type='button'
+            value={value}
+        />
+    );
+}
