@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import styles from "@/app/ui/Button/Button.module.css";
+import styles from "@/app/ui/Buttons/Buttons.module.css";
 
 // icon: icon
 // onClick: function

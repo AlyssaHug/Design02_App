@@ -1,4 +1,4 @@
-import Button from "@/app/ui/Button/Button";
+import Button from "@/app/ui/Buttons/Buttons";
 
 function ProductPage() {
     return (
@@ -8,22 +8,27 @@ function ProductPage() {
                 value='View More'
                 type='view'
             />
+            <br />
             <Button
                 value='Undo'
                 type='outline'
             />
+            <br />
             <Button
                 value='Create Goal'
                 type='primary'
             />
+            <br />
             <Button
                 value='Close'
                 type='close'
             />
+            <br />
             <Button
                 value='Check on MooMoo'
                 type='popup'
             />
+            <br />
             <Button
                 value='Sign In'
                 size='long'
