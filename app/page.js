@@ -1,6 +1,6 @@
 import Button from "@/app/ui/Buttons/Buttons";
 
-function ProductPage() {
+function productPage() {
     return (
         <div>
             <div>Button Styles for MoolahMate</div>
@@ -36,12 +36,22 @@ function ProductPage() {
             />
             <Button
                 value='Sign Up Now!'
-                size='long'
-                color='light'
+                size='signIn'
+            />
+            <br />
+            <Button
+                value='Redeem'
+                size='small'
+                type='primary'
+            />
+            <Button
+                value='Complete Goal First'
+                size='small'
+                type='reward'
             />
             <div>By: Alyssa h.</div>
         </div>
     );
 }
 
-export default ProductPage;
+export default productPage;

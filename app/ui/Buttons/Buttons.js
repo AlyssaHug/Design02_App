@@ -14,6 +14,9 @@ export default function Button({ type, color, icon, size, value, onClick }) {
         [styles.long]: size === "long",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light",
+        [styles.small]: size === "small",
+        [styles.reward]: type === "reward",
+        [styles.signIn]: size === "signIn",
     });
 
     return (

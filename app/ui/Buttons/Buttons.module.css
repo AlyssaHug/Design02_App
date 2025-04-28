@@ -6,12 +6,24 @@
     font-size: 16px;
     margin: 8px;
 }
-
+.small {
+    width: 84px;
+    height: 48px;
+}
+.reward {
+    background-color: #9ccb89;
+    color: #626c7c;
+}
+.signIn {
+    width: 206px;
+    height: 36px;
+    color: #fefdfd;
+    background-color: #83be6c;
+}
 .primary {
     background-color: #83be6c;
     color: #090f19;
 }
-
 .close {
     background-color: #4b5961;
     color: #fefdfd;
