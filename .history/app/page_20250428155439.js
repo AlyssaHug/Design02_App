@@ -7,8 +7,7 @@ function dropdown() {
             value='Select your Category'
         />
     ),
-        (
-            <div
+             <div
                 className='dropdown_item'
                 value='1'
             />
@@ -31,4 +30,5 @@ function dropdown() {
                 value='4'
             />
         );
+        
 }
