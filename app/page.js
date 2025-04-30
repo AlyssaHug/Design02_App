@@ -1,7 +1,6 @@
 import Button from "@/app/ui/Buttons/Buttons";
-import Image from "next/image";
 
-function productPage() {
+function buttonPage() {
     return (
         <div>
             <div>Button Styles for MoolahMate</div>
@@ -161,9 +160,19 @@ function productPage() {
                 type='secondary'
                 size='caption'
             />
+            <div className='sameSizedButtons'>
+                <Button
+                    imageSrc='/left_arrow.svg'
+                    alt='arrow'
+                />
+                <Button
+                    imageSrc='/right_arrow.svg'
+                    alt='arrow'
+                />
+            </div>
             <div>By: Alyssa h.</div>
         </div>
     );
 }
 
-export default productPage;
+export default buttonPage;

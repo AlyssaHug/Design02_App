@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { Quicksand } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
-import Image from "next/image";
 
 const quicksand = Quicksand({
     variable: "--font-quicksand",

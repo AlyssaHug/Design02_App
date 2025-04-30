@@ -21,4 +21,5 @@ body {
 
 .sameSizedButtons {
     display: flex;
+    justify-content: center;
 }
