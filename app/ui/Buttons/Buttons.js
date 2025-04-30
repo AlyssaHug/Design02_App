@@ -27,12 +27,14 @@ export default function Button({
         [styles.lightBlue]: color === "light-blue",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light",
-        [styles.reward]: type === "reward",
+        [styles.secondary]: type === "secondary",
         [styles.round]: style === "round",
         [styles.shop]: type === "shop",
         [styles.bought]: type === "bought",
         [styles.nav]: color === "nav",
         [styles.active]: state === "active",
+        [styles.expense]: type === "expense",
+        [styles.caption]: size === "caption",
     });
 
     return (

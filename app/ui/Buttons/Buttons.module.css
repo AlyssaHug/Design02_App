@@ -8,7 +8,7 @@
     font-weight: bold;
 }
 
-.reward {
+.secondary {
     background-color: #9ccb89;
     color: #626c7c;
 }
@@ -55,4 +55,14 @@
 }
 .active {
     color: #b2d4e6;
+}
+.expense {
+    color: #090f19;
+    background-color: #c1ddeb;
+    font-size: 24px;
+    padding: 10px;
+}
+.caption {
+    padding: 6px;
+    font-size: 12px;
 }

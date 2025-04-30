@@ -47,7 +47,7 @@ function productPage() {
             />
             <Button
                 value='Complete Goal First'
-                type='reward'
+                type='secondary'
             />
             <Button
                 value='Buy 60 Coins'
@@ -89,6 +89,15 @@ function productPage() {
             <Button
                 value='Profile'
                 color='nav'
+            />
+            <Button
+                value='Overview'
+                type='expense'
+            />
+            <Button
+                value='Dismiss'
+                type='secondary'
+                size='caption'
             />
             <div>By: Alyssa h.</div>
         </div>
