@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import { Quicksand } from "next/font/google";
+import { Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 
-const quicksand = Quicksand({
-    variable: "--font-quicksand",
+const libreFranklin = Libre_Franklin({
+    variable: "--font-libre-franklin",
 });
 
 // icon: icon
@@ -19,7 +19,7 @@ export default function Button({
     value,
     onClick,
 }) {
-    const buttonClasses = classNames(styles.button, quicksand.variable, {
+    const buttonClasses = classNames(styles.button, libreFranklin.variable, {
         [styles.view]: type === "view",
         [styles.outline]: type === "outline",
         [styles.primary]: type === "primary",
