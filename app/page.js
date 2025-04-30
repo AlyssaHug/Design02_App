@@ -26,29 +26,49 @@ function productPage() {
             <br />
             <Button
                 value='Check on MooMoo'
-                type='popup'
+                color='light-blue'
             />
             <br />
             <Button
                 value='Sign In'
-                size='long'
+                style='round'
                 color='dark'
             />
             <Button
                 value='Sign Up Now!'
-                size='signIn'
+                color='light'
+                style='round'
             />
             <br />
             <Button
                 value='Redeem'
-                size='small'
                 type='primary'
             />
             <Button
                 value='Complete Goal First'
-                size='small'
                 type='reward'
             />
+            <Button
+                value='Buy 60 Coins'
+                type='shop'
+                style='round'
+            />
+            <Button
+                value='Already Owned'
+                color='dark'
+                style='round'
+            />
+
+            <div className='sameSizedButtons'>
+                <Button
+                    value='Create Goal'
+                    type='primary'
+                />
+                <Button
+                    value='Close'
+                    type='close'
+                />
+            </div>
             <div>By: Alyssa h.</div>
         </div>
     );

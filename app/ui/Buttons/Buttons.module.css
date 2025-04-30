@@ -1,24 +1,16 @@
 .button {
-    width: 142px;
-    height: 48px;
-    flex-shrink: 0;
     border-radius: 12px;
     font-size: 16px;
     margin: 8px;
+    padding: 8px;
+    width: 100%;
+    font-family: var(--font-quicksand);
+    font-weight: bold;
 }
-.small {
-    width: 84px;
-    height: 48px;
-}
+
 .reward {
     background-color: #9ccb89;
     color: #626c7c;
-}
-.signIn {
-    width: 206px;
-    height: 36px;
-    color: #fefdfd;
-    background-color: #83be6c;
 }
 .primary {
     background-color: #83be6c;
@@ -28,8 +20,11 @@
     background-color: #4b5961;
     color: #fefdfd;
 }
+.round {
+    border-radius: 20px;
+}
 
-.popup {
+.lightBlue {
     background-color: #b2d4e6;
     color: #090f19;
 }
@@ -42,12 +37,6 @@
 .outline {
     color: #4b5961;
     border: 2px solid #4b5961;
-    border-radius: 12px;
-}
-.long {
-    width: 258px;
-    height: 36px;
-    flex-shrink: 0;
 }
 .dark {
     color: #fefdfd;
@@ -56,4 +45,8 @@
 .light {
     color: #fefdfd;
     background-color: #83be6c;
+}
+.shop {
+    background-color: #9ccb89;
+    color: #f3f9f0;
 }
