@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { Quicksand } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
+import Image from "next/image";
 
 const quicksand = Quicksand({
     variable: "--font-quicksand",
@@ -13,9 +14,9 @@ export default function Button({
     style,
     type,
     color,
-    icon,
+    imageSrc,
+    alt,
     size,
-    state,
     value,
     onClick,
 }) {
@@ -32,16 +33,24 @@ export default function Button({
         [styles.shop]: type === "shop",
         [styles.bought]: type === "bought",
         [styles.nav]: color === "nav",
-        [styles.active]: state === "active",
+        [styles.active]: color === "active",
         [styles.expense]: type === "expense",
         [styles.caption]: size === "caption",
+        [styles.cow]: color === "cow",
+        [styles.cowActive]: color === "cow-active",
     });
 
     return (
-        <input
+        <button
             className={buttonClasses}
-            type='button'
-            value={value}
-        />
+            value={value}>
+            {imageSrc && (
+                <img
+                    src={imageSrc}
+                    alt={alt}
+                />
+            )}
+            <span>{value}</span>
+        </button>
     );
 }

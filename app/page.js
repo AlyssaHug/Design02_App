@@ -70,26 +70,88 @@ function productPage() {
                     type='close'
                 />
             </div>
-            <Button
-                value='Expenses'
-                color='nav'
-            />
-            <Button
-                value='Goals'
-                color='nav'
-            />
-            <Button
-                value='Home'
-                color='nav'
-            />
-            <Button
-                value='Rewards'
-                color='nav'
-            />
-            <Button
-                value='Profile'
-                color='nav'
-            />
+            <div className='sameSizedButtons'>
+                <Button
+                    value='Expenses'
+                    color='nav'
+                    imageSrc='navbar-icons/expense.svg'
+                    alt='expense icon'
+                />
+                <Button
+                    value='Expenses'
+                    color='active'
+                    imageSrc='navbar-active/expense-active.svg'
+                    alt='expense icon'
+                />
+            </div>
+            <div className='sameSizedButtons'>
+                <Button
+                    value='Goals'
+                    color='nav'
+                    imageSrc='navbar-icons/goal.svg'
+                    alt='goal icon'
+                />
+                <Button
+                    value='Goals'
+                    color='active'
+                    imageSrc='navbar-active/goal-active.svg'
+                    alt='goal icon'
+                />
+            </div>
+            <div className='sameSizedButtons'>
+                <Button
+                    value='Home'
+                    color='nav'
+                    imageSrc='navbar-icons/home-icon.svg'
+                    alt='home icon'
+                />
+                <Button
+                    value='Home'
+                    color='active'
+                    imageSrc='navbar-active/home-active.svg'
+                    alt='home icon'
+                />
+            </div>
+            <div className='sameSizedButtons'>
+                <Button
+                    value='Rewards'
+                    color='nav'
+                    imageSrc='navbar-icons/rewards.svg'
+                    alt='rewards icon'
+                />
+                <Button
+                    value='Rewards'
+                    color='active'
+                    imageSrc='navbar-active/rewards-active.svg'
+                    alt='rewards icon'
+                />
+            </div>
+            <div className='sameSizedButtons'>
+                <Button
+                    value='Profile'
+                    color='nav'
+                    imageSrc='navbar-icons/profile.svg'
+                    alt='account icon'
+                />
+                <Button
+                    value='Profile'
+                    color='active'
+                    imageSrc='navbar-active/profile-active.svg'
+                    alt='account icon'
+                />
+            </div>
+            <div className='sameSizedButtons'>
+                <Button
+                    color='cow'
+                    imageSrc='navbar-icons/cow.svg'
+                    alt='moomoo icon'
+                />
+                <Button
+                    color='cow-active'
+                    imageSrc='navbar-active/cow-active.svg'
+                    alt='moomoo icon'
+                />
+            </div>
             <Button
                 value='Overview'
                 type='expense'
