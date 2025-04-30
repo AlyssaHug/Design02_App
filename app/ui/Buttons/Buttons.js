@@ -15,6 +15,7 @@ export default function Button({
     color,
     icon,
     size,
+    state,
     value,
     onClick,
 }) {
@@ -30,6 +31,8 @@ export default function Button({
         [styles.round]: style === "round",
         [styles.shop]: type === "shop",
         [styles.bought]: type === "bought",
+        [styles.nav]: color === "nav",
+        [styles.active]: state === "active",
     });
 
     return (

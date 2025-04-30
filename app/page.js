@@ -1,4 +1,5 @@
 import Button from "@/app/ui/Buttons/Buttons";
+import Image from "next/image";
 
 function productPage() {
     return (
@@ -69,6 +70,26 @@ function productPage() {
                     type='close'
                 />
             </div>
+            <Button
+                value='Expenses'
+                color='nav'
+            />
+            <Button
+                value='Goals'
+                color='nav'
+            />
+            <Button
+                value='Home'
+                color='nav'
+            />
+            <Button
+                value='Rewards'
+                color='nav'
+            />
+            <Button
+                value='Profile'
+                color='nav'
+            />
             <div>By: Alyssa h.</div>
         </div>
     );

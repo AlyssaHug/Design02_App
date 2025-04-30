@@ -50,3 +50,9 @@
     background-color: #9ccb89;
     color: #f3f9f0;
 }
+.nav {
+    color: #37502d;
+}
+.active {
+    color: #b2d4e6;
+}
