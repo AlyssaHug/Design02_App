@@ -1,34 +1,9 @@
-import "./dropdown/dropdown.module.css";
+import Moomoo from "@/app/ui/Moomoo/Moomoo";
 
-function dropdown() {
-    (
-        <div
-            className='dropdown_button'
-            value='Select your Category'
-        />
-    ),
-        (
-            <div
-                className='dropdown_item'
-                value='1'
-            />
-        ),
-        (
-            <div
-                className='dropdown_item'
-                value='2'
-            />
-        ),
-        (
-            <div
-                className='dropdown_item'
-                value='3'
-            />
-        ),
-        (
-            <div
-                className='dropdown_item'
-                value='4'
-            />
-        );
+function cowPage() {
+    return (
+        <div>
+        </div>
+    );
 }
+export default cowPage;
