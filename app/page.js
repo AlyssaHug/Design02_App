@@ -1,4 +1,5 @@
 import Button from "@/app/ui/Buttons/Buttons";
+import ToggleSlider from "./ui/Buttons/Slider";
 import ToggleButton from "./ui/Buttons/ToggleButton";
 
 function buttonPage() {
@@ -6,6 +7,7 @@ function buttonPage() {
         <div>
             <div>Button Styles for MoolahMate</div>
             <ToggleButton />
+            <ToggleSlider />
             <Button
                 value='View More'
                 type='view'
