@@ -32,7 +32,7 @@ export default function Button({
         [styles.shop]: type === "shop",
         [styles.bought]: type === "bought",
         [styles.nav]: color === "nav",
-        [styles.active]: color === "active",
+        [styles.navActive]: color === "nav-active",
         [styles.expense]: type === "expense",
         [styles.caption]: size === "caption",
         [styles.cow]: color === "cow",

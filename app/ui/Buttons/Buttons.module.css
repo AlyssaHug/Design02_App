@@ -67,7 +67,7 @@
     padding: 6px;
     font-size: 12px;
 }
-.active {
+.navActive {
     color: #b2d4e6;
 }
 .cow {
@@ -79,4 +79,54 @@
     background-color: #77ad62;
     border-radius: 100%;
     max-width: 64px;
+}
+
+/*=========Toggle Button========*/
+.toggleContainer {
+    display: flex;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #bcc7bc;
+    border: 1px solid #ccc;
+    font-size: 28px;
+    font-family: var(--font-quicksand);
+    font-weight: bold;
+}
+
+.hiddenCheckbox {
+    display: none;
+}
+
+.monthlyLabel,
+.weeklyLabel {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    width: 50%;
+}
+
+.monthlyLabel {
+    background-color: #37502d;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.weeklyLabel {
+    background-color: #bcc7bc;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.hiddenCheckbox:checked ~ .monthlyLabel {
+    background-color: #bcc7bc;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.hiddenCheckbox:checked ~ .weeklyLabel {
+    background-color: #37502d;
+    color: #fefdfd;
+    border-radius: 25px;
 }

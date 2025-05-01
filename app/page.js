@@ -1,9 +1,11 @@
 import Button from "@/app/ui/Buttons/Buttons";
+import ToggleButton from "./ui/Buttons/ToggleButton";
 
 function buttonPage() {
     return (
         <div>
             <div>Button Styles for MoolahMate</div>
+            <ToggleButton />
             <Button
                 value='View More'
                 type='view'
@@ -78,7 +80,7 @@ function buttonPage() {
                 />
                 <Button
                     value='Expenses'
-                    color='active'
+                    color='nav-active'
                     imageSrc='navbar-active/expense-active.svg'
                     alt='expense icon'
                 />
@@ -92,7 +94,7 @@ function buttonPage() {
                 />
                 <Button
                     value='Goals'
-                    color='active'
+                    color='nav-active'
                     imageSrc='navbar-active/goal-active.svg'
                     alt='goal icon'
                 />
@@ -106,7 +108,7 @@ function buttonPage() {
                 />
                 <Button
                     value='Home'
-                    color='active'
+                    color='nav-active'
                     imageSrc='navbar-active/home-active.svg'
                     alt='home icon'
                 />
@@ -120,7 +122,7 @@ function buttonPage() {
                 />
                 <Button
                     value='Rewards'
-                    color='active'
+                    color='nav-active'
                     imageSrc='navbar-active/rewards-active.svg'
                     alt='rewards icon'
                 />
@@ -134,7 +136,7 @@ function buttonPage() {
                 />
                 <Button
                     value='Profile'
-                    color='active'
+                    color='nav-active'
                     imageSrc='navbar-active/profile-active.svg'
                     alt='account icon'
                 />
