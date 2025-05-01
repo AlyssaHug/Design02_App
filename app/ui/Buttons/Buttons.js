@@ -25,6 +25,7 @@ export default function Button({
         [styles.primary]: type === "primary",
         [styles.close]: type === "close",
         [styles.lightBlue]: color === "light-blue",
+        [styles.darkBlue]: color === "dark-blue",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light",
         [styles.secondary]: type === "secondary",

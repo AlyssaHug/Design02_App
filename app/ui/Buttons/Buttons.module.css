@@ -32,6 +32,11 @@
     background-color: #b2d4e6;
     color: #090f19;
 }
+.darkBlue {
+    color: #e8e9ec;
+    background-color: #445063;
+    padding: 16px;
+}
 
 .view {
     color: #090f19;
@@ -54,6 +59,7 @@
     background-color: #9ccb89;
     color: #f3f9f0;
 }
+/*====nav styles====*/
 .nav {
     color: #37502d;
 }

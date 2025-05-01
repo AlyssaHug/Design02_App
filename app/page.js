@@ -30,6 +30,10 @@ function buttonPage() {
                 value='Check on MooMoo'
                 color='light-blue'
             />
+            <Button
+                value='Play'
+                color='dark-blue'
+            />
             <br />
             <Button
                 value='Sign In'
