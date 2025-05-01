@@ -1,91 +1,146 @@
+import Moomoo from "@/app/ui/Moomoo/Moomoo";
 
-
-function NavBarStyle() {
-
+function cowPage() {
     return (
         <div>
-            <div>NavBar items for MoolahMate</div>
+            <div>MooMoo MoolahMate</div>
             <div>
-                <img 
-                    src="outfitsmoomoo.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="interaction"
+                    value="outfitsmoomoo"
+                    src="/outfitsmoomoo.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="bowmoomoo.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="interaction"
+                    value="outfitsmoomoo"
+                    src="/eat.svg"
+                />
+            </div>
+            <Moomoo
+                size="interaction"
+                value="outfitsmoomoo"
+                src="/pet.svg"
+            />
+            <div>
+                <Moomoo
+                    size="interaction"
+                    value="outfitsmoomoo"
+                    src="/play.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="eat.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="shop"
+                    value="outfitsmoomoo"
+                    src="/fancysuit.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="fancysuit.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="shop"
+                    value="outfitsmoomoo"
+                    src="/flower.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="flower.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="shop"
+                    value="outfitsmoomoo"
+                    src="/icecream.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="icecream.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="shop"
+                    value="outfitsmoomoo"
+                    src="/kitty.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="kitty.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="shop"
+                    value="outfitsmoomoo"
+                    src="/puppy.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="pet.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="shop"
+                    value="outfitsmoomoo"
+                    src="/royaldress.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="play.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="dressup"
+                    value="outfitsmoomoo"
+                    src="/sunglassmoomoo.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="puppy.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="dressup"
+                    value="outfitsmoomoo"
+                    src="/susmoomoo.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="royaldress.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="dressup"
+                    value="outfitsmoomoo"
+                    src="/outfitsmoomoo.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="sunglassmoomoo.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="dressup"
+                    value="outfitsmoomoo"
+                    src="/bowmoomoo.svg"
                 />
             </div>
             <div>
-                <img 
-                    src="susmoomoo.svg"
-                    style={{ width: "200px" }}
+                <Moomoo
+                    size="goals"
+                    value="outfitsmoomoo"
+                    src="/moomoonormal.svg"
                 />
             </div>
+            <div>
+                <Moomoo
+                    size="recommendationsgoals"
+                    value="outfitsmoomoo"
+                    src="/moomoonormal.svg"
+                />
+            </div>
+            <div>
+                <Moomoo
+                    size="recommendationsgoals"
+                    value="outfitsmoomoo"
+                    src="/moomoonormal.svg"
+                />
+            </div>
+
+            <div>
+                <Moomoo
+                    size="recommendationsgoals"
+                    value="outfitsmoomoo"
+                    src="/moomoolayingdown.svg"
+                />
+            </div>
+
+            <div>
+                <Moomoo
+                    size="recommendationsgoals"
+                    value="outfitsmoomoo"
+                    src="/moomoosit.svg"
+                />
+            </div>
+
             <div>By: Thea C.</div>
         </div>
     );
 }
 
-export default NavBarStyle;
+export default cowPage;
