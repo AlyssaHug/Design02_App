@@ -6,20 +6,15 @@ function page() {
         <div>
             <ToggleButton />
             <ProgressBar
-                name='Goal 1: Touches Sandy'
-                value='100/100'
-                type='complete'
+                value='Goal 1: Touches Sandy'
+                progress={80}
+                goal={100}
             />
             <ProgressBar
-                name='Goal 2: Check on Moomoo'
-                value='0/100'
-                type='empty'
-            />
-            <ProgressBar
-                name='Goal 2: Check on Moomoo'
-                value='10/100'
-                type='empty'
-                color='ten'
+                value='Goal 2: Touches Sandy'
+                progress={30}
+                goal={100}
+                textColor='#4caf50'
             />
         </div>
     );

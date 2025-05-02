@@ -6,36 +6,24 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function ProgressBar({ type, style, color, value, name }) {
-    const progressClasses = classNames(
-        styles.progress,
-        libreFranklin.variable,
-        {
-            [styles.complete]: type === "complete",
-            [styles.empty]: type === "empty",
-        }
-    );
-    const progressName = classNames(styles.name, libreFranklin.variable, {
-        [styles.name]: style === "name",
-    });
-    const progressFill = classNames(styles.fill, {
-        [styles.ten]: color === "ten",
-        [styles.twenty]: color === "twenty",
-        [styles.thirty]: color === "thirty",
-        [styles.forty]: color === "forty",
-        [styles.fifty]: color === "fifty",
-        [styles.sixty]: color === "sixty",
-        [styles.seventy]: color === "seventy",
-        [styles.eighty]: color === "eighty",
-        [styles.ninety]: color === "ninety",
-    });
+const ProgressBar = ({ progress, goal, value, textColor = "#fefdfd" }) => {
+    const percentage = (progress / goal) * 100;
+
     return (
-        <div>
-            <h3 className={progressName}>{name}</h3>
-            <div className={progressFill}></div>
-            <div className={progressClasses}>
-                <span>{value}</span>
+        <div className={styles.container}>
+            <h3 className={styles.goalText}>{value}</h3>
+            <div className={styles.progressBar}>
+                <div
+                    className={styles.progressFill}
+                    style={{ width: `${percentage}%` }}></div>
             </div>
+            <span
+                className={styles.progressText}
+                style={{ color: textColor }}>
+                {progress}/{goal}
+            </span>
         </div>
     );
-}
+};
+
+export default ProgressBar;
