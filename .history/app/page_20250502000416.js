@@ -86,7 +86,7 @@ export default function Page() {
         { value: "vacation", label: "Vacation" },
         { value: "concert", label: "Concert" },
         { value: "Digital", label: "Digital" },
-        { value: "Big_Purchase", label: "Big Purchase" },
+        { value: "Big Purchase", label: "Big Purchase" },
         { value: "Saving", label: "Saving" },
     ];
 
@@ -94,6 +94,7 @@ export default function Page() {
         { value: "e-transfer", label: "E-Transfer" },
         { value: "cash", label: "Cash" },
         { value: "cheque", label: "Cheque" },
+        { value: "credit card", label: "Credit Card" },
         { value: "paypal", label: "Paypal" },
         { value: "other", label: "Other" },
     ];

@@ -1,10 +1,12 @@
 "use client";
 
-import Dropdown from "@/app/ui/dropdown/dropdown";
+import CategoryDropdown from "@/app/ui/dropdown/CategoryDropdown";
+import MonthDropdown from "@/app/ui/dropdown/MonthDropdown";
+import DateDropdown from "@/app/ui/dropdown/DateDropdown";
 import styles from "@/app/ui/dropdown/dropdown.module.css";
 
 export default function Page() {
-    const categoryOptions = [
+    const options = [
         { value: "groceries", label: "Groceries" },
         { value: "dineout", label: "Dine Out" },
         { value: "clothing", label: "Clothing" },
@@ -61,6 +63,7 @@ export default function Page() {
         { value: "30", label: "30" },
         { value: "31", label: "31" },
     ];
+
     const yearOptions = [
         { value: "2025", label: "2025" },
         { value: "2026", label: "2026" },
@@ -74,30 +77,27 @@ export default function Page() {
         { value: "2034", label: "2034" },
         { value: "2035", label: "2035" },
     ];
-
     const depositFrequencyOptions = [
         { value: "daily", label: "Daily" },
         { value: "weekly", label: "Weekly" },
         { value: "bi-weekly", label: "Bi-weekly" },
         { value: "monthly", label: "Monthly" },
     ];
-
     const goalTypeOptions = [
         { value: "vacation", label: "Vacation" },
         { value: "concert", label: "Concert" },
         { value: "Digital", label: "Digital" },
-        { value: "Big_Purchase", label: "Big Purchase" },
+        { value: "Big Purchase", label: "Big Purchase" },
         { value: "Saving", label: "Saving" },
     ];
-
     const interactionOptions = [
         { value: "e-transfer", label: "E-Transfer" },
         { value: "cash", label: "Cash" },
         { value: "cheque", label: "Cheque" },
+        { value: "credit card", label: "Credit Card" },
         { value: "paypal", label: "Paypal" },
         { value: "other", label: "Other" },
     ];
-
     const handleCategorySelect = (option) => {
         if (option.value === "add_category") {
             console.log("Add category clicked");
@@ -105,48 +105,34 @@ export default function Page() {
     };
 
     const handleMonthSelect = (option) => {
-        // Handle month selection
+        // The dropdown will automatically show the selected month
     };
 
     const handleDateSelect = (option) => {
-        // Handle date selection
+        // The dropdown will automatically show the selected date
     };
 
     const handleYearSelect = (option) => {
-        // Handle year selection
+        alert(`Selected year: ${option.label}`);
     };
-
     const handleDepositFrequencySelect = (option) => {
-        // Handle deposit frequency selection
+        alert(`Selected deposit frequency: ${option.label}`);
     };
-
     const handleGoalTypeSelect = (option) => {
-        // Handle goal type selection
+        alert(`Selected goal type: ${option.label}`);
     };
-
     const handleInteractionSelect = (option) => {
         if (option.value === "other") {
-            console.log("Other interaction selected");
+            alert("Other interaction selected");
+        } else {
+            alert(`Selected interaction: ${option.label}`);
         }
     };
-
     return (
         <div>
-            <Dropdown
-                options={categoryOptions}
-                onSelect={handleCategorySelect}
-                placeholder='Select your category'
-            />
-            <Dropdown
-                options={monthOptions}
-                onSelect={handleMonthSelect}
-                placeholder='Select month'
-            />
-            <Dropdown
-                options={dateOptions}
-                onSelect={handleDateSelect}
-                placeholder='Select date'
-            />
+            <CategoryDropdown onSelect={handleCategorySelect} />
+            <MonthDropdown onSelect={handleMonthSelect} />
+            <DateDropdown onSelect={handleDateSelect} />
             <Dropdown
                 options={yearOptions}
                 onSelect={handleYearSelect}
@@ -158,7 +144,7 @@ export default function Page() {
                 placeholder='Select deposit frequency'
             />
             <Dropdown
-                options={goalTypeOptions}
+                option={goalTypeOptions}
                 onSelect={handleGoalTypeSelect}
                 placeholder='Select goal type'
             />
