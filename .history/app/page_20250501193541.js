@@ -1,6 +1,8 @@
+
+
 "use client";
 
-import Dropdown from "@/app/ui/dropdown/dropdown";
+import Dropdown from "@/app/dropdown/dropdown";
 
 export default function Page() {
     const options = [
@@ -16,7 +18,7 @@ export default function Page() {
         if (option.value === "add_category") {
             alert("Add category clicked");
         } else {
-            alert(`Selected: ${option.label}`);
+            alert(Selected: ${option.label});
         }
     };
 

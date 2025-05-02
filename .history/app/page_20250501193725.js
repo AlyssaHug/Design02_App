@@ -1,6 +1,6 @@
 "use client";
 
-import Dropdown from "@/app/ui/dropdown/dropdown";
+import Dropdown from "@/app/dropdown/dropdown";
 
 export default function Page() {
     const options = [
