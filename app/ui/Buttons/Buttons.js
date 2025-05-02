@@ -1,10 +1,14 @@
 import classNames from "classnames";
-import { Libre_Franklin } from "next/font/google";
+import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
+const quicksand = Quicksand({
+    variable: "--font-quicksand",
+});
+
 
 // icon: icon
 // onClick: function

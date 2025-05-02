@@ -120,3 +120,4 @@ export function GoalCow({ value, type }) {
         </div>
     );
 }
+

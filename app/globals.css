@@ -20,3 +20,18 @@ html {
     justify-content: center;
 }
 
+.nav {
+    background: #f3f9f0;
+    width: 402px;
+    height: 98px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; /* Space items evenly */
+    align-items: center; /* Center vertically */
+    gap: 16px;
+}
+
+.home {
+    padding-top: 900px;
+}
+

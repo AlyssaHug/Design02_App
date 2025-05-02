@@ -1,62 +1,54 @@
-import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import GoalProgress from "./ui/GoalCards/GoalCards";
-import { Goals } from "./ui/GoalCards/GoalCards";
-import { GoalRecs } from "./ui/GoalCards/GoalCards";
-import styles from "@/app/ui/GoalCards/GoalCards.module.css";
-import Button from "./ui/Buttons/Buttons";
-import { GoalCow } from "./ui/GoalCards/GoalCards";
+"use client";
+
+import Nav from "@/app/ui/Buttons/Buttons";
 function page() {
     return (
         <div>
-            <ToggleButton />
-            <GoalProgress
-                value='Goal Progress'
-                type='progress'
-            />
-            <div className={styles.subheaderContainer}>
-                <h3 className={styles.subheader}>Goals</h3>
-                <Button
-                    className={styles.view}
-                    color='dark'
-                    value='Create Goal'
+            <div className="nav">
+                <Nav
+                    color="nav"
+                    size="expense"
+                    imageSrc="/navbar-icons/expense.svg"
+                    value="Expenses"
+                    text="belowtext"
+                    font="font"
+                />
+                <Nav
+                    color="nav"
+                    size="goals"
+                    imageSrc="/navbar-icons/goal.svg"
+                    value="Goals"
+                    text="belowtext"
+                    font="font"
+                />
+                <Nav
+                    className="home"
+                    color="nav"
+                    size="home"
+                    imageSrc="/navbar-icons/home-icon.svg"
+                    value="home"
+                    text="belowtext"
+                    font="font"
+                />
+                <Nav
+                    color="nav"
+                    size="goals"
+                    imageSrc="/navbar-icons/goal.svg"
+                    value="Goals"
+                    text="belowtext"
+                    font="font"
+                />
+                <Nav
+                    color="nav"
+                    size="goals"
+                    imageSrc="/navbar-icons/goal.svg"
+                    value="Goals"
+                    text="belowtext"
+                    font="font"
                 />
             </div>
-            <div className={styles.goalsContent}>
-                <Goals
-                    type='goals'
-                    value='Reduce spending by $60!'
-                    imageSrc='/right_arrow.svg'
-                />
-                <Goals
-                    type='goals'
-                    value='Add $50 to tuition fund!'
-                    imageSrc='/right_arrow.svg'
-                />
-            </div>
-            <div className={styles.subheaderContainer}>
-                <h3 className={styles.subheader}>Recommendations</h3>
-                <Button
-                    className={styles.view}
-                    color='dark'
-                    value='View More'
-                />
-            </div>
-            <div className={styles.recsContent}>
-                <GoalRecs value='Spend $50 less on games!' />
-                <GoalRecs value='Spend $50 less on games!' />
-            </div>
-            <div className={styles.subheaderContent}>
-                <h3 className={styles.subheader}>Your cow friend!</h3>
-            </div>
-            <GoalCow
-                type='goalCow'
-                value='Check on MooMoo!'
-
- 
-            />
         </div>
     );
 }
 
 export default page;
-

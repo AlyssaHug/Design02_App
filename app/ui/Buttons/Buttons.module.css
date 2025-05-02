@@ -62,6 +62,11 @@
 /*====nav styles====*/
 .nav {
     color: #37502d;
+    font-family: var(--font-quicksand);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
 }
 .expense {
     color: #090f19;
