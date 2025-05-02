@@ -1,0 +1,34 @@
+/* components/ProgressBar.module.css */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.goalText {
+    margin-bottom: 5px;
+}
+
+.progressBar {
+    height: 36px;
+    background-color: #f3f9f0;
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #4caf50;
+}
+
+.progressFill {
+    height: 100%;
+    background-color: #4caf50; /* Green fill */
+    border-radius: 28px; /* Rounded left edge */
+    transition: width 0.3s ease-in-out;
+}
+
+.progressText {
+    position: absolute;
+    text-align: center;
+    color: #fefdfd;
+    padding: 4px;
+    transform: translate(305%, -103%);
+}
