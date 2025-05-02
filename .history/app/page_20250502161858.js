@@ -503,47 +503,12 @@ export default function Page() {
                 merchant='Tim Hortons'
             />
             <TransactionCard
-                time='3:36pm'
+                time='11:46pm'
                 category='Dine...'
-                amount='1.67'
-                description='Ice Cream'
-                merchant='Mcdonalds'
+                amount='7.85'
+                description='Chilli'
+                merchant='Tim Hortons'
             />
-            <TransactionCard
-                time='10:33am'
-                category='Dine...'
-                amount='7.57'
-                description='McDouble Meal'
-                merchant='McDonalds'
-            />
-            <TransactionCard
-                time='12:26pm'
-                category='Groc...'
-                amount='2.68'
-                description='B-day hat'
-                merchant='Dollarama'
-            />
-            <TransactionCard
-                time='12:34pm'
-                category='Dine...'
-                amount='3.35'
-                description='Cake'
-                merchant='T&T Supermarket'
-            />
-            <TransactionCard
-                time='12:54pm'
-                category='Dine...'
-                amount='3.35'
-                description='BBT'
-                merchant='Ngon'
-            />
-            {/*April*/}
-            <TransactionCard
-                time='12:54pm'
-                category='Dine...'
-                amount='3.35'
-                description='BBT'
-                merchant='Ngon'
         </div>
     );
 }
