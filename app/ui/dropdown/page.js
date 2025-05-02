@@ -1,5 +1,3 @@
-"use client";
-
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import styles from "@/app/ui/dropdown/dropdown.module.css";
 

@@ -112,11 +112,14 @@ export function GoalCow({ value, type }) {
     );
     return (
         <div className={styles.goalCow}>
-            <p className={styles.cowText}>{value}</p>
-            <Moomoo
-                size='goals'
-                src='moomoonormal.svg'
-            />
+            <div className={styles.cowContent}>
+                <p className={styles.cowText}>{value}</p>
+                <Moomoo
+                    className={styles.cow}
+                    size='goals'
+                    src='moomoonormal.svg'
+                />
+            </div>
         </div>
     );
 }

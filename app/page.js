@@ -45,18 +45,23 @@ function page() {
                 <GoalRecs value='Spend $50 less on games!' />
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
-            <div className={styles.subheaderContent}>
-                <h3 className={styles.subheader}>Your cow friend!</h3>
+            <div className={styles.checkMoo}>
+                <div className={styles.subheaderContent}>
+                    <h3 className={styles.subheader}>Your cow friend!</h3>
+                </div>
+                <GoalCow
+                    type='goalCow'
+                    value='Check on MooMoo!'
+                />
             </div>
-            <GoalCow
-                type='goalCow'
-                value='Check on MooMoo!'
-
- 
+            <Button
+                value='home'
+                type='home'
+                color='nav'
+                imageSrc='/navbar-icons/home-icon.svg'
             />
         </div>
     );
 }
 
 export default page;
-
