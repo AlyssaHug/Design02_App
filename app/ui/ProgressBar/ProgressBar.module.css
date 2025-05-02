@@ -2,6 +2,7 @@
 .container {
     width: 100%;
     margin: 0 auto;
+    margin-top: 24px;
 }
 
 .goalText {
@@ -9,7 +10,6 @@
 }
 
 .progressBar {
-    width: 320px;
     height: 36px;
     background-color: #f3f9f0;
     border-radius: 28px;
@@ -30,5 +30,5 @@
     text-align: center;
     color: #fefdfd;
     padding: 4px;
-    transform: translate(225%, -103%);
+    transform: translate(275%, -103%);
 }

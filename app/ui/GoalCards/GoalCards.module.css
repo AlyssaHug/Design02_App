@@ -1,0 +1,40 @@
+/*========General========*/
+.goalCard {
+    background-color: #dcebf4;
+    margin: 8px;
+    align-self: center;
+    border-radius: 40px;
+    padding: 16px;
+    max-width: 400px;
+}
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    align-items: center;
+    padding-top: 4px;
+}
+.header {
+    flex: 0 0 65%;
+
+    font-weight: bold;
+    font-family: var(--font-quicksand);
+}
+.view {
+    flex: 0 0 20%;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+/*======Goals======*/
+.recs {
+    margin: 8px;
+    align-self: center;
+    border-radius: 40px;
+    padding: 16px;
+    max-width: 400px;
+}

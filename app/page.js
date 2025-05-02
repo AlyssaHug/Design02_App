@@ -1,20 +1,16 @@
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
 import ProgressBar from "./ui/ProgressBar/ProgressBar";
+import GoalProgress from "./ui/GoalCards/GoalCards";
+import { GoalRecs } from "./ui/GoalCards/GoalCards";
 
 function page() {
     return (
         <div>
             <ToggleButton />
-            <ProgressBar
-                value='Goal 1: Touches Sandy'
-                progress={80}
-                goal={100}
-            />
-            <ProgressBar
-                value='Goal 2: Touches Sandy'
-                progress={30}
-                goal={100}
-                textColor='#4caf50'
+            <GoalProgress value='Goal Progress' />
+            <GoalRecs
+                value='Goals'
+                type='recs'
             />
         </div>
     );
