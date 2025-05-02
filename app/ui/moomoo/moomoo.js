@@ -17,5 +17,3 @@ export default function Moomoo({ size, type, value, src }) {
         />
     );
 }
-
-//ee
