@@ -88,14 +88,6 @@ export default function Page() {
         { value: "Big Purchase", label: "Big Purchase" },
         { value: "Saving", label: "Saving" },
     ];
-    const interactionOptions = [
-        { value: "e-transfer", label: "E-Transfer" },
-        { value: "cash", label: "Cash" },
-        { value: "cheque", label: "Cheque" },
-        { value: "credit card", label: "Credit Card" },
-        { value: "paypal", label: "Paypal" },
-        { value: "other", label: "Other" },
-    ];
     const handleSelect = (option) => {
         if (option.value === "add_category") {
             alert("Add category clicked");
@@ -120,13 +112,7 @@ export default function Page() {
     const handleGoalTypeSelect = (option) => {
         alert(`Selected goal type: ${option.label}`);
     };
-    const handleInteractionSelect = (option) => {
-        if (option.value === "other") {
-            alert("Other interaction selected");
-        } else {
-            alert(`Selected interaction: ${option.label}`);
-        }
-    };
+
     return (
         <div>
             <Dropdown
@@ -158,11 +144,6 @@ export default function Page() {
                 option={goalTypeOptions}
                 onSelect={handleGoalTypeSelect}
                 placeholder='Select goal type'
-            />
-            <Dropdown
-                options={interactionOptions}
-                onSelect={handleInteractionSelect}
-                placeholder='Select interaction'
             />
         </div>
     );

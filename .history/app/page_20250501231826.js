@@ -81,21 +81,7 @@ export default function Page() {
         { value: "bi-weekly", label: "Bi-weekly" },
         { value: "monthly", label: "Monthly" },
     ];
-    const goalTypeOptions = [
-        { value: "vacation", label: "Vacation" },
-        { value: "concert", label: "Concert" },
-        { value: "Digital", label: "Digital" },
-        { value: "Big Purchase", label: "Big Purchase" },
-        { value: "Saving", label: "Saving" },
-    ];
-    const interactionOptions = [
-        { value: "e-transfer", label: "E-Transfer" },
-        { value: "cash", label: "Cash" },
-        { value: "cheque", label: "Cheque" },
-        { value: "credit card", label: "Credit Card" },
-        { value: "paypal", label: "Paypal" },
-        { value: "other", label: "Other" },
-    ];
+
     const handleSelect = (option) => {
         if (option.value === "add_category") {
             alert("Add category clicked");
@@ -117,16 +103,7 @@ export default function Page() {
     const handleDepositFrequencySelect = (option) => {
         alert(`Selected deposit frequency: ${option.label}`);
     };
-    const handleGoalTypeSelect = (option) => {
-        alert(`Selected goal type: ${option.label}`);
-    };
-    const handleInteractionSelect = (option) => {
-        if (option.value === "other") {
-            alert("Other interaction selected");
-        } else {
-            alert(`Selected interaction: ${option.label}`);
-        }
-    };
+
     return (
         <div>
             <Dropdown
@@ -153,16 +130,6 @@ export default function Page() {
                 options={depositFrequencyOptions}
                 onSelect={handleDepositFrequencySelect}
                 placeholder='Select deposit frequency'
-            />
-            <Dropdown
-                option={goalTypeOptions}
-                onSelect={handleGoalTypeSelect}
-                placeholder='Select goal type'
-            />
-            <Dropdown
-                options={interactionOptions}
-                onSelect={handleInteractionSelect}
-                placeholder='Select interaction'
             />
         </div>
     );

@@ -62,40 +62,6 @@ export default function Page() {
         { value: "31", label: "31" },
     ];
 
-    const yearOptions = [
-        { value: "2025", label: "2025" },
-        { value: "2026", label: "2026" },
-        { value: "2027", label: "2027" },
-        { value: "2028", label: "2028" },
-        { value: "2029", label: "2029" },
-        { value: "2030", label: "2030" },
-        { value: "2031", label: "2031" },
-        { value: "2032", label: "2032" },
-        { value: "2033", label: "2033" },
-        { value: "2034", label: "2034" },
-        { value: "2035", label: "2035" },
-    ];
-    const depositFrequencyOptions = [
-        { value: "daily", label: "Daily" },
-        { value: "weekly", label: "Weekly" },
-        { value: "bi-weekly", label: "Bi-weekly" },
-        { value: "monthly", label: "Monthly" },
-    ];
-    const goalTypeOptions = [
-        { value: "vacation", label: "Vacation" },
-        { value: "concert", label: "Concert" },
-        { value: "Digital", label: "Digital" },
-        { value: "Big Purchase", label: "Big Purchase" },
-        { value: "Saving", label: "Saving" },
-    ];
-    const interactionOptions = [
-        { value: "e-transfer", label: "E-Transfer" },
-        { value: "cash", label: "Cash" },
-        { value: "cheque", label: "Cheque" },
-        { value: "credit card", label: "Credit Card" },
-        { value: "paypal", label: "Paypal" },
-        { value: "other", label: "Other" },
-    ];
     const handleSelect = (option) => {
         if (option.value === "add_category") {
             alert("Add category clicked");
@@ -111,24 +77,9 @@ export default function Page() {
     const handleMonthSelect = (option) => {
         alert(`Selected month: ${option.label}`);
     };
-    const handleYearSelect = (option) => {
-        alert(`Selected year: ${option.label}`);
-    };
-    const handleDepositFrequencySelect = (option) => {
-        alert(`Selected deposit frequency: ${option.label}`);
-    };
-    const handleGoalTypeSelect = (option) => {
-        alert(`Selected goal type: ${option.label}`);
-    };
-    const handleInteractionSelect = (option) => {
-        if (option.value === "other") {
-            alert("Other interaction selected");
-        } else {
-            alert(`Selected interaction: ${option.label}`);
-        }
-    };
+
     return (
-        <div>
+        <div style={{ display: "flex", gap: "20px", padding: "20px" }}>
             <Dropdown
                 options={options}
                 onSelect={handleSelect}
@@ -138,31 +89,15 @@ export default function Page() {
                 options={monthOptions}
                 onSelect={handleMonthSelect}
                 placeholder='Select month'
+                className={styles.month_dropdown}
+                buttonClassName={styles.month_dropdown_button}
+                contentClassName={styles.month_dropdown_content}
+                itemClassName={styles.month_dropdown_item}
             />
             <Dropdown
                 options={dateOptions}
                 onSelect={handleDateSelect}
                 placeholder='Select date'
-            />
-            <Dropdown
-                options={yearOptions}
-                onSelect={handleYearSelect}
-                placeholder='Select year'
-            />
-            <Dropdown
-                options={depositFrequencyOptions}
-                onSelect={handleDepositFrequencySelect}
-                placeholder='Select deposit frequency'
-            />
-            <Dropdown
-                option={goalTypeOptions}
-                onSelect={handleGoalTypeSelect}
-                placeholder='Select goal type'
-            />
-            <Dropdown
-                options={interactionOptions}
-                onSelect={handleInteractionSelect}
-                placeholder='Select interaction'
             />
         </div>
     );

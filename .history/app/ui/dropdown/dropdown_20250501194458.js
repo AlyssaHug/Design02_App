@@ -8,7 +8,6 @@ export default function Dropdown({
     options = [],
     onSelect,
     placeholder = "Select...",
-    className,
 }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState(null);
@@ -34,10 +33,9 @@ export default function Dropdown({
         setIsOpen(false);
         if (onSelect) onSelect(option);
     };
-
     return (
         <div
-            className={classNames(styles.dropdown, className)}
+            className={styles.dropdown}
             ref={dropdownRef}>
             <div
                 className={styles.dropdown_button}

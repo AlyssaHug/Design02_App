@@ -9,6 +9,9 @@ export default function Dropdown({
     onSelect,
     placeholder = "Select...",
     className,
+    buttonClassName,
+    contentClassName,
+    itemClassName,
 }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState(null);
@@ -34,13 +37,12 @@ export default function Dropdown({
         setIsOpen(false);
         if (onSelect) onSelect(option);
     };
-
     return (
         <div
             className={classNames(styles.dropdown, className)}
             ref={dropdownRef}>
             <div
-                className={styles.dropdown_button}
+                className={classNames(styles.dropdown_button, buttonClassName)}
                 onClick={() => setIsOpen((open) => !open)}
                 tabIndex={0}
                 role='button'
@@ -50,12 +52,18 @@ export default function Dropdown({
             </div>
             {isOpen && (
                 <div
-                    className={styles.dropdown_content}
+                    className={classNames(
+                        styles.dropdown_content,
+                        contentClassName
+                    )}
                     role='listbox'>
                     {options.map((option, idx) => (
                         <div
                             key={option.value || option}
-                            className={styles.dropdown_item}
+                            className={classNames(
+                                styles.dropdown_item,
+                                itemClassName
+                            )}
                             onClick={() => handleSelect(option)}
                             role='option'
                             aria-selected={selected === option}>
