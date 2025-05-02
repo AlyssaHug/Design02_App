@@ -1,25 +1,50 @@
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import ProgressBar from "./ui/ProgressBar/ProgressBar";
 import GoalProgress from "./ui/GoalCards/GoalCards";
 import { Goals } from "./ui/GoalCards/GoalCards";
 import { GoalRecs } from "./ui/GoalCards/GoalCards";
+import styles from "@/app/ui/GoalCards/GoalCards.module.css";
+import Button from "./ui/Buttons/Buttons";
 
 function page() {
     return (
         <div>
             <ToggleButton />
-            <GoalProgress value='Goal Progress' />
-            <Goals
-                value='Goals'
-                type='goals'
-                desc='Reduce spending by $60!'
-                imageSrc='/right_arrow.svg'
+            <GoalProgress
+                value='Goal Progress'
+                type='progress'
             />
-            <GoalRecs
-                value='Recommendations'
-                desc='Spend $50 less on games!'
-                desc2='Spend $40 less on takeout!'
-            />
+            <div className={styles.subheaderContainer}>
+                <h3 className={styles.subheader}>Goals</h3>
+                <Button
+                    className={styles.view}
+                    color='dark'
+                    value='Create Goal'
+                />
+            </div>
+            <div className={styles.goalsContent}>
+                <Goals
+                    type='goals'
+                    value='Reduce spending by $60!'
+                    imageSrc='/right_arrow.svg'
+                />
+                <Goals
+                    type='goals'
+                    value='Add $50 to tuition fund!'
+                    imageSrc='/right_arrow.svg'
+                />
+            </div>
+            <div className={styles.subheaderContainer}>
+                <h3 className={styles.subheader}>Recommendations</h3>
+                <Button
+                    className={styles.view}
+                    color='dark'
+                    value='View More'
+                />
+            </div>
+            <div className={styles.recsContent}>
+                <GoalRecs value='Spend $50 less on games!' />
+                <GoalRecs value='Spend $50 less on games!' />
+            </div>
         </div>
     );
 }
