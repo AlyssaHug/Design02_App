@@ -51,7 +51,47 @@ export default function GoalProgress({ style, value, type, size, icon }) {
         </div>
     );
 }
-export function GoalRecs({ value, type, size, imageSrc, desc }) {
+export function Goals({ value, type, size, imageSrc, desc }) {
+    const goalsClasses = classNames(
+        styles.goals,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.goals]: type === "goals",
+        }
+    );
+    return (
+        <div className={goalsClasses}>
+            <div className={styles.headerContainer}>
+                <h3 className={styles.subheader}>{value}</h3>
+                <Button
+                    className={styles.view}
+                    color='dark'
+                    value='Create Goal'
+                />
+            </div>
+            <div className={styles.goalsContent}>
+                <div className={styles.goal}>
+                    <p className={styles.goalText}>{desc}</p>
+                    <img
+                        className={styles.goalArrow}
+                        src={imageSrc}
+                    />
+                </div>
+                <div className={styles.goal}>
+                    <p className={styles.goalText}>
+                        Add $50 to tuition payment!
+                    </p>
+                    <img
+                        className={styles.goalArrow}
+                        src={imageSrc}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+}
+export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
     const goalRecsClasses = classNames(
         styles.goalRecs,
         quicksand.variable,
@@ -63,29 +103,43 @@ export function GoalRecs({ value, type, size, imageSrc, desc }) {
     return (
         <div className={goalRecsClasses}>
             <div className={styles.headerContainer}>
-                <h3 className={styles.header}>{value}</h3>
+                <h3 className={styles.subheader}>{value}</h3>
                 <Button
                     className={styles.view}
                     color='dark'
-                    value='Create Goal'
+                    value='View More'
                 />
             </div>
-            <div className={styles.recContent}>
+            <div className={styles.recsContent}>
                 <div className={styles.rec}>
-                    <p className={styles.goalText}>{desc}</p>
-                    <img
-                        className={styles.goalArrow}
-                        src={imageSrc}
-                    />
+                    <p className={styles.recText}>{desc}</p>
+                    <div className={styles.buttons}>
+                        <Button
+                            value='Activate'
+                            size='caption'
+                            color='dark'
+                        />
+                        <Button
+                            value='Dismiss'
+                            size='caption'
+                            type='secondary'
+                        />
+                    </div>
                 </div>
                 <div className={styles.rec}>
-                    <p className={styles.goalText}>
-                        Add $50 to tuition payment!
-                    </p>
-                    <img
-                        className={styles.goalArrow}
-                        src={imageSrc}
-                    />
+                    <p className={styles.recText}>{desc2}</p>
+                    <div className={styles.buttons}>
+                        <Button
+                            value='Activate'
+                            size='caption'
+                            color='dark'
+                        />
+                        <Button
+                            value='Dismiss'
+                            size='caption'
+                            type='secondary'
+                        />
+                    </div>
                 </div>
             </div>
         </div>

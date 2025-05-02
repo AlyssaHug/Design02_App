@@ -10,11 +10,11 @@
 .headerContainer {
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
     align-items: center;
     padding-top: 4px;
 }
 .header {
+    font-size: 24px;
     flex: 0 0 65%;
     font-weight: bold;
     font-family: var(--font-quicksand);
@@ -31,7 +31,7 @@
 }
 /*======Goals======*/
 
-.rec {
+.goal {
     background-color: #dcebf4;
     border-radius: 30px;
     display: flex;
@@ -47,16 +47,43 @@
     padding: 10px;
     flex: 0 0 20%;
 }
-.recContent {
+.goalsContent {
     display: flex;
     justify-content: center;
     font-size: 12px;
     align-items: center;
 }
-.goalRecs {
+.goals {
     margin: 8px;
     align-self: center;
     border-radius: 40px;
     padding: 16px;
     max-width: 400px;
+}
+/*===Recommendations===*/
+.subheader {
+    font-size: 20px;
+    flex: 0 0 65%;
+    font-weight: bold;
+    font-family: var(--font-quicksand);
+}
+.recsContent {
+    display: flex;
+    justify-content: center;
+}
+.recText {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+.rec {
+    background-color: #dcebf4;
+    border-radius: 30px;
+    flex: 0 0 40%;
+    padding: 12px;
+    margin: 12px;
+}
+.buttons {
+    display: flex;
 }
