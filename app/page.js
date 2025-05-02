@@ -51,8 +51,12 @@ function page() {
             <GoalCow
                 type='goalCow'
                 value='Check on MooMoo!'
+
+ 
             />
         </div>
     );
 }
+
 export default page;
+
