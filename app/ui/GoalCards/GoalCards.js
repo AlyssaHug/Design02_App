@@ -79,7 +79,9 @@ export function GoalRecs({ value, type, size, imageSrc, desc }) {
                     />
                 </div>
                 <div className={styles.rec}>
-                    <p className={styles.goalText}>{desc}</p>
+                    <p className={styles.goalText}>
+                        Add $50 to tuition payment!
+                    </p>
                     <img
                         className={styles.goalArrow}
                         src={imageSrc}
