@@ -51,7 +51,7 @@ export default function GoalProgress({ style, value, type, size, icon }) {
         </div>
     );
 }
-export function GoalRecs({ value, type, size }) {
+export function GoalRecs({ value, type, size, imageSrc, desc }) {
     const goalRecsClasses = classNames(
         styles.goalRecs,
         quicksand.variable,
@@ -69,6 +69,22 @@ export function GoalRecs({ value, type, size }) {
                     color='dark'
                     value='Create Goal'
                 />
+            </div>
+            <div className={styles.recContent}>
+                <div className={styles.rec}>
+                    <p className={styles.goalText}>{desc}</p>
+                    <img
+                        className={styles.goalArrow}
+                        src={imageSrc}
+                    />
+                </div>
+                <div className={styles.rec}>
+                    <p className={styles.goalText}>{desc}</p>
+                    <img
+                        className={styles.goalArrow}
+                        src={imageSrc}
+                    />
+                </div>
             </div>
         </div>
     );

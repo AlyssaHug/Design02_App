@@ -11,6 +11,8 @@ function page() {
             <GoalRecs
                 value='Goals'
                 type='recs'
+                desc='Reduce spending by $60!'
+                imageSrc='/right_arrow.svg'
             />
         </div>
     );

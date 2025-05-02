@@ -16,7 +16,6 @@
 }
 .header {
     flex: 0 0 65%;
-
     font-weight: bold;
     font-family: var(--font-quicksand);
 }
@@ -31,7 +30,30 @@
     padding-bottom: 24px;
 }
 /*======Goals======*/
-.recs {
+
+.rec {
+    background-color: #dcebf4;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 8px;
+}
+.goalText {
+    flex: 0 0 80%;
+}
+.goalArrow {
+    padding: 10px;
+    flex: 0 0 20%;
+}
+.recContent {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+}
+.goalRecs {
     margin: 8px;
     align-self: center;
     border-radius: 40px;
