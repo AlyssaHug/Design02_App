@@ -3,7 +3,7 @@ import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "../Buttons/Buttons";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import { Quicksand, Libre_Franklin } from "next/font/google";
-
+import Moomoo from "../moomoo/moomoo";
 const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
@@ -98,6 +98,25 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
                     />
                 </div>
             </div>
+        </div>
+    );
+}
+export function GoalCow({ value, type }) {
+    const goalCowClasses = classNames(
+        styles.goalCow,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.goalCow]: type === "goalCow",
+        }
+    );
+    return (
+        <div className={styles.goalCow}>
+            <p className={styles.cowText}>{value}</p>
+            <Moomoo
+                size='goals'
+                src='moomoonormal.svg'
+            />
         </div>
     );
 }

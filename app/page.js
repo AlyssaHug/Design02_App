@@ -4,7 +4,7 @@ import { Goals } from "./ui/GoalCards/GoalCards";
 import { GoalRecs } from "./ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "./ui/Buttons/Buttons";
-
+import { GoalCow } from "./ui/GoalCards/GoalCards";
 function page() {
     return (
         <div>
@@ -45,6 +45,13 @@ function page() {
                 <GoalRecs value='Spend $50 less on games!' />
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
+            <div className={styles.subheaderContent}>
+                <h3 className={styles.subheader}>Your cow friend!</h3>
+            </div>
+            <GoalCow
+                type='goalCow'
+                value='Check on MooMoo!'
+            />
         </div>
     );
 }
