@@ -2,38 +2,38 @@
   width: 267px;
   padding: 37px;
   background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .expense_input {
-  width: 370px;
-  padding: 52px;
-  background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  width: 267px;
+  padding: 37px;
+  color: #D9EBD1;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .goal_input {
   width: 267px;
   padding: 37px;
-  background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  color: #D9EBD1;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .account_input {
   width: 267px;
   padding: 37px;
-  background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  color: #D9EBD1;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .paragraph_input {
-  width: 370px;
-  padding: 148px;
-  background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  width: 267px;
+  padding: 37px;
+  color: #D9EBD1;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
