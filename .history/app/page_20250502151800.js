@@ -8,7 +8,7 @@ import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
-import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
+import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 
 export default function Page() {
     const categoryOptions = [
@@ -219,19 +219,19 @@ export default function Page() {
                 onSelect={handleInteractionSelect}
                 placeholder='Select interaction'
             />
-            <TransactionCard
+            <CalendarCard
                 time='12:20pm'
-                category='Groc...'
+                category='Groceries'
                 amount='34.68'
                 description='Lunch with friends'
                 merchant='Gyukaku'
             />
-            <TransactionCard
-                time='2:20pm'
-                category='Diner'
-                amount='20.00'
-                description='Food'
-                merchant='hEHe'
+            <CalendarCard
+                time='12:20pm'
+                category='Groceries'
+                amount='34.68'
+                description='Lunch with friends'
+                merchant='Gyukaku'
             />
         </div>
     );

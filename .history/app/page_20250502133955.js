@@ -1,14 +1,13 @@
 "use client";
 
-import Dropdown from "@/app/ui/dropdown/dropdown";
-import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import GoalProgress from "@/app/ui/GoalCards/GoalCards";
-import { Goals } from "@/app/ui/GoalCards/GoalCards";
-import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
-import styles from "@/app/ui/GoalCards/GoalCards.module.css";
-import Button from "@/app/ui/Buttons/Buttons";
-import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
-import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
+import Dropdown from "@/app/ui/Dropdown/dropdown";
+import styles from "@/app/ui/Dropdown/dropdown.module.css";
+import ToggleButton from "@/app/ui/ToggleButton/toggleButton";
+import GoalProgress from "@/app/ui/GoalProgress/goalProgress";
+import Buttons from "@/app/ui/Buttons/button";
+import Goals from "@/app/ui/Goals/goals";
+import GoalRecs from "@/app/ui/GoalRecs/goalRecs";
+import GoalCow from "@/app/ui/GoalCow/goalCow";
 
 export default function Page() {
     const categoryOptions = [
@@ -68,7 +67,6 @@ export default function Page() {
         { value: "30", label: "30" },
         { value: "31", label: "31" },
     ];
-
     const yearOptions = [
         { value: "2025", label: "2025" },
         { value: "2026", label: "2026" },
@@ -147,7 +145,7 @@ export default function Page() {
             />
             <div className={styles.subheaderContainer}>
                 <h3 className={styles.subheader}>Goals</h3>
-                <Button
+                <Buttons
                     className={styles.view}
                     color='dark'
                     value='Create Goal'
@@ -167,7 +165,7 @@ export default function Page() {
             </div>
             <div className={styles.subheaderContainer}>
                 <h3 className={styles.subheader}>Recommendations</h3>
-                <Button
+                <Buttons
                     className={styles.view}
                     color='dark'
                     value='View More'
@@ -219,20 +217,8 @@ export default function Page() {
                 onSelect={handleInteractionSelect}
                 placeholder='Select interaction'
             />
-            <TransactionCard
-                time='12:20pm'
-                category='Groc...'
-                amount='34.68'
-                description='Lunch with friends'
-                merchant='Gyukaku'
-            />
-            <TransactionCard
-                time='2:20pm'
-                category='Diner'
-                amount='20.00'
-                description='Food'
-                merchant='hEHe'
-            />
         </div>
     );
 }
+
+export default page;

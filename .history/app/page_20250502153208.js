@@ -219,14 +219,14 @@ export default function Page() {
                 onSelect={handleInteractionSelect}
                 placeholder='Select interaction'
             />
-            <TransactionCard
+            <CalendarCard
                 time='12:20pm'
-                category='Groc...'
+                category='Groceries'
                 amount='34.68'
                 description='Lunch with friends'
                 merchant='Gyukaku'
             />
-            <TransactionCard
+            <CalendarCard
                 time='2:20pm'
                 category='Diner'
                 amount='20.00'

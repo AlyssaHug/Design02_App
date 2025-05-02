@@ -1,6 +1,7 @@
 "use client";
 
 import Dropdown from "@/app/ui/dropdown/dropdown";
+import styles from "@/app/ui/Dropdown/dropdown.module.css";
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
 import GoalProgress from "@/app/ui/GoalCards/GoalCards";
 import { Goals } from "@/app/ui/GoalCards/GoalCards";
@@ -8,7 +9,6 @@ import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
-import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 
 export default function Page() {
     const categoryOptions = [
@@ -68,7 +68,6 @@ export default function Page() {
         { value: "30", label: "30" },
         { value: "31", label: "31" },
     ];
-
     const yearOptions = [
         { value: "2025", label: "2025" },
         { value: "2026", label: "2026" },
@@ -183,55 +182,6 @@ export default function Page() {
             <GoalCow
                 type='goalCow'
                 value='Check on MooMoo!'
-            />
-            <Dropdown
-                options={categoryOptions}
-                onSelect={handleCategorySelect}
-                placeholder='Select your category'
-            />
-            <Dropdown
-                options={monthOptions}
-                onSelect={handleMonthSelect}
-                placeholder='Select month'
-            />
-            <Dropdown
-                options={dateOptions}
-                onSelect={handleDateSelect}
-                placeholder='Select date'
-            />
-            <Dropdown
-                options={yearOptions}
-                onSelect={handleYearSelect}
-                placeholder='Select year'
-            />
-            <Dropdown
-                options={depositFrequencyOptions}
-                onSelect={handleDepositFrequencySelect}
-                placeholder='Select deposit frequency'
-            />
-            <Dropdown
-                options={goalTypeOptions}
-                onSelect={handleGoalTypeSelect}
-                placeholder='Select goal type'
-            />
-            <Dropdown
-                options={interactionOptions}
-                onSelect={handleInteractionSelect}
-                placeholder='Select interaction'
-            />
-            <TransactionCard
-                time='12:20pm'
-                category='Groc...'
-                amount='34.68'
-                description='Lunch with friends'
-                merchant='Gyukaku'
-            />
-            <TransactionCard
-                time='2:20pm'
-                category='Diner'
-                amount='20.00'
-                description='Food'
-                merchant='hEHe'
             />
         </div>
     );

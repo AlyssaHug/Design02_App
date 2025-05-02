@@ -221,7 +221,7 @@ export default function Page() {
             />
             <TransactionCard
                 time='12:20pm'
-                category='Groc...'
+                category='Groceries'
                 amount='34.68'
                 description='Lunch with friends'
                 merchant='Gyukaku'
