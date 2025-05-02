@@ -311,14 +311,6 @@ export default function Page() {
                 description='Strawberry Matcha Latte'
                 merchant='Cafe Algan'
             />
-            {/*February*/}
-            <TransactionCard
-                time='11:47am'
-                category='Dine...'
-                amount='1.68'
-                description='icecream'
-                merchant='Mcdonalds'
-            />
         </div>
     );
 }
