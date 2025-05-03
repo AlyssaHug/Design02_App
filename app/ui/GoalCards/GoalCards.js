@@ -4,6 +4,7 @@ import Button from "../Buttons/Buttons";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import Moomoo from "../moomoo/moomoo";
+
 const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
@@ -11,7 +12,15 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function GoalProgress({ style, value, type, size, icon }) {
+export default function GoalProgress({
+    style,
+    value,
+    type,
+    href,
+    percetnage,
+    size,
+    icon,
+}) {
     const goalCardClasses = classNames(
         styles.goalCard,
         quicksand.variable,
@@ -24,10 +33,12 @@ export default function GoalProgress({ style, value, type, size, icon }) {
         <div className={goalCardClasses}>
             <div className={styles.headerContainer}>
                 <h3 className={styles.header}>{value}</h3>
+
                 <Button
                     className={styles.view}
                     color='dark'
                     value='View Goals'
+                    href={href}
                 />
             </div>
             <div className={styles.content}>
@@ -91,6 +102,7 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
                         size='caption'
                         color='dark'
                     />
+
                     <Button
                         value='Dismiss'
                         size='caption'
@@ -132,26 +144,32 @@ export function GoalCow({ value, type }) {
 }
 
 export function GoalDetailed({
-    goal,
+    name,
     title,
     type,
     start,
     end,
     value,
-    imageSrc,
+    style,
+    progress,
+    goal,
+    textColor = "#fefdfd",
 }) {
     const goalDetailedClasses = classNames(
         styles.goalDetail,
         quicksand.variable,
         libreFranklin.variable
     );
+    const percentage = (progress / goal) * 100;
     {
         return (
             <div className={styles.container}>
-                <h3 className={styles.header}>{goal}</h3>
+                <h3 className={styles.header}>{name}</h3>
                 <ProgressBar
-                    progress={90}
-                    goal={100}
+                    progress={progress}
+                    goal={goal}
+                    textColor={textColor}
+                    style={style}
                 />
                 <div className={styles.goalContent}>
                     <div className={styles.details}>

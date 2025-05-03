@@ -1,25 +1,23 @@
-import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import GoalProgress from "./ui/GoalCards/GoalCards";
-import { Goals } from "./ui/GoalCards/GoalCards";
-import { GoalRecs } from "./ui/GoalCards/GoalCards";
+import GoalProgress from "@/app//ui/GoalCards/GoalCards";
+import { Goals } from "@/app/ui/GoalCards/GoalCards";
+import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
-import Button from "./ui/Buttons/Buttons";
-import { GoalCow, GoalDetailed } from "./ui/GoalCards/GoalCards";
-import ShopItem from "./ui/ShopItem/ShopItem";
+import Button from "@/app/ui/Buttons/Buttons";
+import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 
 function page() {
     return (
         <div>
+            <h1>Welcome to da goals</h1>
             <Button
                 color='light'
-                value='check out da goals'
-                href='Goals'
+                value='BOO!'
+                href='/'
             />
-
-            <ToggleButton />
             <GoalProgress
                 value='Goal Progress'
                 type='progress'
+                href='/Goals/ViewGoals'
             />
             <div className={styles.subheaderContainer}>
                 <h3 className={styles.subheader}>Goals</h3>
@@ -61,27 +59,6 @@ function page() {
                     type='goalCow'
                     value='Check on MooMoo!'
                     text='Go!'
-                />
-            </div>
-            <GoalDetailed
-                name='Goal 1'
-                title='Reduce spending by $60!'
-                type='General'
-                start='March 26, 2025'
-                end='April 27, 2025'
-                progress={90}
-                goal={100}
-            />
-            <div className='sameSizedButtons'>
-                <ShopItem
-                    name='Flower Crown'
-                    imageSrc='/flower.svg'
-                    value='90'
-                />
-                <ShopItem
-                    name='Ice Cream Hat'
-                    imageSrc='/icecream.svg'
-                    value='60'
                 />
             </div>
         </div>
