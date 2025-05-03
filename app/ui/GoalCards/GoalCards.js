@@ -114,12 +114,64 @@ export function GoalCow({ value, type }) {
         <div className={styles.goalCow}>
             <div className={styles.cowContent}>
                 <p className={styles.cowText}>{value}</p>
-                <Moomoo
-                    className={styles.cow}
-                    size='goals'
-                    src='moomoonormal.svg'
-                />
+                <div className={styles.imageStack}>
+                    <Moomoo
+                        className={styles.cow}
+                        size='goals'
+                        src='moomoonormal.svg'
+                    />
+                    <Button
+                        className={styles.go}
+                        value='Go!'
+                        type='goalMoo'
+                    />
+                </div>
             </div>
         </div>
     );
+}
+
+export function GoalDetailed({
+    goal,
+    title,
+    type,
+    start,
+    end,
+    value,
+    imageSrc,
+}) {
+    const goalDetailedClasses = classNames(
+        styles.goalDetail,
+        quicksand.variable,
+        libreFranklin.variable
+    );
+    {
+        return (
+            <div className={styles.container}>
+                <h3 className={styles.header}>{goal}</h3>
+                <ProgressBar
+                    progress={90}
+                    goal={100}
+                />
+                <div className={styles.goalContent}>
+                    <div className={styles.details}>
+                        <p>{title}</p>
+                        <p>Goal type: {type}</p>
+                        <p>Start: {start}</p>
+                        <p>End: {end}</p>
+                    </div>
+                    <div className={styles.imageStack}>
+                        <Moomoo
+                            size='goals'
+                            src='/moomoolayingdown.svg'
+                        />
+                        <Button
+                            value='View More'
+                            type='view'
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }

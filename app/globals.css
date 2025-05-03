@@ -13,9 +13,22 @@ html {
     display: flex;
     flex-direction: columns;
     justify-content: center;
+    align-items: center;
 }
 
 .sameSizedButtons {
     display: flex;
     justify-content: center;
+}
+.checkMoo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+}
+.subheader {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-quicksand);
+    padding-left: 24px;
 }

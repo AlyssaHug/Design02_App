@@ -4,7 +4,7 @@ import { Goals } from "./ui/GoalCards/GoalCards";
 import { GoalRecs } from "./ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "./ui/Buttons/Buttons";
-import { GoalCow } from "./ui/GoalCards/GoalCards";
+import { GoalCow, GoalDetailed } from "./ui/GoalCards/GoalCards";
 function page() {
     return (
         <div>
@@ -45,20 +45,22 @@ function page() {
                 <GoalRecs value='Spend $50 less on games!' />
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
-            <div className={styles.checkMoo}>
+            <div className='checkMoo'>
                 <div className={styles.subheaderContent}>
-                    <h3 className={styles.subheader}>Your cow friend!</h3>
+                    <h3 className='subheader'>Your cow friend!</h3>
                 </div>
                 <GoalCow
                     type='goalCow'
                     value='Check on MooMoo!'
+                    text='Go!'
                 />
             </div>
-            <Button
-                value='home'
-                type='home'
-                color='nav'
-                imageSrc='/navbar-icons/home-icon.svg'
+            <GoalDetailed
+                goal='Goal 1'
+                title='Reduce spending by $60!'
+                type='General'
+                start='March 26, 2025'
+                end='April 27, 2025'
             />
         </div>
     );

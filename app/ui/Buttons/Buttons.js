@@ -39,6 +39,7 @@ export default function Button({
         [styles.caption]: size === "caption",
         [styles.cow]: color === "cow",
         [styles.cowActive]: color === "cow-active",
+        [styles.goalMoo]: type === "goalMoo",
     });
 
     return (

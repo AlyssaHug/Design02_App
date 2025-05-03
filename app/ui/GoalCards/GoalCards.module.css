@@ -27,11 +27,7 @@
     flex: 0 0 20%;
 }
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 6px;
 }
 /*======Goals======*/
 
@@ -103,32 +99,45 @@
     display: flex;
 }
 /*===Cards with moomoo===*/
-
 .goalCow {
+    display: inline-block;
+}
+.cowContent {
+    margin: 8px;
+    align-self: center;
+    border-radius: 40px;
+    padding: 16px;
+    background-color: #dcebf4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imageStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cowText {
+    font-size: 20px;
+    flex: 0 0 65%;
+    padding-left: 16px;
+}
+
+.container {
     background-color: #dcebf4;
     margin: 8px;
     align-self: center;
     border-radius: 40px;
     padding: 16px;
     max-width: 440px;
-    display: flex;
-    justify-content: center;
 }
-.cowContent {
+.goalContent {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.cow {
-    justify-content: right;
-}
-.cowText {
-    font-size: 20px;
-    flex: 0 0 65%;
-    padding-left: 16px;
-}
-.checkMoo {
-    display: flex;
-    justify-content: center;
-    flex-direction: rows;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
 }
