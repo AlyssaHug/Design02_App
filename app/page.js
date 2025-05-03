@@ -5,6 +5,8 @@ import { GoalRecs } from "./ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "./ui/Buttons/Buttons";
 import { GoalCow, GoalDetailed } from "./ui/GoalCards/GoalCards";
+import ShopItem from "./ui/ShopItem/ShopItem";
+
 function page() {
     return (
         <div>
@@ -62,6 +64,18 @@ function page() {
                 start='March 26, 2025'
                 end='April 27, 2025'
             />
+            <div className='sameSizedButtons'>
+                <ShopItem
+                    name='Flower Crown'
+                    imageSrc='/flower.svg'
+                    value='90'
+                />
+                <ShopItem
+                    name='Ice Cream Hat'
+                    imageSrc='/icecream.svg'
+                    value='60'
+                />
+            </div>
         </div>
     );
 }
