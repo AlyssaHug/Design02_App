@@ -674,39 +674,13 @@ export default function Page() {
             />
             <TransactionCard
                 time='11:20pm'
-                category='Dine...'
-                amount='7.57'
-                description='Kids meal'
-                merchant='Popeyes'
+                category='Games'
+                amount='90.00'
+                description='Skin bundle'
+                merchant='Valorant'
             />
             <TransactionCard
-                time='12:23pm'
-                category='Dine...'
-                amount='7.23'
-                description='BBT'
-                merchant='CoCo'
-            />
-            <TransactionCard
-                time='4:46pm'
-                category='Misc...'
-                amount='16.45'
-                description='Movie tickets'
-                merchant='Cinema'
-            />
-            <TransactionCard
-                time='1:34pm'
-                category='Misc...'
-                amount='16.86'
-                description='Makeup'
-                merchant='Omomo'
-            />
-            <TransactionCard
-                time='3:26pm'
-                category='Misc...'
-                amount='9.00'
-                description='Photo strips'
-                merchant='PhotoCrumb'
-            />
+                time='11:20pm'
         </div>
     );
 }
