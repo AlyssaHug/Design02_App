@@ -19,7 +19,7 @@ export default function Nav({ size }) {
     );
 
     return (
-        <div>
+        <div className={styles.wholenav}>
             <div className={navClasses}>
                 <Button
                     value="expense"
