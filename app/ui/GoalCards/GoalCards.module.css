@@ -6,9 +6,6 @@
     border-radius: 40px;
     padding: 16px;
 }
-.goalDetail {
-    width: 420px;
-}
 .progress {
     align-self: center;
     margin: 0 auto;
@@ -31,7 +28,6 @@
 .content {
     padding-bottom: 6px;
 }
-
 /*======Goals======*/
 
 .goal {
@@ -102,7 +98,6 @@
 .goalCow {
     display: inline-block;
 }
-
 .cowContent {
     margin: 8px;
     align-self: center;

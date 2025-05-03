@@ -16,7 +16,7 @@ export default function GoalProgress({
     style,
     value,
     type,
-    href,
+
     percetnage,
     size,
     icon,
@@ -38,7 +38,7 @@ export default function GoalProgress({
                     className={styles.view}
                     color='dark'
                     value='View Goals'
-                    href={href}
+                    href='/Goals/ViewGoals'
                 />
             </div>
             <div className={styles.content}>
@@ -158,7 +158,10 @@ export function GoalDetailed({
     const goalDetailedClasses = classNames(
         styles.goalDetail,
         quicksand.variable,
-        libreFranklin.variable
+        libreFranklin.variable,
+        {
+            [styles.style]: type === "font",
+        }
     );
     const percentage = (progress / goal) * 100;
     {
