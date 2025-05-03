@@ -588,74 +588,11 @@ export default function Page() {
                 merchant='Valorant'
             />
             <TransactionCard
-                time='6:32pm'
-                category='Misc...'
-                amount='15.35'
-                description='Chiikawa figures'
-                merchant='Token'
-            />
-            <TransactionCard
-                time='2:25am'
-                category='Games'
-                amount='13.56'
-                description='REPO'
-                merchant='Steam'
-            />
-            <TransactionCard
-                time='5:34pm'
-                category='Games'
-                amount='130.64'
-                description='In-game purchase'
-                merchant='Fortnite'
-            />
-            <TransactionCard
-                time='11:46am'
+                time='12:20pm'
                 category='Dine...'
-                amount='9.53'
-                description='Matcha Supreme'
-                merchant='HeyTea'
-            />
-            <TransactionCard
-                time='1:34pm'
-                category='Dine...'
-                amount='12.86'
-                description='BBT'
-                merchant='Uber Eats'
-            />
-            <TransactionCard
-                time='4:20pm'
-                category='Groc...'
-                amount='4.56'
-                description='Snacks'
-                merchant='T&T Supermarket'
-            />
-            <TransactionCard
-                time='5:33am'
-                category='Dine...'
-                amount='12.57'
-                description='Nugget meal'
-                merchant='McDonalds'
-            />
-            <TransactionCard
-                time='11:20pm'
-                category='Cloth...'
-                amount='190.23'
-                description='Dress'
-                merchant='Maie'
-            />
-            <TransactionCard
-                time='1:47pm'
-                category='Dine...'
-                amount='32.69'
+                amount='34.68'
                 description='Lunch with friends'
-                merchant='Earls'
-            />
-            <TransactionCard
-                time='5:23pm'
-                category='Dine...'
-                amount='9.68'
-                description='Mcdouble meal'
-                merchant='McDonalds'
+                merchant='Gyukaku'
             />
         </div>
     );
