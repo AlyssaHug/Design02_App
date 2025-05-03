@@ -13,14 +13,14 @@
 .backArrow {
     position: absolute;
     top: 16px;
-    left: 10px;
+
     width: 28px;
     height: 28px;
     display: inline-block;
     background-image: url("/left_arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
-
+    background-position: center;
     cursor: pointer;
     margin-bottom: 16px;
 }

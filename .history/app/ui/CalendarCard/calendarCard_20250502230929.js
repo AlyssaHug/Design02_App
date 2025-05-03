@@ -4,7 +4,7 @@ import styles from "./calendarCard.module.css";
 export default function MonthlySummary({ month, amount }) {
     return (
         <div className={styles.container}>
-            <span className={styles.backArrow}></span>
+            <div className={styles.backArrow}></div>
             <ToggleButton />
             <div className={styles.pill}>Transactions This Month</div>
             <div className={styles.monthRow}>

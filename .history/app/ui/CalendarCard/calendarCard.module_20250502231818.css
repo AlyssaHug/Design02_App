@@ -8,21 +8,18 @@
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 16px;
-    padding-top: 56px;
 }
 .backArrow {
     position: absolute;
     top: 16px;
-    left: 10px;
+    left: 16px;
     width: 28px;
     height: 28px;
     display: inline-block;
     background-image: url("/left_arrow.svg");
     background-size: contain;
-    background-repeat: no-repeat;
 
     cursor: pointer;
-    margin-bottom: 16px;
 }
 .pill {
     background: #fff3f0;
