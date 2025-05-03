@@ -6,7 +6,7 @@ import Slider from "@/app/ui/slider/slider";
 function Page() {
     return (
         <>
-            <Nav />
+ 
             <Slider />
         </>
     );
