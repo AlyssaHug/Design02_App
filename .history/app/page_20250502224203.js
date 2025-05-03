@@ -712,26 +712,7 @@ export default function Page() {
                 />
             </div>
             <div>
-                <MonthlySummary
-                    month='January'
-                    amount='440.02'
-                />
-                <MonthlySummary
-                    month='February'
-                    amount='219.54'
-                />
-                <MonthlySummary
-                    month='March'
-                    amount='188.90'
-                />
-                <MonthlySummary
-                    month='April'
-                    amount='258.72 '
-                />
-                <MonthlySummary
-                    month='May'
-                    amount='258.72'
-                />
+                <MonthlySummary />
             </div>
         </div>
     );

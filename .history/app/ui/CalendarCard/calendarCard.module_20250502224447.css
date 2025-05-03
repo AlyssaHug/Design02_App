@@ -2,12 +2,11 @@
     background: #b6d7a8;
     border-radius: 0 0 40px 40px;
     padding: 24px 16px 32px 16px;
-    width: auto;
+    width: 300px;
     margin: 0 auto;
     position: relative;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    margin-bottom: 16px;
 }
 
 .pill {
@@ -29,26 +28,10 @@
     margin-bottom: 8px;
 }
 
-.arrowLeft {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
+.arrow {
+    font-size: 1.5em;
+    color: #3d2c29;
     background-image: url("/left_arrow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 12px;
-    user-select: none;
-}
-
-.arrowRight {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    background-image: url("/right_arrow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0 12px;
     user-select: none;
 }

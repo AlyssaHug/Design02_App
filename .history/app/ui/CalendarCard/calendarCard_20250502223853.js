@@ -1,18 +1,18 @@
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import styles from "./calendarCard.module.css";
+import styles from "./MonthlySummary.module.css";
 
-export default function MonthlySummary({ month, amount }) {
+export default function MonthlySummary() {
     return (
         <div className={styles.container}>
             <ToggleButton />
             <div className={styles.pill}>Transactions This Month</div>
             <div className={styles.monthRow}>
-                <span className={styles.arrowLeft}></span>
-                <span className={styles.month}>{month}</span>
-                <span className={styles.arrowRight}></span>
+                <span className={styles.arrow}>&lt;</span>
+                <span className={styles.month}>January</span>
+                <span className={styles.arrow}>&gt;</span>
             </div>
             <div className={styles.spentLabel}>You've Spent:</div>
-            <div className={styles.amount}>{amount}</div>
+            <div className={styles.amount}>$440.02</div>
             <div className={styles.thisMonth}>This Month!</div>
         </div>
     );
