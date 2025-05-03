@@ -1,10 +1,15 @@
 "use client";
 
 import Nav from "@/app/ui/navbar/navbar";
-function page() {
+import Slider from "@/app/ui/slider/slider";
+
+function Page() {
     return (
-       <Nav/>
+        <>
+            <Nav />
+            <Slider />
+        </>
     );
 }
 
-export default page;
+export default Page;

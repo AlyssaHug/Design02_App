@@ -1,0 +1,32 @@
+.lightBlueOverride {
+    padding: 6px 60px !important; /* Further increased horizontal padding for longer buttons */
+    max-width: 500px !important; /* Even wider button */
+    margin: 0 !important; /* Override default button margin to remove unwanted gaps */
+    height: 62px !important; /* Maintain vertical size */
+    font-size: 16px !important; /* Unchanged font size */
+    font-style: normal;
+    font-weight: 800 !important;
+    line-height: 20px !important; /* Unchanged line height */
+    white-space: nowrap;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 12px; /* Spacing between buttons */
+    margin-left: 50px; /* Shift right */
+    flex-wrap: nowrap; /* Keep buttons in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-bottom: 10px; /* Space for scrollbar area */
+    -webkit-overflow-scrolling: touch; /* Smooth */
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider {
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
