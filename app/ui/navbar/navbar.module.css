@@ -1,15 +1,41 @@
+.navbar {
+    background: #f3f9f0;
+    width: 100%; /* Full width */
+    height: 98px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 38px;
+    align-items: end;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.navbar > div {
+    display: flex;
+    justify-content: center; /* Center each icon within its grid cell */
+    align-items: end; /* Ensure bottom alignment within the cell */
+}
+
+
+.cow {
+    position: absolute;
+    top: -25px; /* Adjust vertically above the navbar */
+    left: 50%;
+    transform: translate(-41%, -20%);
+    grid-column: 3 / 4; /* Optional for fallback support */
+    width: 80px;
+    background: none;
+    z-index: 10; /* Make sure it’s above the navbar */
+}
+
 .nav {
     font-family: var(--font-quicksand), sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    padding: 8px;
-}
-
-.goals {
-    width: 50px;
-    height: 50.068px;
 }
 
 .expense {
@@ -17,7 +43,22 @@
     height: 36.058px;
 }
 
+.goal {
+    width: 50px;
+    height: 50.068px;
+}
+
 .home {
     width: 30px;
     height: 26.667px;
+}
+
+.rewards {
+    width: 50px;
+    height: 50px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
 }

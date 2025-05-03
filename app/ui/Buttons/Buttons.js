@@ -39,6 +39,7 @@ export default function Button({
         [styles.nav]: color === "nav",
         [styles.navActive]: color === "nav-active",
         [styles.expense]: type === "expense",
+        [styles.home]: type === "home",
         [styles.caption]: size === "caption",
         [styles.cow]: color === "cow",
         [styles.cowActive]: color === "cow-active",
