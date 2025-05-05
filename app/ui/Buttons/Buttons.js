@@ -18,6 +18,7 @@ export default function Button({
     alt,
     size,
     value,
+    coin,
     onClick,
     customClass, // Add customClass to props
 }) {
@@ -46,6 +47,8 @@ export default function Button({
             [styles.caption]: size === "caption",
             [styles.cow]: color === "cow",
             [styles.cowActive]: color === "cow-active",
+            [styles.coins]: type === "coins",
+            [styles.coins]: color === "coin-border",
         }
     );
 
@@ -57,7 +60,7 @@ export default function Button({
                     alt={alt}
                 />
             )}
-            <span>{value}</span>
+            <span>{value}{coin}</span>
         </button>
     );
 }
