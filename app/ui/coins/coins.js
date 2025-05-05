@@ -13,12 +13,12 @@ const quicksand = Quicksand({
 
 export default function Coins({ style }) {
     return (
-        <div className={styles.coins}>
+        <div>
             <Button
                 type="coins"
                 value="Coins: "
                 coin={90}
-                color="coin-border"
+                customClass={styles.coinborder}
             />
         </div>
     );
