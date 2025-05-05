@@ -98,7 +98,6 @@
     font-family: var(--font-quicksand);
     font-weight: bold;
     z-index: 1;
-    overflow: hidden;
 }
 
 .hiddenCheckbox {
@@ -113,10 +112,18 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
     width: 50%;
+}
+
+.monthlyLabel {
+    background-color: #37502d;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.weeklyLabel {
     background-color: #bcc7bc;
-    color: #37502d;
-    border: none;
-    outline: none;
+    color: #fefdfd;
+    border-radius: 25px;
 }
 
 .hiddenCheckbox:checked ~ .monthlyLabel {
@@ -130,9 +137,75 @@
     color: #fefdfd;
     border-radius: 25px;
 }
+/*========Slider Styles========*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    font-family: var(--font-quicksand);
+    font-size: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c6e1bb;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #e8e9ec;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Text for "Off" state */
+.slider:after {
+    content: "Off";
+    color: #090f19;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* When the slider is on */
+input:checked + .slider {
+    background-color: #77ad62;
+}
+
+input:checked + .slider:before {
+    transform: translateX(50px);
+}
+
+/* Text for "On" state */
+input:checked + .slider:after {
+    content: "On";
+    right: auto;
+    left: 10px;
+}
 
 .active {
     background-color: #37502d !important;
     color: #fefdfd !important;
-    border-radius: 25px;
 }

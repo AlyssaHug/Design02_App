@@ -1,5 +1,5 @@
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import styles from "@/app/ui/CalendarCard/calendarCard.module.css";
+import styles from "./calendarCard.module.css";
 
 export default function CalendarCard({ month, amount }) {
     return (

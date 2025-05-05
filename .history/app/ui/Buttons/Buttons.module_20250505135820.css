@@ -119,6 +119,18 @@
     outline: none;
 }
 
+.monthlyLabel {
+    background-color: #37502d;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.weeklyLabel {
+    background-color: #bcc7bc;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
 .hiddenCheckbox:checked ~ .monthlyLabel {
     background-color: #bcc7bc;
     color: #fefdfd;
@@ -134,5 +146,4 @@
 .active {
     background-color: #37502d !important;
     color: #fefdfd !important;
-    border-radius: 25px;
 }

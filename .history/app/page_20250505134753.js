@@ -9,7 +9,7 @@ import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
-import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
+import MonthlySummary from "@/app/ui/CalendarCard/calendarCard";
 export default function Page() {
     const categoryOptions = [
         { value: "groceries", label: "Groceries" },
@@ -716,19 +716,19 @@ export default function Page() {
                     month='January'
                     amount='440.02'
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='February'
                     amount='219.54'
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='March'
                     amount='188.90'
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='April'
                     amount='258.72 '
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='May'
                     amount='258.72'
                 />

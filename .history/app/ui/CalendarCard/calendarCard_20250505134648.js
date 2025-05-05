@@ -1,7 +1,7 @@
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import styles from "@/app/ui/CalendarCard/calendarCard.module.css";
+import styles from "./calendarCard.module.css";
 
-export default function CalendarCard({ month, amount }) {
+export default function MonthlySummary({ month, amount }) {
     return (
         <div className={styles.container}>
             <span className={styles.backArrow}></span>

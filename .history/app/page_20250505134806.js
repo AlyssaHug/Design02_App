@@ -716,19 +716,19 @@ export default function Page() {
                     month='January'
                     amount='440.02'
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='February'
                     amount='219.54'
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='March'
                     amount='188.90'
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='April'
                     amount='258.72 '
                 />
-                <CalendarCard
+                <MonthlySummary
                     month='May'
                     amount='258.72'
                 />
