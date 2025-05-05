@@ -17,7 +17,6 @@ function page() {
             <GoalProgress
                 value='Goal Progress'
                 type='progress'
-                href='/Goals/ViewGoals'
             />
             <div className={styles.subheaderContainer}>
                 <h3 className={styles.subheader}>Goals</h3>
@@ -45,6 +44,7 @@ function page() {
                     className={styles.view}
                     color='dark'
                     value='View More'
+                    href='/Goals/GoalRecs'
                 />
             </div>
             <div className={styles.recsContent}>
@@ -59,6 +59,7 @@ function page() {
                     type='goalCow'
                     value='Check on MooMoo!'
                     text='Go!'
+                    imageSrc='moomoonormal.svg'
                 />
             </div>
         </div>

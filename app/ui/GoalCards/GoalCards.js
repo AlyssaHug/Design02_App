@@ -113,7 +113,7 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
         </div>
     );
 }
-export function GoalCow({ value, type }) {
+export function GoalCow({ value, type, imageSrc, text }) {
     const goalCowClasses = classNames(
         styles.goalCow,
         quicksand.variable,
@@ -130,11 +130,11 @@ export function GoalCow({ value, type }) {
                     <Moomoo
                         className={styles.cow}
                         size='goals'
-                        src='moomoonormal.svg'
+                        src={imageSrc}
                     />
                     <Button
                         className={styles.go}
-                        value='Go!'
+                        value={text}
                         type='goalMoo'
                     />
                 </div>

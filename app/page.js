@@ -61,6 +61,7 @@ function page() {
                     type='goalCow'
                     value='Check on MooMoo!'
                     text='Go!'
+                    imageSrc='moomoonormal.svg'
                 />
             </div>
             <GoalDetailed
