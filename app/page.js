@@ -15,7 +15,11 @@ function page() {
                 value='check out da goals'
                 href='Goals'
             />
-
+            <Button
+                color='light'
+                value='check out da Rewards'
+                href='Rewards'
+            />
             <ToggleButton />
             <GoalProgress
                 value='Goal Progress'
@@ -54,10 +58,8 @@ function page() {
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
             <div className='checkMoo'>
-                <div className={styles.subheaderContent}>
-                    <h3 className='subheader'>Your cow friend!</h3>
-                </div>
                 <GoalCow
+                    title='Your Cow Friend!'
                     type='goalCow'
                     value='Check on MooMoo!'
                     text='Go!'

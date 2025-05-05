@@ -113,7 +113,7 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
         </div>
     );
 }
-export function GoalCow({ value, type, imageSrc, text }) {
+export function GoalCow({ value, type, imageSrc, text, title }) {
     const goalCowClasses = classNames(
         styles.goalCow,
         quicksand.variable,
@@ -124,6 +124,7 @@ export function GoalCow({ value, type, imageSrc, text }) {
     );
     return (
         <div className={styles.goalCow}>
+            <h3 className={styles.subheader}>{title}</h3>
             <div className={styles.cowContent}>
                 <p className={styles.cowText}>{value}</p>
                 <div className={styles.imageStack}>

@@ -1,0 +1,17 @@
+.container {
+    background-color: #c6e1bb;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    align-items: center;
+}
+.button {
+    padding: 8px;
+}
+.name {
+    flex: 0 0 60%;
+    font-size: 20px;
+    padding: 16px;
+    padding-left: 20px;
+    font-family: var(--font-libre-franklin);
+}
