@@ -4,17 +4,14 @@ import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
+import Nav from "../ui/navbar/navbar";
 import React from "react";
 function page() {
     return (
         <div>
+            <Nav />
             <h1>Welcome to da goals</h1>
-            <Button
-                color='light'
-                value='BOO!'
-                href='/'
-                target='_self'
-            />
+
             <GoalProgress
                 value='Goal Progress'
                 type='progress'

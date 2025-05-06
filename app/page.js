@@ -10,6 +10,7 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
+import Nav from "./ui/navbar/navbar";
 export default function Page() {
     const categoryOptions = [
         { value: "groceries", label: "Groceries" },
@@ -140,17 +141,20 @@ export default function Page() {
 
     return (
         <div>
-            <Coins />
-            <Button
-                color='light'
-                value='check out da goals'
-                href='/Goals'
-            />
-            <Button
-                color='light'
-                value='check out da Rewards'
-                href='/Rewards'
-            />
+            <Nav />
+            <div className={styles.small}>
+                <Coins />
+                <Button
+                    color='light'
+                    value='check out da goals'
+                    href='/Goals'
+                />
+                <Button
+                    color='light'
+                    value='check out da Rewards'
+                    href='/Rewards'
+                />
+            </div>
             <Button
                 value='JANUARY'
                 href='/Expense/overview/Weekly/January'></Button>
