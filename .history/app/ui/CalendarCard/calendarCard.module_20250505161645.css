@@ -26,9 +26,8 @@
 }
 .nav {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
-
 .pill {
     background: #fff3f0;
     color: #3d2c29;

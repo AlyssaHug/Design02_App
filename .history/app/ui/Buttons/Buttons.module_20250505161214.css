@@ -91,7 +91,7 @@
 .toggleContainer {
     display: flex;
     border-radius: 25px;
-    width: 80%;
+    width: 100%;
     background-color: #d9ebd1;
     border: 1px solid #ccc;
     font-size: 28px;
@@ -113,7 +113,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
     width: 50%;
-    background-color: #d9ebd1;
+    background-color: #bcc7bc;
     color: #37502d;
     border: none;
     outline: none;

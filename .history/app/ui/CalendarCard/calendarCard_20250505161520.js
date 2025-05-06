@@ -6,7 +6,7 @@ export default function CalendarCard({ month, amount }) {
         <div className={styles.container}>
             <div className={styles.nav}>
                 <span className={styles.backArrow}></span>
-                <ToggleButton className={styles.toggle} />
+                <ToggleButton />
             </div>
             <div className={styles.pill}>Transactions This Month</div>
             <div className={styles.monthRow}>

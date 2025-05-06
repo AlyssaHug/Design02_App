@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 

@@ -18,7 +18,6 @@ export default function Button({
     size,
     value,
     onClick,
-    href,
 }) {
     const buttonClasses = classNames(styles.button, libreFranklin.variable, {
         [styles.view]: type === "view",
@@ -51,7 +50,7 @@ export default function Button({
                     alt={alt}
                 />
             )}
-            <a href={href}>{value}</a>
+            <span>{value}</span>
         </button>
     );
 }

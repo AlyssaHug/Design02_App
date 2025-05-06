@@ -91,7 +91,7 @@
 .toggleContainer {
     display: flex;
     border-radius: 25px;
-    width: 80%;
+    width: 100%;
     background-color: #d9ebd1;
     border: 1px solid #ccc;
     font-size: 28px;

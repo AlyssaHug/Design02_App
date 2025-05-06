@@ -26,9 +26,11 @@
 }
 .nav {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
-
+toggle {
+    flex: 0 0 80%;
+}
 .pill {
     background: #fff3f0;
     color: #3d2c29;
