@@ -17,7 +17,7 @@ export default function Coins({ style }) {
             <Button
                 type="coins"
                 value="Coins: "
-                coin={90}
+                coin={9000}
                 customClass={styles.coinborder}
             />
         </div>
