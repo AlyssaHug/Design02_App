@@ -1,3 +1,4 @@
+
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
@@ -10,10 +11,6 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-
-// icon: icon
-// onClick: function
-
 export default function Button({
     style,
     type,
@@ -22,7 +19,15 @@ export default function Button({
     alt,
     size,
     value,
-    href,
+    onClick,
+    customClass, // Add customClass to props
+}) {
+    const buttonClasses = classNames(
+        styles.button,
+        quicksand.variable,
+        libreFranklin.variable,
+        customClass, // Include customClass here
+        href,
 }) {
     const buttonClasses = classNames(styles.button, libreFranklin.variable, {
         [styles.view]: type === "view",
@@ -48,9 +53,7 @@ export default function Button({
     });
 
     return (
-        <button
-            className={buttonClasses}
-            value={value}>
+        <button className={buttonClasses} value={value} onClick={onClick}>
             {imageSrc && (
                 <img
                     src={imageSrc}

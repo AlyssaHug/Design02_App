@@ -4,7 +4,7 @@
     margin: 8px;
     padding: 8px;
     width: 100%;
-    font-family: var(--font-libre-franklin);
+    font-family: var(--font-quicksand);
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
     color: #b2d4e6;
 }
 .cow {
-    background-color: #C6E1BB;
+    background-color: #c6e1bb;
     border-radius: 100%;
     max-width: 64px;
 }
@@ -219,4 +219,3 @@ input:checked + .slider:after {
     right: auto;
     left: 10px;
 }
-
