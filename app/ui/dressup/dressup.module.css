@@ -1,10 +1,12 @@
 .dressup {
-    display: flex;
-    justify-content: center; /* Center all buttons together */
+    display: flex; 
+    justify-content: flex-start; 
     align-items: center;
     padding: 10px;
-    gap: 10px; /* Consistent spacing between buttons */
-    overflow-x: auto; /* Allow horizontal scrolling for many buttons */
+    gap: 10px; 
+    overflow-x: auto; 
+    width: 100%;
+    max-width: 100%; 
 }
 
 .dressupButton {
@@ -12,11 +14,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px; /* Fixed width */
-    height: 200px; /* Fixed height */
-    min-width: 150px; /* Prevent shrinking */
-    min-height: 200px; /* Prevent shrinking */
-    flex-shrink: 0; /* Prevent flex from shrinking the button */
+    width: 150px; 
+    height: 200px; 
+    min-width: 150px; 
+    min-height: 200px; 
+    flex-shrink: 0; 
     border-radius: 20px; 
     border: none;
     font-family: var(--font-quicksand), sans-serif;
@@ -26,9 +28,9 @@
 }
 
 .dressupButton img {
-    max-width: 80px; /* Ensure images don’t overflow */
+    max-width: 80px; 
     max-height: 80px;
-    object-fit: contain; /* Maintain aspect ratio */
+    object-fit: contain; 
 }
 
 .dressupButton span { 
@@ -42,11 +44,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px; /* Fixed width, matching dressupButton */
-    height: 200px; /* Fixed height, matching dressupButton */
-    min-width: 150px; /* Prevent shrinking */
-    min-height: 200px; /* Prevent shrinking */
-    flex-shrink: 0; /* Prevent flex from shrinking the button */
+    width: 150px; 
+    height: 200px; 
+    min-width: 150px; 
+    min-height: 200px; 
+    flex-shrink: 0; 
     border-radius: 20px;
     border: none;
     font-family: var(--font-quicksand), sans-serif;
@@ -56,9 +58,9 @@
 }
 
 .large img {
-    width: 100px; /* Larger image, as requested previously */
+    width: 100px; 
     height: 100px;
-    object-fit: contain; /* Maintain aspect ratio */
+    object-fit: contain; 
 }
 
 .large span {
