@@ -9,12 +9,7 @@ import Moomoo from "./ui/moomoo/moomoo";
 export default function Page() {
     return (
         <div className={styles.container}>
-            <div className={styles.moomoo}>
-                <Moomoo
-                    src="/moomoonormal.svg"
-                    size="interaction"
-                />
-            </div>
+
             <div className={styles.sliderContainer}>
                 <Slider />
             </div>
@@ -24,6 +19,7 @@ export default function Page() {
                     src="/left_arrow.svg"
                     alt="Back arrow"
                 />
+                  <h1 className={styles.header}>MooMoo</h1>
                 <div className={styles.coins}>
                     <Coins
                         value="Coins: "
