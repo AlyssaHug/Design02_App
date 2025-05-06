@@ -4,10 +4,17 @@ import Nav from "./ui/navbar/navbar";
 import Slider from "@/app/ui/slider/slider";
 
 import styles from "@/app/Cow/styles.module.css";
+import Moomoo from "./ui/moomoo/moomoo";
 
 export default function Page() {
     return (
         <div className={styles.container}>
+            <div className={styles.moomoo}>
+                <Moomoo
+                    src="/moomoonormal.svg"
+                    size="interaction"
+                />
+            </div>
             <div className={styles.sliderContainer}>
                 <Slider />
             </div>
@@ -31,7 +38,6 @@ export default function Page() {
                     alt="Grass field background"
                 />
             </div>
-            
         </div>
     );
 }

@@ -29,10 +29,19 @@
 
 .sliderContainer {
     position: absolute;
-    bottom: 160px; /* Space from the bottom */
+    bottom: 160px; 
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 10; /* Ensure it stays above the background */
+    z-index: 10; 
     margin-left: 10px;
+}
+
+.moomoo {
+    position: absolute; 
+    top: 40%;
+    left: 15%;
+    z-index: 250;
+    width: 100%;
+    height: 100%;
 }
