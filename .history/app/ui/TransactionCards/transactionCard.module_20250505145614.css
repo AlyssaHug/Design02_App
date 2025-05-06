@@ -1,0 +1,96 @@
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formGroup label {
+    font-weight: 500;
+    color: #555;
+}
+
+.formGroup input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.dateGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.dateGroup .formGroup {
+    flex: 1;
+}
+
+.submitButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.time {
+    color: #000;
+    background: transparent;
+    border: none;
+
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+.card {
+    display: flex;
+    align-items: center;
+    background: #f2f6f4;
+    border-radius: 30px;
+}
+.category {
+    background: #cbe6c3;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 15px;
+    font-weight: 500;
+    width: 70px;
+    text-align: center;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}

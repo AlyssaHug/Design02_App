@@ -1,0 +1,149 @@
+.button {
+    border-radius: 12px;
+    font-size: 16px;
+    margin: 8px;
+    padding: 8px;
+    width: 100%;
+    font-family: var(--font-libre-franklin);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary {
+    background-color: #9ccb89;
+    color: #626c7c;
+}
+.primary {
+    background-color: #83be6c;
+    color: #090f19;
+}
+.close {
+    background-color: #4b5961;
+    color: #fefdfd;
+}
+.round {
+    border-radius: 20px;
+}
+
+.lightBlue {
+    background-color: #b2d4e6;
+    color: #090f19;
+}
+.darkBlue {
+    color: #e8e9ec;
+    background-color: #445063;
+    padding: 16px;
+}
+
+.view {
+    color: #090f19;
+    background-color: #acd39d;
+}
+
+.outline {
+    color: #4b5961;
+    border: 2px solid #4b5961;
+}
+.dark {
+    color: #fefdfd;
+    background-color: #48693b;
+}
+.light {
+    color: #fefdfd;
+    background-color: #83be6c;
+}
+.shop {
+    background-color: #9ccb89;
+    color: #f3f9f0;
+}
+/*====nav styles====*/
+.nav {
+    color: #37502d;
+}
+.expense {
+    color: #090f19;
+    background-color: #c1ddeb;
+    font-size: 24px;
+    padding: 10px;
+}
+.caption {
+    padding: 6px;
+    font-size: 12px;
+}
+.navActive {
+    color: #b2d4e6;
+}
+.cow {
+    background-color: #f3f9f0;
+    border-radius: 100%;
+    max-width: 64px;
+}
+.cowActive {
+    background-color: #77ad62;
+    border-radius: 100%;
+    max-width: 64px;
+}
+
+/*=========Toggle Button========*/
+.toggleContainer {
+    display: flex;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #bcc7bc;
+    border: 1px solid #ccc;
+    font-size: 28px;
+    font-family: var(--font-quicksand);
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hiddenCheckbox {
+    display: none;
+}
+
+.monthlyLabel,
+.weeklyLabel {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    width: 50%;
+    background-color: #bcc7bc;
+    color: #37502d;
+    border: none;
+    outline: none;
+}
+
+.monthlyLabel {
+    background-color: #37502d;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.weeklyLabel {
+    background-color: #bcc7bc;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.hiddenCheckbox:checked ~ .monthlyLabel {
+    background-color: #bcc7bc;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.hiddenCheckbox:checked ~ .weeklyLabel {
+    background-color: #37502d;
+    color: #fefdfd;
+    border-radius: 25px;
+}
+
+.active {
+    background-color: #37502d !important;
+    color: #fefdfd !important;
+}

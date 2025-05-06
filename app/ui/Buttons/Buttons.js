@@ -2,6 +2,7 @@
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
+import Link from "next/link";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
@@ -20,6 +21,7 @@ export default function Button({
     value,
     coin,
     onClick,
+    href,
     customClass, // Add customClass to props
 }) {
     const buttonClasses = classNames(
@@ -47,6 +49,7 @@ export default function Button({
             [styles.caption]: size === "caption",
             [styles.cow]: color === "cow",
             [styles.cowActive]: color === "cow-active",
+            [styles.goalMoo]: type === "goalMoo",
             [styles.coins]: type === "coins",
             [styles.coins]: color === "coin-border",
         }
@@ -60,7 +63,9 @@ export default function Button({
                     alt={alt}
                 />
             )}
+
             <span>{value}{coin}</span>
+            <a href={href}>{value}</a>
         </button>
     );
 }

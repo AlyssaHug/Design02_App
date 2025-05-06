@@ -20,6 +20,13 @@
     gap: 12px; /* Keep from your latest code */
     margin-left: 0px; /* Keep from your latest code */
     flex-wrap: nowrap; /* Single row for carousel */
-    padding-left: 50px;
-    margin-left: 350px;
+    padding-left: 0px;
+    margin-left: 0px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    box-sizing: border-box;
 }

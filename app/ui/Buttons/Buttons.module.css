@@ -45,7 +45,15 @@
     color: #090f19;
     background-color: #acd39d;
 }
-
+.goalMoo {
+    color: #fefdfd;
+    background-color: #83be6c;
+    font-family: var(--font-libre-franklin);
+    font-size: 24px;
+    padding: 10px;
+    width: 104px;
+    height: 48px;
+}
 .outline {
     color: #4b5961;
     border: 2px solid #4b5961;
@@ -61,6 +69,7 @@
 .shop {
     background-color: #9ccb89;
     color: #f3f9f0;
+    font-weight: 500;
 }
 /*====nav styles====*/
 .nav {
@@ -101,12 +110,14 @@
 .toggleContainer {
     display: flex;
     border-radius: 25px;
-    width: 100%;
-    background-color: #bcc7bc;
+    width: 80%;
+    background-color: #d9ebd1;
     border: 1px solid #ccc;
     font-size: 28px;
     font-family: var(--font-quicksand);
     font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .hiddenCheckbox {
@@ -121,18 +132,10 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
     width: 50%;
-}
-
-.monthlyLabel {
-    background-color: #37502d;
-    color: #fefdfd;
-    border-radius: 25px;
-}
-
-.weeklyLabel {
-    background-color: #bcc7bc;
-    color: #fefdfd;
-    border-radius: 25px;
+    background-color: #d9ebd1;
+    color: #37502d;
+    border: none;
+    outline: none;
 }
 
 .hiddenCheckbox:checked ~ .monthlyLabel {
@@ -146,20 +149,10 @@
     color: #fefdfd;
     border-radius: 25px;
 }
-/*========Slider Styles========*/
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 90px;
-    height: 40px;
-    font-family: var(--font-quicksand);
-    font-size: 20px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.active {
+    background-color: #37502d !important;
+    color: #fefdfd !important;
+    border-radius: 25px;
 }
 
 .slider {
@@ -213,3 +206,4 @@ input:checked + .slider:after {
     right: auto;
     left: 10px;
 }
+
