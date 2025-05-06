@@ -1,15 +1,11 @@
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalDetailed } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/Goals/ViewGoals/styles.module.css";
-
+import Nav from "@/app/ui/navbar/navbar";
 function page() {
     return (
-        <div>
-            <Button
-                color='light'
-                value='check out da home'
-                href='/'
-            />
+        <div className={styles.page}>
+            <Nav />
             <div className={styles.content}>
                 <GoalDetailed
                     name='Goal 1'
