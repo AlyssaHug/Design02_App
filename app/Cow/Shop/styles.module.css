@@ -1,0 +1,17 @@
+.gridItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.coins {
+    display: flex;
+    justify-content: end;
+    margin: 8px;
+}
+.shopItem {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.page {
+    margin-bottom: 130px;
+}

@@ -15,7 +15,6 @@ export default function Input({
     color,
     disabled,
     maxLength,
-    
 }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.text]: type === "text",
