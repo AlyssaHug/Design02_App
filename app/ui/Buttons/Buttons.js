@@ -20,6 +20,7 @@ export default function Button({
     size,
     value,
     onClick,
+    href,
     customClass, // Add customClass to props
 }) {
     const buttonClasses = classNames(
@@ -27,7 +28,6 @@ export default function Button({
         quicksand.variable,
         libreFranklin.variable,
         customClass, // Include customClass here
-        href,
 }) {
     const buttonClasses = classNames(styles.button, libreFranklin.variable, {
         [styles.view]: type === "view",

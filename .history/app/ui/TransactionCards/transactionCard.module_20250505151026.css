@@ -1,0 +1,40 @@
+.card {
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    background: #f2f6f4;
+    border-radius: 30px;
+    min-width: 450px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.time {
+    color: #000;
+    background: transparent;
+    border: none;
+
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.category {
+    background: #cbe6c3;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 20px;
+    font-weight: 500;
+    width: 70px;
+    text-align: center;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}
