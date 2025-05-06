@@ -19,7 +19,7 @@ export default function Page() {
                 />
             </div>
             <div className={styles.transactionContainer}>
-                <div className={styles.transactionDates}>
+                <div className={styles.tranactionDates}>
                     <p>January 29th</p>
                 </div>
                 <TransactionCard
