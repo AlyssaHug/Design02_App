@@ -149,7 +149,7 @@ export default function Page() {
             <Button
                 color='light'
                 value='check out da Rewards'
-                href='Rewards'
+                href='/Rewards'
             />
             <Button
                 value='JANUARY'
