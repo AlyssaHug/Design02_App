@@ -19,6 +19,11 @@
     background-repeat: no-repeat;
     flex: 0 0 10%;
     cursor: pointer;
+    margin-bottom: 16px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
 }
 
 .pill {

@@ -8,17 +8,25 @@
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 16px;
-    padding-top: 30px;
+    padding-top: 56px;
 }
 .backArrow {
+    position: absolute;
+    top: 16px;
+    left: 20px;
     width: 28px;
     height: 28px;
     display: flex;
     background-image: url("/left_arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    flex: 0 0 10%;
+    flex: 0 0 20%;
     cursor: pointer;
+    margin-bottom: 16px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
 }
 
 .pill {
@@ -87,8 +95,16 @@
     color: #3d2c29;
     font-size: 1.1em;
 }
+
+.ToggleButton {
+    top: 16px;
+}
+
 .headerRow {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    gap: 16px;
 }

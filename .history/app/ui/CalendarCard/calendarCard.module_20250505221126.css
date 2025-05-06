@@ -20,6 +20,10 @@
     flex: 0 0 10%;
     cursor: pointer;
 }
+.nav {
+    display: flex;
+    justify-content: center;
+}
 
 .pill {
     background: #fff3f0;
