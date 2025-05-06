@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
+import Link from "next/link";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
@@ -21,7 +22,7 @@ export default function Button({
     alt,
     size,
     value,
-    onClick,
+    href,
 }) {
     const buttonClasses = classNames(styles.button, libreFranklin.variable, {
         [styles.view]: type === "view",
@@ -43,6 +44,7 @@ export default function Button({
         [styles.caption]: size === "caption",
         [styles.cow]: color === "cow",
         [styles.cowActive]: color === "cow-active",
+        [styles.goalMoo]: type === "goalMoo",
     });
 
     return (
@@ -55,7 +57,7 @@ export default function Button({
                     alt={alt}
                 />
             )}
-            <span>{value}</span>
+            <a href={href}>{value}</a>
         </button>
     );
 }

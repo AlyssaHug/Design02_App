@@ -1,0 +1,20 @@
+.info {
+    text-align: center;
+    padding: 12px;
+    background-color: #d9ebd1;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: var(--font-libreFranklin);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px;
+}
+.item {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}

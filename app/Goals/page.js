@@ -1,26 +1,19 @@
-"use client";
-import GoalProgress from "./ui/GoalCards/GoalCards";
-import { Goals } from "./ui/GoalCards/GoalCards";
-import { GoalRecs } from "./ui/GoalCards/GoalCards";
+import GoalProgress from "@/app//ui/GoalCards/GoalCards";
+import { Goals } from "@/app/ui/GoalCards/GoalCards";
+import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/ui/GoalCards/GoalCards.module.css";
-import Button from "./ui/Buttons/Buttons";
-import { GoalCow, GoalDetailed } from "./ui/GoalCards/GoalCards";
-import ShopItem from "./ui/ShopItem/ShopItem";
+import Button from "@/app/ui/Buttons/Buttons";
+import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 
 function page() {
     return (
         <div>
+            <h1>Welcome to da goals</h1>
             <Button
                 color='light'
-                value='check out da goals'
-                href='Goals'
+                value='BOO!'
+                href='/'
             />
-            <Button
-                color='light'
-                value='check out da Rewards'
-                href='Rewards'
-            />
-            <ToggleButton />
             <GoalProgress
                 value='Goal Progress'
                 type='progress'
@@ -51,6 +44,7 @@ function page() {
                     className={styles.view}
                     color='dark'
                     value='View More'
+                    href='/Goals/GoalRecs'
                 />
             </div>
             <div className={styles.recsContent}>
@@ -58,33 +52,14 @@ function page() {
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
             <div className='checkMoo'>
+                <div className={styles.subheaderContent}>
+                    <h3 className='subheader'>Your cow friend!</h3>
+                </div>
                 <GoalCow
-                    title='Your Cow Friend!'
                     type='goalCow'
                     value='Check on MooMoo!'
                     text='Go!'
                     imageSrc='moomoonormal.svg'
-                />
-            </div>
-            <GoalDetailed
-                name='Goal 1'
-                title='Reduce spending by $60!'
-                type='General'
-                start='March 26, 2025'
-                end='April 27, 2025'
-                progress={90}
-                goal={100}
-            />
-            <div className='sameSizedButtons'>
-                <ShopItem
-                    name='Flower Crown'
-                    imageSrc='/flower.svg'
-                    value='90'
-                />
-                <ShopItem
-                    name='Ice Cream Hat'
-                    imageSrc='/icecream.svg'
-                    value='60'
                 />
             </div>
         </div>
