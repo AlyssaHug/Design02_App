@@ -4,6 +4,7 @@ import Button from "../Buttons/Buttons";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import Moomoo from "../moomoo/moomoo";
+
 const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
@@ -11,7 +12,15 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function GoalProgress({ style, value, type, size, icon }) {
+export default function GoalProgress({
+    style,
+    value,
+    type,
+
+    percetnage,
+    size,
+    icon,
+}) {
     const goalCardClasses = classNames(
         styles.goalCard,
         quicksand.variable,
@@ -24,10 +33,12 @@ export default function GoalProgress({ style, value, type, size, icon }) {
         <div className={goalCardClasses}>
             <div className={styles.headerContainer}>
                 <h3 className={styles.header}>{value}</h3>
+
                 <Button
                     className={styles.view}
                     color='dark'
                     value='View Goals'
+                    href='/Goals/ViewGoals'
                 />
             </div>
             <div className={styles.content}>
@@ -91,6 +102,7 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
                         size='caption'
                         color='dark'
                     />
+
                     <Button
                         value='Dismiss'
                         size='caption'
@@ -101,7 +113,7 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
         </div>
     );
 }
-export function GoalCow({ value, type }) {
+export function GoalCow({ value, type, imageSrc, text, title }) {
     const goalCowClasses = classNames(
         styles.goalCow,
         quicksand.variable,
@@ -112,12 +124,77 @@ export function GoalCow({ value, type }) {
     );
     return (
         <div className={styles.goalCow}>
-            <p className={styles.cowText}>{value}</p>
-            <Moomoo
-                size='goals'
-                src='moomoonormal.svg'
-            />
+            <h3 className={styles.subheader}>{title}</h3>
+            <div className={styles.cowContent}>
+                <p className={styles.cowText}>{value}</p>
+                <div className={styles.imageStack}>
+                    <Moomoo
+                        className={styles.cow}
+                        size='goals'
+                        src={imageSrc}
+                    />
+                    <Button
+                        className={styles.go}
+                        value={text}
+                        type='goalMoo'
+                    />
+                </div>
+            </div>
         </div>
     );
+}
+
+export function GoalDetailed({
+    name,
+    title,
+    type,
+    start,
+    end,
+    value,
+    style,
+    progress,
+    goal,
+    textColor = "#fefdfd",
+}) {
+    const goalDetailedClasses = classNames(
+        styles.goalDetail,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.style]: type === "font",
+        }
+    );
+    const percentage = (progress / goal) * 100;
+    {
+        return (
+            <div className={styles.container}>
+                <h3 className={styles.header}>{name}</h3>
+                <ProgressBar
+                    progress={progress}
+                    goal={goal}
+                    textColor={textColor}
+                    style={style}
+                />
+                <div className={styles.goalContent}>
+                    <div className={styles.details}>
+                        <p>{title}</p>
+                        <p>Goal type: {type}</p>
+                        <p>Start: {start}</p>
+                        <p>End: {end}</p>
+                    </div>
+                    <div className={styles.imageStack}>
+                        <Moomoo
+                            size='goals'
+                            src='/moomoolayingdown.svg'
+                        />
+                        <Button
+                            value='View More'
+                            type='view'
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 

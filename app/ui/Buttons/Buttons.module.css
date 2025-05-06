@@ -42,7 +42,15 @@
     color: #090f19;
     background-color: #acd39d;
 }
-
+.goalMoo {
+    color: #fefdfd;
+    background-color: #83be6c;
+    font-family: var(--font-libre-franklin);
+    font-size: 24px;
+    padding: 10px;
+    width: 104px;
+    height: 48px;
+}
 .outline {
     color: #4b5961;
     border: 2px solid #4b5961;
@@ -58,6 +66,7 @@
 .shop {
     background-color: #9ccb89;
     color: #f3f9f0;
+    font-weight: 500;
 }
 /*====nav styles====*/
 .nav {
