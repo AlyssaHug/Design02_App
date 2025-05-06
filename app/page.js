@@ -144,7 +144,7 @@ export default function Page() {
             <Button
                 color='light'
                 value='check out da goals'
-                href='Goals'
+                href='/Goals'
             />
             <Button
                 color='light'
@@ -165,6 +165,7 @@ export default function Page() {
                     className={styles.view}
                     color='dark'
                     value='Create Goal'
+                    href='/'
                 />
             </div>
             <div className={styles.goalsContent}>
@@ -172,11 +173,13 @@ export default function Page() {
                     type='goals'
                     value='Reduce spending by $60!'
                     imageSrc='/right_arrow.svg'
+                    href='/'
                 />
                 <Goals
                     type='goals'
                     value='Add $50 to tuition fund!'
                     imageSrc='/right_arrow.svg'
+                    href='/'
                 />
             </div>
             <div className={styles.subheaderContainer}>

@@ -1,8 +1,10 @@
 import styles from "@/app/Rewards/styles.module.css";
 import RewardClaim from "../ui/Reward/Reward";
+import Nav from "../ui/navbar/navbar";
 export default function page() {
     return (
         <div className={styles.container}>
+            <Nav />
             <div className={styles.claim}>
                 <h1 className={styles.header}>Claimable Rewards</h1>
                 <RewardClaim

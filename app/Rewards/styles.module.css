@@ -1,6 +1,9 @@
 .container {
     margin: 16px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header {
     font-family: var(--font-quicksand);

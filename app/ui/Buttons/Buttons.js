@@ -1,7 +1,8 @@
+"use client";
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
-import Link from "next/link";
+import React from "react";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
@@ -22,8 +23,12 @@ export default function Button({
     coins,
     onClick,
     href,
+    target = "_self",
     customClass, // Add customClass to props
 }) {
+    function handleClick() {
+        window.open(href, target);
+    }
     const buttonClasses = classNames(
         styles.button,
         quicksand.variable,
@@ -71,7 +76,7 @@ export default function Button({
                 {coins}
                 {coinValue}
             </span>
-            <a href={href}>{value}</a>
+            <p>{value}</p>
         </button>
     );
 }
