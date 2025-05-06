@@ -7,11 +7,17 @@ export default function page() {
     return (
         <div className={styles.page}>
             <Nav />
-            <div className={styles.coins}>
-                <Coins
-                    value='Coins: '
-                    coin={990}
+            <div className={styles.sameRow}>
+                <img
+                    src='/left_arrow.svg'
+                    alt='back arrow'
                 />
+                <div className={styles.coins}>
+                    <Coins
+                        value='Coins: '
+                        coin={990}
+                    />
+                </div>
             </div>
             <div className={styles.gridItems}>
                 <div className={styles.shopItem}>
