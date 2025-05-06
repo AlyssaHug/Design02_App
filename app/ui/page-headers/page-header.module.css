@@ -1,0 +1,29 @@
+.new_user_homepage_header {
+    background-color: #acd39d;
+}
+
+.your_total_balance {
+    font-size: 24px;
+    font-family: Quicksand;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.balance {
+    font-size: 32px;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
