@@ -20,19 +20,61 @@ export default function Dressup({ style, onClick }) {
                 onClick={onClick}
                 customClass={styles.dressupButton}
             />
-             <Button
+            <Button
                 imageSrc="/moomoo-dressup/sunglasses.png"
                 value="Sunglasses"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.dressupButton}
             />
-             <Button
+            <Button
                 imageSrc="/moomoo-dressup/moustache.png"
                 value="Dapper"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.dressupButton}
+            />
+            <Button
+                imageSrc="/Accessories/cat.svg"
+                value="Cat"
+                color="light-blue"
+                onClick={onClick}
+                customClass={styles.large}
+            />
+                <Button
+                imageSrc="/Accessories/dog.svg"
+                value="Dog"
+                color="light-blue"
+                onClick={onClick}
+                customClass={styles.large}
+            />
+                <Button
+                imageSrc="/Accessories/dress.svg"
+                value="Dress"
+                color="light-blue"
+                onClick={onClick}
+                customClass={styles.large}
+            />
+                <Button
+                imageSrc="/Accessories/flowercrown.svg"
+                value="Flower Crown"
+                color="light-blue"
+                onClick={onClick}
+                customClass={styles.large}
+            />
+                <Button
+                imageSrc="/Accessories/icecream.svg"
+                value="Ice Cream"
+                color="light-blue"
+                onClick={onClick}
+                customClass={styles.large}
+            />
+                <Button
+                imageSrc="/Accessories/suit.svg"
+                value="Suit"
+                color="light-blue"
+                onClick={onClick}
+                customClass={styles.large}
             />
         </div>
     );

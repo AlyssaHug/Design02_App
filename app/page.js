@@ -10,6 +10,7 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
+
 import Nav from "./ui/navbar/navbar";
 export default function Page() {
     const categoryOptions = [
@@ -754,6 +755,12 @@ export default function Page() {
                     amount='258.72'
                 />
             </div>
-        </div>
-    );
+      <Coins
+        type="coins"
+        value="Coins: "
+        coin={10} 
+      />
+    </div>
+  );
+
 }
