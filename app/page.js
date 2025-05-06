@@ -143,19 +143,6 @@ export default function Page() {
     return (
         <div>
             <Nav />
-            <div className={styles.small}>
-                <Coins />
-                <Button
-                    color='light'
-                    value='check out da goals'
-                    href='/Goals'
-                />
-                <Button
-                    color='light'
-                    value='check out da Rewards'
-                    href='/Rewards'
-                />
-            </div>
             <Button
                 value='JANUARY'
                 href='/Expense/overview/Weekly/January'></Button>
@@ -755,12 +742,11 @@ export default function Page() {
                     amount='258.72'
                 />
             </div>
-      <Coins
-        type="coins"
-        value="Coins: "
-        coin={10} 
-      />
-    </div>
-  );
-
+            <Coins
+                type='coins'
+                value='Coins: '
+                coin={10}
+            />
+        </div>
+    );
 }
