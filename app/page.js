@@ -12,13 +12,13 @@ import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 import Moomoo from "./ui/moomoo/moomoo";
 
 export default function Page() {
-    return (
-        <div >
-            <Coins
-            type="coins"
-            value="Coins: "
-            coin={90}
-            />
-        </div>
-    );
+  return (
+    <div>
+      <Coins
+        type="coins"
+        value="Coins: "
+        coin={10} 
+      />
+    </div>
+  );
 }

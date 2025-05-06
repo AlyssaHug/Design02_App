@@ -11,15 +11,11 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Coins({ style }) {
+
+export default function Coins({ type, value, coin, customClass }) {
     return (
-        <div>
-            <Button
-                type="coins"
-                value="Coins: "
-                coin={9000}
-                customClass={styles.coinborder}
-            />
-        </div>
+      <div className={styles.coinborder}>
+        {`${value}${coin}`} {/* Combine value and coin into a single string */}
+      </div>
     );
-}
+  }
