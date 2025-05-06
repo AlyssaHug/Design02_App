@@ -1,5 +1,5 @@
-import Coins from "./ui/coins/coins";
 "use client";
+import Coins from "./ui/coins/coins";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
 import GoalProgress from "@/app/ui/GoalCards/GoalCards";
@@ -10,6 +10,8 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
+
+import Nav from "./ui/navbar/navbar";
 export default function Page() {
     const categoryOptions = [
         { value: "groceries", label: "Groceries" },
@@ -140,17 +142,20 @@ export default function Page() {
 
     return (
         <div>
-            <Coins/>
-            <Button
-                color='light'
-             value='check out da goals'
-                href='Goals'
-            />
-            <Button
-                color='light'
-                value='check out da Rewards'
-                href='Rewards'
-            />
+            <Nav />
+            <div className={styles.small}>
+                <Coins />
+                <Button
+                    color='light'
+                    value='check out da goals'
+                    href='/Goals'
+                />
+                <Button
+                    color='light'
+                    value='check out da Rewards'
+                    href='/Rewards'
+                />
+            </div>
             <Button
                 value='JANUARY'
                 href='/Expense/overview/Weekly/January'></Button>
@@ -165,6 +170,7 @@ export default function Page() {
                     className={styles.view}
                     color='dark'
                     value='Create Goal'
+                    href='/'
                 />
             </div>
             <div className={styles.goalsContent}>
@@ -172,11 +178,13 @@ export default function Page() {
                     type='goals'
                     value='Reduce spending by $60!'
                     imageSrc='/right_arrow.svg'
+                    href='/'
                 />
                 <Goals
                     type='goals'
                     value='Add $50 to tuition fund!'
                     imageSrc='/right_arrow.svg'
+                    href='/'
                 />
             </div>
             <div className={styles.subheaderContainer}>
@@ -747,10 +755,12 @@ export default function Page() {
                     amount='258.72'
                 />
             </div>
-        </div>
+      <Coins
+        type="coins"
+        value="Coins: "
+        coin={10} 
+      />
+    </div>
+  );
 
-    );
 }
-
-export default Page;
-

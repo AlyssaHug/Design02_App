@@ -38,7 +38,7 @@ export default function GoalProgress({
                     className={styles.view}
                     color='dark'
                     value='View Goals'
-                    href='/Goals/ViewGoals'
+                    href='Goals/ViewGoals'
                 />
             </div>
             <div className={styles.content}>
@@ -197,4 +197,3 @@ export function GoalDetailed({
         );
     }
 }
-
