@@ -19,6 +19,7 @@ export default function Button({
     alt,
     size,
     value,
+    coin,
     onClick,
     href,
     customClass, // Add customClass to props
@@ -28,29 +29,31 @@ export default function Button({
         quicksand.variable,
         libreFranklin.variable,
         customClass, // Include customClass here
-}) {
-    const buttonClasses = classNames(styles.button, libreFranklin.variable, {
-        [styles.view]: type === "view",
-        [styles.outline]: type === "outline",
-        [styles.primary]: type === "primary",
-        [styles.close]: type === "close",
-        [styles.lightBlue]: color === "light-blue",
-        [styles.darkBlue]: color === "dark-blue",
-        [styles.dark]: color === "dark",
-        [styles.light]: color === "light",
-        [styles.secondary]: type === "secondary",
-        [styles.round]: style === "round",
-        [styles.shop]: type === "shop",
-        [styles.bought]: type === "bought",
-        [styles.nav]: color === "nav",
-        [styles.navActive]: color === "nav-active",
-        [styles.expense]: type === "expense",
-        [styles.home]: type === "home",
-        [styles.caption]: size === "caption",
-        [styles.cow]: color === "cow",
-        [styles.cowActive]: color === "cow-active",
-        [styles.goalMoo]: type === "goalMoo",
-    });
+        {
+            [styles.view]: type === "view",
+            [styles.outline]: type === "outline",
+            [styles.primary]: type === "primary",
+            [styles.close]: type === "close",
+            [styles.lightBlue]: color === "light-blue",
+            [styles.darkBlue]: color === "dark-blue",
+            [styles.dark]: color === "dark",
+            [styles.light]: color === "light",
+            [styles.secondary]: type === "secondary",
+            [styles.round]: style === "round",
+            [styles.shop]: type === "shop",
+            [styles.bought]: type === "bought",
+            [styles.nav]: color === "nav",
+            [styles.navActive]: color === "nav-active",
+            [styles.expense]: type === "expense",
+            [styles.home]: type === "home",
+            [styles.caption]: size === "caption",
+            [styles.cow]: color === "cow",
+            [styles.cowActive]: color === "cow-active",
+            [styles.goalMoo]: type === "goalMoo",
+            [styles.coins]: type === "coins",
+            [styles.coins]: color === "coin-border",
+        }
+    );
 
     return (
         <button className={buttonClasses} value={value} onClick={onClick}>
@@ -60,6 +63,8 @@ export default function Button({
                     alt={alt}
                 />
             )}
+
+            <span>{value}{coin}</span>
             <a href={href}>{value}</a>
         </button>
     );

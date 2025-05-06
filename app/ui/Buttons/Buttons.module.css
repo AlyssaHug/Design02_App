@@ -27,6 +27,9 @@
 .round {
     border-radius: 20px;
 }
+.coins {
+    font-family: var(--font-libre-franklin);
+}
 
 .lightBlue {
     background-color: #b2d4e6;

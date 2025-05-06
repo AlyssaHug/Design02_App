@@ -1,3 +1,4 @@
+import Coins from "./ui/coins/coins";
 "use client";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
@@ -139,6 +140,7 @@ export default function Page() {
 
     return (
         <div>
+            <Coins/>
             <Button
                 color='light'
              value='check out da goals'
@@ -746,6 +748,7 @@ export default function Page() {
                 />
             </div>
         </div>
+
     );
 }
 
