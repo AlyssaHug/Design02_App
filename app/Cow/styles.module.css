@@ -26,3 +26,13 @@
     height: 85vh;
     
 }
+
+.sliderContainer {
+    position: absolute;
+    bottom: 160px; /* Space from the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Ensure it stays above the background */
+    margin-left: 10px;
+}
