@@ -11,7 +11,7 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Coins({ style }) {
+export default function Coins({ style, coinValue, coins }) {
     return (
         <div>
             <Button
