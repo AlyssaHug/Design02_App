@@ -20,7 +20,14 @@ export default function Page() {
             </div>
             <div className={styles.transactionContainer}>
                 <div className={styles.tranactionDates}>
-                    <p>January 29th</p>
+                    <p>January 24th</p>
+                    <p>January 22nd</p>
+                    <p>January 19th</p>
+                    <p>January 13th</p>
+                    <p>January 9th</p>
+                    <p>January 8th</p>
+                    <p>January 6th</p>
+                    <p>January 5th</p>
                 </div>
                 <TransactionCard
                     time='12:56am'
@@ -58,9 +65,9 @@ export default function Page() {
                     amount='3.68'
                     description='Ice Coffee'
                     merchant='Tim Hortons'
-                />
+                />{" "}
                 <div className={styles.transactionDates}>
-                    <p>January 22nd</p>
+                    <p>January 25th</p>
                 </div>
                 <TransactionCard
                     time='11:46am'
@@ -69,9 +76,6 @@ export default function Page() {
                     description='Rotisserie Chicken'
                     merchant='Costco'
                 />
-                <div className={styles.transactionDates}>
-                    <p>January 19th</p>
-                </div>
                 <TransactionCard
                     time='11:00am'
                     category='Dine...'
@@ -79,9 +83,6 @@ export default function Page() {
                     description='Swedish Meatballs'
                     merchant='Ikea'
                 />
-                <div className={styles.transactionDates}>
-                    <p>January 13th</p>
-                </div>
                 <TransactionCard
                     time='11:45am'
                     category='Dine...'
@@ -89,9 +90,6 @@ export default function Page() {
                     description='Ice Coffe & Chilli'
                     merchant='Tim Hortons'
                 />
-                <div className={styles.transactionDates}>
-                    <p>January 9th</p>
-                </div>
                 <TransactionCard
                     time='11:35am'
                     category='Misc...'
@@ -99,9 +97,6 @@ export default function Page() {
                     description='Wireless keyboard'
                     merchant='Staples'
                 />
-                <div className={styles.transactionDates}>
-                    <p>January 8th</p>
-                </div>
                 <TransactionCard
                     time='2:34pm'
                     category='Games'
@@ -116,9 +111,6 @@ export default function Page() {
                     description=' NZXT H7 Elite Case'
                     merchant='Canada Computers'
                 />
-                <div className={styles.transactionDates}>
-                    <p>January 6th</p>
-                </div>
                 <TransactionCard
                     time='12:19pm'
                     category='Groc...'
@@ -126,9 +118,6 @@ export default function Page() {
                     description='Pikachu Squishmallow'
                     merchant='Costco'
                 />
-                <div className={styles.transactionDates}>
-                    <p>January 5th</p>
-                </div>
                 <TransactionCard
                     time='11:47am'
                     category='Dine...'

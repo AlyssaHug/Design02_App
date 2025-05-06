@@ -20,7 +20,14 @@ export default function Page() {
             </div>
             <div className={styles.transactionContainer}>
                 <div className={styles.tranactionDates}>
-                    <p>January 29th</p>
+                    <p>January 24th</p>
+                    <p>January 22nd</p>
+                    <p>January 19th</p>
+                    <p>January 13th</p>
+                    <p>January 9th</p>
+                    <p>January 8th</p>
+                    <p>January 6th</p>
+                    <p>January 5th</p>
                 </div>
                 <TransactionCard
                     time='12:56am'
