@@ -1,4 +1,4 @@
-import ToggleButton from "@/app/ui/Buttons/ToggleButton";
+"use client";
 import GoalProgress from "./ui/GoalCards/GoalCards";
 import { Goals } from "./ui/GoalCards/GoalCards";
 import { GoalRecs } from "./ui/GoalCards/GoalCards";

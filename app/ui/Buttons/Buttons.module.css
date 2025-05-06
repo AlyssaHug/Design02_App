@@ -71,12 +71,19 @@
 /*====nav styles====*/
 .nav {
     color: #37502d;
+    font-family: var(--font-quicksand);
+    font-size: 12px;
+    font-weight: 600;
 }
 .expense {
     color: #090f19;
     background-color: #c1ddeb;
     font-size: 24px;
     padding: 10px;
+}
+.home {
+    padding-top: 20px;
+    max-width: 48px;
 }
 .caption {
     padding: 6px;
@@ -86,7 +93,7 @@
     color: #b2d4e6;
 }
 .cow {
-    background-color: #f3f9f0;
+    background-color: #C6E1BB;
     border-radius: 100%;
     max-width: 64px;
 }
@@ -212,3 +219,4 @@ input:checked + .slider:after {
     right: auto;
     left: 10px;
 }
+
