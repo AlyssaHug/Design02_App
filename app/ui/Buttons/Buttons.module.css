@@ -4,7 +4,7 @@
     margin: 8px;
     padding: 8px;
     width: 100%;
-    font-family: var(--font-libre-franklin);
+    font-family: var(--font-quicksand);
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,15 @@
     color: #090f19;
     background-color: #acd39d;
 }
-
+.goalMoo {
+    color: #fefdfd;
+    background-color: #83be6c;
+    font-family: var(--font-libre-franklin);
+    font-size: 24px;
+    padding: 10px;
+    width: 104px;
+    height: 48px;
+}
 .outline {
     color: #4b5961;
     border: 2px solid #4b5961;
@@ -58,16 +66,24 @@
 .shop {
     background-color: #9ccb89;
     color: #f3f9f0;
+    font-weight: 500;
 }
 /*====nav styles====*/
 .nav {
     color: #37502d;
+    font-family: var(--font-quicksand);
+    font-size: 12px;
+    font-weight: 600;
 }
 .expense {
     color: #090f19;
     background-color: #c1ddeb;
     font-size: 24px;
     padding: 10px;
+}
+.home {
+    padding-top: 20px;
+    max-width: 48px;
 }
 .caption {
     padding: 6px;
@@ -77,7 +93,7 @@
     color: #b2d4e6;
 }
 .cow {
-    background-color: #f3f9f0;
+    background-color: #c6e1bb;
     border-radius: 100%;
     max-width: 64px;
 }
@@ -130,9 +146,61 @@
     color: #fefdfd;
     border-radius: 25px;
 }
-
 .active {
     background-color: #37502d !important;
     color: #fefdfd !important;
     border-radius: 25px;
 }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c6e1bb;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #e8e9ec;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Text for "Off" state */
+.slider:after {
+    content: "Off";
+    color: #090f19;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* When the slider is on */
+input:checked + .slider {
+    background-color: #77ad62;
+}
+
+input:checked + .slider:before {
+    transform: translateX(50px);
+}
+
+/* Text for "On" state */
+input:checked + .slider:after {
+    content: "On";
+    right: auto;
+    left: 10px;
+}
+

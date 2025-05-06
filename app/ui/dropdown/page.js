@@ -1,5 +1,3 @@
-"use client";
-
 import Dropdown from "@/app/ui/dropdown/dropdown";
 
 export default function Page() {

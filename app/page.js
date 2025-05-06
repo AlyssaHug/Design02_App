@@ -1,5 +1,4 @@
 "use client";
-
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
 import GoalProgress from "@/app/ui/GoalCards/GoalCards";
@@ -142,9 +141,17 @@ export default function Page() {
         <div>
             <Button
                 color='light'
+             value='check out da goals'
+                href='Goals'
+            />
+            <Button
+                color='light'
+                value='check out da Rewards'
+                href='Rewards'
+            />
+            <Button
                 value='JANUARY'
                 href='/Expense/overview/Weekly/January'></Button>
-
             <ToggleButton />
             <GoalProgress
                 value='Goal Progress'
@@ -741,3 +748,6 @@ export default function Page() {
         </div>
     );
 }
+
+export default Page;
+

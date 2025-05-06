@@ -1,13 +1,15 @@
+
 import classNames from "classnames";
-import { Libre_Franklin } from "next/font/google";
+import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
+import Link from "next/link";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
-
-// icon: icon
-// onClick: function
+const quicksand = Quicksand({
+    variable: "--font-quicksand",
+});
 
 export default function Button({
     style,
@@ -19,6 +21,13 @@ export default function Button({
     value,
     onClick,
     href,
+    customClass, // Add customClass to props
+}) {
+    const buttonClasses = classNames(
+        styles.button,
+        quicksand.variable,
+        libreFranklin.variable,
+        customClass, // Include customClass here
 }) {
     const buttonClasses = classNames(styles.button, libreFranklin.variable, {
         [styles.view]: type === "view",
@@ -36,15 +45,15 @@ export default function Button({
         [styles.nav]: color === "nav",
         [styles.navActive]: color === "nav-active",
         [styles.expense]: type === "expense",
+        [styles.home]: type === "home",
         [styles.caption]: size === "caption",
         [styles.cow]: color === "cow",
         [styles.cowActive]: color === "cow-active",
+        [styles.goalMoo]: type === "goalMoo",
     });
 
     return (
-        <button
-            className={buttonClasses}
-            value={value}>
+        <button className={buttonClasses} value={value} onClick={onClick}>
             {imageSrc && (
                 <img
                     src={imageSrc}
