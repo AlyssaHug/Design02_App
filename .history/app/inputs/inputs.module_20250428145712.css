@@ -1,0 +1,11 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input fieldset {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}

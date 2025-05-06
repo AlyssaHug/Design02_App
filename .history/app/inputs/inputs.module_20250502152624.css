@@ -1,16 +1,16 @@
 .sign-in_input {
   width: 267px;
   padding: 37px;
-  background-color: #d9ebd1;
+  background-color: #D9EBD1;
   border: 1px solid #ffffff;
   border-radius: 4px;
 }
 
 .expense_input {
-  width: 370px;
-  padding: 52px;
+  width: 267px;
+  padding: 37px;
   background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
@@ -18,7 +18,7 @@
   width: 267px;
   padding: 37px;
   background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
@@ -26,14 +26,14 @@
   width: 267px;
   padding: 37px;
   background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .paragraph_input {
-  width: 370px;
-  padding: 148px;
+  width: 267px;
+  padding: 37px;
   background-color: #D9EBD1;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }

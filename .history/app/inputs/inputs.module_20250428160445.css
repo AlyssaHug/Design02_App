@@ -1,0 +1,46 @@
+input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    size: 1000px;
+    background-color: #D9EBD1;
+}
+
+input fieldset {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+input fieldset legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input fieldset label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+input fieldset label input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+input fieldset label input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+input fieldset label input[type="text"],
+input fieldset label input[type="email"],
+input fieldset label input[type="password"],
+input fieldset label input[type="number"],
+input fieldset label input[type="tel"],
+input fieldset label input[type="url"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25rem;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
