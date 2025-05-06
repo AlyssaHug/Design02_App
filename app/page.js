@@ -1,5 +1,5 @@
-import Coins from "./ui/coins/coins";
 "use client";
+import Coins from "./ui/coins/coins";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
 import GoalProgress from "@/app/ui/GoalCards/GoalCards";
@@ -140,10 +140,10 @@ export default function Page() {
 
     return (
         <div>
-            <Coins/>
+            <Coins />
             <Button
                 color='light'
-             value='check out da goals'
+                value='check out da goals'
                 href='Goals'
             />
             <Button
@@ -748,9 +748,5 @@ export default function Page() {
                 />
             </div>
         </div>
-
     );
 }
-
-export default Page;
-

@@ -1,3 +1,10 @@
 .container {
     margin: 16px;
+    padding: 16px;
+}
+.header {
+    font-family: var(--font-quicksand);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
 }

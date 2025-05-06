@@ -1,4 +1,3 @@
-
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
@@ -19,7 +18,8 @@ export default function Button({
     alt,
     size,
     value,
-    coin,
+    coinValue,
+    coins,
     onClick,
     href,
     customClass, // Add customClass to props
@@ -56,7 +56,10 @@ export default function Button({
     );
 
     return (
-        <button className={buttonClasses} value={value} onClick={onClick}>
+        <button
+            className={buttonClasses}
+            value={value}
+            onClick={onClick}>
             {imageSrc && (
                 <img
                     src={imageSrc}
@@ -64,7 +67,10 @@ export default function Button({
                 />
             )}
 
-            <span>{value}{coin}</span>
+            <span>
+                {coins}
+                {coinValue}
+            </span>
             <a href={href}>{value}</a>
         </button>
     );
