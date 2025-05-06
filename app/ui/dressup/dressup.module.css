@@ -1,19 +1,22 @@
 .dressup {
     display: flex;
-    justify-content: center; /* center all buttons together */
+    justify-content: center; /* Center all buttons together */
     align-items: center;
     padding: 10px;
-    gap: 10px; /* or whatever spacing you want between buttons */
+    gap: 10px; /* Consistent spacing between buttons */
+    overflow-x: auto; /* Allow horizontal scrolling for many buttons */
 }
-
 
 .dressupButton {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 200px;
+    width: 150px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    min-width: 150px; /* Prevent shrinking */
+    min-height: 200px; /* Prevent shrinking */
+    flex-shrink: 0; /* Prevent flex from shrinking the button */
     border-radius: 20px; 
     border: none;
     font-family: var(--font-quicksand), sans-serif;
@@ -22,8 +25,44 @@
     position: relative;
 }
 
+.dressupButton img {
+    max-width: 80px; /* Ensure images don’t overflow */
+    max-height: 80px;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
 .dressupButton span { 
     position: absolute;
     bottom: 15px; 
     margin: 0; 
+}
+
+.large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Fixed width, matching dressupButton */
+    height: 200px; /* Fixed height, matching dressupButton */
+    min-width: 150px; /* Prevent shrinking */
+    min-height: 200px; /* Prevent shrinking */
+    flex-shrink: 0; /* Prevent flex from shrinking the button */
+    border-radius: 20px;
+    border: none;
+    font-family: var(--font-quicksand), sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+
+.large img {
+    width: 100px; /* Larger image, as requested previously */
+    height: 100px;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.large span {
+    position: absolute;
+    bottom: 15px;
+    margin: 0;
 }
