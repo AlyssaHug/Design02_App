@@ -43,35 +43,35 @@ export default function Dressup({ style, onClick }) {
             />
                 <Button
                 imageSrc="/Accessories/dog.svg"
-                value="Cat"
+                value="Dog"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.large}
             />
                 <Button
                 imageSrc="/Accessories/dress.svg"
-                value="Cat"
+                value="Dress"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.large}
             />
                 <Button
                 imageSrc="/Accessories/flowercrown.svg"
-                value="Cat"
+                value="Flower Crown"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.large}
             />
                 <Button
                 imageSrc="/Accessories/icecream.svg"
-                value="Cat"
+                value="Ice Cream"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.large}
             />
                 <Button
                 imageSrc="/Accessories/suit.svg"
-                value="Cat"
+                value="Suit"
                 color="light-blue"
                 onClick={onClick}
                 customClass={styles.large}
