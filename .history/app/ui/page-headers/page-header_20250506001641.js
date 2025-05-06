@@ -8,15 +8,15 @@ const libreFranklin = Libre_Franklin({
 
 const PageHeader = ({ title, subtitle, icon }) => {
     const headerClasses = classNames(styles.header, libreFranklin.variable, {
-        [styles.new_user_homepage_header]: icon === "new_user_homepage",
-        [styles.expense_header]: icon === "expense",
-        [styles.your_total_balance]: type === "your_total_balance",
+        [styles.withIcon]: icon,
     });
 
     return (
-        <header className={headerClasses}>
-            <h1 className={styles.header_title}>{title}</h1>
-        </header>
+        <div className={headerClasses}>
+            {icon && <img src={icon} alt="Icon" className={styles.icon} />}
+            <h1 className={styles.title}>{title}</h1>
+            {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+        </div>
     );
 }
 

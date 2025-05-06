@@ -25,15 +25,12 @@
     text-align: center;
 }
 
-.header_title {
-    color: var(--secondary-secondary-900, #090F19);
-
-    /* Header 1: 32 px */
-    font-family: Quicksand;
+.title {
     font-size: 32px;
-    font-style: normal;
+    font-family: Quicksand;
     font-weight: 700;
-    line-height: 36px; /* 112.5% */
+    line-height: 36px;
+    letter-spacing: 0%;
 }
 
 .expense_header {

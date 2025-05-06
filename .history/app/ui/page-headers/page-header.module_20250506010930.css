@@ -25,15 +25,12 @@
     text-align: center;
 }
 
-.header_title {
-    color: var(--secondary-secondary-900, #090F19);
-
-    /* Header 1: 32 px */
-    font-family: Quicksand;
+.title {
     font-size: 32px;
-    font-style: normal;
+    font-family: Quicksand;
     font-weight: 700;
-    line-height: 36px; /* 112.5% */
+    line-height: 36px;
+    letter-spacing: 0%;
 }
 
 .expense_header {
@@ -49,9 +46,6 @@
     width: 402px;
     height: 496px;
     flex-shrink: 0;
-    border-radius: 60px;
-    background: var(--accent-blue-accent-blue-100, #E7F2F7);
-    box-shadow: 0px 4px 4px 0px rgba(30, 53, 72, 0.40);
 }
 
 .goal_header {
@@ -60,22 +54,4 @@
     flex-shrink: 0;
     border-radius: 40px;
     background: var(--Primary-primary-300, #ACD39D);
-}
-
-.income_history_header {
-    width: 402px;
-    height: 355px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 60px 60px;
-    background: var(--Primary-primary-400, #9CCB89);
-    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
-}
-
-.transactions_this_month_header {
-    width: 272.461px;
-    height: 44px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 60px 60px;
-    background: var(--Primary-primary-400, #9CCB89);
-    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
 }
