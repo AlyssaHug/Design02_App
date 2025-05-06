@@ -6,7 +6,7 @@ export default function RewardClaim({ value, coin }) {
     return (
         <div className={styles.container}>
             <h3 className={styles.name}>{value}</h3>
-            <p classname={styles.coin}>{coin} coins</p>
+            <p className={styles.coin}>{coin} coins</p>
             <Button
                 className={styles.button}
                 color='light'

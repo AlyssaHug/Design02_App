@@ -9,9 +9,13 @@
     padding: 8px;
 }
 .name {
-    flex: 0 0 60%;
+    flex: 0 0 40%;
     font-size: 20px;
     padding: 16px;
     padding-left: 20px;
     font-family: var(--font-libre-franklin);
+}
+.coin {
+    flex: 0 0 40%;
+    text-align: right;
 }
