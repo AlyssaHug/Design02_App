@@ -1,0 +1,47 @@
+.success {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    
+    /* 28 px: Header 2 */
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 114.286% */
+}
+
+.error {
+    color: var(--secondary-secondary-900, #CD533B);
+    text-align: center;
+    
+    /* 28 px: Header 2 */
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 114.286% */
+}
+
+.warning {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    
+    /* 28 px: Header 2 */
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 114.286% */
+}
+
+.info {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    
+    /* 28 px: Header 2 */
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 114.286% */
+}
