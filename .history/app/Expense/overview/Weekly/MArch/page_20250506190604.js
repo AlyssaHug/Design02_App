@@ -4,7 +4,7 @@ import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "./march.module.css";
-import Nav from "@/app/ui/navbar/navbar";
+import Nav from "@/app/ui/Nav/nav";
 
 export default function Page() {
     return (
@@ -224,12 +224,6 @@ export default function Page() {
                     description='Ice Coffee'
                     merchant='Tim Hortons'
                 />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
             </div>
             <Nav />
         </div>

@@ -224,12 +224,6 @@ export default function Page() {
                     description='Ice Coffee'
                     merchant='Tim Hortons'
                 />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
             </div>
             <Nav />
         </div>
