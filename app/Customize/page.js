@@ -9,7 +9,7 @@ import Dressup from "../ui/dressup/dressup";
 export default function Dressmoo() {
     return (
         <div>
-            <Nav/>
+            <Nav />
             <div className={styles.sameRow}>
                 <img
                     src="/left_arrow.svg"
@@ -35,14 +35,22 @@ export default function Dressmoo() {
                 </div>
             </div>
             <div className={styles.removebutton}>
-                <Button 
-                color="light-blue"
-                value="Remove"
+                <Button
+                    color="light-blue"
+                    value="Remove"
                 />
+            </div >
+            <div className={styles.buyanditems}>
+                <h1 className={styles.items} >Items</h1>
+                <div className={styles.shop}>
+                    <Button
+                        type="shop"
+                        value="Buy More"
+                    />
+                </div>
             </div>
-            <div className={styles.items}><h1>Items</h1></div>
             <div>
-                <Dressup/>
+                <Dressup />
             </div>
         </div>
     );

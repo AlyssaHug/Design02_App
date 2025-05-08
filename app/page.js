@@ -5,7 +5,7 @@ import Dressup from "./ui/dressup/dressup";
 export default function Page() {
     return (
     <div>
-       <Dressup/>
+       <Dressmoo/>
     </div>
     );
 }

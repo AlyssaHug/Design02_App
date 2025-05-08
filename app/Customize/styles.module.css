@@ -72,7 +72,26 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; 
+    line-height: 28px;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 20px;
+}
+
+.shop button {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #274b28;
+    margin-top: 10px;
+}
+
+.buyanditems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    z-index: 1; 
 }
