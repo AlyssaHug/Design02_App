@@ -13,12 +13,18 @@ const PageHeader = ({ title, subtitle, icon }) => {
 
     return (
         <div className={headerClasses}>
-            {icon && <img src={icon} alt="Icon" className={styles.icon} />}
+            {icon && (
+                <img
+                    src={icon}
+                    alt='Icon'
+                    className={styles.icon}
+                />
+            )}
             <h1 className={styles.title}>{title}</h1>
             {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         </div>
     );
-}
+};
 
 export default PageHeader;
-// Compare this snippet from app/ui/page-headers/page-header.module.css:   
+// Compare this snippet from app/ui/page-headers/page-header.module.css:

@@ -1,0 +1,49 @@
+.progressHeader {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: var(--font-quicksand);
+    margin-bottom: -20px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tipText,
+.details,
+.coin {
+    font-size: 16px;
+    font-family: var(--font-libre-franklin);
+}
+.tipTitle,
+.reward {
+    font-size: 20px;
+}
+.details {
+    margin-left: 10%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.tip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.moo {
+    width: 200px;
+}
+.tipText {
+    max-width: 200px;
+}
+.coin {
+    color: #5d874d;
+}
+.reward {
+    flex: 0 0 70%;
+}
+.rewardCoins {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

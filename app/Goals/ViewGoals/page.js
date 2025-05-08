@@ -15,6 +15,7 @@ function page() {
                     end='April 27, 2025'
                     progress={90}
                     goal={100}
+                    href='/Goals/ViewGoals/Goal1'
                 />
                 <GoalDetailed
                     name='Goal 2'
