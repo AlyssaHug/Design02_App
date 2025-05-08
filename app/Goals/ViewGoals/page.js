@@ -25,6 +25,7 @@ function page() {
                     end='march 31, 2025'
                     progress={60}
                     goal={100}
+                    href='/Goals/ViewGoals/Goal2'
                 />
                 <GoalDetailed
                     name='Goal 3'
@@ -35,6 +36,7 @@ function page() {
                     progress={30}
                     goal={100}
                     textColor='#4caf50'
+                    href='/Goals/ViewGoals/Goal3'
                 />
             </div>
         </div>
