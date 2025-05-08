@@ -3,6 +3,7 @@ import CowPage from "./Cow/cow";
 import Moomoo from "./ui/moomoo/moomoo";
 import Coins from "@/app/ui/coins/coins";
 import styles from "@/app/Customize/styles.module.css";
+import Button from "@/app/ui/Buttons/Buttons";
 
 export default function Page() {
     return (
@@ -30,6 +31,12 @@ export default function Page() {
                         className={styles.moomooSvg}
                     />
                 </div>
+            </div>
+            <div>
+                <Button 
+                color="light-blue"
+                value="Remove"
+                />
             </div>
         </div>
     );
