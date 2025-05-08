@@ -32,7 +32,7 @@ export default function Page() {
                     />
                 </div>
             </div>
-            <div>
+            <div className={styles.removebutton}>
                 <Button 
                 color="light-blue"
                 value="Remove"
