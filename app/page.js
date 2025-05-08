@@ -4,10 +4,12 @@ import Moomoo from "./ui/moomoo/moomoo";
 import Coins from "@/app/ui/coins/coins";
 import styles from "@/app/Customize/styles.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
+import Nav from "./ui/navbar/navbar";
 
 export default function Page() {
     return (
         <div>
+            <Nav/>
             <div className={styles.sameRow}>
                 <img
                     src="/left_arrow.svg"
@@ -38,6 +40,7 @@ export default function Page() {
                 value="Remove"
                 />
             </div>
+            <div className={styles.items}><h1>Items</h1></div>
         </div>
     );
 }
