@@ -13,6 +13,7 @@ const quicksand = Quicksand({
 export default function Dressup({ style, onClick }) {
     return (
         <div className={styles.dressup}>
+            <div className={styles.textfix}>
             <Button
                 imageSrc="/moomoo-dressup/bow.png"
                 value="Bow"
@@ -20,6 +21,8 @@ export default function Dressup({ style, onClick }) {
                 onClick={onClick}
                 customClass={styles.dressupButton}
             />
+            </div>
+            <div className={styles.textfix}>
             <Button
                 imageSrc="/moomoo-dressup/sunglasses.png"
                 value="Sunglasses"
@@ -27,6 +30,7 @@ export default function Dressup({ style, onClick }) {
                 onClick={onClick}
                 customClass={styles.dressupButton}
             />
+            </div>
             <Button
                 imageSrc="/moomoo-dressup/moustache.png"
                 value="Dapper"
