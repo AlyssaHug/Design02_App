@@ -20,6 +20,8 @@ export default function Button({
     size,
     value,
     coinValue,
+    disabled,
+    text,
     coins,
     onClick,
     href,
@@ -68,7 +70,8 @@ export default function Button({
         <button
             className={buttonClasses}
             value={value}
-            onClick={handleClick}>
+            onClick={onClick}
+            disabled={disabled}>
             {imageSrc && (
                 <img
                     src={imageSrc}
