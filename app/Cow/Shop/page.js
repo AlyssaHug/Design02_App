@@ -8,14 +8,20 @@ import { useState } from "react";
 
 export default function Page() {
     const [coins, setCoins] = useState(900);
-    function purchaseItem(value) {
+    const [purchasedItems, setPurchasedItems] = useState({});
+    function purchaseItem(value, itemId) {
         if (coins < value) {
-            console.log("not enought coins");
+            alert("Not enough coins for this purchase :(");
             return;
         }
         console.log("hiiiiiiii");
         const currentCoins = coins - value;
         setCoins(currentCoins);
+        setPurchasedItems((prev) => {
+            const newPurchasedItems = { ...prev, [itemId]: true };
+            console.log("Updated purchasedItems:", newPurchasedItems);
+            return newPurchasedItems;
+        });
     }
     return (
         <div className={styles.page}>
@@ -38,7 +44,9 @@ export default function Page() {
                         name='Flower Crown'
                         imageSrc='/flower.svg'
                         value={90}
-                        onClick={() => purchaseItem(90)}
+                        type='shop'
+                        isPurchased={purchasedItems["flower-crown"]}
+                        onClick={() => purchaseItem(90, "flower-crown")}
                     />
                 </div>
                 <div className={styles.shopItem}>

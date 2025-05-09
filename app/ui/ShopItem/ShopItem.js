@@ -11,7 +11,14 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function ShopItem({ type, onClick, name, value, imageSrc }) {
+export default function ShopItem({
+    type,
+    onClick,
+    name,
+    value,
+    imageSrc,
+    isPurchased,
+}) {
     const ItemClasses = classNames(styles.Item, libreFranklin.variable);
     {
         return (
@@ -22,10 +29,13 @@ export default function ShopItem({ type, onClick, name, value, imageSrc }) {
                     src={imageSrc}
                 />
                 <Button
-                    className={styles.button}
+                    className={classNames(styles.button, {
+                        [styles.isPurchased]: isPurchased,
+                    })}
                     type='shop'
-                    value={`Buy: ${value} coins`}
+                    value={isPurchased ? "Purchased" : `Buy: ${value} coins`}
                     onClick={onClick}
+                    isPurchased={isPurchased}
                 />
             </div>
         );
