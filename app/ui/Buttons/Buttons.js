@@ -29,11 +29,12 @@ export default function Button({
     customClass, // Add customClass to props
 }) {
     function handleClick() {
-        if (!href) {
-            console.error("href is missing");
+        if (href) {
+            window.open(href, target);
             return;
         }
-        window.open(href, target);
+
+        onClick();
     }
     const buttonClasses = classNames(
         styles.button,
@@ -70,7 +71,7 @@ export default function Button({
         <button
             className={buttonClasses}
             value={value}
-            onClick={onClick}
+            onClick={handleClick}
             disabled={disabled}>
             {imageSrc && (
                 <img
