@@ -54,7 +54,9 @@ export default function Page() {
                         name='Ice Cream Hat'
                         imageSrc='/icecream.svg'
                         value={90}
-                        onClick={() => purchaseItem(90)}
+                        type='shop'
+                        isPurchased={purchasedItems["ice-cream-hat"]}
+                        onClick={() => purchaseItem(90, "ice-cream-hat")}
                     />
                 </div>
                 <div className={styles.shopItem}>
@@ -62,7 +64,9 @@ export default function Page() {
                         name='Royal Dress'
                         imageSrc='/royaldress.svg'
                         value={140}
-                        onClick={() => purchaseItem(140)}
+                        type='shop'
+                        isPurchased={purchasedItems["royal-dress"]}
+                        onClick={() => purchaseItem(140, "royal-dress")}
                     />
                 </div>
                 <div className={styles.shopItem}>
@@ -70,7 +74,9 @@ export default function Page() {
                         name='Dapper Suit'
                         imageSrc='/fancysuit.svg'
                         value={250}
-                        onClick={() => purchaseItem(250)}
+                        type='shop'
+                        isPurchased={purchasedItems["dapper-suit"]}
+                        onClick={() => purchaseItem(250, "dapper-suit")}
                     />
                 </div>
                 <div className={styles.shopItem}>
@@ -78,7 +84,9 @@ export default function Page() {
                         name='Mini Friend (Cat)'
                         imageSrc='/kitty.svg'
                         value={90}
-                        onClick={() => purchaseItem(90)}
+                        type='shop'
+                        isPurchased={purchasedItems["mini-friend-cat"]}
+                        onClick={() => purchaseItem(90, "mini-friend-cat")}
                     />
                 </div>
                 <div className={styles.shopItem}>
@@ -86,7 +94,9 @@ export default function Page() {
                         name='Mini Friend (Dog)'
                         imageSrc='/puppy.svg'
                         value={90}
-                        onClick={() => purchaseItem(90)}
+                        type='shop'
+                        isPurchased={purchasedItems["mini-friend-dog"]}
+                        onClick={() => purchaseItem(90, "mini-friend-dog")}
                     />
                 </div>
             </div>
