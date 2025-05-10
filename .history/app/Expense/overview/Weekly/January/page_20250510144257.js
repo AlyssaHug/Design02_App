@@ -17,7 +17,6 @@ export default function Page() {
                     state='Transactions'
                     month='January'
                     amount='440.02'
-                    spentOrEarned='Spent'
                 />
             </div>
             <div className={styles.transactionContainer}>
@@ -27,7 +26,7 @@ export default function Page() {
                 <TransactionCard
                     time='12:56am'
                     category='Dine...'
-                    amount='8.42'
+                    amount='8:42'
                     description='Strawberry Matcha Latte'
                     merchant='Cafe Algan'
                 />

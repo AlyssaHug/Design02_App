@@ -14,8 +14,8 @@ export default function CalendarCard({ month, amount, state, spentOrEarned }) {
                 <span className={styles.month}>{month}</span>
                 <span className={styles.arrowRight}></span>
             </div>
-            <div className={styles.spentLabel}>You've {spentOrEarned}:</div>
-            <div className={styles.amount}>${amount}</div>
+            <div className={styles.spentLabel}>You've ${spentOrEarned}:</div>
+            <div className={styles.amount}>{amount}</div>
             <div className={styles.thisMonth}>This Month!</div>
         </div>
     );

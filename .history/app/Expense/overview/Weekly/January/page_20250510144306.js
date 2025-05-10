@@ -27,7 +27,7 @@ export default function Page() {
                 <TransactionCard
                     time='12:56am'
                     category='Dine...'
-                    amount='8.42'
+                    amount='8:42'
                     description='Strawberry Matcha Latte'
                     merchant='Cafe Algan'
                 />
