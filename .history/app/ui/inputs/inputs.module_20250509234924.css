@@ -1,7 +1,10 @@
 .input {
   display: flex;
+  width: 267px;
+  height: 37px;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .login {
@@ -28,12 +31,20 @@
   background: var(--Primary-primary-100, #D9EBD1);
 }
 
+.account {
+  width: 267px;
+  padding: 37px;
+  background-color: #D9EBD1;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
 .paragraph {
   width: 370px;
-  height: 148px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  background: var(--Primary-primary-100, #D9EBD1);
+  padding: 148px;
+  background-color: #D9EBD1;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
 }
 
 .dark {
@@ -44,9 +55,9 @@
   background: var(--Tertiary-tertiary-700, #1C351C);
 }
 
-.account-large {
-  width: 288px;
-  height: 44px;
+.light {
+  width: 267px;
+  height: 37px;
   flex-shrink: 0;
   border-radius: 30px;
   background: var(--Primary-primary-100, #D9EBD1);

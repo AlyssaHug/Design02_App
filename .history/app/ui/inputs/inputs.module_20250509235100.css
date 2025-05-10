@@ -32,8 +32,7 @@
   width: 370px;
   height: 148px;
   flex-shrink: 0;
-  border-radius: 12px;
-  background: var(--Primary-primary-100, #D9EBD1);
+
 }
 
 .dark {
@@ -44,9 +43,9 @@
   background: var(--Tertiary-tertiary-700, #1C351C);
 }
 
-.account-large {
-  width: 288px;
-  height: 44px;
+.light {
+  width: 267px;
+  height: 37px;
   flex-shrink: 0;
   border-radius: 30px;
   background: var(--Primary-primary-100, #D9EBD1);

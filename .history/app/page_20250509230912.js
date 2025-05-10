@@ -245,6 +245,16 @@ export default function Page() {
                 />
             </div>
             <div>
+                <input
+                className={inputClasses}
+                type={type}
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+                maxLength={maxLength}
+                disabled={disabled}></input>
+            </div>
+            <div>
                 {/*January*/}
                 <TransactionCard
                     time='11:47am'

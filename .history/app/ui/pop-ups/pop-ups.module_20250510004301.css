@@ -40,21 +40,3 @@
     font-weight: 400;
     line-height: 20px; 
 }
-
-.pop-up_dark-button {
-    width: 141.602px;
-    height: 49.22px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: #4B5961;
-}
-
-.pop-up_dark-button-text {
-    color: #FEFDFD;
-    text-align: center;
-    font-family: "Libre Franklin";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; 
-}

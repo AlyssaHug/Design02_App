@@ -10,7 +10,7 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
-
+import inputs from "@/app/ui/inputs/inputs";    
 
 import Nav from "./ui/navbar/navbar";
 export default function Page() {
@@ -243,6 +243,16 @@ export default function Page() {
                     onSelect={handleInteractionSelect}
                     placeholder='Select interaction'
                 />
+            </div>
+            <div>
+                <input
+                className={inputClasses}
+                type={type}
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+                maxLength={maxLength}
+                disabled={disabled}></input>
             </div>
             <div>
                 {/*January*/}

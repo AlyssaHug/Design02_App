@@ -26,7 +26,7 @@ export default function Input({
         [styles.paragraph]: type === "paragraph",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light"
-    })
+    });
 
     return (
         <input

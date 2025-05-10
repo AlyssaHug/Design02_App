@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import styles from "@/app/ui/inputs/inputs.module.css";
 import { Libre_Franklin } from "next/font/google";
-import React from "react";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
@@ -20,13 +19,15 @@ export default function Input({
 }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.login]: type === "login",
-        [styles.expense]: type === "expense",
-        [styles.goal]: type === "goal",
-        [styles.account]: type === "account",
-        [styles.paragraph]: type === "paragraph",
+        [styles.number]: type === "number",
+        [styles.password]: type === "password",
+        [styles.email]: type === "email",
+        [styles.search]: type === "search",
+        [styles.caption]: size === "caption",
         [styles.dark]: color === "dark",
-        [styles.light]: color === "light"
-    })
+        [styles.light]: color === "light",
+        [styles.disabled]: disabled,
+    });
 
     return (
         <input
@@ -36,7 +37,6 @@ export default function Input({
             onChange={onChange}
             placeholder={placeholder}
             maxLength={maxLength}
-            size={size}
             disabled={disabled}
         />
     );
