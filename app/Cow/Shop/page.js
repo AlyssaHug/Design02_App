@@ -45,7 +45,7 @@ export default function Page() {
                         imageSrc='/flower.svg'
                         value={90}
                         type='shop'
-                        isPurchased={purchasedItems["flower-crown"]}
+                        isBought={purchasedItems["flower-crown"]}
                         onClick={() => purchaseItem(90, "flower-crown")}
                     />
                 </div>
@@ -55,7 +55,7 @@ export default function Page() {
                         imageSrc='/icecream.svg'
                         value={90}
                         type='shop'
-                        isPurchased={purchasedItems["ice-cream-hat"]}
+                        isBought={purchasedItems["ice-cream-hat"]}
                         onClick={() => purchaseItem(90, "ice-cream-hat")}
                     />
                 </div>
@@ -65,7 +65,7 @@ export default function Page() {
                         imageSrc='/royaldress.svg'
                         value={140}
                         type='shop'
-                        isPurchased={purchasedItems["royal-dress"]}
+                        isBought={purchasedItems["royal-dress"]}
                         onClick={() => purchaseItem(140, "royal-dress")}
                     />
                 </div>
@@ -75,7 +75,7 @@ export default function Page() {
                         imageSrc='/fancysuit.svg'
                         value={250}
                         type='shop'
-                        isPurchased={purchasedItems["dapper-suit"]}
+                        isBought={purchasedItems["dapper-suit"]}
                         onClick={() => purchaseItem(250, "dapper-suit")}
                     />
                 </div>
@@ -85,7 +85,7 @@ export default function Page() {
                         imageSrc='/kitty.svg'
                         value={90}
                         type='shop'
-                        isPurchased={purchasedItems["mini-friend-cat"]}
+                        isBought={purchasedItems["mini-friend-cat"]}
                         onClick={() => purchaseItem(90, "mini-friend-cat")}
                     />
                 </div>
@@ -95,7 +95,7 @@ export default function Page() {
                         imageSrc='/puppy.svg'
                         value={90}
                         type='shop'
-                        isPurchased={purchasedItems["mini-friend-dog"]}
+                        isBought={purchasedItems["mini-friend-dog"]}
                         onClick={() => purchaseItem(90, "mini-friend-dog")}
                     />
                 </div>

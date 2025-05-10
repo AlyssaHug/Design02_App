@@ -17,7 +17,7 @@ export default function ShopItem({
     name,
     value,
     imageSrc,
-    isPurchased,
+    isBought,
 }) {
     const ItemClasses = classNames(styles.Item, libreFranklin.variable);
     {
@@ -30,12 +30,12 @@ export default function ShopItem({
                 />
                 <Button
                     className={classNames(styles.button, {
-                        [styles.isPurchased]: isPurchased,
+                        [styles.isBought]: isBought,
                     })}
                     type='shop'
-                    value={isPurchased ? "Purchased" : `Buy: ${value} coins`}
+                    value={isBought ? "Already Owned" : `Buy: ${value} coins`}
                     onClick={onClick}
-                    isPurchased={isPurchased}
+                    isBought={isBought}
                 />
             </div>
         );
