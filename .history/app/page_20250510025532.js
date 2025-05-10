@@ -207,6 +207,7 @@ export default function Page() {
                 <Input
                     className={styles.login}
                     type='text'
+                    value={''}
                     onChange={() => {}}
                     placeholder='Enter your email'
                 />

@@ -205,7 +205,7 @@ export default function Page() {
             </div>
             <div className={styles.input}>
                 <Input
-                    className={styles.login}
+                    className={styles.input}
                     type='text'
                     onChange={() => {}}
                     placeholder='Enter your email'

@@ -199,17 +199,16 @@ export default function Page() {
                     value='View More'
                 />
             </div>
-            <div className={styles.recsContent}>
-                <GoalRecs value='Spend $50 less on games!' />
-                <GoalRecs value='Spend $50 less on games!' />
-            </div>
             <div className={styles.input}>
                 <Input
                     className={styles.login}
                     type='text'
-                    onChange={() => {}}
-                    placeholder='Enter your email'
+                    value='email'
                 />
+            </div>
+            <div className={styles.recsContent}>
+                <GoalRecs value='Spend $50 less on games!' />
+                <GoalRecs value='Spend $50 less on games!' />
             </div>
             <div className={styles.subheaderContent}>
                 <h3 className={styles.subheader}>Your cow friend!</h3>

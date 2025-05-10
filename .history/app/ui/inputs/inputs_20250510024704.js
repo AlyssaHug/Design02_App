@@ -19,11 +19,11 @@ export default function Input({
     
 }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
-        [styles.login]: size === "login",
-        [styles.expense]: size === "expense",
-        [styles.goal]: size === "goal",
-        [styles.account]: size === "account",
-        [styles.paragraph]: size === "paragraph",
+        [styles.login]: type === "login",
+        [styles.expense]: type === "expense",
+        [styles.goal]: type === "goal",
+        [styles.account]: type === "account",
+        [styles.paragraph]: type === "paragraph",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light"
     })
@@ -42,4 +42,10 @@ export default function Input({
     );
 }
 
-            
+            <div className={styles.input}>
+                <Input
+                    className={styles.input}
+                    type='text'
+                    value='email'
+                />
+            </div>

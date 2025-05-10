@@ -10,9 +10,9 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
-import Input from "@/app/ui/inputs/inputs";
-import PopUp from "@/app/ui/pop-ups/pop-ups";
-import header from "@/app/ui/page-headers/page-header";
+import Input from "./ui/inputs/inputs";
+import PopUp from "./ui/pop-ups/pop-ups";
+import header from "./ui/page-headers/page-header";
 
 
 import Nav from "./ui/navbar/navbar";
@@ -203,14 +203,6 @@ export default function Page() {
                 <GoalRecs value='Spend $50 less on games!' />
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
-            <div className={styles.input}>
-                <Input
-                    className={styles.login}
-                    type='text'
-                    onChange={() => {}}
-                    placeholder='Enter your email'
-                />
-            </div>
             <div className={styles.subheaderContent}>
                 <h3 className={styles.subheader}>Your cow friend!</h3>
             </div>
@@ -218,6 +210,11 @@ export default function Page() {
                 type='goalCow'
                 value='Check on MooMoo!'
             />
+            <div className={styles.input}>
+                <Input
+                    type={inputclasses}
+                    />
+            </div>
             <div>
                 <Dropdown
                     options={categoryOptions}
