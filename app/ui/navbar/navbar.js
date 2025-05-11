@@ -42,6 +42,7 @@ export default function Nav({ size, href }) {
                     <Button
                         color='cow'
                         imageSrc='/navbar-icons/cow.svg'
+                        href='/Cow'
                     />
                 </div>
                 <Button
