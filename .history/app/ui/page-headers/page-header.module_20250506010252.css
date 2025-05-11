@@ -1,0 +1,43 @@
+.new_user_homepage_header {
+    width: 402px;
+    height: 428px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
+
+.your_total_balance {
+    font-size: 24px;
+    font-family: Quicksand;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.balance {
+    font-size: 32px;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+
+.expense_header {
+    width: 402px;
+    height: 430px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 100px 100px;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
