@@ -1,3 +1,40 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.sameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure it stays above the background */
+}
+
+.coins {
+    display: flex;
+    justify-content: end;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    margin-left: 20px;
+}
+
+.backgroundImage {
+    width: 120%; /* Increase width to make it wider */
+    height: 100%;
+    top: 0;
+    left: 50%;
+}
+
 .moo {
     position: absolute;
     z-index: 250;
@@ -6,3 +43,4 @@
     width: 325.717px;
     height: 255.451px;
 }
+
