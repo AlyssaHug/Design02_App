@@ -154,6 +154,7 @@ export function GoalDetailed({
     style,
     progress,
     goal,
+    href,
     textColor = "#fefdfd",
 }) {
     const goalDetailedClasses = classNames(
@@ -190,6 +191,7 @@ export function GoalDetailed({
                         <Button
                             value='View More'
                             type='view'
+                            href={href}
                         />
                     </div>
                 </div>

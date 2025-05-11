@@ -1,18 +1,17 @@
 "use client";
-import CowPage from "./Cow/cow";
-import Moomoo from "./ui/moomoo/moomoo";
-import styles from "@/app/Cow/styles.module.css"
-
+import Nav from "./ui/navbar/navbar";
+import GoalProgress from "./ui/GoalCards/GoalCards";
+import Button from "./ui/Buttons/Buttons";
 export default function Page() {
     return (
         <div>
-        <div className={styles.moo}>
-            <Moomoo
-            size="interaction"
-            src="/moomoonormal.svg"
+            <Nav />
+            <Button
+                color='light'
+                value='da shop'
+                href='/Cow/Shop'
             />
-            </div>
-      <CowPage/>
-      </div>
+            <GoalProgress />
+        </div>
     );
 }

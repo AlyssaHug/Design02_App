@@ -1,15 +1,11 @@
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalDetailed } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/Goals/ViewGoals/styles.module.css";
-
+import Nav from "@/app/ui/navbar/navbar";
 function page() {
     return (
-        <div>
-            <Button
-                color='light'
-                value='check out da home'
-                href='/'
-            />
+        <div className={styles.page}>
+            <Nav />
             <div className={styles.content}>
                 <GoalDetailed
                     name='Goal 1'
@@ -19,6 +15,7 @@ function page() {
                     end='April 27, 2025'
                     progress={90}
                     goal={100}
+                    href='/Goals/ViewGoals/Goal1'
                 />
                 <GoalDetailed
                     name='Goal 2'
@@ -28,6 +25,7 @@ function page() {
                     end='march 31, 2025'
                     progress={60}
                     goal={100}
+                    href='/Goals/ViewGoals/Goal2'
                 />
                 <GoalDetailed
                     name='Goal 3'
@@ -38,6 +36,7 @@ function page() {
                     progress={30}
                     goal={100}
                     textColor='#4caf50'
+                    href='/Goals/ViewGoals/Goal3'
                 />
             </div>
         </div>

@@ -8,17 +8,25 @@ const libreFranklin = Libre_Franklin({
 
 const PageHeader = ({ title, subtitle, icon }) => {
     const headerClasses = classNames(styles.header, libreFranklin.variable, {
-        [styles.withIcon]: icon,
+        [styles.new_user_homepage_header]: header === "new_user_homepage",
+        [styles.your_total_balance]: type === "your_total_balance",
+        [styles.balance]: type === "balance",
+        [styles.header_title]: type === "header_title",
+        [styles.expense_header]: icon === "expense_header",
+        [styles.goal_homepage_header]: icon === "goal_homepage",
+        [styles.goal_header]: icon === "goal_header",
+        [styles.income_history_header]: icon === "income_history_header",
+        [styles.transactions_this_month_header]: icon === "transactions_this_month_header",
+        [styles.history_subtitle]: icon === "history_subtitle",
     });
 
     return (
-        <div className={headerClasses}>
-            {icon && <img src={icon} alt="Icon" className={styles.icon} />}
-            <h1 className={styles.title}>{title}</h1>
-            {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+        <div>
+            <header className={headerClasses}>
+                <h1 className={title}>{title}</h1>
+            </header>
         </div>
     );
-}
+};
 
 export default PageHeader;
-// Compare this snippet from app/ui/page-headers/page-header.module.css:   
