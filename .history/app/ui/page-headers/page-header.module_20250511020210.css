@@ -40,8 +40,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    text-indent: 20px;
-    line-height: 240px;
+    line-height: 36px; 
 }
 
 .expense_homepage_header {
@@ -117,7 +116,7 @@
     background: var(--Primary-primary-300, #ACD39D);
 }
 
-.back_button {
+.back-button {
     width: 16px;
     height: 31.802px;
     flex-shrink: 0;

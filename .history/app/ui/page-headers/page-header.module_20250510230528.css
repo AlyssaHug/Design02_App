@@ -40,8 +40,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    text-indent: 20px;
-    line-height: 240px;
+    line-height: 36px; 
 }
 
 .expense_homepage_header {
@@ -117,16 +116,16 @@
     background: var(--Primary-primary-300, #ACD39D);
 }
 
-.back_button {
+.back-button {
     width: 16px;
     height: 31.802px;
     flex-shrink: 0;
     aspect-ratio: 16.00/31.80;
     box-sizing: border-box;
     position: relative;
-    left: 16px;
-    right: 370px;
-    top: 25px;
-    bottom: 863px;
+    border-left: 16px;
+    border-right: 370px;
+    border-top: 25px;
+    border-bottom: 863px;
 }
 
