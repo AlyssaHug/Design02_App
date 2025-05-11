@@ -20,7 +20,7 @@ export default function Page() {
                 </div>
                 <TransactionCard
                     time='12:20pm'
-                    category='Trans...'
+                    category='E-trans'
                     amount='35.68'
                     description='Paid back for food'
                 />
@@ -43,7 +43,7 @@ export default function Page() {
                     <p> January 8th</p>
                 </div>
                 <TransactionCard
-                    category='Trans...'
+                    category='E-trans'
                     amount='40.00'
                     description='Haidilao Hotpot'
                     time='2:53pm'

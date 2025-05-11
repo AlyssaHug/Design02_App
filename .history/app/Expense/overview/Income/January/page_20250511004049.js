@@ -43,7 +43,7 @@ export default function Page() {
                     <p> January 8th</p>
                 </div>
                 <TransactionCard
-                    category='Trans...'
+                    category='E-trans'
                     amount='40.00'
                     description='Haidilao Hotpot'
                     time='2:53pm'

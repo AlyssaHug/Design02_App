@@ -15,7 +15,7 @@ export default function TransactionCard({
                     <span className={styles.category}>{category}</span>
                     <div className={styles.details}>
                         <span>
-                            <b>{merchant}</b> ${amount}
+                            <b>{merchant}</b> - ${amount}
                         </span>
                         <span>{description}</span>
                     </div>

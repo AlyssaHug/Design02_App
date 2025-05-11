@@ -1,0 +1,10 @@
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noIncome {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
