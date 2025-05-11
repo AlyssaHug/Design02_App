@@ -4,7 +4,7 @@ import GoalProgress from "./ui/GoalCards/GoalCards";
 import Button from "./ui/Buttons/Buttons";
 export default function Page() {
     return (
-        <div>
+        <div className={styles.container}>
             <Nav />
             <Button
                 color='light'
@@ -15,3 +15,4 @@ export default function Page() {
         </div>
     );
 }
+
