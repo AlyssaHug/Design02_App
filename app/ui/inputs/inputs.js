@@ -6,7 +6,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function Input({
+export default function Inputs({
     type,
     value,
     onChange,
@@ -15,7 +15,6 @@ export default function Input({
     color,
     disabled,
     maxLength,
-    
 }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.text]: type === "text",

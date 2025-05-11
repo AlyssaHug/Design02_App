@@ -2,17 +2,14 @@ import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "@/app/Goals/GoalRecs/styles.module.css";
 import { Libre_Franklin } from "next/font/google";
+import Nav from "@/app/ui/navbar/navbar";
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 export default function page() {
     return (
-        <div>
-            <Button
-                color='light'
-                value='check out da home'
-                href='/'
-            />
+        <div className={styles.page}>
+            <Nav />
             <div className={styles.info}>
                 <h3>Based on your recent purchases:</h3>
             </div>

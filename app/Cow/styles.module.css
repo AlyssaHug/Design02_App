@@ -34,3 +34,13 @@
     top: 0;
     left: 50%;
 }
+
+.moo {
+    position: absolute;
+    z-index: 250;
+    margin-top: 40vh;
+    margin-left: 15vw;
+    width: 325.717px;
+    height: 255.451px;
+}
+

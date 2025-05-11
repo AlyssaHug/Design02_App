@@ -1,28 +1,18 @@
 "use client";
-import Coins from "./ui/coins/coins";
 import Nav from "./ui/navbar/navbar";
-
-import styles from "@/app/Cow/styles.module.css";
-
+import GoalProgress from "./ui/GoalCards/GoalCards";
+import Button from "./ui/Buttons/Buttons";
 export default function Page() {
     return (
         <div className={styles.container}>
             <Nav />
-            <div className={styles.sameRow}>
-                <img
-                    src='/left_arrow.svg'
-                    alt='back arrow'
-                />
-                <div className={styles.coins}>
-                    <Coins
-                        value='Coins: '
-                        coin={990}
-                    />
-                </div>
-            </div>
-            <div className={styles.background}>
-                <img src="/grassbg.svg" className={styles.backgroundImage} alt="grass background" />
-            </div>
+            <Button
+                color='light'
+                value='da shop'
+                href='/Cow/Shop'
+            />
+            <GoalProgress />
         </div>
     );
 }
+
