@@ -1,42 +1,28 @@
 import classNames from "classnames";
-import styles from "@/app/ui/inputs/inputs.module.css";
+import styles from "@/app/ui/TextField/TextField.module.css";
 import { Libre_Franklin } from "next/font/google";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function Inputs({
-    type,
-    value,
-    onChange,
-    placeholder,
-    size,
-    color,
-    disabled,
-    maxLength,
-}) {
+export default function TextField({ type, placeholder, size, color }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.text]: type === "text",
         [styles.number]: type === "number",
         [styles.password]: type === "password",
         [styles.email]: type === "email",
-        [styles.search]: type === "search",
         [styles.caption]: size === "caption",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light",
-        [styles.disabled]: disabled,
+        [styles.large]: size === "large",
     });
-
     return (
         <input
             className={inputClasses}
+            color={color}
             type={type}
-            value={value}
-            onChange={onChange}
-            placeholder={placeholder}
-            maxLength={maxLength}
-            disabled={disabled}
-        />
+            size={size}
+            placeholder={placeholder}></input>
     );
 }

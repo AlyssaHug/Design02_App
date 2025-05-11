@@ -1,14 +1,14 @@
 import GoalProgress from "@/app//ui/GoalCards/GoalCards";
 import { Goals } from "@/app/ui/GoalCards/GoalCards";
 import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
-import styles from "@/app/ui/GoalCards/GoalCards.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import Nav from "../ui/navbar/navbar";
 import React from "react";
+import styles from "@/app/Goals/styles.module.css";
 function page() {
     return (
-        <div>
+        <div className={styles.page}>
             <Nav />
             <h1>Welcome to da goals</h1>
 
