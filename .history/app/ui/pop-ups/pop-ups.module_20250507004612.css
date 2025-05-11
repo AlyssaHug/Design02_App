@@ -1,5 +1,5 @@
 .success {
-    color: var(--secondary-secondary-900, #28E256);
+    color: var(--secondary-secondary-900, #090F19);
     text-align: center;
     
     /* 28 px: Header 2 */
@@ -23,7 +23,7 @@
 }
 
 .warning {
-    color: var(--secondary-secondary-900, #FFB647);
+    color: var(--secondary-secondary-900, #090F19);
     text-align: center;
     
     /* 28 px: Header 2 */

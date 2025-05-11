@@ -27,6 +27,7 @@
 
 .header_title {
     color: var(--secondary-secondary-900, #090F19);
+
     /* Header 1: 32 px */
     font-family: Quicksand;
     font-size: 32px;
@@ -82,6 +83,7 @@
 .history_subtitle {
     color: var(--secondary-secondary-900, #090F19);
     text-align: center;
+
     /* Libre Franklin/heading 4 */
     font-family: "Libre Franklin";
     font-size: 20px;

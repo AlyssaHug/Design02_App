@@ -17,7 +17,6 @@ const PageHeader = ({ title, subtitle, icon }) => {
         [styles.goal_header]: icon === "goal_header",
         [styles.income_history_header]: icon === "income_history_header",
         [styles.transactions_this_month_header]: icon === "transactions_this_month_header",
-        [styles.history_subtitle]: icon === "history_subtitle",
     });
 
     return (
@@ -27,6 +26,6 @@ const PageHeader = ({ title, subtitle, icon }) => {
             </header>
         </div>
     );
-};
+}
 
 export default PageHeader;

@@ -27,6 +27,6 @@ const PageHeader = ({ title, subtitle, icon }) => {
             </header>
         </div>
     );
-};
+}
 
 export default PageHeader;
