@@ -10,76 +10,39 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Dressup({ style, onClick }) {
+export default function Dressup({ onAccessoryToggle }) {
+    const accessories = [
+        { imageSrc: "/moomoo-dressup/bow.png", value: "Bow" },
+        { imageSrc: "/moomoo-dressup/sunglasses.png", value: "Sunglasses" },
+        { imageSrc: "/moomoo-dressup/moustache.png", value: "Dapper" },
+        { imageSrc: "/Accessories/cat.svg", value: "Cat" },
+        { imageSrc: "/Accessories/dog.svg", value: "Dog" },
+        { imageSrc: "/Accessories/dress.svg", value: "Dress" },
+        { imageSrc: "/Accessories/flowercrown.svg", value: "Flower Crown" },
+        { imageSrc: "/Accessories/icecream.svg", value: "Ice Cream" },
+        { imageSrc: "/Accessories/suit.svg", value: "Suit" },
+    ];
+
     return (
         <div className={styles.dressup}>
-            <div className={styles.textfix}>
-            <Button
-                imageSrc="/moomoo-dressup/bow.png"
-                value="Bow"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.dressupButton}
-            />
-            </div>
-            <div className={styles.textfix}>
-            <Button
-                imageSrc="/moomoo-dressup/sunglasses.png"
-                value="Sunglasses"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.dressupButton}
-            />
-            </div>
-            <Button
-                imageSrc="/moomoo-dressup/moustache.png"
-                value="Dapper"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.dressupButton}
-            />
-            <Button
-                imageSrc="/Accessories/cat.svg"
-                value="Cat"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.large}
-            />
-                <Button
-                imageSrc="/Accessories/dog.svg"
-                value="Dog"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.large}
-            />
-                <Button
-                imageSrc="/Accessories/dress.svg"
-                value="Dress"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.large}
-            />
-                <Button
-                imageSrc="/Accessories/flowercrown.svg"
-                value="Flower Crown"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.large}
-            />
-                <Button
-                imageSrc="/Accessories/icecream.svg"
-                value="Ice Cream"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.large}
-            />
-                <Button
-                imageSrc="/Accessories/suit.svg"
-                value="Suit"
-                color="light-blue"
-                onClick={onClick}
-                customClass={styles.large}
-            />
+            {accessories.map((accessory, index) => (
+                <div
+                    key={accessory.value}
+                    className={classNames({
+                        [styles.textfix]: index < 2,
+                    })}
+                >
+                    <Button
+                        imageSrc={accessory.imageSrc}
+                        value={accessory.value}
+                        color="light-blue"
+                        customClass={classNames({
+                            [styles.dressupButton]: index < 3,
+                            [styles.large]: index >= 3,
+                        })}
+                    />
+                </div>
+            ))}
         </div>
     );
 }

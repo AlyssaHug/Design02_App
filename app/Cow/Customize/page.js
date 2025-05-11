@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Moomoo from "@/app/ui/moomoo/moomoo";
 import Coins from "@/app/ui/coins/coins";
 import styles from "@/app/Cow/Customize/styles.module.css";
@@ -25,7 +26,6 @@ export default function Dressmoo() {
             </div>
             <div className={styles.cowContainer}>
                 <div className={styles.cowback}></div>
-
                 <div className={styles.mooplace}>
                     <Moomoo
                         size="dressup"
@@ -37,11 +37,11 @@ export default function Dressmoo() {
             <div className={styles.removebutton}>
                 <Button
                     color="light-blue"
-                    value="Remove"
+                    value="Remove All"
                 />
-            </div >
+            </div>
             <div className={styles.buyanditems}>
-                <h1 className={styles.items} >Items</h1>
+                <h1 className={styles.items}>Items</h1>
                 <div className={styles.shop}>
                     <Button
                         type="shop"
