@@ -1,10 +1,10 @@
 "use client";
 import Moomoo from "@/app/ui/moomoo/moomoo";
 import Coins from "@/app/ui/coins/coins";
-import styles from "@/app/Customize/styles.module.css";
+import styles from "@/app/Cow/Customize/styles.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
 import Nav from "@/app/ui/navbar/navbar";
-import Dressup from "../ui/dressup/dressup";
+import Dressup from "@/app/ui/dressup/dressup";
 
 export default function Dressmoo() {
     return (

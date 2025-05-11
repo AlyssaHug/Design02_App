@@ -1,13 +1,18 @@
 "use client";
-import Dressmoo from "./Customize/page";
-import Dressup from "./ui/dressup/dressup";
+import CowPage from "./Cow/cow";
+import Moomoo from "./ui/moomoo/moomoo";
+import styles from "@/app/Cow/styles.module.css"
 
 export default function Page() {
     return (
-    <div>
-       <Dressmoo/>
-    </div>
+        <div>
+        <div className={styles.moo}>
+            <Moomoo
+            size="interaction"
+            src="/moomoonormal.svg"
+            />
+            </div>
+      <CowPage/>
+      </div>
     );
 }
-
-//help
