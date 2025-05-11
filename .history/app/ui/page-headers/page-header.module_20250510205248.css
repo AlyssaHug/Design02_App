@@ -116,7 +116,7 @@
     background: var(--Primary-primary-300, #ACD39D);
 }
 
-.back-button {
+.svg {
     width: 16px;
     height: 31.802px;
     flex-shrink: 0;
