@@ -1,18 +1,19 @@
 "use client";
-import classNames from "classnames";
-import Coins from "@/app/ui/coins/coins";
-import Nav from "@/app/ui/navbar/navbar";
-
+import CowPage from "./Cow/cow";
+import Moomoo from "./ui/moomoo/moomoo";
+import styles from "@/app/Cow/styles.module.css"
 
 export default function Page() {
     return (
         <div>
-            <Nav />
-            <Coins
-                type="coins"
-                value="Coins: "
-                coin={90}
+        <div className={styles.moo}>
+            <Moomoo
+            size="interaction"
+            src="/moomoonormal.svg"
             />
-        </div>
+            </div>
+      <CowPage/>
+      </div>
     );
 }
+
