@@ -10,7 +10,7 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Dressup({ onAccessoryToggle }) {
+export default function Dressup() {
     const accessories = [
         { imageSrc: "/moomoo-dressup/bow.png", value: "Bow" },
         { imageSrc: "/moomoo-dressup/sunglasses.png", value: "Sunglasses" },
