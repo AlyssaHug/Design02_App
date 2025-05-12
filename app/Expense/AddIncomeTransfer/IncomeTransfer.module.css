@@ -2,9 +2,4 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    max-width: 300px;
-    max-height: 90px;
-}
-.Button {
-    font-size: 12px;
 }

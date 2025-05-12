@@ -22,19 +22,21 @@ export default function Page() {
                     value='Cancel'
                     style='round'
                     size='caption'
-                    href='/overview/'
+                    href='/Expense/'
                 />
                 <Button
-                    color='light-blue'
+                    color='lightBlue'
                     value='Save and Add'
+                    type='expense'
                     style='round'
-                    href='/Expense/AddIncomeTransfer'
+                    href='/Expense/'
                 />
                 <Button
-                    color='light-blue'
-                    value='Add Income'
+                    color='lightBlue'
+                    value='Add Expense'
+                    type='expense'
                     style='round'
-                    href='/Expense/Income/May'
+                    href='/Expense/'
                 />
             </div>
             <Nav />

@@ -22,7 +22,7 @@ export default function Page() {
                     value='Cancel'
                     style='round'
                     size='caption'
-                    href='/overview/'
+                    href='/Expense/'
                 />
                 <Button
                     color='light-blue'
@@ -34,7 +34,7 @@ export default function Page() {
                     color='light-blue'
                     value='Add Income'
                     style='round'
-                    href='/Expense/Income/May'
+                    href='/Expense/'
                 />
             </div>
             <Nav />
