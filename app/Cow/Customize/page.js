@@ -11,9 +11,9 @@ export default function Dressmoo() {
         <div className={styles.container}>
             <Nav />
             <div className={styles.sameRow}>
-                <img
-                    src='/left_arrow.svg'
-                    alt='Back arrow'
+                <Button
+                    imageSrc="/left_arrow.svg"
+
                 />
                 <h1 className={styles.header}>Customize</h1>
                 <div className={styles.coins}>
@@ -25,7 +25,6 @@ export default function Dressmoo() {
             </div>
             <div className={styles.cowContainer}>
                 <div className={styles.cowback}></div>
-
                 <div className={styles.mooplace}>
                     <Moomoo
                         size='dressup'
