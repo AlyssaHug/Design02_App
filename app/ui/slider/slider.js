@@ -10,60 +10,41 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Slider({ style, onClick, isClicked }) {
+export default function Slider({ style, onClick, onButtonClick, isToggled }) {
     return (
         <div className={styles.slider}>
             <Button
-                value='Play'
-                color='light-blue'
-                onClick={onClick}
+                value="Play"
+                color="light-blue"
+                onClick={() => onImageChange()}
                 customClass={styles.lightBlueOverride}
-                isClicked={isClicked}
-                className={classNames(styles.button, {
-                    [styles.isClicked]: isClicked,
-                })}
             />
             <Button
-                value='Pet'
-                color='light-blue'
-                onClick={onClick}
+                value="Pet"
+                color="light-blue"
+                onClick={onButtonClick}
                 customClass={styles.lightBlueOverride}
-                isClicked={isClicked}
-                className={classNames(styles.button, {
-                    [styles.isClicked]: isClicked,
-                })}
+                className={isToggled ? 'toggled' : ''}
             />
             <Button
-                value='Feed'
-                color='light-blue'
+                value="Feed"
+                color="light-blue"
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
-                isClicked={isClicked}
-                className={classNames(styles.button, {
-                    [styles.isClicked]: isClicked,
-                })}
             />
             <Button
-                value='Customize'
-                color='light-blue'
+                value="Customize"
+                color="light-blue"
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
-                href='/Cow/Customize'
-                isClicked={isClicked}
-                className={classNames(styles.button, {
-                    [styles.isClicked]: isClicked,
-                })}
+                href="/Cow/Customize"
             />
             <Button
-                value='Shop'
-                color='light-blue'
+                value="Shop"
+                color="light-blue"
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
-                href='/Cow/Shop'
-                isClicked={isClicked}
-                className={classNames(styles.button, {
-                    [styles.isClicked]: isClicked,
-                })}
+                href="/Cow/Shop"
             />
         </div>
     );

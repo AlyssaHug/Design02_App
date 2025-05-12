@@ -29,7 +29,7 @@ export default function Button({
     href,
     target = "_self",
     className,
-    customClass, // Add customClass to props
+    customClass, 
 }) {
     console.log("Button rendered: ", { value, isBought, type, isClicked });
     function handleClick() {
@@ -43,7 +43,7 @@ export default function Button({
         styles.button,
         quicksand.variable,
         libreFranklin.variable,
-        customClass, // Include customClass here
+        customClass, 
         {
             [styles.view]: type === "view",
             [styles.outline]: type === "outline",
