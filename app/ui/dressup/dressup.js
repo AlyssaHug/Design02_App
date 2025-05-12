@@ -10,7 +10,7 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-//hi
+//hi pp
 export default function Dressup() {
     const accessories = [
         { imageSrc: "/moomoo-dressup/bow.png", value: "Bow" },
