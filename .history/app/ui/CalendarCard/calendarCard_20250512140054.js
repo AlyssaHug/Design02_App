@@ -1,8 +1,6 @@
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
 import styles from "@/app/ui/CalendarCard/calendarCard.module.css";
 import Button from "@/app/ui/Buttons/Buttons";
-import leftArrow from "@/public/left_arrow.svg";
-import rightArrow from "@/public/right_arrow.svg";
 
 export default function CalendarCard({ month, amount }) {
     return (
@@ -14,11 +12,11 @@ export default function CalendarCard({ month, amount }) {
             <div className={styles.pill}>TransactionsThis Month</div>
             <div className={styles.monthRow}>
                 <div className={styles.arrowLeft}>
-                    <Button imageSrc={leftArrow} />
+                    <Button imageSrc='\images\left_arrow.svg' />
                 </div>
                 <span className={styles.month}>{month}</span>
                 <div className={styles.arrowRight}>
-                    <Button imageSrc={rightArrow} />
+                    <Button imageSrc='\images\right_arrow.svg' />
                 </div>
             </div>
             <div className={styles.spentLabel}>You've Earned:</div>

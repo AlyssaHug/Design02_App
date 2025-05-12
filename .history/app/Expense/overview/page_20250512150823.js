@@ -31,7 +31,7 @@ export default function Page() {
                             value='income overview'
                             style='round'
                             color='light-blue'
-                            href='overview/Income/May'
+                            href='Income/May'
                         />
                     </div>
                     <div className={styles.buttonHistory}>

@@ -14,11 +14,11 @@ export default function CalendarCard({ month, amount }) {
             <div className={styles.pill}>TransactionsThis Month</div>
             <div className={styles.monthRow}>
                 <div className={styles.arrowLeft}>
-                    <Button imageSrc={leftArrow} />
+                    <Button imageSrc='left_arrow.svg' />
                 </div>
                 <span className={styles.month}>{month}</span>
                 <div className={styles.arrowRight}>
-                    <Button imageSrc={rightArrow} />
+                    <Button imageSrc='right_arrow.svg' />
                 </div>
             </div>
             <div className={styles.spentLabel}>You've Earned:</div>

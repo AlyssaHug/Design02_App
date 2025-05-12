@@ -31,7 +31,7 @@ export default function Page() {
                             value='income overview'
                             style='round'
                             color='light-blue'
-                            href='overview/Income/May'
+                            href='expense/overview/Income/May'
                         />
                     </div>
                     <div className={styles.buttonHistory}>
@@ -40,7 +40,7 @@ export default function Page() {
                             value='view history'
                             style='round'
                             color='light-blue'
-                            href='overview/Weekly/May'
+                            href='expense/overview/Weekly/May'
                         />
                     </div>
                     <div className={styles.buttonCalendar}>
@@ -49,7 +49,7 @@ export default function Page() {
                             value='calendar'
                             style='round'
                             color='light-blue'
-                            href='overview/MonthlyView'
+                            href='expense/overview/MonthlyView'
                         />
                     </div>
                 </div>

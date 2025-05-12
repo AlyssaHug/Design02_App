@@ -40,7 +40,7 @@ export default function Page() {
                             value='view history'
                             style='round'
                             color='light-blue'
-                            href='overview/Weekly/May'
+                            href='Weekly/May'
                         />
                     </div>
                     <div className={styles.buttonCalendar}>
@@ -49,7 +49,7 @@ export default function Page() {
                             value='calendar'
                             style='round'
                             color='light-blue'
-                            href='overview/MonthlyView'
+                            href='MonthlyView'
                         />
                     </div>
                 </div>
