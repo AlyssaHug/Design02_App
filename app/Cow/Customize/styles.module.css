@@ -1,0 +1,98 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    margin-bottom: 130px;
+}
+
+.sameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure it stays above the background */
+}
+
+.coins {
+    display: flex;
+    justify-content: end;
+    margin-right: -20px;
+    margin-top: 10px;
+}
+
+.header {
+    font-family: var(--font-quicksand);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.cowContainer {
+    position: relative;
+}
+
+.cowback {
+    background-color: #c1ddeb;
+    width: 370px;
+    height: 219px;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 1;
+}
+
+.mooplace {
+    position: relative;
+    margin-left: 90px;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+.removebutton {
+    width: 142px;
+    height: 50px;
+    margin-left: 160px;
+}
+
+.removebutton button {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0f1a2b;
+}
+
+.items {
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.shop button {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #274b28;
+    margin-top: 10px;
+}
+
+.buyanditems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}

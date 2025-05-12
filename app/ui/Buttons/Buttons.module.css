@@ -12,7 +12,11 @@
     justify-content: center;
     cursor: pointer;
 }
-
+.bought {
+    background-color: #5d874d;
+    color: #f3f9f0;
+    cursor: not-allowed;
+}
 .secondary {
     background-color: #9ccb89;
     color: #626c7c;

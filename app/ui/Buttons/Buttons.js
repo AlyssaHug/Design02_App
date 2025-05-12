@@ -20,18 +20,23 @@ export default function Button({
     size,
     value,
     coinValue,
+    disabled,
+    text,
     coins,
     onClick,
+    isBought,
     href,
     target = "_self",
+    className,
     customClass, // Add customClass to props
 }) {
+    console.log("Button rendered: ", { value, isBought, type });
     function handleClick() {
-        if (!href) {
-            console.error("href is missing");
+        if (href) {
+            window.open(href, target);
             return;
         }
-        window.open(href, target);
+        onClick();
     }
     const buttonClasses = classNames(
         styles.button,
@@ -49,8 +54,8 @@ export default function Button({
             [styles.light]: color === "light",
             [styles.secondary]: type === "secondary",
             [styles.round]: style === "round",
-            [styles.shop]: type === "shop",
-            [styles.bought]: type === "bought",
+            [styles.shop]: type === "shop" && !isBought,
+            [styles.bought]: isBought,
             [styles.nav]: color === "nav",
             [styles.navActive]: color === "nav-active",
             [styles.expense]: type === "expense",
@@ -68,7 +73,8 @@ export default function Button({
         <button
             className={buttonClasses}
             value={value}
-            onClick={handleClick}>
+            onClick={handleClick}
+            disabled={isBought}>
             {imageSrc && (
                 <img
                     src={imageSrc}

@@ -1,0 +1,21 @@
+.gridItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 24px;
+}
+.coins {
+    display: flex;
+    justify-content: end;
+}
+.shopItem {
+    padding: 16px 24px;
+}
+.page {
+    margin-bottom: 130px;
+}
+.sameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
