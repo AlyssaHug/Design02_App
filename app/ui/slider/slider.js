@@ -16,6 +16,7 @@ export default function Slider({
     onFeedClick,
     onCustomizeClick,
     onShopClick,
+    activeButton,
 }) {
     return (
         <div className={styles.slider}>
@@ -24,6 +25,7 @@ export default function Slider({
                 color="light-blue"
                 onClick={onPlayClick}
                 customClass={styles.lightBlueOverride}
+                
             />
             <Button
                 value="Pet"

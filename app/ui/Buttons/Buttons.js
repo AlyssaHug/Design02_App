@@ -31,7 +31,7 @@ export default function Button({
     className,
     customClass, 
 }) {
-    console.log("Button rendered: ", { value, isBought, type, isClicked });
+    console.log("Button rendered: ", { value, isBought, type, isClicked, className, customClass });
     function handleClick() {
         if (href) {
             window.open(href, target);
