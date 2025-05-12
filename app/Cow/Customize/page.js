@@ -36,7 +36,7 @@ export default function Dressmoo() {
             <div className={styles.removebutton}>
                 <Button
                     color="light-blue"
-                    value="Remove All"
+                    value="Remove"
                 />
             </div>
             <div className={styles.buyanditems}>
