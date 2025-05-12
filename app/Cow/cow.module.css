@@ -40,10 +40,18 @@
 
 .header {
     font-family: var(--font-quicksand);
-    font-size: 32px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px; 
     margin-left: 100px;
     margin-top: 10px;
+}
+
+.sameRow h1 {
+    margin-right: 55px;
+}
+
+.sameRow Button {
+    margin-top: px;
 }

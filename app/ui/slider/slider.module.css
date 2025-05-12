@@ -30,3 +30,8 @@
     scrollbar-width: none; /* Firefox */
     box-sizing: border-box;
 }
+
+.isClicked {
+    color: #e8e9ec;
+    background-color: #445063;
+}

@@ -10,7 +10,7 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Slider({ style, onClick }) {
+export default function Slider({ style, onClick, isClicked }) {
     return (
         <div className={styles.slider}>
             <Button
@@ -18,18 +18,30 @@ export default function Slider({ style, onClick }) {
                 color='light-blue'
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
+                isClicked={isClicked}
+                className={classNames(styles.button, {
+                    [styles.isClicked]: isClicked,
+                })}
             />
             <Button
                 value='Pet'
                 color='light-blue'
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
+                isClicked={isClicked}
+                className={classNames(styles.button, {
+                    [styles.isClicked]: isClicked,
+                })}
             />
             <Button
                 value='Feed'
                 color='light-blue'
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
+                isClicked={isClicked}
+                className={classNames(styles.button, {
+                    [styles.isClicked]: isClicked,
+                })}
             />
             <Button
                 value='Customize'
@@ -37,6 +49,10 @@ export default function Slider({ style, onClick }) {
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
                 href='/Cow/Customize'
+                isClicked={isClicked}
+                className={classNames(styles.button, {
+                    [styles.isClicked]: isClicked,
+                })}
             />
             <Button
                 value='Shop'
@@ -44,6 +60,10 @@ export default function Slider({ style, onClick }) {
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}
                 href='/Cow/Shop'
+                isClicked={isClicked}
+                className={classNames(styles.button, {
+                    [styles.isClicked]: isClicked,
+                })}
             />
         </div>
     );

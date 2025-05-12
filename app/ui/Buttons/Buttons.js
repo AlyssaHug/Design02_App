@@ -25,12 +25,13 @@ export default function Button({
     coins,
     onClick,
     isBought,
+    isClicked,
     href,
     target = "_self",
     className,
     customClass, // Add customClass to props
 }) {
-    console.log("Button rendered: ", { value, isBought, type });
+    console.log("Button rendered: ", { value, isBought, type, isClicked });
     function handleClick() {
         if (href) {
             window.open(href, target);
@@ -48,7 +49,7 @@ export default function Button({
             [styles.outline]: type === "outline",
             [styles.primary]: type === "primary",
             [styles.close]: type === "close",
-            [styles.lightBlue]: color === "light-blue",
+            [styles.lightBlue]: color === "light-blue" && !isClicked,
             [styles.darkBlue]: color === "dark-blue",
             [styles.dark]: color === "dark",
             [styles.light]: color === "light",
@@ -74,7 +75,8 @@ export default function Button({
             className={buttonClasses}
             value={value}
             onClick={handleClick}
-            disabled={isBought}>
+            disabled={isBought}
+            id={isClicked}>
             {imageSrc && (
                 <img
                     src={imageSrc}
