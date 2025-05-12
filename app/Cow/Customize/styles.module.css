@@ -1,7 +1,7 @@
 .container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
 .sameRow {
@@ -10,7 +10,11 @@
     justify-content: space-between;
     margin: 20px;
     position: relative;
-    z-index: 1; /* Ensure it stays above the background */
+    z-index: 1; 
+}
+
+.sameRow Button {
+    padding-right: 100px;
 }
 
 .coins {
@@ -26,9 +30,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
-    margin-left: 75px;
     margin-top: 10px;
+    padding-right: 50px;
 }
+
 
 .cowContainer {
     position: relative;
@@ -36,12 +41,12 @@
 
 .cowback {
     background-color: #c1ddeb;
-    width: 370px;
+    width: 400px;
     height: 219px;
     border-radius: 40px;
     position: absolute;
     top: 0;
-    left: 60px;
+    left: 45px;
     z-index: 1;
 }
 
@@ -55,7 +60,7 @@
 .removebutton {
     width: 142px;
     height: 50px;
-    margin-left: 160px;
+    margin-left: 170px;
 }
 
 .removebutton button {

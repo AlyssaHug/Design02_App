@@ -29,7 +29,7 @@ export default function Dressup() {
                 <div
                     key={accessory.value}
                     className={classNames({
-                        [styles.textfix]: index < 2,
+                        [styles.textfix]: index < 2,  // personal note for moi, this is because of the dumb styling of the svgs :(
                     })}
                 >
                     <Button
@@ -37,8 +37,8 @@ export default function Dressup() {
                         value={accessory.value}
                         color="light-blue"
                         customClass={classNames({
-                            [styles.dressupButton]: index < 3,
-                            [styles.large]: index >= 3,
+                            [styles.dressupButton]: index < 3, // as well as this
+                            [styles.large]: index >= 3, // and this BECAUSE I HAVE TO MAKE SURE THAT THESE STYLES APPLY BECAUSE OF DIFFERENT SVG SIZING AAAA
                         })}
                     />
                 </div>
