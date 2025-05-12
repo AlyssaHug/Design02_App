@@ -233,10 +233,8 @@ export default function Page() {
             <div>
                 <PageHeader
                     placeholder='Hello, John!'
-                    type="header_title"
-                    header="new_user_homepage"
                     >
-                </PageHeader>
+                    </PageHeader>
             </div>
             <div>
                 <Dropdown

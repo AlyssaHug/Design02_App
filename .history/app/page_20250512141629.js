@@ -236,7 +236,7 @@ export default function Page() {
                     type="header_title"
                     header="new_user_homepage"
                     >
-                </PageHeader>
+                    </PageHeader>
             </div>
             <div>
                 <Dropdown

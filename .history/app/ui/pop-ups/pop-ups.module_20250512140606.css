@@ -11,6 +11,7 @@
     flex-shrink: 0;
     border-radius: 20px;
     background: var(--Primary-primary-200, #C6E1BB);
+    bottom: 863px;
 }
 
 .popup_text {

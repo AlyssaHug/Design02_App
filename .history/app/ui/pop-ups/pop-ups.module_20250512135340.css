@@ -1,8 +1,8 @@
 .popup_background {
     width: 356px;
     height: 224px;
-    border-radius: 20px;
-    background: var(--Tertiary-tertiary-300, #6E866F);
+    border-radius: 24px;
+    background: var(--accent-white-accent-white-50, #FEFDFD);
 }
 
 .popup_foreground {

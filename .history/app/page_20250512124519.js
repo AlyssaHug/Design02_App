@@ -147,11 +147,6 @@ export default function Page() {
 
     return (
         <div>
-            <PopUp
-                element='background'
-                type='text'
-                message='Welcome to the app! We are so happy to have you here!'
-            />
             <Nav />
             <div className={styles.small}>
                 <Coins />
@@ -233,10 +228,8 @@ export default function Page() {
             <div>
                 <PageHeader
                     placeholder='Hello, John!'
-                    type="header_title"
-                    header="new_user_homepage"
                     >
-                </PageHeader>
+                    </PageHeader>
             </div>
             <div>
                 <Dropdown

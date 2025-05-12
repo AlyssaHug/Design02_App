@@ -20,7 +20,7 @@
     font-size: 24px;
     font-family: Quicksand;
     font-weight: 600;
-    line-height: 128px;
+    line-height: 28px;
     letter-spacing: 0%;
     text-align: center;
 }
@@ -99,7 +99,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 32px; 
-    text-indent: 20px;
 }
 
 .goal_homepage_header {

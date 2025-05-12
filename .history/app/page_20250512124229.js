@@ -147,11 +147,6 @@ export default function Page() {
 
     return (
         <div>
-            <PopUp
-                element='background'
-                type='text'
-                message='Welcome to the app! We are so happy to have you here!'
-            />
             <Nav />
             <div className={styles.small}>
                 <Coins />
@@ -216,12 +211,6 @@ export default function Page() {
                     onChange={() => {}}
                     placeholder='Enter your email'
                 />
-                <Input 
-                    className={styles.expense}
-                    type='text'
-                    onChange={() => {}}
-                    placeholder='Enter your expense'
-                />
             </div>
             <div className={styles.subheaderContent}>
                 <h3 className={styles.subheader}>Your cow friend!</h3>
@@ -233,10 +222,8 @@ export default function Page() {
             <div>
                 <PageHeader
                     placeholder='Hello, John!'
-                    type="header_title"
-                    header="new_user_homepage"
                     >
-                </PageHeader>
+                    </PageHeader>
             </div>
             <div>
                 <Dropdown

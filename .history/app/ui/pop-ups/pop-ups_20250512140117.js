@@ -29,11 +29,9 @@ const PopUp = ({ element, type, message, onClose }) => {
 
     return (
         <div className={styles.popup_background}>
-            <div className={styles.popup_foreground}>
                 <h2 className={styles.popup_text}
                 >{message}
                 </h2>
-                </div>
                     <button
                         onClick={handleClose}
                         className={styles.popup_dark_button}
