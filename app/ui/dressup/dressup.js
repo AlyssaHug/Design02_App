@@ -13,15 +13,15 @@ const quicksand = Quicksand({
 //hi pp
 export default function Dressup() {
     const accessories = [
-        { imageSrc: "/moomoo-dressup/bow.png", value: "Bow" },
-        { imageSrc: "/moomoo-dressup/sunglasses.png", value: "Sunglasses" },
-        { imageSrc: "/moomoo-dressup/moustache.png", value: "Dapper" },
-        { imageSrc: "/Accessories/cat.svg", value: "Cat" },
-        { imageSrc: "/Accessories/dog.svg", value: "Dog" },
-        { imageSrc: "/Accessories/dress.svg", value: "Dress" },
-        { imageSrc: "/Accessories/flowercrown.svg", value: "Flower Crown" },
-        { imageSrc: "/Accessories/icecream.svg", value: "Ice Cream" },
-        { imageSrc: "/Accessories/suit.svg", value: "Suit" },
+        { id: 1,imageSrc: "/moomoo-dressup/bow.png", value: "Bow" },
+        { id: 2,imageSrc: "/moomoo-dressup/sunglasses.png", value: "Sunglasses" },
+        { id: 3,imageSrc: "/moomoo-dressup/moustache.png", value: "Dapper" },
+        { id: 4,imageSrc: "/Accessories/cat.svg", value: "Cat" },
+        { id: 5,imageSrc: "/Accessories/dog.svg", value: "Dog" },
+        { id: 6,imageSrc: "/Accessories/dress.svg", value: "Dress" },
+        { id: 7,imageSrc: "/Accessories/flowercrown.svg", value: "Flower Crown" },
+        { id: 8,imageSrc: "/Accessories/icecream.svg", value: "Ice Cream" },
+        { id: 9,imageSrc: "/Accessories/suit.svg", value: "Suit" },
     ];
 
     return (

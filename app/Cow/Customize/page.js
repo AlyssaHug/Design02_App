@@ -48,7 +48,7 @@ export default function Dressmoo() {
                     />
                 </div>
             </div>
-            <div>
+            <div className={styles.DressupSlider}>
                 <Dressup />
             </div>
         </div>
