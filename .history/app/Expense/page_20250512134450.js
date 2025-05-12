@@ -1,0 +1,34 @@
+"use client";
+
+import Nav from "@/app/ui/navbar/navbar";
+import Button from "@/app/ui/Buttons/Buttons";
+import styles from "./expense.module.css";
+export default function Page() {
+    return (
+        <>
+            <div className={styles.buttonContainer}>
+                <Button
+                    type='expense'
+                    value='Overview'
+                    href='/Expense/overview'
+                />
+                <Button
+                    type='expense'
+                    value='Add Income Transfer'
+                    href='/Expense/AddIncomeTransfer'
+                />
+                <Button
+                    type='expense'
+                    value='Add Expenses'
+                    href='/Expense/AddExpenses'
+                />
+                <Button
+                    type='expense'
+                    value='View Expenses'
+                    href='/Expense/overview/MonthlyView'
+                />
+            </div>
+            <Nav />
+        </>
+    );
+}

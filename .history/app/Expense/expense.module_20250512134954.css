@@ -1,0 +1,24 @@
+.buttonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttonOverview {
+    margin: 5px;
+}
+.buttonOverview p {
+    padding: 30px;
+}
+
+.buttonAddIncome {
+    margin: 5px;
+}
+.buttonAddIncome p {
+    padding: 30px;
+}
+.buttonAddExpenses {
+    margin: 5px;
+}
+.buttonAddExpenses p {
+    padding: 30px;
+}
