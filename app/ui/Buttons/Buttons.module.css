@@ -76,6 +76,10 @@
     color: #f3f9f0;
     font-weight: 500;
 }
+.settings {
+    display: flex;
+    flex-direction: row;
+}
 /*====nav styles====*/
 .nav {
     color: #37502d;
