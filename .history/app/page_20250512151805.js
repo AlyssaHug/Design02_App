@@ -217,7 +217,7 @@ export default function Page() {
                     placeholder='Enter your email'
                 />
                 <Input 
-                    size='paragraph'
+                    className={styles.expense}
                     type='text'
                     onChange={() => {}}
                     placeholder='Enter your expense'

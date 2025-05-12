@@ -7,7 +7,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-const PageHeader = ({ type, header, text}) => {
+const PageHeader = ({ type, header }) => {
     const headerClasses = classNames(styles.header, libreFranklin.variable, {
         [styles.new_user_homepage_header]: header === "new_user_homepage",
         [styles.your_total_balance]: type === "your_total_balance",

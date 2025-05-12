@@ -211,13 +211,13 @@ export default function Page() {
             </div>
             <div>
                 <Input
-                    size='login'
+                    className={styles.login}
                     type='text'
                     onChange={() => {}}
                     placeholder='Enter your email'
                 />
                 <Input 
-                    size='paragraph'
+                    className={styles.expense}
                     type='text'
                     onChange={() => {}}
                     placeholder='Enter your expense'
@@ -235,7 +235,6 @@ export default function Page() {
                     placeholder='Hello, John!'
                     type="header_title"
                     header="new_user_homepage"
-                    text="Test"
                     >
                 </PageHeader>
             </div>
