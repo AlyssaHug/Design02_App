@@ -32,16 +32,18 @@ import classNames from "classnames";
                  customClass={styles.lightBlueOverride}
              />
               <Button
-                 value="Custom"
+                 value="Customize"
                  color="light-blue"
                  onClick={onClick}
                  customClass={styles.lightBlueOverride}
+                 href="/Cow/Customize"
              />
               <Button
                  value="Shop"
                  color="light-blue"
                  onClick={onClick}
                  customClass={styles.lightBlueOverride}
+                 href="/Cow/Shop"
              />
          </div>
      );

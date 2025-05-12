@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Moomoo from "@/app/ui/moomoo/moomoo";
 import Coins from "@/app/ui/coins/coins";
 import styles from "@/app/Cow/Customize/styles.module.css";
