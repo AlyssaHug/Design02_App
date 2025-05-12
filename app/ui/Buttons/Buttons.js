@@ -91,7 +91,14 @@ export default function Button({
         </button>
     );
 }
-export function SettingButton({ type, value, imageSrc, alt }) {
+export function SettingButton({
+    type,
+    value,
+    imageSrc,
+    alt,
+    href,
+    target = "_self",
+}) {
     function handleClick() {
         if (href) {
             window.open(href, target);

@@ -5,17 +5,16 @@ export default function Page() {
     return (
         <div>
             <Nav />
-            <h1>Hi there user!</h1>
+
             <div className={styles.divider}></div>
             <SettingButton
-                value='Settings'
-                imageSrc='right_arrow.svg'
+                value='Change password'
+                imageSrc='/right_arrow.svg'
                 type='settings'
-                href='/Profile/Settings'
             />
             <SettingButton
-                value='Linked Accounts'
-                imageSrc='right_arrow.svg'
+                value='Security Settings'
+                imageSrc='/right_arrow.svg'
                 type='settings'
             />
         </div>
