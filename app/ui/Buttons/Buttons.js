@@ -25,31 +25,34 @@ export default function Button({
     coins,
     onClick,
     isBought,
-    isClicked,
+    isCowActive,
     href,
     target = "_self",
     className,
-    customClass, 
+    customClass,
 }) {
-    console.log("Button rendered: ", { value, isBought, type, isClicked, className, customClass });
+    console.log("Button rendered: ", { value, isBought, type, isCowActive, className, customClass });
+
     function handleClick() {
         if (href) {
             window.open(href, target);
             return;
         }
-        onClick();
+        onClick && onClick();
     }
+
     const buttonClasses = classNames(
         styles.button,
         quicksand.variable,
         libreFranklin.variable,
-        customClass, 
+        customClass,
         {
             [styles.view]: type === "view",
             [styles.outline]: type === "outline",
             [styles.primary]: type === "primary",
             [styles.close]: type === "close",
-            [styles.lightBlue]: color === "light-blue" && !isClicked,
+            [styles.lightBlue]: color === "light-blue" && !isCowActive,
+            [styles.cowActive]: isCowActive, // Ensure cowActive is applied when isCowActive is true
             [styles.darkBlue]: color === "dark-blue",
             [styles.dark]: color === "dark",
             [styles.light]: color === "light",
@@ -63,10 +66,8 @@ export default function Button({
             [styles.home]: type === "home",
             [styles.caption]: size === "caption",
             [styles.cow]: color === "cow",
-            [styles.cowActive]: color === "cow-active",
             [styles.goalMoo]: type === "goalMoo",
-            [styles.coins]: type === "coins",
-            [styles.coins]: color === "coin-border",
+            [styles.coins]: type === "coins" || color === "coin-border",
         }
     );
 
@@ -76,14 +77,13 @@ export default function Button({
             value={value}
             onClick={handleClick}
             disabled={isBought}
-            id={isClicked}>
+        >
             {imageSrc && (
                 <img
                     src={imageSrc}
                     alt={alt}
                 />
             )}
-
             <span>
                 {coins}
                 {coinValue}
