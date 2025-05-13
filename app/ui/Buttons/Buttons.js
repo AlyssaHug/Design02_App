@@ -52,7 +52,7 @@ export default function Button({
             [styles.primary]: type === "primary",
             [styles.close]: type === "close",
             [styles.lightBlue]: color === "light-blue" && !isCowActive,
-            [styles.cowActive]: isCowActive, // Ensure cowActive is applied when isCowActive is true
+            [styles.cowActive]: isCowActive,
             [styles.darkBlue]: color === "dark-blue",
             [styles.dark]: color === "dark",
             [styles.light]: color === "light",

@@ -25,14 +25,14 @@ export default function Slider({
                 color="light-blue"
                 onClick={onPlayClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Play"} // Changed to isCowActive
+                isCowActive={activeButton === "Play"} 
             />
             <Button
                 value="Pet"
                 color="light-blue"
                 onClick={onPetClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Pet"} // Changed to isCowActive
+                isCowActive={activeButton === "Pet"} 
             />
             <Button
                 value="Feed"

@@ -1,3 +1,4 @@
+"use client";
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
 import Button from "@/app/ui/Buttons/Buttons";
@@ -10,7 +11,6 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-//hi pp
 export default function Dressup() {
     const accessories = [
         { imageSrc: "/moomoo-dressup/bow.png", value: "Bow" },
@@ -24,13 +24,18 @@ export default function Dressup() {
         { imageSrc: "/Accessories/suit.svg", value: "Suit" },
     ];
 
+    // Just so I know that the accessory is being clicked it's for my own sake to know they work lol
+    const handleButtonClick = () => {
+        alert(`Accessory selected`);
+    };
+
     return (
         <div className={styles.dressup}>
             {accessories.map((accessory, index) => (
                 <div
                     key={accessory.value}
                     className={classNames({
-                        [styles.textfix]: index < 2,  // personal note for moi, this is because of the dumb styling of the svgs :(
+                        [styles.textfix]: index < 2, // personal note for moi, this is because of the dumb styling of the svgs :(
                     })}
                 >
                     <Button
@@ -41,6 +46,7 @@ export default function Dressup() {
                             [styles.dressupButton]: index < 3, // as well as this
                             [styles.large]: index >= 3, // and this BECAUSE I HAVE TO MAKE SURE THAT THESE STYLES APPLY BECAUSE OF DIFFERENT SVG SIZING AAAA
                         })}
+                        onClick={() => handleButtonClick()}
                     />
                 </div>
             ))}
