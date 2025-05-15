@@ -44,17 +44,15 @@
     width: 24px;
     height: 24px;
     display: inline-block;
-    margin-right: 15px;
+    margin: 0 12px;
     user-select: none;
-    margin-bottom: 5px;
 }
 
 .arrowRight {
     width: 24px;
     height: 24px;
     display: inline-block;
-    margin-left: 5px;
-    margin-bottom: 5px;
+
     user-select: none;
 }
 
@@ -67,6 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .arrowRight button {
@@ -78,6 +77,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .arrowLeft img,

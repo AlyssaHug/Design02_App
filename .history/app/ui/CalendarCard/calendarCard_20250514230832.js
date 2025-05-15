@@ -6,12 +6,32 @@ import leftArrow from "@/public/left_arrow.svg";
 import rightArrow from "@/public/right_arrow.svg";
 import { useRouter } from "next/navigation";
 
-export default function CalendarCard({ month, amount, prevMonth, nextMonth }) {
-    // instead of page, name the props prevMonth, nextMonth
+export default function CalendarCard({ month, amount }) {
     const router = useRouter();
 
-    const navigateToMonth = (month) => {
-        router.push(month);
+    const months = {
+        January: "/Expense/overview/Weekly/January",
+        February: "/Expense/overview/Weekly/February",
+        March: "/Expense/overview/Weekly/March",
+        April: "/Expense/overview/Weekly/April",
+        May: "/Expense/overview/Weekly/May",
+    };
+
+    const monthOrder = ["January", "February", "March", "April", "May"];
+    const currentIndex = monthOrder.indexOf(month);
+
+    const prevPage = () => {
+        if (currentIndex > 0) {
+            const prevMonth = monthOrder[currentIndex - 1];
+            router.push(months[prevMonth]);
+        }
+    };
+
+    const nextPage = () => {
+        if (currentIndex < monthOrder.length - 1) {
+            const nextMonth = monthOrder[currentIndex + 1];
+            router.push(months[nextMonth]);
+        }
     };
 
     return (
@@ -24,15 +44,15 @@ export default function CalendarCard({ month, amount, prevMonth, nextMonth }) {
             <div className={styles.monthRow}>
                 <div className={styles.arrowLeft}>
                     <Button
-                        imageSrc='/left_arrow.svg'
-                        onClick={() => navigateToMonth(prevMonth)}
+                        imageSrc={leftArrow}
+                        onClick={prevPage}
                     />
                 </div>
                 <span className={styles.month}>{month}</span>
                 <div className={styles.arrowRight}>
                     <Button
-                        imageSrc='/right_arrow.svg'
-                        onClick={() => navigateToMonth(nextMonth)}
+                        imageSrc={rightArrow}
+                        onClick={nextPage}
                     />
                 </div>
             </div>

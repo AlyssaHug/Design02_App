@@ -11,10 +11,11 @@ import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 import PopUps from "@/app/ui/pop-ups/pop-ups";
-import PageHeader from "@/app/ui/page-headers/page-header";
-import Input from "@/app/ui/inputs/inputs";
+import PageHeader from "@/app/ui/page-header/page-header";
+import Input from "@/app/ui/input/input";
 
 import Nav from "./ui/navbar/navbar";
+import GoalProgress from "./ui/GoalCards/GoalCards";
 import TextField from "./ui/TextField/TextField";
 export default function Page() {
     const categoryOptions = [

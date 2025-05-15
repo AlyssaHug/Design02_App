@@ -18,7 +18,9 @@ export default function Page() {
                     month='January'
                     amount='440.02'
                     spentOrEarned='Spent'
-                    nextMonth='February'
+                    onClick={() => {
+                        router.push("/Expense/overview/Weekly/February");
+                    }}
                 />
             </div>
             <div className={styles.transactionContainer}>

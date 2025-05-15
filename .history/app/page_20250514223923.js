@@ -11,10 +11,12 @@ import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 import PopUps from "@/app/ui/pop-ups/pop-ups";
-import PageHeader from "@/app/ui/page-headers/page-header";
-import Input from "@/app/ui/inputs/inputs";
+import PageHeader from "@/app/ui/page-header/page-header";
+import Input from "@/app/ui/input/input";
 
 import Nav from "./ui/navbar/navbar";
+import GoalProgress from "./ui/GoalCards/GoalCards";
+import Button from "./ui/Buttons/Buttons";
 import TextField from "./ui/TextField/TextField";
 export default function Page() {
     const categoryOptions = [
@@ -159,9 +161,6 @@ export default function Page() {
                     value='check out da Rewards'
                     href='/Rewards'
                 />
-                <Input />
-                <PopUps />
-                <PageHeader />
             </div>
             <Button
                 value='JANUARY'
@@ -177,5 +176,11 @@ export default function Page() {
             <Button imageSrc='/right_arrow.svg' />
             <GoalProgress />
         </div>
+        <Input/>
+        <PopUps/>
+        <PageHeader/>
+        <TextField/>
+       
+        
     );
 }

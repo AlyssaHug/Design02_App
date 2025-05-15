@@ -6,12 +6,29 @@ import leftArrow from "@/public/left_arrow.svg";
 import rightArrow from "@/public/right_arrow.svg";
 import { useRouter } from "next/navigation";
 
-export default function CalendarCard({ month, amount, prevMonth, nextMonth }) {
-    // instead of page, name the props prevMonth, nextMonth
+export default function CalendarCard({ month, amount, prevPage, nextPage }) {
     const router = useRouter();
+    const months = {
+        january: { name: "January", path: "/Expense/overview/Weekly/January" },
+        february: {
+            name: "February",
+            path: "/Expense/overview/Weekly/February",
+        },
+        march: { name: "March", path: "/Expense/overview/Weekly/March" },
+        april: { name: "April", path: "/Expense/overview/Weekly/April" },
+        may: { name: "May", path: "/Expense/overview/Weekly/May" },
+    };
 
-    const navigateToMonth = (month) => {
-        router.push(month);
+    const handlePrevPage = () => {
+        if (prevPage) {
+            prevPage();
+        }
+    };
+
+    const handleNextPage = () => {
+        if (nextPage) {
+            nextPage();
+        }
     };
 
     return (
@@ -24,15 +41,19 @@ export default function CalendarCard({ month, amount, prevMonth, nextMonth }) {
             <div className={styles.monthRow}>
                 <div className={styles.arrowLeft}>
                     <Button
-                        imageSrc='/left_arrow.svg'
-                        onClick={() => navigateToMonth(prevMonth)}
+                        imageSrc={leftArrow}
+                        onClick={handlePrevPage}
+                        type='nav'
+                        alt='Previous month'
                     />
                 </div>
                 <span className={styles.month}>{month}</span>
                 <div className={styles.arrowRight}>
                     <Button
-                        imageSrc='/right_arrow.svg'
-                        onClick={() => navigateToMonth(nextMonth)}
+                        imageSrc={rightArrow}
+                        onClick={handleNextPage}
+                        type='nav'
+                        alt='Next month'
                     />
                 </div>
             </div>

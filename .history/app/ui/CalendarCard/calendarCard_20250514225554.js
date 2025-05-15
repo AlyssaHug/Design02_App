@@ -6,13 +6,8 @@ import leftArrow from "@/public/left_arrow.svg";
 import rightArrow from "@/public/right_arrow.svg";
 import { useRouter } from "next/navigation";
 
-export default function CalendarCard({ month, amount, prevMonth, nextMonth }) {
-    // instead of page, name the props prevMonth, nextMonth
+export default function CalendarCard({ month, amount, onPrev, onNext }) {
     const router = useRouter();
-
-    const navigateToMonth = (month) => {
-        router.push(month);
-    };
 
     return (
         <div className={styles.container}>
@@ -24,15 +19,17 @@ export default function CalendarCard({ month, amount, prevMonth, nextMonth }) {
             <div className={styles.monthRow}>
                 <div className={styles.arrowLeft}>
                     <Button
-                        imageSrc='/left_arrow.svg'
-                        onClick={() => navigateToMonth(prevMonth)}
+                        imageSrc={leftArrow}
+                        alt='Previous Month'
+                        onClick={onPrev}
                     />
                 </div>
                 <span className={styles.month}>{month}</span>
                 <div className={styles.arrowRight}>
                     <Button
-                        imageSrc='/right_arrow.svg'
-                        onClick={() => navigateToMonth(nextMonth)}
+                        imageSrc={rightArrow}
+                        alt='Next Month'
+                        onClick={onNext}
                     />
                 </div>
             </div>

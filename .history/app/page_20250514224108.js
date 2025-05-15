@@ -11,7 +11,7 @@ import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 import PopUps from "@/app/ui/pop-ups/pop-ups";
-import PageHeader from "@/app/ui/page-headers/page-header";
+import PageHeader from "@/app/ui/page-header/page-header";
 import Input from "@/app/ui/inputs/inputs";
 
 import Nav from "./ui/navbar/navbar";

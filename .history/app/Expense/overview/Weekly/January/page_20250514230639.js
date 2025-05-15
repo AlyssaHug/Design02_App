@@ -18,7 +18,7 @@ export default function Page() {
                     month='January'
                     amount='440.02'
                     spentOrEarned='Spent'
-                    nextMonth='February'
+                    onClick={nextPage}
                 />
             </div>
             <div className={styles.transactionContainer}>

@@ -10,6 +10,14 @@ import { useRouter } from "next/navigation";
 export default function Page() {
     const router = useRouter();
 
+    const handlePrevMonth = () => {
+        router.push("/Expense/overview/Weekly/February");
+    };
+
+    const handleNextMonth = () => {
+        router.push("/Expense/overview/Weekly/April");
+    };
+
     return (
         <div>
             <Button
@@ -23,10 +31,8 @@ export default function Page() {
                     amount='188.90'
                     state='Transactions'
                     spentOrEarned='Spent'
-                    onPrev={() =>
-                        router.push("/Expense/overview/Weekly/February")
-                    }
-                    onNext={() => router.push("/Expense/overview/Weekly/April")}
+                    onPrev={handlePrevMonth}
+                    onNext={handleNextMonth}
                 />
             </div>
             <div className={styles.transactionContainer}>
