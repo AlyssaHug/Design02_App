@@ -6,3 +6,8 @@
     font-size: 16px;
     padding-left: 20px;
 }
+.title {
+    font-family: var(--font-libre-franklin);
+    font-size: 20px;
+    padding: 4px 8px;
+}

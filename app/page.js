@@ -2,17 +2,18 @@
 import Nav from "./ui/navbar/navbar";
 import GoalProgress from "./ui/GoalCards/GoalCards";
 import Button from "./ui/Buttons/Buttons";
+import TextField from "./ui/TextField/TextField";
 export default function Page() {
     return (
-        <div className={styles.container}>
+        <div>
             <Nav />
             <Button
                 color='light'
                 value='da shop'
                 href='/Cow/Shop'
             />
+            <Button imageSrc='/right_arrow.svg' />
             <GoalProgress />
         </div>
     );
 }
-

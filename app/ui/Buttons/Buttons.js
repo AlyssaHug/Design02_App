@@ -30,7 +30,7 @@ export default function Button({
     className,
     customClass, // Add customClass to props
 }) {
-    console.log("Button rendered: ", { value, isBought, type });
+    console.log("Button rendered: ", { value, isBought, type, alt, imageSrc });
     function handleClick() {
         if (href) {
             window.open(href, target);
@@ -66,6 +66,7 @@ export default function Button({
             [styles.goalMoo]: type === "goalMoo",
             [styles.coins]: type === "coins",
             [styles.coins]: color === "coin-border",
+            [styles.settings]: type === "settings",
         }
     );
 
@@ -87,6 +88,44 @@ export default function Button({
                 {coinValue}
             </span>
             <p>{value}</p>
+        </button>
+    );
+}
+export function SettingButton({
+    type,
+    value,
+    imageSrc,
+    alt,
+    href,
+    target = "_self",
+}) {
+    function handleClick() {
+        if (href) {
+            window.open(href, target);
+            return;
+        }
+        onClick();
+    }
+    const settingButtonClasses = classNames(
+        styles.settingButton,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.settings]: type === "settings",
+        }
+    );
+    return (
+        <button
+            className={settingButtonClasses}
+            value={value}
+            onClick={handleClick}>
+            <p>{value}</p>
+            {imageSrc && (
+                <img
+                    src={imageSrc}
+                    alt={alt}
+                />
+            )}
         </button>
     );
 }

@@ -6,7 +6,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function TextField({ type, placeholder, size, color }) {
+export default function TextField({ value, type, placeholder, size, color }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.text]: type === "text",
         [styles.number]: type === "number",
@@ -18,11 +18,14 @@ export default function TextField({ type, placeholder, size, color }) {
         [styles.large]: size === "large",
     });
     return (
-        <input
-            className={inputClasses}
-            color={color}
-            type={type}
-            size={size}
-            placeholder={placeholder}></input>
+        <div>
+            <h3 className={styles.title}>{value}</h3>
+            <input
+                className={inputClasses}
+                color={color}
+                type={type}
+                size={size}
+                placeholder={placeholder}></input>
+        </div>
     );
 }
