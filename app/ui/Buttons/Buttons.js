@@ -106,8 +106,8 @@ export function SettingButton({
         }
         onClick();
     }
-    const buttonClasses = classNames(
-        styles.button,
+    const settingButtonClasses = classNames(
+        styles.settingButton,
         quicksand.variable,
         libreFranklin.variable,
         {
@@ -116,7 +116,7 @@ export function SettingButton({
     );
     return (
         <button
-            className={buttonClasses}
+            className={settingButtonClasses}
             value={value}
             onClick={handleClick}>
             <p>{value}</p>

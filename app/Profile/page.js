@@ -3,7 +3,7 @@ import { SettingButton } from "@/app/ui/Buttons/Buttons";
 import styles from "@/app/Profile/styles.module.css";
 export default function Page() {
     return (
-        <div>
+        <div className={styles.content}>
             <Nav />
             <h1>Hi there user!</h1>
             <div className={styles.divider}></div>
