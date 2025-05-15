@@ -27,6 +27,10 @@
 }
 
 .popup_light_button {
+    display: flex;
+    justify-content: center; 
+    gap: 16px;
+    margin-top: 24px; 
     position: relative; 
     width: 141.602px;
     height: 49.22px;
@@ -46,20 +50,16 @@
 }
 
 .popup_dark_button {
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+    margin-top: 24px; 
     position: relative; 
     width: 141.602px;
     height: 49.22px;
     flex-shrink: 0;
     border-radius: 15px;
     background: #4B5961;
-}
-
-.popup_buttons {
-    display: flex;
-    flex-direction: row;   
-    justify-content: center; 
-    gap: 16px;              
-    margin-top: 104px;
 }
 
 .popup_dark_button_text {
@@ -91,13 +91,5 @@
     flex-shrink: 0;
     border-radius: 12px;
     background: var(--Primary-primary-100, #D9EBD1);
-}
-
-.edit_button {
-    width: 141.602px;
-    height: 49.22px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    border: 2px solid var(--accent-blue-accent-blue-900, #4B5961);
 }
 

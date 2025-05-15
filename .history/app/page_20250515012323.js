@@ -148,23 +148,11 @@ export default function Page() {
     return (
         <div>
             <PopUp
-                message="Hello?"
-                onClose={() => {}}
-                buttons={[
-                    {
-                    label: "Cancel",
-                    className: "edit_button",
-                    textClassName: "popup_light_button_text",
-                    onClick: () => alert("Cancelled"),
-                    },
-                    {
-                    label: "Confirm",
-                    className: "popup_dark_button",
-                    textClassName: "popup_dark_button_text",
-                    onClick: () => alert("Confirmed"),
-                    },
-                ]}
-                />
+                type='dark-button-text'
+                message='Welcome to the app! We are so happy to have you here!'
+                button='dark-button-r'
+                description='Close'
+            />
             <Nav />
             <div className={styles.small}>
                 <Coins />

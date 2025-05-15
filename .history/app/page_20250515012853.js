@@ -148,18 +148,18 @@ export default function Page() {
     return (
         <div>
             <PopUp
-                message="Hello?"
+                message="Are you sure?"
                 onClose={() => {}}
                 buttons={[
                     {
                     label: "Cancel",
-                    className: "edit_button",
+                    className: "popup_light_button_left",
                     textClassName: "popup_light_button_text",
                     onClick: () => alert("Cancelled"),
                     },
                     {
                     label: "Confirm",
-                    className: "popup_dark_button",
+                    className: "popup_dark_button_right",
                     textClassName: "popup_dark_button_text",
                     onClick: () => alert("Confirmed"),
                     },

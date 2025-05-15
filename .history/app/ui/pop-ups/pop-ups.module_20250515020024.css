@@ -101,3 +101,12 @@
     border: 2px solid var(--accent-blue-accent-blue-900, #4B5961);
 }
 
+.edit_button_text {
+    color: #4B5961;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -27,12 +27,14 @@
 }
 
 .popup_light_button {
-    position: relative; 
+    position: absolute;
     width: 141.602px;
     height: 49.22px;
     flex-shrink: 0;
     border-radius: 15px;
     background: var(--accent-blue-accent-blue-500, #B2D4E6);
+    left: 50px;
+    top: 150px;
 }
 
 .popup_light_button_text {
@@ -45,21 +47,37 @@
     line-height: 20px; 
 }
 
-.popup_dark_button {
-    position: relative; 
+.popup_dark_button_center {
+    position: absolute;
     width: 141.602px;
     height: 49.22px;
     flex-shrink: 0;
     border-radius: 15px;
     background: #4B5961;
+    top: 135px;
+    left: 100px;
 }
 
-.popup_buttons {
-    display: flex;
-    flex-direction: row;   
-    justify-content: center; 
-    gap: 16px;              
-    margin-top: 104px;
+.popup_dark_button_left {
+    position: absolute;
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #4B5961;
+    top: 135px;
+    left: 8px;
+}
+
+.popup_dark_button_right {
+    position: absolute;
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #4B5961;
+    top: 135px;
+    left: 200px;
 }
 
 .popup_dark_button_text {
@@ -71,33 +89,3 @@
     font-weight: 400;
     line-height: 20px; 
 }
-
-.popup_edit_categories_background {
-    width: 363px;
-    height: 652px;
-    flex-shrink: 0;
-}
-
-.remove_category_button{
-    width: 156px;
-    height: 35px;
-    flex-shrink: 0;
-    background: var(--accent-blue-accent-blue-200, #DCEBF4);
-}
-
-.category_text_field{
-    width: 326px;
-    height: 52px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    background: var(--Primary-primary-100, #D9EBD1);
-}
-
-.edit_button {
-    width: 141.602px;
-    height: 49.22px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    border: 2px solid var(--accent-blue-accent-blue-900, #4B5961);
-}
-

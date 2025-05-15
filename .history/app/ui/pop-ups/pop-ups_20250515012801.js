@@ -7,7 +7,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-const PopUp = ({ buttons, message, onClose }) => {
+const PopUp = ({ buttons, type, message, onClose, description}) => {
     const [isVisible, setIsVisible] = useState(true);
 
     const handleClose = (handler) => {
@@ -18,16 +18,29 @@ const PopUp = ({ buttons, message, onClose }) => {
 
     if (!isVisible) return null;
 
+    const popUpClasses = classNames(styles.popUp, libreFranklin.variable, {
+        [styles.popup_text]: type === "text",
+        [styles.popup_light_button]: button === "light-button",
+        [styles.popup_light_button_center]: button === "light-button-c",
+        [styles.popup_light_button_left]: button === "light-button-l",
+        [styles.popup_light_button_right]: button === "light-button-r",
+        [styles.popup_light_button_text]: type === "light-button-text",
+        [styles.popup_dark_button_center]: button === "dark-button-c",
+        [styles.popup_dark_button_left]: button === "dark-button-l",
+        [styles.popup_dark_button_right]: button === "dark-button-r",
+        [styles.popup_dark_button_text]: type === "dark-button-text",
+    });
+
     return (
         <div className={styles.popup_background}>
             <div className={styles.popup_foreground}>
                 <h2 className={styles.popup_text}>{message}</h2>
-                <div className={styles.popup_buttons}>
+                <div>
                     {buttons.map((btn, idx) => {
                         const btnClasses = classNames(
                             libreFranklin.variable,
                             styles[btn.className],
-                            styles[btn.textClassName]
+                            styles[btn.textClassName] 
                         );
                         return (
                             <button
@@ -45,6 +58,8 @@ const PopUp = ({ buttons, message, onClose }) => {
         </div>
     );
 };
+
+
 
 export default PopUp;
 export { PopUp };

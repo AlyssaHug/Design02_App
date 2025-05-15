@@ -154,7 +154,7 @@ export default function Page() {
                     {
                     label: "Cancel",
                     className: "edit_button",
-                    textClassName: "popup_light_button_text",
+                    textClassName: "edit_button_text",
                     onClick: () => alert("Cancelled"),
                     },
                     {

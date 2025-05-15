@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from '@/app/Homepage/styles.module.css';
 import Nav from '../ui/navbar/navbar';
+import { Libre_Franklin } from 'next/font/google';
 function page() {
   return (
     <div>

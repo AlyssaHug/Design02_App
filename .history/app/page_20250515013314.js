@@ -153,13 +153,13 @@ export default function Page() {
                 buttons={[
                     {
                     label: "Cancel",
-                    className: "edit_button",
+                    className: "popup_light_button_left",
                     textClassName: "popup_light_button_text",
                     onClick: () => alert("Cancelled"),
                     },
                     {
                     label: "Confirm",
-                    className: "popup_dark_button",
+                    className: "popup_dark_button_right",
                     textClassName: "popup_dark_button_text",
                     onClick: () => alert("Confirmed"),
                     },
