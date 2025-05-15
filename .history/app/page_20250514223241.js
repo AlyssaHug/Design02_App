@@ -253,8 +253,6 @@ export default function Page() {
                 />
             </div>
             <pop-ups />
-            <PageHeader />
-            <Input />
         </div>
     );
 }

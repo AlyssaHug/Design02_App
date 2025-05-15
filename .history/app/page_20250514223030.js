@@ -10,9 +10,6 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
 import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
-import PopUps from "@/app/ui/pop-ups/pop-ups";
-import PageHeader from "@/app/ui/page-header/page-header";
-import Input from "@/app/ui/input/input";
 
 import Nav from "./ui/navbar/navbar";
 export default function Page() {
@@ -252,9 +249,6 @@ export default function Page() {
                     placeholder='Select interaction'
                 />
             </div>
-            <pop-ups />
-            <PageHeader />
-            <Input />
-        </div>
+            <pop-ups/>
     );
 }
