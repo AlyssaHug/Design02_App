@@ -31,7 +31,7 @@ export default function Button({
     className,
     customClass,
 }) {
-    console.log("Button rendered: ", { value, isBought, type, isCowActive, className, customClass });
+    console.log("Button rendered: ", { value, isBought, type, imageSrc, alt, isCowActive, className, customClass });
 
     function handleClick() {
         if (href) {
@@ -68,6 +68,8 @@ export default function Button({
             [styles.cow]: color === "cow",
             [styles.goalMoo]: type === "goalMoo",
             [styles.coins]: type === "coins" || color === "coin-border",
+            [styles.coins]: color === "coin-border",
+            [styles.settings]: type === "settings",
         }
     );
 
@@ -92,3 +94,42 @@ export default function Button({
         </button>
     );
 }
+export function SettingButton({
+    type,
+    value,
+    imageSrc,
+    alt,
+    href,
+    target = "_self",
+}) {
+    function handleClick() {
+        if (href) {
+            window.open(href, target);
+            return;
+        }
+        onClick();
+    }
+    const settingButtonClasses = classNames(
+        styles.settingButton,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.settings]: type === "settings",
+        }
+    );
+    return (
+        <button
+            className={settingButtonClasses}
+            value={value}
+            onClick={handleClick}>
+            <p>{value}</p>
+            {imageSrc && (
+                <img
+                    src={imageSrc}
+                    alt={alt}
+                />
+            )}
+        </button>
+    );
+}
+

@@ -64,6 +64,7 @@ export default function Nav({ size, href }) {
                     color='nav'
                     imageSrc='/navbar-icons/profile.svg'
                     size='profile'
+                    href='/Profile'
                 />
             </div>
         </div>

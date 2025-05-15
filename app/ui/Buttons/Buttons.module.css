@@ -76,6 +76,17 @@
     color: #f3f9f0;
     font-weight: 500;
 }
+.settings {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-libre-franklin);
+    justify-content: space-between;
+}
+.settingButton {
+    padding: 12px;
+}
 /*====nav styles====*/
 .nav {
     color: #37502d;
