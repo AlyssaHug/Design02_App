@@ -222,3 +222,8 @@ input:checked + .slider:after {
     right: auto;
     left: 10px;
 }
+
+.cowActive {
+    background-color:#445063 !important;
+    color:#b2d4e6 !important; /* HAHAHA YOU WORK NOW I WAS JUST CALLING YOU WRONG :'D - thea */
+}

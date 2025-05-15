@@ -10,40 +10,52 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Slider({ style, onClick }) {
+export default function Slider({
+    onPlayClick,
+    onPetClick,
+    onFeedClick,
+    onCustomizeClick,
+    onShopClick,
+    activeButton,
+}) {
     return (
         <div className={styles.slider}>
             <Button
-                value='Play'
-                color='light-blue'
-                onClick={onClick}
+                value="Play"
+                color="light-blue"
+                onClick={onPlayClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Play"} 
             />
             <Button
-                value='Pet'
-                color='light-blue'
-                onClick={onClick}
+                value="Pet"
+                color="light-blue"
+                onClick={onPetClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Pet"} 
             />
             <Button
-                value='Feed'
-                color='light-blue'
-                onClick={onClick}
+                value="Feed"
+                color="light-blue"
+                onClick={onFeedClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Eat"} 
             />
             <Button
-                value='Custom'
-                color='light-blue'
-                onClick={onClick}
+                value="Customize"
+                color="light-blue"
+                onClick={onCustomizeClick}
                 customClass={styles.lightBlueOverride}
-                href='/Cow/Customize'
+                isCowActive={activeButton === "Customize"} 
+                href="/Cow/Customize"
             />
             <Button
-                value='Shop'
-                color='light-blue'
-                onClick={onClick}
+                value="Shop"
+                color="light-blue"
+                onClick={onShopClick}
                 customClass={styles.lightBlueOverride}
-                href='/Cow/Shop'
+                isCowActive={activeButton === "Shop"} 
+                href="/Cow/Shop"
             />
         </div>
     );

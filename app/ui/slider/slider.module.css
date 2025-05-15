@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 800 !important;
     line-height: 20px !important;
-    background-color: #b2d4e6;
+
     border-radius: 12px;
     display: flex !important;
     flex-direction: row !important;
@@ -17,9 +17,9 @@
 .slider {
     display: flex;
     flex-direction: row;
-    gap: 12px; /* Keep from your latest code */
-    margin-left: 0px; /* Keep from your latest code */
-    flex-wrap: nowrap; /* Single row for carousel */
+    gap: 12px; 
+    margin-left: 0px; 
+    flex-wrap: nowrap; 
     padding-left: 0px;
     margin-left: 0px;
     overflow-x: auto;
@@ -27,6 +27,7 @@
     cursor: grab;
     user-select: none;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; 
     box-sizing: border-box;
 }
+
