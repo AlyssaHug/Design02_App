@@ -4,6 +4,7 @@ import styles from "@/app/Cow/Shop/styles.module.css";
 import ShopItem from "@/app/ui/ShopItem/ShopItem";
 import Nav from "@/app/ui/navbar/navbar";
 import Coins from "@/app/ui/coins/coins";
+import Button from "@/app/ui/Buttons/Buttons";
 import { useState, useEffect } from "react";
 
 const shopItems = [
@@ -125,10 +126,12 @@ export default function Page() {
         <div className={styles.page}>
             <Nav />
             <div className={styles.sameRow}>
-                <img
-                    src='/left_arrow.svg'
-                    alt='back arrow'
-                />
+                <div className={styles.arrow}>
+                    <Button
+                        imageSrc='/left_arrow.svg'
+                        href='/Cow/Customize'
+                    />
+                </div>
                 <div className={styles.coins}>
                     <Coins
                         value='Coins: '

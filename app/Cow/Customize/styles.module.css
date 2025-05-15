@@ -96,3 +96,8 @@
     position: relative;
     z-index: 1;
 }
+.arrow {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+}

@@ -27,7 +27,12 @@ export default function Dressmoo() {
         <div className={styles.container}>
             <Nav />
             <div className={styles.sameRow}>
-                <Button imageSrc='/left_arrow.svg' />
+                <div className={styles.arrow}>
+                    <Button
+                        imageSrc='/left_arrow.svg'
+                        href='/Cow'
+                    />
+                </div>
                 <h1 className={styles.header}>Customize</h1>
                 <div className={styles.coins}>
                     <Coins
