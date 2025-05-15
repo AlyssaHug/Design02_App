@@ -148,7 +148,7 @@ export default function Page() {
     return (
         <div>
             <PopUp
-                type='dark-button-text'
+                type='dark-button-text-c'
                 message='Welcome to the app! We are so happy to have you here!'
                 element='dark-button-c'
                 description='close'
@@ -235,7 +235,7 @@ export default function Page() {
                 <PageHeader
                     placeholder='Hello, John!'
                     type="header_title"
-                    header="add_expense_header"
+                    header="new_user_homepage"
                     text="Test"
                     >
                 </PageHeader>

@@ -235,7 +235,7 @@ export default function Page() {
                 <PageHeader
                     placeholder='Hello, John!'
                     type="header_title"
-                    header="add_expense_header"
+                    header="expense"
                     text="Test"
                     >
                 </PageHeader>

@@ -22,7 +22,7 @@ export default function Input({
         [styles.login]: size === "login",
         [styles.expense]: size === "expense",
         [styles.goal]: size === "goal",
-        [styles.account_large]: size === "account_large",
+        [styles.account-large]: size === "account-large",
         [styles.paragraph]: size === "paragraph",
         [styles.dark]: color === "dark",
         [styles.light]: color === "light"

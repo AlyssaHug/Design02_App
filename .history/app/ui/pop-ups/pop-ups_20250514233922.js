@@ -20,7 +20,7 @@ const PopUp = ({ element, type, message, onClose, description }) => {
     const popUpClasses = classNames(styles.popUp, libreFranklin.variable, {
         [styles.popup_text]: type === "text",
         [styles.popup_light_button]: element === "light-button",
-        [styles.popup_light_button_text]: type === "light-button-text",
+        [styles.popup_light_button_text]: type === "dark-button-text",
         [styles.popup_dark_button_center]: element === "dark-button-c",
         [styles.popup_dark_button_text]: type === "dark-button-text",
     });
