@@ -86,6 +86,7 @@ export default function Dressup() {
                         customClass={classNames({
                             [styles.dressupButton]: !accessory.requiresLarge,
                             [styles.large]: accessory.requiresLarge,
+
                         })}
                     />
                 </div>
