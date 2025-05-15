@@ -147,12 +147,17 @@ export default function Page() {
 
     return (
         <div>
-            <PopUp
+            <PopUp 
+                element='background'
                 type='text'
                 message='Welcome to the app! We are so happy to have you here!'
-                element='light-button'
-                description='close'
-            />
+            >
+                <button
+                    onClick={() => {}}
+                    className='dark-button'>
+                        <h2 className={styles.popup_dark_button_text}>Close</h2>
+                </button>
+            </PopUp>
             <Nav />
             <div className={styles.small}>
                 <Coins />

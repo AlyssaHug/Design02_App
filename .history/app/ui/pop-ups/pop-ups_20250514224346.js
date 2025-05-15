@@ -7,7 +7,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-const PopUp = ({ element, type, message, onClose, description }) => {
+const PopUp = ({ element, type, message, onClose }) => {
     const [isVisible, setIsVisible] = useState(true);
 
     const handleClose = () => {
@@ -18,6 +18,8 @@ const PopUp = ({ element, type, message, onClose, description }) => {
     if (!isVisible) return null;
 
     const popUpClasses = classNames(styles.popUp, libreFranklin.variable, {
+        [styles.popup_background]: element === "background",
+        [styles.popup_foreground]: element === "foreground",
         [styles.popup_text]: type === "text",
         [styles.popup_light_button]: element === "light-button",
         [styles.popup_light_button_text]: type === "light-button-text",
@@ -31,13 +33,19 @@ const PopUp = ({ element, type, message, onClose, description }) => {
                 <h2 className={styles.popup_text}
                 >{message}
                 </h2>
+                </div>
                     <button
                         onClick={handleClose}
-                        className={popUpClasses}
+                        className={styles.popup_dark_button}
                     >
-                        <h2 className={popUpClasses.type}>{description}</h2>
+                        <h2 className={styles.popup_dark_button_text}>Close</h2>
                     </button>
-                </div>
+                    <button 
+                        onClick={handleClose}
+                        className={styles.popup_light_button}
+                    >
+                        <span className={styles.popup_light_button_text}>Close</span>
+                    </button>
         </div>
     );
 }

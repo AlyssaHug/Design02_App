@@ -151,7 +151,7 @@ export default function Page() {
                 type='text'
                 message='Welcome to the app! We are so happy to have you here!'
                 element='light-button'
-                description='close'
+                text='close'
             />
             <Nav />
             <div className={styles.small}>

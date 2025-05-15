@@ -7,7 +7,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-const PopUp = ({ element, type, message, onClose, description }) => {
+const PopUp = ({ element, type, message, onClose }) => {
     const [isVisible, setIsVisible] = useState(true);
 
     const handleClose = () => {
@@ -35,7 +35,7 @@ const PopUp = ({ element, type, message, onClose, description }) => {
                         onClick={handleClose}
                         className={popUpClasses}
                     >
-                        <h2 className={popUpClasses.type}>{description}</h2>
+                        <h2 className={popUpClasses.type}>{message}</h2>
                     </button>
                 </div>
         </div>

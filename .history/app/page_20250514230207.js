@@ -148,10 +148,10 @@ export default function Page() {
     return (
         <div>
             <PopUp
+                element='background'
                 type='text'
                 message='Welcome to the app! We are so happy to have you here!'
-                element='light-button'
-                description='close'
+                className={styles.element}
             />
             <Nav />
             <div className={styles.small}>

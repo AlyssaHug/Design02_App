@@ -150,7 +150,7 @@ export default function Page() {
             <PopUp
                 type='text'
                 message='Welcome to the app! We are so happy to have you here!'
-                element='light-button'
+                element='dark_button_right'
                 description='close'
             />
             <Nav />
