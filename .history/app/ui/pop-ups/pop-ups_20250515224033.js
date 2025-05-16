@@ -12,7 +12,7 @@ const PopUp = ({ buttons, message, onClose }) => {
     const [isVisible, setIsVisible] = useState(true);
     const router = useRouter();
 
-    const handleClose = (handler, navigateTo) => {
+    const handleClose = (handler) => {
         setIsVisible(false);
         if (handler) handler();
         if (onClose) onClose();

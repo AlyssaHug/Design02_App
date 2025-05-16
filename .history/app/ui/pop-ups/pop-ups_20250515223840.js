@@ -10,13 +10,11 @@ const libreFranklin = Libre_Franklin({
 
 const PopUp = ({ buttons, message, onClose }) => {
     const [isVisible, setIsVisible] = useState(true);
-    const router = useRouter();
 
-    const handleClose = (handler, navigateTo) => {
+    const handleClose = (handler) => {
         setIsVisible(false);
         if (handler) handler();
         if (onClose) onClose();
-        if (navigateTo) router.push(navigateTo);
     };
 
     if (!isVisible) return null;
@@ -35,7 +33,7 @@ const PopUp = ({ buttons, message, onClose }) => {
                         return (
                             <button
                                 key={idx}
-                                onClick={() => handleClose(btn.onClick, btn.navigateTo)}
+                                onClick={() => handleClose(btn.onClick)}
                                 className={btnClasses}
                                 type={btn.type || "button"}
                             >

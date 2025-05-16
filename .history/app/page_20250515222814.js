@@ -177,7 +177,6 @@ export default function Page() {
                         label: "Go Customize",
                         className: "popup_light_button",
                         textClassName: "popup_light_button_text",
-                        navigateTo: "/",
                     },
                     {
                         label: "Close",
@@ -194,7 +193,6 @@ export default function Page() {
                         label: "Check on MooMoo",
                         className: "popup_light_button",
                         textClassName: "popup_light_button_text",
-                        navigateTo: "/",
                     },
                     {
                         label: "Close",
@@ -211,7 +209,6 @@ export default function Page() {
                         label: "Undo",
                         className: "edit_button",
                         textClassName: "popup_light_button_text",
-                        navigateTo: "/",
                     },
                     {
                         label: "Close",
@@ -233,7 +230,6 @@ export default function Page() {
                         label: "Edit Goal",
                         className: "popup_light_button",
                         textClassName: "popup_light_button_text",
-                        navigateTo: "/",
                     }
                 ]}
             />
@@ -244,18 +240,13 @@ export default function Page() {
                 className={styles.input}
                 onChange={() => {}}
             />
-            <PageHeader
-                placeholder='Hello, John!'
-                type="header_title"
-                header="expense_homepage"
-                text="Test"
-            />
+            <h3></h3>
             <Nav />
             <div className={styles.small}>
                 <Coins />
                 <Button
                     color='light'
-                    value='check out da goals'
+                    value='check ut da goals'
                     href='/Goals'
                 />
                 <Button
