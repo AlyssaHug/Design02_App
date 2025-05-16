@@ -24,11 +24,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    margin-top: 30px;
 }
 
 .popup_light_button {
-    position: relative; 
     width: 141.602px;
     height: 49.22px;
     flex-shrink: 0;
@@ -60,7 +58,7 @@
     flex-direction: row;   
     justify-content: center; 
     gap: 16px;              
-    margin-top: 74px;
+    margin-top: 104px;
 }
 
 .popup_dark_button_text {

@@ -240,6 +240,7 @@ export default function Page() {
                 className={styles.input}
                 onChange={() => {}}
             />
+            <
             <Nav />
             <div className={styles.small}>
                 <Coins />

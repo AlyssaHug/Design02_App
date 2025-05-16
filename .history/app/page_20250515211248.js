@@ -147,99 +147,8 @@ export default function Page() {
 
     return (
         <div>
-            <PopUp
-                message="Saved!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]}
-            />
-            <PopUp
-                message="Deleted!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]}
-            />
-            <PopUp
-                message="Not Enough Coins!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Go Customize",
-                        className: "popup_light_button",
-                        textClassName: "popup_light_button_text",
-                    },
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]}
-            />
-            <PopUp
-                message="Coins have been added to your MooMoo fund!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Check on MooMoo",
-                        className: "popup_light_button",
-                        textClassName: "popup_light_button_text",
-                    },
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]}
-            />
-            <PopUp
-                message="Goal removed"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Undo",
-                        className: "edit_button",
-                        textClassName: "popup_light_button_text",
-                    },
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]} 
-            />
-            <PopUp 
-                message="Your goal was created!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    },
-                    {
-                        label: "Edit Goal",
-                        className: "popup_light_button",
-                        textClassName: "popup_light_button_text",
-                    }
-                ]}
-            />
-            <h3>Email</h3>
-            <Input 
-                size="login"
-                type="text"
-                className={styles.input}
-                onChange={() => {}}
-            />
+            
+
             <Nav />
             <div className={styles.small}>
                 <Coins />
@@ -854,6 +763,18 @@ export default function Page() {
                     merchant='PhotoCrumb'
                 />
             </div>
+            <PopUp
+                message="Saved!"
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "OK",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                        onClick: () => alert("OK clicked"),
+                    }
+                ]}
+            />
             <div>
                 <CalendarCard
                     month='January'

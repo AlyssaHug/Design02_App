@@ -152,94 +152,33 @@ export default function Page() {
                 onClose={() => {}}
                 buttons={[
                     {
-                        label: "Close",
+                        label: "OK",
                         className: "popup_dark_button",
                         textClassName: "popup_dark_button_text",
-                    }
+                        onClick: () => alert("OK clicked"),
+                    },
                 ]}
             />
             <PopUp
-                message="Deleted!"
+                message="Hello"
                 onClose={() => {}}
                 buttons={[
                     {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]}
-            />
-            <PopUp
-                message="Not Enough Coins!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Go Customize",
-                        className: "popup_light_button",
-                        textClassName: "popup_light_button_text",
+                    label: "Cancel",
+                    className: "edit_button",
+                    textClassName: "popup_light_button_text",
+                    onClick: () => alert("Cancelled"),
                     },
                     {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]}
-            />
-            <PopUp
-                message="Coins have been added to your MooMoo fund!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Check on MooMoo",
-                        className: "popup_light_button",
-                        textClassName: "popup_light_button_text",
+                    label: "Confirm",
+                    className: "popup_dark_button",
+                    textClassName: "popup_dark_button_text",
+                    onClick: () => alert("Confirmed"),
                     },
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
                 ]}
-            />
-            <PopUp
-                message="Goal removed"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Undo",
-                        className: "edit_button",
-                        textClassName: "popup_light_button_text",
-                    },
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    }
-                ]} 
-            />
-            <PopUp 
-                message="Your goal was created!"
-                onClose={() => {}}
-                buttons={[
-                    {
-                        label: "Close",
-                        className: "popup_dark_button",
-                        textClassName: "popup_dark_button_text",
-                    },
-                    {
-                        label: "Edit Goal",
-                        className: "popup_light_button",
-                        textClassName: "popup_light_button_text",
-                    }
-                ]}
-            />
-            <h3>Email</h3>
-            <Input 
-                size="login"
-                type="text"
-                className={styles.input}
-                onChange={() => {}}
-            />
+                />
+            
+
             <Nav />
             <div className={styles.small}>
                 <Coins />

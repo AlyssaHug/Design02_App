@@ -233,16 +233,19 @@ export default function Page() {
                     }
                 ]}
             />
-            <h3>Email</h3>
             <Input 
-                size="login"
                 type="text"
-                className={styles.input}
-                onChange={() => {}}
+                placeholder="Enter your goal name"
+                className={styles.login}
+                disabled={false}
             />
             <Nav />
             <div className={styles.small}>
-                <Coins />
+                <Coins
+                    type="coins"
+                    value="Coins: "
+                    coin={10}
+                />
                 <Button
                     color='light'
                     value='check out da goals'
@@ -298,18 +301,6 @@ export default function Page() {
                 <GoalRecs value='Spend $50 less on games!' />
             </div>
             <div>
-                <Input
-                    size='login'
-                    type='text'
-                    onChange={() => {}}
-                    placeholder='Enter your email'
-                />
-                <Input 
-                    size='paragraph'
-                    type='text'
-                    onChange={() => {}}
-                    placeholder='Enter your expense'
-                />
             </div>
             <div className={styles.subheaderContent}>
                 <h3 className={styles.subheader}>Your cow friend!</h3>

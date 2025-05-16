@@ -24,7 +24,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    margin-top: 30px;
 }
 
 .popup_light_button {
@@ -38,6 +37,7 @@
 
 .popup_light_button_text {
     color: var(--secondary-secondary-900, #090F19);
+    position: absolute;
     text-align: center;
     font-family: "Libre Franklin";
     font-size: 16px;
@@ -60,7 +60,7 @@
     flex-direction: row;   
     justify-content: center; 
     gap: 16px;              
-    margin-top: 74px;
+    margin-top: 104px;
 }
 
 .popup_dark_button_text {

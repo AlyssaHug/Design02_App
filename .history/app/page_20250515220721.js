@@ -233,7 +233,6 @@ export default function Page() {
                     }
                 ]}
             />
-            <h3>Email</h3>
             <Input 
                 size="login"
                 type="text"

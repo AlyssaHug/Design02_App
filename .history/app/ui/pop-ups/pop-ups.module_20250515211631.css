@@ -18,13 +18,13 @@
 
 .popup_text {
     color: var(--secondary-secondary-900, #090F19);
+    margin-top: 20px;
     text-align: center;
     font-family: Quicksand;
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    margin-top: 30px;
 }
 
 .popup_light_button {
@@ -60,7 +60,7 @@
     flex-direction: row;   
     justify-content: center; 
     gap: 16px;              
-    margin-top: 74px;
+    margin-top: 104px;
 }
 
 .popup_dark_button_text {
