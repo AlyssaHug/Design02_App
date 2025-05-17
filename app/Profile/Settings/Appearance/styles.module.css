@@ -9,7 +9,7 @@
     font-size: 24px;
     font-weight: 400;
     font-family: var(--font-libre-franklin);
-    flex: 0 0 45%;
+    flex: 0 0 55%;
 }
 .lightMode {
     display: flex;
