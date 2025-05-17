@@ -40,3 +40,8 @@ export default function Inputs({
         />
     );
 }
+<<<<<<< HEAD
+
+            
+=======
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
