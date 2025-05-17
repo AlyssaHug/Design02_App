@@ -17,6 +17,11 @@ export default function Dressmoo() {
         if (typeof window !== "undefined") {
             const storedCoins = localStorage.getItem("coins");
             setCoins(storedCoins ? parseInt(storedCoins) : 900);
+            const savedAccessory = localStorage.getItem("selectedMoomooSrc");
+            if (savedAccessory) {
+                console.log("Dressmoo: Loaded accessory SVG from localStorage:", savedAccessory);
+                setSelectedMoomooSrc(savedAccessory);
+            }
         }
     }, []);
 
@@ -28,11 +33,19 @@ export default function Dressmoo() {
     const handleSelectAccessory = (moomooSrc) => {
         console.log("Dressmoo: Received moomooSrc:", moomooSrc);
         setSelectedMoomooSrc(moomooSrc);
+        if (typeof window !== "undefined") {
+            localStorage.setItem("selectedMoomooSrc", moomooSrc);
+            console.log("Dressmoo: Saved moomooSrc to localStorage:", moomooSrc);
+        }
     };
 
     const handleRemoveAccessory = () => {
         console.log("Dressmoo: Removing accessory, resetting to default");
         setSelectedMoomooSrc(null);
+        if (typeof window !== "undefined") {
+            localStorage.removeItem("selectedMoomooSrc");
+            console.log("Dressmoo: Cleared selectedMoomooSrc from localStorage");
+        }
     };
 
     const currentSrc = selectedMoomooSrc || "/outfitsmoomoo.svg";
@@ -44,17 +57,11 @@ export default function Dressmoo() {
             <Nav />
             <div className={styles.sameRow}>
                 <div className={styles.arrow}>
-                    <Button
-                        imageSrc='/left_arrow.svg'
-                        href='/Cow'
-                    />
+                    <Button imageSrc='/left_arrow.svg' href='/Cow' />
                 </div>
                 <h1 className={styles.header}>Customize</h1>
                 <div className={styles.coins}>
-                    <Coins
-                        value='Coins: '
-                        coin={coins}
-                    />
+                    <Coins value='Coins: ' coin={coins} />
                 </div>
             </div>
             <div className={styles.cowContainer}>
@@ -78,11 +85,7 @@ export default function Dressmoo() {
             <div className={styles.buyanditems}>
                 <h1 className={styles.items}>Items</h1>
                 <div className={styles.shop}>
-                    <Button
-                        type='shop'
-                        value='Buy More'
-                        href='/Cow/Shop'
-                    />
+                    <Button type='shop' value='Buy More' href='/Cow/Shop' />
                 </div>
             </div>
             <div className={styles.DressupSlider}>
