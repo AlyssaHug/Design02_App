@@ -34,19 +34,11 @@ export default function Page() {
                 type="text"
                 size="login"
                 color="light"/>
-            <h1 className={styles.AlternativeText}>By clicking “Get Started,” you agree to our Terms and Conditions and Privacy Policy</h1>
             <Button
                 style="round"
                 type="primary"
                 color="dark"
                 value="Get Started!"
-            />
-            <h1 className={styles.AlternativeText}>Already have an account?</h1>
-            <Button
-                style="round"
-                type="primary"
-                color="light"
-                value="Sign in!"
             />
         </div>
     )

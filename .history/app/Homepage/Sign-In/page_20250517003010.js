@@ -27,20 +27,6 @@ export default function Page() {
                 size="login"
                 color="light"
                 />
-            <h1 className={styles.AlternativeText}>Forget your password?</h1>
-            <Button
-                style="round"
-                type="primary"
-                color="dark"
-                value="Login"
-                />
-            <h1 className={styles.AlternativeText}>Don't have an account?</h1>
-            <Button
-                style="round"
-                type="primary"
-                color="light"
-                value="Sign up!"
-            />
         </div>
     );
 }

@@ -9,7 +9,7 @@ export default function Page() {
     return (
         <div>
             <h1 className={styles.logotext}>MoolahMate</h1>
-            <p className={styles.SmallText}>Welcome to a new way of money management. An easier, less stressful alternative made for you!</p>
+            <p className={styles.paragraph}>Welcome to a new way of money management. An easier, less stressful alternative made for you!</p>
             <Button 
             style='round'
             type='primary'

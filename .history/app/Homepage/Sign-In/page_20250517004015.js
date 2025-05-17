@@ -34,7 +34,6 @@ export default function Page() {
                 color="dark"
                 value="Login"
                 />
-            <h1 className={styles.AlternativeText}>Don't have an account?</h1>
             <Button
                 style="round"
                 type="primary"
