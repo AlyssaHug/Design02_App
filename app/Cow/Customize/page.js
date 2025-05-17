@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 
 export default function Dressmoo() {
     const [coins, setCoins] = useState(900);
+    const [selectedMoomooSrc, setSelectedMoomooSrc] = useState(null);
     const router = useRouter();
 
     useEffect(() => {
@@ -20,8 +21,23 @@ export default function Dressmoo() {
     }, []);
 
     const handleBuyMore = () => {
+        console.log("Dressmoo: Navigating to Shop");
         router.push("/Cow/Shop");
     };
+
+    const handleSelectAccessory = (moomooSrc) => {
+        console.log("Dressmoo: Received moomooSrc:", moomooSrc);
+        setSelectedMoomooSrc(moomooSrc);
+    };
+
+    const handleRemoveAccessory = () => {
+        console.log("Dressmoo: Removing accessory, resetting to default");
+        setSelectedMoomooSrc(null);
+    };
+
+    const currentSrc = selectedMoomooSrc || "/outfitsmoomoo.svg";
+    const srcWithCacheBust = `${currentSrc}?v=${Date.now()}`;
+    console.log("Dressmoo: Rendering Moomoo with src:", srcWithCacheBust);
 
     return (
         <div className={styles.container}>
@@ -46,8 +62,9 @@ export default function Dressmoo() {
                 <div className={styles.mooplace}>
                     <Moomoo
                         size="dressup"
-                        src="/outfitsmoomoo.svg"
+                        src={srcWithCacheBust}
                         className={styles.moomooSvg}
+                        key={selectedMoomooSrc || "default"}
                     />
                 </div>
             </div>
@@ -55,6 +72,7 @@ export default function Dressmoo() {
                 <Button
                     color="light-blue"
                     value="Remove"
+                    onClick={handleRemoveAccessory}
                 />
             </div>
             <div className={styles.buyanditems}>
@@ -68,7 +86,7 @@ export default function Dressmoo() {
                 </div>
             </div>
             <div className={styles.DressupSlider}>
-                <Dressup />
+                <Dressup onSelectAccessory={handleSelectAccessory} />
             </div>
         </div>
     );
