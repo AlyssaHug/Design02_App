@@ -46,7 +46,7 @@ export default function Dressmoo() {
                 <div className={styles.mooplace}>
                     <Moomoo
                         size="dressup"
-                        src="/moomoonormal.svg"
+                        src="/outfitsmoomoo.svg"
                         className={styles.moomooSvg}
                     />
                 </div>
