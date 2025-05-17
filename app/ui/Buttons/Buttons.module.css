@@ -83,6 +83,7 @@
     font-weight: 400;
     font-family: var(--font-libre-franklin);
     justify-content: space-between;
+    cursor: pointer;
 }
 .settingButton {
     padding: 12px;

@@ -7,12 +7,6 @@ export default function Page() {
     return (
         <div>
             <Nav />
-            <Button
-                color='light'
-                value='da shop'
-                href='/Cow/Shop'
-            />
-            <Button imageSrc='/right_arrow.svg' />
             <GoalProgress />
         </div>
     );
