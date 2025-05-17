@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className={styles.homepage}>
     <PageHeader
-      type='header_title'
+      type='homepage_title'
       header='homepage_header'
       text='Welcome, Username!'
       />

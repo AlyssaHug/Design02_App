@@ -1,0 +1,11 @@
+.MainSectionText {
+    width: 284px;
+    height: 20.496px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}

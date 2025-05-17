@@ -11,14 +11,12 @@ export default function Page() {
   return (
     <div className={styles.homepage}>
     <PageHeader
-      type='header_title'
+      type='homepage_title'
       header='homepage_header'
       text='Welcome, Username!'
       />
     
-    <h1 className={styles.MainSectionText}>Transactions & Expenses</h1>
-    <h1 className={styles.MainSectionText}>Goals & Rewards</h1>
-    <h1 className={styles.MainSectionText}>Other Recent Activity</h1>
+    <h3 className={styles.welcome}>Transactions & Expenses</h3>
     </div>
   );
 }
