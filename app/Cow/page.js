@@ -39,7 +39,7 @@ export default function Page() {
     const handleFeedClick = () => {
         console.log("Page: Setting moomooImage to /eat.svg");
         setMoomooImage("/eat.svg");
-        setActiveButton("Feed");
+        setActiveButton("Eat");
     };
 
     const handleCustomizeClick = () => {
