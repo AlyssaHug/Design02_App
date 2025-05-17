@@ -32,7 +32,7 @@ export default function Slider({ style, onClick }) {
                 customClass={styles.lightBlueOverride}
             />
             <Button
-                value='Custom'
+                value='Customize'
                 color='light-blue'
                 onClick={onClick}
                 customClass={styles.lightBlueOverride}

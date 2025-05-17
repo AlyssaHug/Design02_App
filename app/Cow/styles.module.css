@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; 
+    z-index: 0;
     margin-left: 20px;
 }
 
@@ -38,9 +38,8 @@
 .moo {
     position: absolute;
     z-index: 250;
-    margin-top: 40vh;
+    margin-top: 32vh;
     margin-left: 15vw;
     width: 325.717px;
     height: 255.451px;
 }
-
