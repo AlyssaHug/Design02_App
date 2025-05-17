@@ -12,7 +12,11 @@
     justify-content: center;
     cursor: pointer;
 }
-
+.bought {
+    background-color: #5d874d;
+    color: #f3f9f0;
+    cursor: not-allowed;
+}
 .secondary {
     background-color: #9ccb89;
     color: #626c7c;
@@ -71,6 +75,17 @@
     background-color: #9ccb89;
     color: #f3f9f0;
     font-weight: 500;
+}
+.settings {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-libre-franklin);
+    justify-content: space-between;
+}
+.settingButton {
+    padding: 12px;
 }
 /*====nav styles====*/
 .nav {
@@ -206,4 +221,9 @@ input:checked + .slider:after {
     content: "On";
     right: auto;
     left: 10px;
+}
+
+.cowActive {
+    background-color:#445063 !important;
+    color:#b2d4e6 !important; /* HAHAHA YOU WORK NOW I WAS JUST CALLING YOU WRONG :'D - thea */
 }

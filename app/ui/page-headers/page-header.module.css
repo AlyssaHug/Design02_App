@@ -1,4 +1,5 @@
 .new_user_homepage_header {
+<<<<<<< HEAD
     height: 289px;
     flex-shrink: 0;
     border-radius: 0px 0px 60px 60px;
@@ -12,6 +13,23 @@
     border-radius: 0px 0px 60px 60px;
     background: var(--Primary-primary-300, #ACD39D);
     box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+=======
+    width: 402px;
+    height: 289px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+}
+
+.homepage_header {
+    width: 402px;
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
 }
 
 .your_total_balance {
@@ -33,7 +51,11 @@
 }
 
 .header_title {
+<<<<<<< HEAD
     color: var(--secondary-secondary-900, #090F19);
+=======
+    color: var(--secondary-secondary-900, #090f19);
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
     font-family: Quicksand;
     font-size: 32px;
     font-style: normal;
@@ -43,13 +65,67 @@
 }
 
 .expense_homepage_header {
+<<<<<<< HEAD
+=======
+    width: 402px;
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
     height: 430px;
     flex-shrink: 0;
     border-radius: 0px 0px 100px 100px;
-    background: var(--Primary-primary-300, #ACD39D);
-    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
 }
 
+.add_expense_header {
+    width: 402px;
+    height: 147px;
+    flex-shrink: 0;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+}
+
+.add_expense_header_text {
+    color: var(--secondary-secondary-900, #090f19);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-indent: 20px;
+    line-height: 240px;
+}
+
+.expense_overview_header {
+    width: 402px;
+    height: 101px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 40px 40px;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+}
+
+.income_transfer_header {
+    width: 402px;
+    height: 170px;
+    flex-shrink: 0;
+    fill: var(--Primary-primary-300, #acd39d);
+    filter: drop-shadow(0px 4px 4px rgba(1, 67, 14, 0.4));
+}
+
+.income_transfer_text {
+    width: 273px;
+    height: 39px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090f19);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-indent: 20px;
+}
+
+<<<<<<< HEAD
 .add_expense_header {
     height: 147px;
     flex-shrink: 0;
@@ -102,20 +178,37 @@
     border-radius: 0px 0px 60px 60px;
     background: var(--accent-blue-accent-blue-100, #E7F2F7);
     box-shadow: 0px 4px 4px 0px rgba(30, 53, 72, 0.40);
+=======
+.goal_homepage_header {
+    width: 402px;
+    height: 266px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--accent-blue-accent-blue-100, #e7f2f7);
+    box-shadow: 0px 4px 4px 0px rgba(30, 53, 72, 0.4);
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
 }
 
 .goal_header {
     height: 193px;
     flex-shrink: 0;
     border-radius: 0px 0px 40px 40px;
+<<<<<<< HEAD
     background: var(--Primary-primary-300, #ACD39D);
+=======
+    background: var(--Primary-primary-300, #acd39d);
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
 }
 
 .back_button {
     width: 16px;
     height: 31.802px;
     flex-shrink: 0;
+<<<<<<< HEAD
     aspect-ratio: 16.00/31.80;
+=======
+    aspect-ratio: 16/31.8;
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
     box-sizing: border-box;
     position: relative;
     left: 16px;
@@ -123,4 +216,7 @@
     top: 25px;
     bottom: 863px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403

@@ -1,0 +1,99 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  
+}
+
+.sameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure it stays above the background */
+}
+
+.coins {
+    display: flex;
+    justify-content: end;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10; 
+    margin-left: 20px;
+
+}
+.bg {
+    background-image: url('/grassbg.jpg');
+    background-size: 100vh 150vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}
+
+.content {
+    width: 105%;
+}
+
+
+.backgroundImage {
+    width: 120%; /* Increase width to make it wider */
+    height: 100%;
+    top: 0;
+    left: 50%;
+    
+}
+
+
+
+.sliderContainer{
+    padding-bottom: 100px;
+}
+.moomoo{
+    padding-top:230px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.header {
+    font-family: var(--font-quicksand);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.sameRow h1 {
+    margin-right: 55px;
+}
+
+.sameRow Button {
+    margin-top: px;
+}
+
+.sameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure it stays above the background */
+   padding-top: 10px;
+}
+
+.coins {
+    display: flex;
+    justify-content: end;
+    margin-right: -20px;
+    margin-top: 10px;
+}

@@ -27,7 +27,7 @@ export default function Nav({ size, href }) {
                     color='nav'
                     imageSrc='/navbar-icons/expense.svg'
                     size='expense'
-                    href='Expense'
+                    href='/Expense'
                 />
 
                 <Button
@@ -35,13 +35,14 @@ export default function Nav({ size, href }) {
                     color='nav'
                     imageSrc='/navbar-icons/goal.svg'
                     size='goal'
-                    href='Goals'
+                    href='/Goals'
                 />
 
                 <div className={styles.cow}>
                     <Button
                         color='cow'
                         imageSrc='/navbar-icons/cow.svg'
+                        href='/Cow'
                     />
                 </div>
                 <Button
@@ -56,13 +57,14 @@ export default function Nav({ size, href }) {
                     color='nav'
                     imageSrc='/navbar-icons/rewards.svg'
                     size='rewards'
-                    href='Rewards'
+                    href='/Rewards'
                 />
                 <Button
                     value='profile'
                     color='nav'
                     imageSrc='/navbar-icons/profile.svg'
                     size='profile'
+                    href='/Profile'
                 />
             </div>
         </div>

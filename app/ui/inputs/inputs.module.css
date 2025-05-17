@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .input {
   display: flex;
   justify-content: center;
@@ -51,3 +52,44 @@
   border-radius: 30px;
   background: var(--Primary-primary-100, #D9EBD1);
 }
+=======
+.sign-in_input {
+    width: 267px;
+    padding: 37px;
+    background-color: #d9ebd1;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.expense_input {
+    width: 370px;
+    padding: 52px;
+    background-color: #d9ebd1;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.goal_input {
+    width: 267px;
+    padding: 37px;
+    background-color: #d9ebd1;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.account_input {
+    width: 267px;
+    padding: 37px;
+    background-color: #d9ebd1;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.paragraph_input {
+    width: 370px;
+    padding: 148px;
+    background-color: #d9ebd1;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403

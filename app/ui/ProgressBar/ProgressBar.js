@@ -6,7 +6,13 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-const ProgressBar = ({ progress, goal, value, textColor = "#fefdfd" }) => {
+const ProgressBar = ({
+    progress,
+    goal,
+    value,
+
+    textColor = "#fefdfd",
+}) => {
     const percentage = (progress / goal) * 100;
 
     return (

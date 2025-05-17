@@ -7,7 +7,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-export default function Input({
+export default function Inputs({
     type,
     value,
     onChange,
@@ -15,8 +15,12 @@ export default function Input({
     size,
     color,
     disabled,
+<<<<<<< HEAD
     maxLength
     
+=======
+    maxLength,
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
 }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.login]: size === "login",
@@ -41,5 +45,8 @@ export default function Input({
         />
     );
 }
+<<<<<<< HEAD
 
             
+=======
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
