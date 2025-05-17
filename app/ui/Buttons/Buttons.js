@@ -94,6 +94,8 @@ export default function Button({
         </button>
     );
 }
+<<<<<<< HEAD
+=======
 export function SettingButton({
     type,
     value,
@@ -132,4 +134,5 @@ export function SettingButton({
         </button>
     );
 }
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
 

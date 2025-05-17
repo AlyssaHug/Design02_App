@@ -1,3 +1,58 @@
+<<<<<<< HEAD
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 267px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Primary-primary-100, #D9EBD1);
+}
+
+.expense {
+  width: 370px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Primary-primary-100, #D9EBD1);
+}
+
+.goal {
+  width: 370px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Primary-primary-100, #D9EBD1);
+}
+
+.paragraph {
+  width: 370px;
+  height: 148px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Primary-primary-100, #D9EBD1);
+}
+
+.dark {
+  width: 267px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Tertiary-tertiary-700, #1C351C);
+}
+
+.account_large {
+  width: 288px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Primary-primary-100, #D9EBD1);
+}
+=======
 .sign-in_input {
     width: 267px;
     padding: 37px;
@@ -37,3 +92,4 @@
     border: 1px solid #ffffff;
     border-radius: 4px;
 }
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403

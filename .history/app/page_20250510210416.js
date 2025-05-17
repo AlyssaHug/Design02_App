@@ -1,0 +1,786 @@
+"use client";
+import Coins from "./ui/coins/coins";
+import Dropdown from "@/app/ui/dropdown/dropdown";
+import ToggleButton from "@/app/ui/Buttons/ToggleButton";
+import GoalProgress from "@/app/ui/GoalCards/GoalCards";
+import { Goals } from "@/app/ui/GoalCards/GoalCards";
+import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
+import styles from "@/app/ui/GoalCards/GoalCards.module.css";
+import Button from "@/app/ui/Buttons/Buttons";
+import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
+import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
+import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
+import Input from "@/app/ui/inputs/inputs";
+import PopUp from "@/app/ui/pop-ups/pop-ups";
+import PageHeader from "./ui/page-headers/page-header";
+
+
+import Nav from "./ui/navbar/navbar";
+export default function Page() {
+    const categoryOptions = [
+        { value: "groceries", label: "Groceries" },
+        { value: "dineout", label: "Dine Out" },
+        { value: "clothing", label: "Clothing" },
+        { value: "games", label: "Games" },
+        { value: "online_shopping", label: "Online Shopping" },
+        { value: "add_category", label: "Add category +" },
+    ];
+
+    const monthOptions = [
+        { value: "1", label: "January" },
+        { value: "2", label: "February" },
+        { value: "3", label: "March" },
+        { value: "4", label: "April" },
+        { value: "5", label: "May" },
+        { value: "6", label: "June" },
+        { value: "7", label: "July" },
+        { value: "8", label: "August" },
+        { value: "9", label: "September" },
+        { value: "10", label: "October" },
+        { value: "11", label: "November" },
+        { value: "12", label: "December" },
+    ];
+
+    const dateOptions = [
+        { value: "1", label: "1" },
+        { value: "2", label: "2" },
+        { value: "3", label: "3" },
+        { value: "4", label: "4" },
+        { value: "5", label: "5" },
+        { value: "6", label: "6" },
+        { value: "7", label: "7" },
+        { value: "8", label: "8" },
+        { value: "9", label: "9" },
+        { value: "10", label: "10" },
+        { value: "11", label: "11" },
+        { value: "12", label: "12" },
+        { value: "13", label: "13" },
+        { value: "14", label: "14" },
+        { value: "15", label: "15" },
+        { value: "16", label: "16" },
+        { value: "17", label: "17" },
+        { value: "18", label: "18" },
+        { value: "19", label: "19" },
+        { value: "20", label: "20" },
+        { value: "21", label: "21" },
+        { value: "22", label: "22" },
+        { value: "23", label: "23" },
+        { value: "24", label: "24" },
+        { value: "25", label: "25" },
+        { value: "26", label: "26" },
+        { value: "27", label: "27" },
+        { value: "28", label: "28" },
+        { value: "29", label: "29" },
+        { value: "30", label: "30" },
+        { value: "31", label: "31" },
+    ];
+
+    const yearOptions = [
+        { value: "2025", label: "2025" },
+        { value: "2026", label: "2026" },
+        { value: "2027", label: "2027" },
+        { value: "2028", label: "2028" },
+        { value: "2029", label: "2029" },
+        { value: "2030", label: "2030" },
+        { value: "2031", label: "2031" },
+        { value: "2032", label: "2032" },
+        { value: "2033", label: "2033" },
+        { value: "2034", label: "2034" },
+        { value: "2035", label: "2035" },
+    ];
+
+    const depositFrequencyOptions = [
+        { value: "daily", label: "Daily" },
+        { value: "weekly", label: "Weekly" },
+        { value: "bi-weekly", label: "Bi-weekly" },
+        { value: "monthly", label: "Monthly" },
+    ];
+
+    const goalTypeOptions = [
+        { value: "vacation", label: "Vacation" },
+        { value: "concert", label: "Concert" },
+        { value: "Digital", label: "Digital" },
+        { value: "Big_Purchase", label: "Big Purchase" },
+        { value: "Saving", label: "Saving" },
+    ];
+
+    const interactionOptions = [
+        { value: "e-transfer", label: "E-Transfer" },
+        { value: "cash", label: "Cash" },
+        { value: "cheque", label: "Cheque" },
+        { value: "paypal", label: "Paypal" },
+        { value: "other", label: "Other" },
+    ];
+
+    const handleCategorySelect = (option) => {
+        if (option.value === "add_category") {
+            console.log("Add category clicked");
+        }
+    };
+
+    const handleMonthSelect = (option) => {
+        // Handle month selection
+    };
+
+    const handleDateSelect = (option) => {
+        // Handle date selection
+    };
+
+    const handleYearSelect = (option) => {
+        // Handle year selection
+    };
+
+    const handleDepositFrequencySelect = (option) => {
+        // Handle deposit frequency selection
+    };
+
+    const handleGoalTypeSelect = (option) => {
+        // Handle goal type selection
+    };
+
+    const handleInteractionSelect = (option) => {
+        if (option.value === "other") {
+            console.log("Other interaction selected");
+        }
+    };
+
+    return (
+        <div>
+            <Nav />
+            <div className={styles.small}>
+                <Coins />
+                <Button
+                    color='light'
+                    value='check out da goals'
+                    href='/Goals'
+                />
+                <Button
+                    color='light'
+                    value='check out da Rewards'
+                    href='/Rewards'
+                />
+            </div>
+            <Button
+                value='JANUARY'
+                href='/Expense/overview/Weekly/January'></Button>
+            <ToggleButton />
+            <GoalProgress
+                value='Goal Progress'
+                type='progress'
+            />
+            <div className={styles.subheaderContainer}>
+                <h3 className={styles.subheader}>Goals</h3>
+                <Button
+                    className={styles.view}
+                    color='dark'
+                    value='Create Goal'
+                    href='/'
+                />
+            </div>
+            <div className={styles.goalsContent}>
+                <Goals
+                    type='goals'
+                    value='Reduce spending by $60!'
+                    imageSrc='/right_arrow.svg'
+                    href='/'
+                />
+                <Goals
+                    type='goals'
+                    value='Add $50 to tuition fund!'
+                    imageSrc='/right_arrow.svg'
+                    href='/'
+                />
+            </div>
+            <div className={styles.subheaderContainer}>
+                <h3 className={styles.subheader}>Recommendations</h3>
+                <Button
+                    className={styles.view}
+                    color='dark'
+                    value='View More'
+                />
+            </div>
+            <div className={styles.recsContent}>
+                <GoalRecs value='Spend $50 less on games!' />
+                <GoalRecs value='Spend $50 less on games!' />
+            </div>
+            <div className={styles.input}>
+                <Input
+                    className={styles.login}
+                    type='text'
+                    onChange={() => {}}
+                    placeholder='Enter your email'
+                />
+            </div>
+            <div className={styles.subheaderContent}>
+                <h3 className={styles.subheader}>Your cow friend!</h3>
+            </div>
+            <GoalCow
+                type='goalCow'
+                value='Check on MooMoo!'
+            />
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none" className="back-button">
+            <path d="M13.7295 31.7977C14.2591 31.7987 14.7723 31.6143 15.1801 31.2764C15.4096 31.0861 15.5993 30.8524 15.7383 30.5887C15.8774 30.325 15.9631 30.0365 15.9904 29.7396C16.0178 29.4428 15.9863 29.1434 15.8978 28.8587C15.8093 28.574 15.6656 28.3096 15.4747 28.0806L5.32065 15.932L15.1121 3.76071C15.3003 3.52887 15.4409 3.26211 15.5258 2.97576C15.6106 2.68941 15.638 2.38911 15.6064 2.09213C15.5748 1.79515 15.4849 1.50734 15.3417 1.24525C15.1985 0.983157 15.0049 0.751944 14.7721 0.564904C14.5376 0.358567 14.2629 0.20293 13.9654 0.107761C13.6679 0.0125912 13.354 -0.0200553 13.0432 0.0118686C12.7325 0.0437924 12.4317 0.139598 12.1598 0.293273C11.8878 0.446948 11.6506 0.655174 11.4629 0.904884L0.515608 14.5041C0.182242 14.9096 0 15.4183 0 15.9433C0 16.4683 0.182242 16.977 0.515608 17.3826L11.8483 30.9817C12.0756 31.256 12.3645 31.4729 12.6913 31.6146C13.0182 31.7564 13.3738 31.8191 13.7295 31.7977Z" fill="#090F19"/>
+            </svg>
+            <header className={styles.homepage_header}>
+                <h1 className={styles.header_title}>Hello, John!</h1>
+            </header>
+            </div>
+            <div>
+                <Dropdown
+                    options={categoryOptions}
+                    onSelect={handleCategorySelect}
+                    placeholder='Select your category'
+                />
+                <Dropdown
+                    options={monthOptions}
+                    onSelect={handleMonthSelect}
+                    placeholder='Select month'
+                />
+                <Dropdown
+                    options={dateOptions}
+                    onSelect={handleDateSelect}
+                    placeholder='Select date'
+                />
+                <Dropdown
+                    options={yearOptions}
+                    onSelect={handleYearSelect}
+                    placeholder='Select year'
+                />
+                <Dropdown
+                    options={depositFrequencyOptions}
+                    onSelect={handleDepositFrequencySelect}
+                    placeholder='Select deposit frequency'
+                />
+                <Dropdown
+                    options={goalTypeOptions}
+                    onSelect={handleGoalTypeSelect}
+                    placeholder='Select goal type'
+                />
+                <Dropdown
+                    options={interactionOptions}
+                    onSelect={handleInteractionSelect}
+                    placeholder='Select interaction'
+                />
+            </div>
+            <div>
+                {/*January*/}
+                <TransactionCard
+                    time='11:47am'
+                    category='Dine...'
+                    amount='1.68'
+                    description='icecream'
+                    merchant='Mcdonalds'
+                />
+                <TransactionCard
+                    time='12:19pm'
+                    category='Groc...'
+                    amount='35.35'
+                    description='Pikachu Squishmallow'
+                    merchant='Costco'
+                />
+                <TransactionCard
+                    time='8:36pm'
+                    category='Online'
+                    amount='151.67'
+                    description=' NZXT H7 Elite Case'
+                    merchant='Canada Computers'
+                />
+                <TransactionCard
+                    time='2:34pm'
+                    category='Games'
+                    amount='85.76'
+                    description='Nintendo Switch game'
+                    merchant='GameStop'
+                />
+                <TransactionCard
+                    time='4:20pm'
+                    category='Misc...'
+                    amount='25.55'
+                    description='Acrylic Paint'
+                    merchant='Michaels'
+                />
+                <TransactionCard
+                    time='11:35am'
+                    category='Misc...'
+                    amount='88.63'
+                    description='Wireless keyboard'
+                    merchant='Staples'
+                />
+                <TransactionCard
+                    time='11:45am'
+                    category='Dine...'
+                    amount='11.35'
+                    description='Ice Coffe & Chilli'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='11:00am'
+                    category='Dine...'
+                    amount='4.79'
+                    description='Swedish Meatballs'
+                    merchant='Ikea'
+                />
+                <TransactionCard
+                    time='11:46am'
+                    category='Dine...'
+                    amount='15.78'
+                    description='Rotisserie Chicken'
+                    merchant='Costco'
+                />
+                <TransactionCard
+                    time='12:20pm'
+                    category='Dine...'
+                    amount='3.68'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='10:36am'
+                    category='Dine...'
+                    amount='3.68'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='12:56am'
+                    category='Dine...'
+                    amount='3.68'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='12:56am'
+                    category='Dine...'
+                    amount='8:42'
+                    description='Strawberry Matcha Latte'
+                    merchant='Cafe Algan'
+                />
+                {/*February*/}
+                <TransactionCard
+                    time='4:20pm'
+                    category='Dine...'
+                    amount='33.87'
+                    description='2 bowls of Ramen'
+                    merchant='YahYah Ramen'
+                />
+                <TransactionCard
+                    time='5:43pm'
+                    category='Health'
+                    amount='75.00'
+                    description='Vit D test'
+                    merchant='LifeLabs'
+                />
+                <TransactionCard
+                    time='5:43pm'
+                    category='Health'
+                    amount='75.00'
+                    description='Vit D test'
+                    merchant='LifeLabs'
+                />
+                <TransactionCard
+                    time='3:45pm'
+                    category='Dine...'
+                    amount='8.46'
+                    description='Chicken tenders'
+                    merchant='Costco'
+                />
+                <TransactionCard
+                    time='10:34pm'
+                    category='Dine...'
+                    amount='3.87'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='6:34pm'
+                    category='Dine...'
+                    amount='25.00'
+                    description='3 drinks (venti)'
+                    merchant='Starbucks'
+                />
+                <TransactionCard
+                    time='3:24pm'
+                    category='Misc...'
+                    amount='2.00'
+                    description='Bus fare'
+                    merchant='Transit'
+                />
+                <TransactionCard
+                    time='3:12pm'
+                    category='Dine...'
+                    amount='12.79'
+                    description='Croissant + Matcha Latte'
+                    merchant='Cafe Algan'
+                />
+                <TransactionCard
+                    time='11:20pm'
+                    category='Misc...'
+                    amount='45.00'
+                    description='Pool+VR ride'
+                    merchant='E-spot'
+                />
+                <TransactionCard
+                    time='12:20pm'
+                    category='Misc...'
+                    amount='5.67'
+                    description='Pens + Paper'
+                    merchant='Muji'
+                />
+                <TransactionCard
+                    time='4:52pm'
+                    category='Dine...'
+                    amount='7.88'
+                    description='Two ladies'
+                    merchant='Coco'
+                />
+                {/*March*/}
+                <TransactionCard
+                    time='2:34pm'
+                    category='Dine...'
+                    amount='3.87'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='4:34pm'
+                    category='Dine...'
+                    amount='7.87'
+                    description='Hojicha milk tea'
+                    merchant='Palgona'
+                />
+                <TransactionCard
+                    time='12:35pm'
+                    category='Dine...'
+                    amount='3.87'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='2:25am'
+                    category='Online...'
+                    amount='12.87'
+                    description='Pink Ribbons'
+                    merchant='AliExpress'
+                />
+                <TransactionCard
+                    time='1:20pm'
+                    category='Dine...'
+                    amount='18.87'
+                    description='Pho'
+                    merchant='HA Cafe Vietnam'
+                />
+                <TransactionCard
+                    time='4:05pm'
+                    category='Misc...'
+                    amount='17.00'
+                    description='Photo strips'
+                    merchant='PhotoCrumb'
+                />
+                <TransactionCard
+                    time='10:34pm'
+                    category='Dine...'
+                    amount='7.87'
+                    description='McDouble Meal'
+                    merchant='McDonalds'
+                />
+                <TransactionCard
+                    time='7:59pm'
+                    category='Misc...'
+                    amount='2.00'
+                    description='Parking fee'
+                    merchant='City of Vancouver'
+                />
+                <TransactionCard
+                    time='8:46pm'
+                    category='Misc...'
+                    amount='8.87'
+                    description='Glue stick'
+                    merchant='Dollarama'
+                />
+                <TransactionCard
+                    time='9:35pm'
+                    category='Dine...'
+                    amount='8.87'
+                    description='Matcha Bobo'
+                    merchant='HeyTea'
+                />
+                <TransactionCard
+                    time='12:45pm'
+                    category='Misc...'
+                    amount='3.87'
+                    description='bubble mail'
+                    merchant='Shoppers Drug Mart'
+                />
+                <TransactionCard
+                    time='5:37pm'
+                    category='Misc...'
+                    amount='23.87'
+                    description='Shipping Fee'
+                    merchant='Canada Post'
+                />
+                <TransactionCard
+                    time='12:38am'
+                    category='Online...'
+                    amount='23.87'
+                    description='Spotify Premium'
+                    merchant='Spotify'
+                />
+                <TransactionCard
+                    time='11:00am'
+                    category='Misc...'
+                    amount='6.87'
+                    description='Paint + Brushes'
+                    merchant='Dollarama'
+                />
+                <TransactionCard
+                    time='3:48pm'
+                    category='Dine...'
+                    amount='3.68'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='11:46pm'
+                    category='Dine...'
+                    amount='7.85'
+                    description='Chilli'
+                    merchant='Tim Hortons'
+                />
+                <TransactionCard
+                    time='3:36pm'
+                    category='Dine...'
+                    amount='1.67'
+                    description='Ice Cream'
+                    merchant='Mcdonalds'
+                />
+                <TransactionCard
+                    time='10:33am'
+                    category='Dine...'
+                    amount='7.57'
+                    description='McDouble Meal'
+                    merchant='McDonalds'
+                />
+                <TransactionCard
+                    time='12:26pm'
+                    category='Groc...'
+                    amount='2.68'
+                    description='B-day hat'
+                    merchant='Dollarama'
+                />
+                <TransactionCard
+                    time='12:34pm'
+                    category='Dine...'
+                    amount='3.35'
+                    description='Cake'
+                    merchant='T&T Supermarket'
+                />
+                <TransactionCard
+                    time='12:54pm'
+                    category='Dine...'
+                    amount='3.35'
+                    description='BBT'
+                    merchant='Ngon'
+                />
+                {/*April*/}
+                <TransactionCard
+                    time='1:34pm'
+                    category='Games'
+                    amount='99.45'
+                    description='In-game purchase'
+                    merchant='Honkai Star Rail'
+                />
+                <TransactionCard
+                    time='11:00am'
+                    category='Cloth...'
+                    amount='125.54'
+                    description='White AF1'
+                    merchant='Nike'
+                />
+                <TransactionCard
+                    time='11:45am'
+                    category='Dine...'
+                    amount='16.23'
+                    description='2 drinks'
+                    merchant='HeyTea'
+                />
+                <TransactionCard
+                    time='1:34am'
+                    category='Dine...'
+                    amount='12.86'
+                    description='Taco combo'
+                    merchant='Taco Luis'
+                />
+                <TransactionCard
+                    time='4:20pm'
+                    category='Groc...'
+                    amount='4.54'
+                    description='Whiteboard markers'
+                    merchant='Walmart'
+                />
+                <TransactionCard
+                    time='10:33am'
+                    category='Dine...'
+                    amount='12.57'
+                    description='Nugget meal'
+                    merchant='McDonalds'
+                />
+                <TransactionCard
+                    time='11:20pm'
+                    category='Games'
+                    amount='90.00'
+                    description='Skin bundle'
+                    merchant='Valorant'
+                />
+                <TransactionCard
+                    time='6:32pm'
+                    category='Misc...'
+                    amount='15.35'
+                    description='Chiikawa figures'
+                    merchant='Token'
+                />
+                <TransactionCard
+                    time='2:25am'
+                    category='Games'
+                    amount='13.56'
+                    description='REPO'
+                    merchant='Steam'
+                />
+                <TransactionCard
+                    time='5:34pm'
+                    category='Games'
+                    amount='130.64'
+                    description='In-game purchase'
+                    merchant='Fortnite'
+                />
+                <TransactionCard
+                    time='11:46am'
+                    category='Dine...'
+                    amount='9.53'
+                    description='Matcha Supreme'
+                    merchant='HeyTea'
+                />
+                <TransactionCard
+                    time='1:34pm'
+                    category='Dine...'
+                    amount='12.86'
+                    description='BBT'
+                    merchant='Uber Eats'
+                />
+                <TransactionCard
+                    time='4:20pm'
+                    category='Groc...'
+                    amount='4.56'
+                    description='Snacks'
+                    merchant='T&T Supermarket'
+                />
+                <TransactionCard
+                    time='5:33am'
+                    category='Dine...'
+                    amount='12.57'
+                    description='Nugget meal'
+                    merchant='McDonalds'
+                />
+                <TransactionCard
+                    time='11:20pm'
+                    category='Cloth...'
+                    amount='190.23'
+                    description='Dress'
+                    merchant='Maie'
+                />
+                <TransactionCard
+                    time='1:47pm'
+                    category='Dine...'
+                    amount='32.69'
+                    description='Lunch with friends'
+                    merchant='Earls'
+                />
+                <TransactionCard
+                    time='5:23pm'
+                    category='Dine...'
+                    amount='9.68'
+                    description='Mcdouble meal'
+                    merchant='McDonalds'
+                />
+                {/*May*/}
+                <TransactionCard
+                    time='4:20pm'
+                    category='Games'
+                    amount='99.45'
+                    description='In-game purchase'
+                    merchant='Fortnite'
+                />
+                <TransactionCard
+                    time='10:33am'
+                    category='Misc...'
+                    amount='12.57'
+                    description='Artboard'
+                    merchant='Dollarama'
+                />
+                <TransactionCard
+                    time='11:20pm'
+                    category='Dine...'
+                    amount='7.57'
+                    description='Kids meal'
+                    merchant='Popeyes'
+                />
+                <TransactionCard
+                    time='12:23pm'
+                    category='Dine...'
+                    amount='7.23'
+                    description='BBT'
+                    merchant='CoCo'
+                />
+                <TransactionCard
+                    time='4:46pm'
+                    category='Misc...'
+                    amount='16.45'
+                    description='Movie tickets'
+                    merchant='Cinema'
+                />
+                <TransactionCard
+                    time='1:34pm'
+                    category='Misc...'
+                    amount='16.86'
+                    description='Makeup'
+                    merchant='Omomo'
+                />
+                <TransactionCard
+                    time='3:26pm'
+                    category='Misc...'
+                    amount='9.00'
+                    description='Photo strips'
+                    merchant='PhotoCrumb'
+                />
+            </div>
+            <div>
+                <CalendarCard
+                    month='January'
+                    amount='440.02'
+                />
+                <CalendarCard
+                    month='February'
+                    amount='219.54'
+                />
+                <CalendarCard
+                    month='March'
+                    amount='188.90'
+                />
+                <CalendarCard
+                    month='April'
+                    amount='258.72 '
+                />
+                <CalendarCard
+                    month='May'
+                    amount='258.72'
+                />
+            </div>
+      <Coins
+        type="coins"
+        value="Coins: "
+        coin={10} 
+      />
+    </div>
+  );
+
+}
