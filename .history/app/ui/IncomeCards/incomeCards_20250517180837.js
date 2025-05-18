@@ -1,9 +1,6 @@
 import styles from "@/app/ui/IncomeCards/incomeCards.module.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import Button from "@/app/ui/Buttons/Buttons";
-import leftArrow from "@/public/left_arrow.svg";
-import rightArrow from "@/public/right_arrow.svg";
 
 export default function IncomeCard({ month, amount, prevMonth, nextMonth }) {
     const router = useRouter();
@@ -34,19 +31,9 @@ export default function IncomeCard({ month, amount, prevMonth, nextMonth }) {
             </div>
             <div className={styles.pill}>Income This Month</div>
             <div className={styles.monthRow}>
-                <div className={styles.arrowLeft}>
-                    <Button
-                        imageSrc='/left_arrow.svg'
-                        onClick={() => navigateToMonth(prevMonth)}
-                    />
-                </div>
+                <span className={styles.arrowLeft}></span>
                 <span className={styles.month}>{month}</span>
-                <div className={styles.arrowRight}>
-                    <Button
-                        imageSrc='/right_arrow.svg'
-                        onClick={() => navigateToMonth(nextMonth)}
-                    />
-                </div>
+                <span className={styles.arrowRight}></span>
             </div>
             <div className={styles.spentLabel}>You've Earned:</div>
             <div className={styles.amount}>${amount}</div>

@@ -15,6 +15,7 @@
     width: 34px;
     height: 38px;
     display: flex;
+    background-image: url("/left_arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
     flex: 0 0 10%;

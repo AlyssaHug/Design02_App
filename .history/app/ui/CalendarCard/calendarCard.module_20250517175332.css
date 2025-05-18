@@ -1,4 +1,4 @@
-.box {
+.container {
     background: #b6d7a8;
     border-radius: 0 0 40px 40px;
     padding: 24px 16px 32px 16px;
@@ -10,11 +10,11 @@
     margin-bottom: 16px;
     padding-top: 30px;
 }
-
-.backButton {
-    width: 34px;
-    height: 38px;
+.backArrow {
+    width: 28px;
+    height: 28px;
     display: flex;
+    background-image: url("/left_arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
     flex: 0 0 10%;
@@ -37,12 +37,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     gap: 15px;
+    margin-top: 15px;
 }
 
 .arrowLeft {
-    width: 34px;
+    width: 24px;
     height: 24px;
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@
 }
 
 .arrowRight {
-    width: 34px;
+    width: 24px;
     height: 24px;
     display: flex;
     align-items: center;
@@ -68,6 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .arrowRight button {
@@ -79,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .arrowLeft img,
@@ -86,12 +89,16 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
+    display: block;
 }
 
 .month {
     font-size: 2em;
     font-weight: 700;
     color: #3d2c29;
+    line-height: 1;
+    display: flex;
+    align-items: center;
 }
 
 .spentLabel {
@@ -111,34 +118,8 @@
     color: #3d2c29;
     font-size: 1.1em;
 }
-
 .headerRow {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.backButton {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.backButton button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.backButton img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
 }

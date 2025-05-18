@@ -14,7 +14,8 @@ export default function Page() {
     const handleToggle = (isDatesView) => {
         setIsDates(isDatesView);
         if (!isDatesView) {
-            router.push("/Expense/overview/Weekly/May");
+            // Navigate back to Weekly view when Transactions is selected
+            router.push("/Expense/overview/Weekly/May"); // or whatever month you want to default to
         }
     };
 

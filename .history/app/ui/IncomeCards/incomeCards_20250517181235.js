@@ -2,8 +2,6 @@ import styles from "@/app/ui/IncomeCards/incomeCards.module.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Button from "@/app/ui/Buttons/Buttons";
-import leftArrow from "@/public/left_arrow.svg";
-import rightArrow from "@/public/right_arrow.svg";
 
 export default function IncomeCard({ month, amount, prevMonth, nextMonth }) {
     const router = useRouter();

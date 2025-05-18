@@ -2,31 +2,24 @@
 import { useState } from "react";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 
-const ToggleButton = ({ onToggle, initialIsDates = true }) => {
-    const [isDates, setIsDates] = useState(initialIsDates);
-
-    const handleToggle = (isDatesView) => {
-        setIsDates(isDatesView);
-        if (onToggle) {
-            onToggle(isDatesView);
-        }
-    };
+const ToggleButton = () => {
+    const [isMonthly, setIsMonthly] = useState(true);
 
     return (
         <div className={styles.toggleContainer}>
             <button
                 className={`${styles.monthlyLabel} ${
-                    isDates ? styles.active : ""
+                    isMonthly ? styles.active : ""
                 }`}
-                onClick={() => handleToggle(true)}
+                onClick={() => setIsMonthly(true)}
                 type='button'>
                 Dates
             </button>
             <button
                 className={`${styles.weeklyLabel} ${
-                    !isDates ? styles.active : ""
+                    !isMonthly ? styles.active : ""
                 }`}
-                onClick={() => handleToggle(false)}
+                onClick={() => setIsMonthly(false)}
                 type='button'>
                 Transactions
             </button>

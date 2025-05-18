@@ -14,7 +14,7 @@ export default function Page() {
     const handleToggle = (isDatesView) => {
         setIsDates(isDatesView);
         if (!isDatesView) {
-            router.push("/Expense/overview/Weekly/May");
+            router.push("/Expense/overview/MonthlyView/page.js");
         }
     };
 

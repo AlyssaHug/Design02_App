@@ -2,8 +2,8 @@
 import { useState } from "react";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 
-const ToggleButton = ({ onToggle, initialIsDates = true }) => {
-    const [isDates, setIsDates] = useState(initialIsDates);
+const ToggleButton = ({ onToggle }) => {
+    const [isDates, setIsDates] = useState(true);
 
     const handleToggle = (isDatesView) => {
         setIsDates(isDatesView);
