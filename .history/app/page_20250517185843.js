@@ -1,5 +1,5 @@
 "use client";
-
+<<<<<<< HEAD
 import Coins from "./ui/coins/coins";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import ToggleButton from "@/app/ui/Buttons/ToggleButton";
@@ -15,6 +15,10 @@ import Input from "@/app/ui/inputs/inputs";
 import PopUp from "@/app/ui/pop-ups/pop-ups";
 import PageHeader from "./ui/page-headers/page-header";
 
+
+
+=======
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403
 import Nav from "./ui/navbar/navbar";
 import TextField from "./ui/TextField/TextField";
 export default function Page() {
@@ -148,29 +152,29 @@ export default function Page() {
     return (
         <div>
             <PopUp
-                message='Saved!'
+                message="Saved!"
                 onClose={() => {}}
                 buttons={[
                     {
                         label: "Close",
                         className: "popup_dark_button",
                         textClassName: "popup_dark_button_text",
-                    },
+                    }
                 ]}
             />
             <PopUp
-                message='Deleted!'
+                message="Deleted!"
                 onClose={() => {}}
                 buttons={[
                     {
                         label: "Close",
                         className: "popup_dark_button",
                         textClassName: "popup_dark_button_text",
-                    },
+                    }
                 ]}
             />
             <PopUp
-                message='Not Enough Coins!'
+                message="Not Enough Coins!"
                 onClose={() => {}}
                 buttons={[
                     {
@@ -183,11 +187,11 @@ export default function Page() {
                         label: "Close",
                         className: "popup_dark_button",
                         textClassName: "popup_dark_button_text",
-                    },
+                    }
                 ]}
             />
             <PopUp
-                message='Coins have been added to your MooMoo fund!'
+                message="Coins have been added to your MooMoo fund!"
                 onClose={() => {}}
                 buttons={[
                     {
@@ -200,11 +204,11 @@ export default function Page() {
                         label: "Close",
                         className: "popup_dark_button",
                         textClassName: "popup_dark_button_text",
-                    },
+                    }
                 ]}
             />
             <PopUp
-                message='Goal removed'
+                message="Goal removed"
                 onClose={() => {}}
                 buttons={[
                     {
@@ -217,11 +221,11 @@ export default function Page() {
                         label: "Close",
                         className: "popup_dark_button",
                         textClassName: "popup_dark_button_text",
-                    },
-                ]}
+                    }
+                ]} 
             />
-            <PopUp
-                message='Your goal was created!'
+            <PopUp 
+                message="Your goal was created!"
                 onClose={() => {}}
                 buttons={[
                     {
@@ -234,21 +238,21 @@ export default function Page() {
                         className: "popup_light_button",
                         textClassName: "popup_light_button_text",
                         navigateTo: "/",
-                    },
+                    }
                 ]}
             />
             <h3>Email</h3>
-            <Input
-                size='login'
-                type='text'
+            <Input 
+                size="login"
+                type="text"
                 className={styles.input}
                 onChange={() => {}}
             />
             <PageHeader
                 placeholder='Hello, John!'
-                type='header_title'
-                header='expense_homepage'
-                text='Test'
+                type="header_title"
+                header="expense_homepage"
+                text="Test"
             />
             <Nav />
             <div className={styles.small}>
@@ -278,6 +282,7 @@ export default function Page() {
                 value='da shop'
                 href='/Cow/Shop'
             />
+
 
             <Button imageSrc='/right_arrow.svg' />
             <GoalProgress />

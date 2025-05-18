@@ -6,9 +6,9 @@ import styles from "./overview.module.css";
 import PageHeader from "@/app/ui/page-headers/page-header";
 
 export default function Page() {
+    const pathname = usePathname();
     return (
         <>
-            <PageHeader title='Overview' />
             <div className={styles.transactionContainer}>
                 <div className={styles.transactionIncome}>
                     <Button

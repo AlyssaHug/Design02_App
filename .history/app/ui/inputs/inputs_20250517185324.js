@@ -16,7 +16,9 @@ export default function Inputs({
     color,
     disabled,
 
-    maxLength,
+    maxLength
+    
+
 }) {
     const inputClasses = classNames(styles.input, libreFranklin.variable, {
         [styles.login]: size === "login",
@@ -25,8 +27,8 @@ export default function Inputs({
         [styles.account_large]: size === "account_large",
         [styles.paragraph]: size === "paragraph",
         [styles.dark]: color === "dark",
-        [styles.light]: color === "light",
-    });
+        [styles.light]: color === "light"
+    })
 
     return (
         <input
@@ -41,3 +43,8 @@ export default function Inputs({
         />
     );
 }
+<<<<<<< HEAD
+
+            
+=======
+>>>>>>> eecae54212f273bf1baa5febf4fbd3c21f09e403

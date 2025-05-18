@@ -4,36 +4,44 @@
     align-items: center;
 }
 
-.login {
+.login,
+.sign-in_input {
     width: 267px;
     height: 37px;
     flex-shrink: 0;
     border-radius: 30px;
     background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
 }
 
-.expense {
+.expense,
+.expense_input {
     width: 370px;
     height: 52px;
     flex-shrink: 0;
     border-radius: 12px;
     background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
 }
 
-.goal {
+.goal,
+.goal_input {
     width: 370px;
     height: 44px;
     flex-shrink: 0;
     border-radius: 30px;
     background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
 }
 
-.paragraph {
+.paragraph,
+.paragraph_input {
     width: 370px;
     height: 148px;
     flex-shrink: 0;
     border-radius: 12px;
     background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
 }
 
 .dark {
@@ -44,49 +52,12 @@
     background: var(--Tertiary-tertiary-700, #1c351c);
 }
 
-.account_large {
+.account_large,
+.account_input {
     width: 288px;
     height: 44px;
     flex-shrink: 0;
     border-radius: 30px;
     background: var(--Primary-primary-100, #d9ebd1);
-}
-
-.sign-in_input {
-    width: 267px;
-    padding: 37px;
-    background-color: #d9ebd1;
     border: 1px solid #ffffff;
-    border-radius: 4px;
-}
-
-.expense_input {
-    width: 370px;
-    padding: 52px;
-    background-color: #d9ebd1;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-}
-
-.goal_input {
-    width: 267px;
-    padding: 37px;
-    background-color: #d9ebd1;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-}
-.account_input {
-    width: 267px;
-    padding: 37px;
-    background-color: #d9ebd1;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-}
-
-.paragraph_input {
-    width: 370px;
-    padding: 148px;
-    background-color: #d9ebd1;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
 }

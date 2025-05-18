@@ -8,7 +8,6 @@ import PageHeader from "@/app/ui/page-headers/page-header";
 export default function Page() {
     return (
         <>
-            <PageHeader title='Overview' />
             <div className={styles.transactionContainer}>
                 <div className={styles.transactionIncome}>
                     <Button
