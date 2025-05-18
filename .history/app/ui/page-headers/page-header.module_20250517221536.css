@@ -97,10 +97,11 @@
 .expense_overview_header h1 {
     color: var(--secondary-secondary-900, #090f19);
     font-family: Quicksand;
-    font-size: 36px;
+    font-size: 28px;
     font-style: bold;
     font-weight: 600;
-    padding-top: 20px;
+
+    padding-top: 30px;
     text-align: center;
 }
 

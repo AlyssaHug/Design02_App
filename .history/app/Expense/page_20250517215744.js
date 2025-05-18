@@ -7,7 +7,10 @@ import ExpenseHomepageHeader from "@/app/ui/expenseHomepageHeader/expenseHomepag
 export default function Page() {
     return (
         <>
-            <ExpenseHomepageHeader />
+            <PageHeader
+                header='expense_homepage'
+                text='Expense'
+            />
             <div className={styles.buttonContainer}>
                 <div className={styles.buttonOverview}>
                     <Button

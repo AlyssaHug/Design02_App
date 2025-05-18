@@ -3,11 +3,14 @@
 import Nav from "@/app/ui/navbar/navbar";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "./expense.module.css";
-import ExpenseHomepageHeader from "@/app/ui/expenseHomepageHeader/expenseHomepageHeader";
+import PageHeader from "@/app/ui/page-headers/page-header";
 export default function Page() {
     return (
         <>
-            <ExpenseHomepageHeader />
+            <PageHeader
+                header='expense_homepage'
+                text='Expense'
+            />
             <div className={styles.buttonContainer}>
                 <div className={styles.buttonOverview}>
                     <Button

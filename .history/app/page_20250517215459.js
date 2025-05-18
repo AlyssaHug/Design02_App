@@ -145,7 +145,7 @@ export default function Page() {
         }
     };
 
-    return (
+  /*  return (
         <div>
             <PopUp
                 message='Saved!'
@@ -237,7 +237,7 @@ export default function Page() {
                     },
                 ]}
             />
-
+            
             <h3>Email</h3>
             <Input
                 size='login'
@@ -285,3 +285,4 @@ export default function Page() {
         </div>
     );
 }
+*/

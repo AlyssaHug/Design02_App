@@ -14,9 +14,9 @@ import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
 import Input from "@/app/ui/inputs/inputs";
 import PopUp from "@/app/ui/pop-ups/pop-ups";
 import PageHeader from "./ui/page-headers/page-header";
+import PopUps from "./ui/pop-ups/pop-ups";
 import Nav from "./ui/navbar/navbar";
 import TextField from "./ui/TextField/TextField";
-
 export default function Page() {
     const categoryOptions = [
         { value: "groceries", label: "Groceries" },
@@ -237,7 +237,6 @@ export default function Page() {
                     },
                 ]}
             />
-
             <h3>Email</h3>
             <Input
                 size='login'
