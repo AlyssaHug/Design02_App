@@ -2,12 +2,11 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    margin-top: 50px;
 }
 .questionInputs,
 .amountInputs,
 .dropdownInputs,
-.itemInputs {
+.commentsInputs {
     font-family: Quicksand;
     font-size: 16px;
     font-style: normal;
@@ -17,7 +16,7 @@
 .addExpensesContainer,
 .expenseAmountContainer,
 .dropdownContainer,
-.itemContainer {
+.commentsContainer {
     margin-bottom: 50px;
     margin-top: 50px;
 }

@@ -19,7 +19,7 @@ export default function Page() {
         <>
             <PageHeader
                 title='Add Income Transfer'
-                header='income_transfer_header'
+                header='add_income_transfer_header'
                 text='Add Income Transfer'
             />
             <div className={styles.addExpensesContainer}>

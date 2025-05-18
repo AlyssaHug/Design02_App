@@ -5,7 +5,6 @@ import Dropdown from "@/app/ui/dropdown/dropdown";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "./IncomeTransfer.module.css";
 import TextField from "@/app/ui/TextField/TextField";
-import PageHeader from "@/app/ui/page-headers/page-header";
 
 export default function Page() {
     const interactionOptions = [
@@ -17,14 +16,9 @@ export default function Page() {
     ];
     return (
         <>
-            <PageHeader
-                title='Add Income Transfer'
-                header='income_transfer_header'
-                text='Add Income Transfer'
-            />
             <div className={styles.addExpensesContainer}>
                 <div className={styles.questionInputs}>
-                    <p>Name of recipipent who paid:</p>
+                    <p>Name oof recipipent who paid:</p>
                 </div>
                 <TextField
                     type='text'
@@ -32,19 +26,9 @@ export default function Page() {
                     placeholder='Eg. Jane Doe'
                 />
             </div>
-            <div className={styles.itemContainer}>
-                <div className={styles.itemInputs}>
-                    <p>What item was would you like to add?</p>
-                </div>
-                <TextField
-                    type='text'
-                    size='round'
-                    placeholder='Eg. White T-shirt'
-                />
-            </div>
             <div className={styles.dropdownContainer}>
                 <div className={styles.dropdownInputs}>
-                    <p>Where did this transaction come from?</p>
+                    <p>What item would you like to add?</p>
                 </div>
                 <Dropdown options={interactionOptions} />
             </div>
@@ -58,7 +42,16 @@ export default function Page() {
                     placeholder='Eg. 10.00'
                 />
             </div>
-
+            <div className={styles.commentsContainer}>
+                <div className={styles.commentsInputs}>
+                    <p>Additional Comments:</p>
+                </div>
+                <TextField
+                    type='text'
+                    size='round'
+                    placeholder='Bought drink for my friend'
+                />
+            </div>
             <div className={styles.buttonContainer}>
                 <Button
                     color='light-blue'

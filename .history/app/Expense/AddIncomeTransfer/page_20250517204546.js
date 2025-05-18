@@ -20,7 +20,6 @@ export default function Page() {
             <PageHeader
                 title='Add Income Transfer'
                 header='income_transfer_header'
-                text='Add Income Transfer'
             />
             <div className={styles.addExpensesContainer}>
                 <div className={styles.questionInputs}>

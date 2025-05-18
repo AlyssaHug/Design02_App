@@ -17,11 +17,6 @@ export default function Page() {
     ];
     return (
         <>
-            <PageHeader
-                title='Add Income Transfer'
-                header='income_transfer_header'
-                text='Add Income Transfer'
-            />
             <div className={styles.addExpensesContainer}>
                 <div className={styles.questionInputs}>
                     <p>Name of recipipent who paid:</p>
