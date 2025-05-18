@@ -12,13 +12,13 @@
     padding: 35px;
 }
 .buttonContainer {
-    padding: 20px;
+    padding-top: 40px;
     display: grid;
     margin-top: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     background-color: #445063;
-    margin-right: 15px;
+    border-radius: 40px;
 }
 .buttonIncome p {
     padding: 5px;
