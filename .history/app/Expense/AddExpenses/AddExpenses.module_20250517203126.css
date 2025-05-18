@@ -17,9 +17,6 @@
 .expenseAmountContainer,
 .dropdownContainer,
 .commentsContainer {
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.pageHeaderContainer {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }

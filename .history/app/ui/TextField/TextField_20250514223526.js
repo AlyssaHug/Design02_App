@@ -16,7 +16,6 @@ export default function TextField({ value, type, placeholder, size, color }) {
         [styles.dark]: color === "dark",
         [styles.light]: color === "light",
         [styles.large]: size === "large",
-        [styles.round]: size === "round",
     });
     return (
         <div>

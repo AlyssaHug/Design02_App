@@ -4,7 +4,7 @@ import Nav from "@/app/ui/navbar/navbar";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "./IncomeTransfer.module.css";
-import TextField from "@/app/ui/TextField/TextField";
+import TextField from "@/app/ui/text-fields/text-field";
 
 export default function Page() {
     const interactionOptions = [

@@ -16,6 +16,11 @@ export default function Page() {
     ];
     return (
         <>
+            <TextField
+                type='text'
+                size='expense'
+                placeholder='Eg. Starbucks Coffee (Matcha Latte)'
+            />
             <Dropdown options={interactionOptions} />
             <div className={styles.buttonContainer}>
                 <Button

@@ -5,7 +5,6 @@ import Dropdown from "@/app/ui/dropdown/dropdown";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "./AddExpenses.module.css";
 import TextField from "@/app/ui/TextField/TextField";
-import PageHeader from "@/app/ui/page-headers/page-header";
 
 export default function Page() {
     const categoryOptions = [
@@ -17,13 +16,6 @@ export default function Page() {
     ];
     return (
         <>
-            <div className={styles.pageHeaderContainer}>
-                <PageHeader
-                    title='Add Expenses'
-                    header='add_expense_header'
-                    text='Add Expenses'
-                />
-            </div>
             <div className={styles.addExpensesContainer}>
                 <div className={styles.questionInputs}>
                     <p>What expense would you like to add today?</p>
@@ -48,16 +40,6 @@ export default function Page() {
                     type='number'
                     size='round'
                     placeholder='Eg. 10.00'
-                />
-            </div>
-            <div className={styles.commentsContainer}>
-                <div className={styles.commentsInputs}>
-                    <p>Additional Comments:</p>
-                </div>
-                <TextField
-                    type='text'
-                    size='round'
-                    placeholder='Bought drink for my friend'
                 />
             </div>
             <div className={styles.buttonContainer}>

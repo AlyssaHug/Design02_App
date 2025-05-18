@@ -53,6 +53,7 @@
 }
 
 .add_expense_header {
+    width: 402px;
     height: 147px;
     flex-shrink: 0;
     background: var(--Primary-primary-300, #acd39d);

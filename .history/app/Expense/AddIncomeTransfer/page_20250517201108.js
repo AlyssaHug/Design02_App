@@ -4,7 +4,7 @@ import Nav from "@/app/ui/navbar/navbar";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import Button from "@/app/ui/Buttons/Buttons";
 import styles from "./IncomeTransfer.module.css";
-import TextField from "@/app/ui/TextField/TextField";
+import Input from "@/app/ui/input/input";
 
 export default function Page() {
     const interactionOptions = [
@@ -16,6 +16,11 @@ export default function Page() {
     ];
     return (
         <>
+            <Input
+                type='text'
+                size='expense'
+                placeholder='Enter amount'
+            />
             <Dropdown options={interactionOptions} />
             <div className={styles.buttonContainer}>
                 <Button

@@ -17,13 +17,12 @@ export default function Page() {
     ];
     return (
         <>
-            <div className={styles.pageHeaderContainer}>
-                <PageHeader
-                    title='Add Expenses'
-                    header='add_expense_header'
-                    text='Add Expenses'
-                />
-            </div>
+            <PageHeader
+                title='Add Expenses'
+                header='add_expense_header_text'
+                header='add_expense_header'
+                text='Add Expenses'
+            />
             <div className={styles.addExpensesContainer}>
                 <div className={styles.questionInputs}>
                     <p>What expense would you like to add today?</p>

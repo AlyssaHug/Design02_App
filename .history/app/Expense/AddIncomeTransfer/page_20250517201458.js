@@ -16,6 +16,11 @@ export default function Page() {
     ];
     return (
         <>
+            <TextField
+                type='text'
+                size='expense'
+                placeholder='Enter amount'
+            />
             <Dropdown options={interactionOptions} />
             <div className={styles.buttonContainer}>
                 <Button

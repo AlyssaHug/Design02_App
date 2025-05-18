@@ -4,9 +4,7 @@
     gap: 10px;
 }
 .questionInputs,
-.amountInputs,
-.dropdownInputs,
-.commentsInputs {
+.amountInputs {
     font-family: Quicksand;
     font-size: 16px;
     font-style: normal;
@@ -15,11 +13,7 @@
 
 .addExpensesContainer,
 .expenseAmountContainer,
-.dropdownContainer,
-.commentsContainer {
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.pageHeaderContainer {
-    margin-bottom: 80px;
+.dropdownContainer {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
