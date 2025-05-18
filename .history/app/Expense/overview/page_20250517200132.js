@@ -13,10 +13,8 @@ export default function Page() {
                 header='expense_overview_header'
                 text='Welcome back, John!'
             />
-            <div className={styles.activity}>
-                <p>Activities so far...</p>
-            </div>
             <div className={styles.transactionContainer}>
+                <p>History of this Month</p>
                 <div className={styles.transactionIncome}>
                     <Button
                         value='Income $98.36'

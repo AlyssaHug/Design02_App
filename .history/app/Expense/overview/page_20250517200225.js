@@ -14,8 +14,7 @@ export default function Page() {
                 text='Welcome back, John!'
             />
             <div className={styles.activity}>
-                <p>Activities so far...</p>
-            </div>
+            <p>This months activities so far...</p>
             <div className={styles.transactionContainer}>
                 <div className={styles.transactionIncome}>
                     <Button
@@ -78,6 +77,6 @@ export default function Page() {
                 </div>
             </div>
             <Nav />
-        </>
+        </div>
     );
 }

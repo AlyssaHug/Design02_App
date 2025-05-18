@@ -14,7 +14,7 @@ export default function Page() {
                 text='Welcome back, John!'
             />
             <div className={styles.activity}>
-                <p>Activities so far...</p>
+                <p>This months activities so far...</p>
             </div>
             <div className={styles.transactionContainer}>
                 <div className={styles.transactionIncome}>
@@ -78,6 +78,6 @@ export default function Page() {
                 </div>
             </div>
             <Nav />
-        </>
+        
     );
 }

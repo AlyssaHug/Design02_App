@@ -8,18 +8,11 @@ import PageHeader from "@/app/ui/page-headers/page-header";
 export default function Page() {
     return (
         <>
-            <PageHeader
-                title='Overview'
-                header='expense_overview_header'
-                text='Welcome back, John!'
-            />
-            <div className={styles.activity}>
-                <p>Activities so far...</p>
-            </div>
+            <PageHeader title='Overview' />
             <div className={styles.transactionContainer}>
                 <div className={styles.transactionIncome}>
                     <Button
-                        value='Income $98.36'
+                        value='Income $504.22'
                         type='expense'
                         style='round'
                         href='overview/Income/May'
@@ -27,10 +20,10 @@ export default function Page() {
                 </div>
                 <div className={styles.transactionExpenses}>
                     <Button
-                        value='Expenses $258.72'
+                        value='Expenses $1244.44'
                         type='expense'
                         style='round'
-                        href='overview/Weekly/May'
+                        href='overview/Expenses/May'
                     />
                 </div>
             </div>

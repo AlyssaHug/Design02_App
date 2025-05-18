@@ -13,9 +13,7 @@ export default function Page() {
                 header='expense_overview_header'
                 text='Welcome back, John!'
             />
-            <div className={styles.activity}>
-                <p>Activities so far...</p>
-            </div>
+            <p>This months activities so far...</p>
             <div className={styles.transactionContainer}>
                 <div className={styles.transactionIncome}>
                     <Button

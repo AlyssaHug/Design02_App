@@ -83,8 +83,8 @@
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    padding-left: 85px;
-    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .income_transfer_header {

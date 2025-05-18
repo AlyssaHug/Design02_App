@@ -71,20 +71,12 @@
 }
 
 .expense_overview_header {
+    width: 402px;
     height: 101px;
     flex-shrink: 0;
     border-radius: 0px 0px 40px 40px;
     background: var(--Primary-primary-300, #acd39d);
     box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
-}
-.expense_overview_header h1 {
-    color: var(--secondary-secondary-900, #090f19);
-    font-family: Quicksand;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    padding-left: 85px;
-    padding-top: 30px;
 }
 
 .income_transfer_header {
