@@ -17,8 +17,11 @@
     line-height: 32px;
     text-align: center;
     margin-top: 50px;
+    color: #090f19;
 }
-
+.activity p {
+    color: #090f19;
+}
 .transactionContainer {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
@@ -64,6 +67,7 @@
     padding-bottom: 400px;
 }
 
+.activity p,
 .transactionDate p {
     color: white;
     font-size: 18px;
