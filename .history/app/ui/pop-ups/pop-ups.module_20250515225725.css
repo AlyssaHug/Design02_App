@@ -1,0 +1,105 @@
+.popup_background {
+    width: 356px;
+    height: 224px;
+    border-radius: 20px;
+    background: var(--Tertiary-tertiary-300, #6E866F);
+}
+
+.popup_foreground {
+    margin-top: 20px;
+    position: absolute;
+    left: 15px;
+    width: 321.098px;
+    height: 123.552px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--Primary-primary-200, #C6E1BB);
+}
+
+.popup_text {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 20px;
+    padding: 1 20px;
+}
+
+.popup_light_button {
+    position: relative; 
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--accent-blue-accent-blue-500, #B2D4E6);
+}
+
+.popup_light_button_text {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.popup_dark_button {
+    position: relative; 
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #4B5961;
+}
+
+.popup_buttons {
+    display: flex;
+    flex-direction: row;   
+    justify-content: center; 
+    gap: 16px;              
+    margin-top: 64px;
+}
+
+.popup_dark_button_text {
+    color: #FEFDFD;
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.popup_edit_categories_background {
+    width: 363px;
+    height: 652px;
+    flex-shrink: 0;
+}
+
+.remove_category_button{
+    width: 156px;
+    height: 35px;
+    flex-shrink: 0;
+    background: var(--accent-blue-accent-blue-200, #DCEBF4);
+}
+
+.category_text_field{
+    width: 326px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Primary-primary-100, #D9EBD1);
+}
+
+.edit_button {
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid var(--accent-blue-accent-blue-900, #4B5961);
+}
+
