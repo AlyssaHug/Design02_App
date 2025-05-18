@@ -10,10 +10,8 @@ import styles from "@/app/Homepage/styles.module.css";
 export default function Page() {
     return (
         <div className={styles.Page}>
-            <div className={styles.LogoSignUpContainer}>
             <p className={styles.SubText}>Welcome to</p>
             <h1 className={styles.LogoText}>MoolahMate</h1>
-            </div>
             <p className={styles.SubheadingText}>Email</p>
             <Inputs
                 type="text"
@@ -36,15 +34,13 @@ export default function Page() {
                 type="text"
                 size="login"
                 color="light"/>
-            <h1 className={styles.AccountTextButton}>By clicking “Get Started,” you agree to our Terms and Conditions and Privacy Policy</h1>
-            <div className={styles.GetStartedButton}>
+            <h1 className={styles.AlternativeText}>By clicking “Get Started,” you agree to our Terms and Conditions and Privacy Policy</h1>
             <Button
                 style="round"
                 type="primary"
                 color="dark"
                 value="Get Started!"
             />
-            </div>
             <div className={styles.SignUpContainer}>
             <h1 className={styles.AccountTextButton}>Already have an account?</h1>
             <Button

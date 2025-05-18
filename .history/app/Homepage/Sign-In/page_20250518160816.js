@@ -36,7 +36,7 @@ export default function Page() {
                     type="primary"
                     color="dark"
                     value="Login"
-                    onClick={() => window.location.href = '/Homepage'}
+                    
                     />
             </div>
             <div className={styles.SignUpContainer}>

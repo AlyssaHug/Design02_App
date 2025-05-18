@@ -37,7 +37,7 @@ export default function Page() {
                 size="login"
                 color="light"/>
             <h1 className={styles.AccountTextButton}>By clicking “Get Started,” you agree to our Terms and Conditions and Privacy Policy</h1>
-            <div className={styles.GetStartedButton}>
+            <div className={styles.LoginContainer}>
             <Button
                 style="round"
                 type="primary"

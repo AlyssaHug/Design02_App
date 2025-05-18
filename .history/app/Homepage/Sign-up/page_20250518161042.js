@@ -10,10 +10,8 @@ import styles from "@/app/Homepage/styles.module.css";
 export default function Page() {
     return (
         <div className={styles.Page}>
-            <div className={styles.LogoSignUpContainer}>
             <p className={styles.SubText}>Welcome to</p>
             <h1 className={styles.LogoText}>MoolahMate</h1>
-            </div>
             <p className={styles.SubheadingText}>Email</p>
             <Inputs
                 type="text"
@@ -23,37 +21,33 @@ export default function Page() {
             <p className={styles.SubheadingText}>Password</p>
             <Inputs
                 type="password"
-                size="pass"
+                size="login"
                 color="light"/>
-            <h1 className={styles.AccountTextButton}>8 or more characters, one number, one uppercase letter, one special case character</h1>
+            <h1 className={styles.AlternativeText}>8 or more characters, one number, one uppercase letter, one special case character</h1>
             <h1 className={styles.SubheadingText}>Confirm Password</h1>
             <Inputs
                 type="password"
                 size="login"
                 color="light"/>
-            <h1 className={styles.SubheadingText}>Username</h1>
+            <h1 className={styles.SmallText}>Username</h1>
             <Inputs
                 type="text"
                 size="login"
                 color="light"/>
-            <h1 className={styles.AccountTextButton}>By clicking “Get Started,” you agree to our Terms and Conditions and Privacy Policy</h1>
-            <div className={styles.GetStartedButton}>
+            <h1 className={styles.AlternativeText}>By clicking “Get Started,” you agree to our Terms and Conditions and Privacy Policy</h1>
             <Button
                 style="round"
                 type="primary"
                 color="dark"
                 value="Get Started!"
             />
-            </div>
-            <div className={styles.SignUpContainer}>
-            <h1 className={styles.AccountTextButton}>Already have an account?</h1>
+            <h1 className={styles.AlternativeText}>Already have an account?</h1>
             <Button
                 style="round"
                 type="primary"
                 color="light"
                 value="Sign in!"
             />
-            </div>
         </div>
     )
 }

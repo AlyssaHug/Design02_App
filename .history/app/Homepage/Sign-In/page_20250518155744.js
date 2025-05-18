@@ -16,8 +16,8 @@ export default function Page() {
             <div className={styles.SignInContainer}>
                 <h1 className={styles.LogoText}>MoolahMate</h1>
                 <p className={styles.SubText}>Welcome Back!</p>
+                <p className={styles.SubheadingText}>Email</p>
             </div>
-            <p className={styles.SubheadingText}>Email</p>
             <Inputs
                 type="email"
                 size="login"
@@ -36,7 +36,7 @@ export default function Page() {
                     type="primary"
                     color="dark"
                     value="Login"
-                    onClick={() => window.location.href = '/Homepage'}
+                    
                     />
             </div>
             <div className={styles.SignUpContainer}>
