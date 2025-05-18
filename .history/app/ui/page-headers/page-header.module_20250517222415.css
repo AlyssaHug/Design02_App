@@ -153,6 +153,18 @@
     background: var(--Primary-primary-300, #acd39d);
 }
 
+.back_button {
+    width: 16px;
+    height: 31.802px;
+    flex-shrink: 0;
+    aspect-ratio: 16/31.8;
+    box-sizing: border-box;
+    position: relative;
+    left: 16px;
+    right: 370px;
+    top: 25px;
+    bottom: 863px;
+}
 .backArrow {
     width: 28px;
     height: 28px;
@@ -162,9 +174,4 @@
     background-repeat: no-repeat;
     flex: 0 0 10%;
     cursor: pointer;
-    position: relative;
-    left: 16px;
-    right: 370px;
-    top: 25px;
-    bottom: 863px;
 }

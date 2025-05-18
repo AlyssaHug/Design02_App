@@ -7,12 +7,12 @@ import { useRouter } from "next/navigation";
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
+const router = useRouter();
+const backToOverview = () => {
+    router.replace("/Expense/overview");
+};
 
 const PageHeader = ({ type, header, text, subtext }) => {
-    const router = useRouter();
-    const backToOverview = () => {
-        router.replace("/Expense/overview");
-    };
     const headerClasses = classNames(styles.header, libreFranklin.variable, {
         [styles.new_user_homepage_header]: header === "new_user_homepage",
         [styles.homepage_header]: header === "homepage_header",
@@ -35,8 +35,7 @@ const PageHeader = ({ type, header, text, subtext }) => {
 
     return (
         <div>
-            <header className={headerClasses}>
-                <div className={styles.backArrow}>
+             <div className={styles.backButton}>
                     <Button
                         imageSrc='/left_arrow.svg'
                         onClick={backToOverview}

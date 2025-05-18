@@ -36,7 +36,7 @@ const PageHeader = ({ type, header, text, subtext }) => {
     return (
         <div>
             <header className={headerClasses}>
-                <div className={styles.backArrow}>
+                <div className={styles.backButton}>
                     <Button
                         imageSrc='/left_arrow.svg'
                         onClick={backToOverview}
