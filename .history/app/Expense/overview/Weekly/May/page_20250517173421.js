@@ -20,7 +20,8 @@ export default function Page() {
                     amount='258.72'
                     state='Transactions'
                     spentOrEarned='Spent'
-                    prevMonth='April'
+                    prevMonth='/Expense/overview/Weekly/April'
+                    nextMonth='/Expense/overview/Weekly/June'
                 />
             </div>
             <div className={styles.transactionContainer}>

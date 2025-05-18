@@ -20,7 +20,6 @@ export default function Page() {
                     amount='258.72'
                     state='Transactions'
                     spentOrEarned='Spent'
-                    prevMonth='April'
                 />
             </div>
             <div className={styles.transactionContainer}>
@@ -33,6 +32,7 @@ export default function Page() {
                     amount='9.00'
                     description='Photo strips'
                     merchant='PhotoCrumb'
+                    prevMonth='April'
                 />
                 <TransactionCard
                     time='1:34pm'
