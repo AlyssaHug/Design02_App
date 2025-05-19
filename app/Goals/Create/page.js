@@ -95,20 +95,24 @@ export default function Page() {
                 <TextField
                     value='How much do you need to save?'
                     placeholder='00.00'
+                    type='number'
                 />
                 <h3 className={styles.subheader}>Achieve by:</h3>
                 <div className={styles.dropdowns}>
                     <Dropdown
                         options={dateOptions}
                         className={styles.drop}
+                        placeholder='Day'
                     />
                     <Dropdown
                         options={monthOptions}
                         className={styles.drop}
+                        placeholder='Month'
                     />
                     <Dropdown
                         options={yearOptions}
                         className={styles.drop}
+                        placeholder='Year'
                     />
                 </div>
             </div>

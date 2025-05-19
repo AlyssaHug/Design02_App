@@ -47,7 +47,10 @@ export default function Page() {
                     <div className={styles.dropdownInputs}>
                         <p>Where did this transaction come from?</p>
                     </div>
-                    <Dropdown options={interactionOptions} />
+                    <Dropdown
+                        options={interactionOptions}
+                        placeholder='Transfer Type'
+                    />
                 </div>
                 <div className={styles.expensesAmountContainer}>
                     <div className={styles.amountInputs}>
