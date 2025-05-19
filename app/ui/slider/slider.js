@@ -21,41 +21,41 @@ export default function Slider({
     return (
         <div className={styles.slider}>
             <Button
-                value="Play"
-                color="light-blue"
+                value='Play'
+                color='light-blue'
                 onClick={onPlayClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Play"} 
+                isCowActive={activeButton === "Play"}
             />
             <Button
-                value="Pet"
-                color="light-blue"
+                value='Pet'
+                color='light-blue'
                 onClick={onPetClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Pet"} 
+                isCowActive={activeButton === "Pet"}
             />
             <Button
-                value="Feed"
-                color="light-blue"
+                value='Feed'
+                color='light-blue'
                 onClick={onFeedClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Eat"} 
+                isCowActive={activeButton === "Eat"}
             />
             <Button
-                value="Customize"
-                color="light-blue"
+                value='Customize'
+                color='light-blue'
                 onClick={onCustomizeClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Customize"} 
-                href="/Cow/Customize"
+                isCowActive={activeButton === "Customize"}
+                href='/Cow/Customize'
             />
             <Button
-                value="Shop"
-                color="light-blue"
+                value='Shop'
+                color='light-blue'
                 onClick={onShopClick}
                 customClass={styles.lightBlueOverride}
-                isCowActive={activeButton === "Shop"} 
-                href="/Cow/Shop"
+                isCowActive={activeButton === "Shop"}
+                href='/Cow/Shop'
             />
         </div>
     );

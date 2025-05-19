@@ -29,11 +29,13 @@ export default function Page() {
                 value='Appearance'
                 imageSrc='/right_arrow.svg'
                 type='settings'
+                href='/Profile/Settings/Appearance'
             />
             <SettingButton
                 value='Accessibility'
                 imageSrc='/right_arrow.svg'
                 type='settings'
+                href='/Profile/Settings/Accessibility'
             />
             <SettingButton
                 value='Notifications'

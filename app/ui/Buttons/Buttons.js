@@ -70,7 +70,6 @@ export default function Button({
             [styles.shop]: type === "shop" && !isBought,
             [styles.bought]: isBought,
             [styles.nav]: color === "nav",
-            [styles.navActive]: color === "nav-active",
             [styles.expense]: type === "expense",
             [styles.home]: type === "home",
             [styles.caption]: size === "caption",
@@ -79,6 +78,7 @@ export default function Button({
             [styles.coins]: type === "coins" || color === "coin-border",
             [styles.coins]: color === "coin-border",
             [styles.settings]: type === "settings",
+            [styles.navActive]: isActive,
         }
     );
 
@@ -90,8 +90,8 @@ export default function Button({
             disabled={isBought}>
             {imageSrc && (
                 <img
-                    src={imageSrc}
-                    alt={alt}
+                    src={isActive && activeImageSrc ? activeImageSrc : imageSrc}
+                    alt={value || "icon"}
                 />
             )}
             <span>

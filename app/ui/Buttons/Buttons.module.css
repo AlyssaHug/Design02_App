@@ -83,10 +83,12 @@
     font-weight: 400;
     font-family: var(--font-libre-franklin);
     justify-content: space-between;
+    cursor: pointer;
 }
 .settingButton {
     padding: 12px;
 }
+
 /*====nav styles====*/
 .nav {
     color: #37502d;
@@ -117,9 +119,8 @@
     max-width: 64px;
 }
 .cowActive {
-    background-color: #77ad62;
-    border-radius: 100%;
-    max-width: 64px;
+    background-color: #445063 !important;
+    color: #b2d4e6 !important; /* HAHAHA YOU WORK NOW I WAS JUST CALLING YOU WRONG :'D - thea */
 }
 
 /*=========Toggle Button========*/
@@ -171,6 +172,29 @@
     border-radius: 25px;
 }
 
+/* components/Slider.module.css */
+
+/* Parent container for the slider */
+.switch {
+    position: relative;
+    width: 84px; /* Enough for knob (32px) + translation (50px) + padding */
+    height: 40px; /* Matches knob height (32px) + padding (4px top/bottom) */
+    display: inline-block; /* Prevents stretching */
+}
+/* Hide the checkbox */
+.switch input {
+    opacity: 0;
+    width: 100%; /* Ensure it fills the container for clickability */
+    height: 100%; /* Ensure it fills the container for clickability */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0; /* Remove default browser margins */
+    padding: 0; /* Remove default browser padding */
+    z-index: 1; /* Ensure it’s clickable above the slider */
+    cursor: pointer; /* Maintain interactivity */
+}
+/* Slider track */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -183,6 +207,7 @@
     border-radius: 20px;
 }
 
+/* Slider knob */
 .slider:before {
     position: absolute;
     content: "";
@@ -213,7 +238,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(50px);
+    transform: translateX(44px); /* Adjusted to fit within 84px width */
 }
 
 /* Text for "On" state */
@@ -223,7 +248,95 @@ input:checked + .slider:after {
     left: 10px;
 }
 
+/*=====Setting Slider=====*/
+.sliderContainer {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin: 8px;
+}
+
+.track {
+    width: 100%;
+    height: 20px;
+    background-color: #e0f7e0; /* Light green for empty track */
+    border-radius: 12px;
+    position: relative;
+}
+
+.filledTrack {
+    height: 100%;
+    background-color: #4caf50; /* Green for filled track */
+    border-radius: 12px;
+    transition: width 0.1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.handle {
+    width: 20px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.handle:active {
+    background-color: #d4e8d4;
+}
+
+/*=====Setting Slider=====*/
+.sliderContainer {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin: 8px;
+}
+
+.track {
+    width: 100%;
+    height: 20px;
+    background-color: #e0f7e0; /* Light green for empty track */
+    border-radius: 12px;
+    position: relative;
+}
+
+.filledTrack {
+    height: 100%;
+    background-color: #4caf50; /* Green for filled track */
+    border-radius: 12px;
+    transition: width 0.1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.handle {
+    width: 20px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.handle:active {
+    background-color: #d4e8d4;
+}
+
 .cowActive {
-    background-color:#445063 !important;
-    color:#b2d4e6 !important; /* HAHAHA YOU WORK NOW I WAS JUST CALLING YOU WRONG :'D - thea */
+    background-color: #445063 !important;
+    color: #b2d4e6 !important; /* HAHAHA YOU WORK NOW I WAS JUST CALLING YOU WRONG :'D - thea */
 }

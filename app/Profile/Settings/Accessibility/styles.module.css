@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
+    margin-bottom: 130px;
+}
+.name {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-libre-franklin);
+    flex: 0 0 80%;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-top: 16px;
+    width: 100%;
+}
+.itemStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 16px;
+}
+.leftButton {
+    width: 20%;
+}
