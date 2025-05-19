@@ -2,6 +2,7 @@ import Nav from "@/app/ui/navbar/navbar";
 import { SettingButton } from "@/app/ui/Buttons/Buttons";
 import styles from "@/app/Profile/styles.module.css";
 import TextField from "../ui/TextField/TextField";
+
 export default function Page() {
     return (
         <div className={styles.content}>

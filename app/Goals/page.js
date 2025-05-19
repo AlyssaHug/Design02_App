@@ -6,12 +6,18 @@ import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import Nav from "../ui/navbar/navbar";
 import React from "react";
 import styles from "@/app/Goals/styles.module.css";
+import PageHeader from "../ui/page-headers/page-header";
 function page() {
     return (
         <div className={styles.page}>
             <Nav />
-            <h1>Welcome to da goals</h1>
-
+            <div className={styles.header}>
+                <PageHeader
+                    header='goal_homepage'
+                    text='Goals'
+                    type='header_title'
+                />
+            </div>
             <GoalProgress
                 value='Goal Progress'
                 type='progress'
@@ -58,6 +64,7 @@ function page() {
                     value='Check on MooMoo!'
                     text='Go!'
                     imageSrc='moomoonormal.svg'
+                    href='/Cow'
                 />
             </div>
         </div>

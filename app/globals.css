@@ -8,10 +8,11 @@
 html {
     background: var(--background);
     color: var(--foreground);
-    max-width: 480px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 130px;
 }
 
 .sameSizedButtons {

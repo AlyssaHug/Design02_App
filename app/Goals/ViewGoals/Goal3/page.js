@@ -4,6 +4,7 @@ import ProgressBar from "@/app/ui/ProgressBar/ProgressBar";
 import Nav from "@/app/ui/navbar/navbar";
 import { Libre_Franklin, Quicksand } from "next/font/google";
 import Moomoo from "@/app/ui/moomoo/moomoo";
+import PageHeader from "@/app/ui/page-headers/page-header";
 
 const quicksand = Quicksand({
     variable: "--font-quicksand",
@@ -16,6 +17,13 @@ export default function page() {
     return (
         <div className={styles.page}>
             <Nav />
+            <div className={styles.header}>
+                <PageHeader
+                    header='goal_header'
+                    text='Save for a car ($39,000)!'
+                    type='header_title'
+                />
+            </div>
             <div classname={styles.progress}>
                 <h3 className={styles.progressHeader}>Progress</h3>
                 <ProgressBar

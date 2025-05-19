@@ -2,10 +2,19 @@ import Button from "@/app/ui/Buttons/Buttons";
 import { GoalDetailed } from "@/app/ui/GoalCards/GoalCards";
 import styles from "@/app/Goals/ViewGoals/styles.module.css";
 import Nav from "@/app/ui/navbar/navbar";
+import PageHeader from "@/app/ui/page-headers/page-header";
+
 function page() {
     return (
         <div className={styles.page}>
             <Nav />
+            <div className={styles.header}>
+                <PageHeader
+                    header='goal_header'
+                    text='Current Goals'
+                    type='header_title'
+                />
+            </div>
             <div className={styles.content}>
                 <GoalDetailed
                     name='Goal 1'

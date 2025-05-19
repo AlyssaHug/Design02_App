@@ -3,6 +3,6 @@
     grid-template-columns: 1fr;
     gap: 20px;
 }
-.page {
-    margin-bottom: 130px;
+.header {
+    margin-bottom: 60px;
 }

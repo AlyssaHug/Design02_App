@@ -26,6 +26,8 @@ export default function Button({
     onClick,
     isBought,
     isCowActive,
+    isActive,
+    activeImageSrc,
     href,
     target = "_self",
     className,
@@ -99,6 +101,37 @@ export default function Button({
                 {coinValue}
             </span>
             <p>{value}</p>
+        </button>
+    );
+}
+export function SettingButton({ type, value, imageSrc, alt }) {
+    function handleClick() {
+        if (href) {
+            window.open(href, target);
+            return;
+        }
+        onClick();
+    }
+    const buttonClasses = classNames(
+        styles.button,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.settings]: type === "settings",
+        }
+    );
+    return (
+        <button
+            className={buttonClasses}
+            value={value}
+            onClick={handleClick}>
+            <p>{value}</p>
+            {imageSrc && (
+                <img
+                    src={imageSrc}
+                    alt={alt}
+                />
+            )}
         </button>
     );
 }
