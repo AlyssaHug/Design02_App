@@ -40,8 +40,7 @@ const PageHeader = ({ type, header, text, subtext, href }) => {
                 <div className={styles.backArrow}>
                     <Button
                         imageSrc='/left_arrow.svg'
-                        onClick={backToOverview}
-                        href={href}
+                        onClick={() => router.back()}
                     />
                 </div>
                 <h1 className={headerClasses}>{text}</h1>

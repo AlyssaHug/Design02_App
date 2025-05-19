@@ -22,7 +22,6 @@ export default function page() {
                     header='goal_header'
                     text='Reduce spending by $60!'
                     type='header_title'
-                    href='/Goals/ViewwGoals'
                 />
             </div>
             <div classname={styles.progress}>

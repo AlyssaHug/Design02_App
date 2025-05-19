@@ -1,6 +1,7 @@
 "use client";
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
+import { useRouter } from "next/router";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 import React from "react";
 
@@ -43,13 +44,14 @@ export default function Button({
         className,
         customClass,
     });
-
     function handleClick() {
         if (href) {
             window.open(href, target);
             return;
         }
-        onClick && onClick();
+        if (onClick) {
+            onClick();
+        }
     }
 
     const buttonClasses = classNames(
