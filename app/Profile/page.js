@@ -25,6 +25,7 @@ export default function Page() {
                     <TextField
                         placeholder='JohnDoe@gmail.com'
                         value='Email'
+                        type='email'
                     />
                     <TextField value='Phone Number' />
                 </div>

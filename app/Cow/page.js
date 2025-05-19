@@ -5,11 +5,21 @@ import Coins from "@/app/ui/coins/coins";
 import Nav from "@/app/ui/navbar/navbar";
 import Slider from "@/app/ui/slider/slider";
 import Button from "@/app/ui/Buttons/Buttons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
     const [moomooImage, setMoomooImage] = useState("/outfitsmoomoo.svg");
     const [activeButton, setActiveButton] = useState(null);
+    const [coins, setCoins] = useState(900);
+    const router = useRouter();
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const storedCoins = localStorage.getItem("coins");
+            setCoins(storedCoins ? parseInt(storedCoins) : 900);
+        }
+    }, []);
 
     const handlePlayClick = () => {
         setMoomooImage("/play.svg");
@@ -45,7 +55,7 @@ export default function Page() {
                 <div className={styles.coins}>
                     <Coins
                         value='Coins: '
-                        coin={990}
+                        coin={coins}
                     />
                 </div>
             </div>
