@@ -12,7 +12,6 @@ export default function Page() {
                 <img className={styles.gif} src='/gifs/moodance.gif'></img>
                 <h1 className={styles.LogoText}>MoolahMate</h1>
                 <p className={styles.SubText}>Welcome to a new way of money management. An easier, less stressful alternative made for you!</p>
-                <div className={styles.SignUpContainer}>
                 <Button 
                 style='round'
                 type='primary'
@@ -20,9 +19,7 @@ export default function Page() {
                 value='Sign up now!'
                 onClick={() => window.location.href = '/Homepage/Sign-Up'}
                 />
-                </div>
             </div>
-            <div className={styles.LoginContainer}>
             <Button
             style='round'
             type='primary'
@@ -30,7 +27,6 @@ export default function Page() {
             value='Sign in'
             onClick={() => window.location.href = '/Homepage/Sign-In'}
             />
-            </div>
         </div>
     );
 }

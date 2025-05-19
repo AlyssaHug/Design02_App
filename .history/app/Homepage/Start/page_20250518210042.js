@@ -22,7 +22,6 @@ export default function Page() {
                 />
                 </div>
             </div>
-            <div className={styles.LoginContainer}>
             <Button
             style='round'
             type='primary'
@@ -30,7 +29,6 @@ export default function Page() {
             value='Sign in'
             onClick={() => window.location.href = '/Homepage/Sign-In'}
             />
-            </div>
         </div>
     );
 }

@@ -7,26 +7,16 @@ import Button from '@/app/ui/Buttons/Buttons';
 import { useState } from 'react';
 import PageHeader from '@/app/ui/page-headers/page-header';
 import styles from './styles.module.css';
-import GoalProgress from '../ui/GoalCards/GoalCards';
 
 export default function page() {
     return (
-        <div className={styles.Homepage}>
+        <div className={styles.Page}>
             <Nav />
             <PageHeader
                 header='homepage_header'
-                type='header_title'
-                text='Hello, John!'
-                showBackButton={false}
+                description='Welcome to the homepage of the app'
+                showBackButton={true}
                 onBack={() => window.history.back()}
-            />
-            <GoalProgress
-                style={styles.goalCard}
-                value='Your Goals'
-                type='progress'
-                percetnage={50}
-                size='large'
-                icon='goal'
             />
             <div className={styles.content}>
                 <Button

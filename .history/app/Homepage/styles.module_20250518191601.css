@@ -4,15 +4,6 @@
     background: var(--accent-white-accent-white-50, #ebfeeb);
 }
 
-.gif {
-    width: 226.8px;
-    height: 189px;
-    flex-shrink: 0;
-    aspect-ratio: 226.80/189.00;
-    margin-left: 80px;
-    
-}
-
 .Homepage {
     width: 402px;
     height: 1857px;
@@ -20,8 +11,7 @@
 }
 
 .StartContainer {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .SignInContainer {

@@ -9,8 +9,7 @@
     height: 189px;
     flex-shrink: 0;
     aspect-ratio: 226.80/189.00;
-    margin-left: 80px;
-    
+    padding-left: 100px;
 }
 
 .Homepage {
@@ -20,8 +19,7 @@
 }
 
 .StartContainer {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .SignInContainer {
