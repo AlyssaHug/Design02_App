@@ -29,17 +29,19 @@ export default function Page() {
                     <TextField value='Phone Number' />
                 </div>
                 <div className={styles.divider}></div>
-                <SettingButton
-                    value='Settings'
-                    imageSrc='right_arrow.svg'
-                    type='settings'
-                    href='/Profile/Settings'
-                />
-                <SettingButton
-                    value='Linked Accounts'
-                    imageSrc='right_arrow.svg'
-                    type='settings'
-                />
+                <div className={styles.buttons}>
+                    <SettingButton
+                        value='Settings'
+                        imageSrc='right_arrow.svg'
+                        type='settings'
+                        href='/Profile/Settings'
+                    />
+                    <SettingButton
+                        value='Linked Accounts'
+                        imageSrc='right_arrow.svg'
+                        type='settings'
+                    />
+                </div>
             </div>
         </div>
     );
