@@ -1,3 +1,20 @@
 .header {
     margin-bottom: 60px;
 }
+.subheader {
+    font-size: 20px;
+    padding: 12px;
+    font-family: var(--font-libre-franklin);
+}
+.content {
+    margin: 16px;
+}
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+.drop {
+    flex: 0 0 30%;
+}
