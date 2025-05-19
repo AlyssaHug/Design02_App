@@ -5,6 +5,7 @@ import TextField from "@/app/ui/TextField/TextField";
 import { TextArea } from "@/app/ui/TextField/TextField";
 import { Libre_Franklin } from "next/font/google";
 import Dropdown from "@/app/ui/dropdown/dropdown";
+import Button from "@/app/ui/Buttons/Buttons";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
@@ -113,6 +114,13 @@ export default function Page() {
                         options={yearOptions}
                         className={styles.drop}
                         placeholder='Year'
+                    />
+                </div>
+                <div className={styles.calc}>
+                    <Button
+                        value='Create!'
+                        type='primary'
+                        href='/Goals'
                     />
                 </div>
             </div>

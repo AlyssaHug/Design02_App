@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .subheader {
     font-size: 20px;
@@ -8,6 +8,9 @@
 }
 .content {
     margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .dropdowns {
     display: flex;
@@ -17,4 +20,9 @@
 }
 .drop {
     flex: 0 0 30%;
+}
+.calc {
+    width: 30%;
+    margin-left: 33.5%;
+    margin-top: 16px;
 }
