@@ -7,7 +7,7 @@ import PageHeader from "@/app/ui/page-headers/page-header";
 
 export default function Page() {
     return (
-        <>
+        <div className={styles.page}>
             <PageHeader
                 title='Overview'
                 header='expense_overview_header'
@@ -78,6 +78,6 @@ export default function Page() {
                 </div>
             </div>
             <Nav />
-        </>
+        </div>
     );
 }
