@@ -28,6 +28,7 @@ function page() {
                     className={styles.view}
                     color='dark'
                     value='Create Goal'
+                    href='/Goals/Create'
                 />
             </div>
             <div className={styles.goalsContent}>
