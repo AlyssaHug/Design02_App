@@ -1,0 +1,7 @@
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 300px;
+    max-height: 100px;
+}

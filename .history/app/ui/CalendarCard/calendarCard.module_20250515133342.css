@@ -1,0 +1,117 @@
+.container {
+    background: #b6d7a8;
+    border-radius: 0 0 40px 40px;
+    padding: 24px 16px 32px 16px;
+    width: 103%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+    padding-top: 30px;
+}
+.backArrow {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    background-image: url("/left_arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 0 0 10%;
+    cursor: pointer;
+}
+
+.pill {
+    background: #fff3f0;
+    color: #3d2c29;
+    border-radius: 20px;
+    padding: 8px 24px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.monthRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.arrowLeft {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 12px;
+    user-select: none;
+    margin-bottom: 5px;
+}
+
+.arrowRight {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    user-select: none;
+}
+
+.arrowLeft button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowRight button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowLeft img,
+.arrowRight img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.month {
+    font-size: 2em;
+    font-weight: 700;
+    color: #3d2c29;
+}
+
+.spentLabel {
+    margin-top: 8px;
+    color: #3d2c29;
+    font-size: 1.1em;
+}
+
+.amount {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3d2c29;
+    margin: 4px 0;
+}
+
+.thisMonth {
+    color: #3d2c29;
+    font-size: 1.1em;
+}
+.headerRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

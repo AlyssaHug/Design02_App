@@ -1,0 +1,9 @@
+.toggleButton {
+    margin: auto;
+}
+
+.ToggleButton {
+    display: block;
+    margin: 0 auto;
+    /* or simply margin: 0 auto; */
+}

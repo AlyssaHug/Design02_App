@@ -1,0 +1,79 @@
+.expense_homepage_header {
+    height: 430px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 100px 100px;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px 24px 0 24px;
+    position: relative;
+}
+
+.expense_homepage_header h1 {
+    color: var(--secondary-secondary-900, #090f19);
+    font-family: Quicksand;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+.spentLabel {
+    width: 100%;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    color: #090f19;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.amountBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.amount {
+    background: #49505a;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 32px;
+    text-align: center;
+    min-width: 180px;
+}
+
+.monthText {
+    width: 100%;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    color: #090f19;
+    margin-bottom: 16px;
+}
+
+.expense_homepage_header .subtext {
+    color: var(--secondary-secondary-900, #090f19);
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+
+    margin-top: -200px;
+    text-align: center;
+}
+
+.expense_homepage_header p {
+    color: var(--secondary-secondary-900, #090f19);
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+}

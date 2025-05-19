@@ -1,0 +1,19 @@
+.buttonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
+    margin-right: 10px;
+    gap: 10px;
+}
+.buttonIncome p {
+    padding: 5px;
+}
+
+.buttonHistory p {
+    padding: 5px;
+}
+
+.buttonCalendar p {
+    padding: 5px;
+}

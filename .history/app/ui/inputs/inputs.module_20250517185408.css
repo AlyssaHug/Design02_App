@@ -1,0 +1,63 @@
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login,
+.sign-in_input {
+    width: 267px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
+}
+
+.expense,
+.expense_input {
+    width: 370px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
+}
+
+.goal,
+.goal_input {
+    width: 370px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
+}
+
+.paragraph,
+.paragraph_input {
+    width: 370px;
+    height: 148px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
+}
+
+.dark {
+    width: 267px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Tertiary-tertiary-700, #1c351c);
+}
+
+.account_large,
+.account_input {
+    width: 288px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Primary-primary-100, #d9ebd1);
+    border: 1px solid #ffffff;
+}

@@ -1,0 +1,25 @@
+.transactionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #445063;
+}
+.buttonIncome p {
+    padding: 5px;
+}
+
+.buttonHistory p {
+    padding: 5px;
+}
+
+.buttonCalendar p {
+    padding: 5px;
+}

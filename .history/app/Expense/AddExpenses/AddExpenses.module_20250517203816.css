@@ -1,0 +1,25 @@
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.questionInputs,
+.amountInputs,
+.dropdownInputs,
+.commentsInputs {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.addExpensesContainer,
+.expenseAmountContainer,
+.dropdownContainer,
+.commentsContainer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.pageHeaderContainer {
+    margin-bottom: 100px;
+}
