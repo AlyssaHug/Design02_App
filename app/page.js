@@ -147,7 +147,6 @@ export default function Page() {
 
     return (
         <div>
-            <Nav />
             <PopUp
                 message='Saved!'
                 onClose={() => {}}
@@ -253,6 +252,109 @@ export default function Page() {
                 text='Test'
             />
             <Nav />
+            <PopUp
+                message='Saved!'
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "Close",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                    },
+                ]}
+            />
+            <PopUp
+                message='Deleted!'
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "Close",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                    },
+                ]}
+            />
+            <PopUp
+                message='Not Enough Coins!'
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "Go Customize",
+                        className: "popup_light_button",
+                        textClassName: "popup_light_button_text",
+                        navigateTo: "/",
+                    },
+                    {
+                        label: "Close",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                    },
+                ]}
+            />
+            <PopUp
+                message='Coins have been added to your MooMoo fund!'
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "Check on MooMoo",
+                        className: "popup_light_button",
+                        textClassName: "popup_light_button_text",
+                        navigateTo: "/",
+                    },
+                    {
+                        label: "Close",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                    },
+                ]}
+            />
+            <PopUp
+                message='Goal removed'
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "Undo",
+                        className: "edit_button",
+                        textClassName: "popup_light_button_text",
+                        navigateTo: "/",
+                    },
+                    {
+                        label: "Close",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                    },
+                ]}
+            />
+            <PopUp
+                message='Your goal was created!'
+                onClose={() => {}}
+                buttons={[
+                    {
+                        label: "Close",
+                        className: "popup_dark_button",
+                        textClassName: "popup_dark_button_text",
+                    },
+                    {
+                        label: "Edit Goal",
+                        className: "popup_light_button",
+                        textClassName: "popup_light_button_text",
+                        navigateTo: "/",
+                    },
+                ]}
+            />
+            <h3>Email</h3>
+            <Input
+                size='login'
+                type='text'
+                className={styles.input}
+                onChange={() => {}}
+            />
+            <PageHeader
+                placeholder='Hello, John!'
+                type='header_title'
+                header='expense_homepage'
+                text='Test'
+            />
             <div className={styles.small}>
                 <Coins />
                 <Button

@@ -101,8 +101,14 @@
     position: relative;
     z-index: 1;
 }
+
+.DressupSlider {
+    margin-top: -30px;
+}
+
 .arrow {
     display: flex;
     justify-content: flex-start;
     height: 40px;
 }
+

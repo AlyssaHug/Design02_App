@@ -1,0 +1,15 @@
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.buttonIncome p {
+    padding: 5px;
+}
+
+.buttonHistory p {
+    padding: 5px;
+}
+
+.buttonCalendar p {
+    padding: 5px;
+}

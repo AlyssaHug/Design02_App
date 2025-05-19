@@ -1,0 +1,64 @@
+.popup_background {
+    width: 356px;
+    height: 224px;
+    border-radius: 20px;
+    background: var(--Tertiary-tertiary-300, #6E866F);
+}
+
+.popup_foreground {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 321.098px;
+    height: 123.552px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--Primary-primary-200, #C6E1BB);
+}
+
+.popup_text {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.popup_light_button {
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--accent-blue-accent-blue-500, #B2D4E6);
+}
+
+.popup_light_button_text {
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.popup_dark_button {
+    position: relative;
+    width: 141.602px;
+    height: 49.22px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #4B5961;
+}
+
+.popup_dark_button_text {
+    color: #FEFDFD;
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}

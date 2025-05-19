@@ -43,7 +43,6 @@ const imageMap = {
     cat: "accessories/cat.svg",
     dog: "accessories/dog.svg",
 };
-
 export default function Dressup() {
     const [accessories, setAccessories] = useState(defaultAccessories);
 
@@ -70,6 +69,11 @@ export default function Dressup() {
         }
     }, []);
 
+    // Just so I know that the accessory is being clicked it's for my own sake to know they work lol
+    const handleButtonClick = () => {
+        alert(`Accessory selected`);
+    };
+
     return (
         <div className={styles.dressup}>
             {accessories.map((accessory) => (
@@ -88,6 +92,7 @@ export default function Dressup() {
                             [styles.large]: accessory.requiresLarge,
 
                         })}
+                        onClick={() => handleButtonClick()}
                     />
                 </div>
             ))}

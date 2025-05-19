@@ -1,0 +1,231 @@
+"use client";
+
+import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
+import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
+import Button from "@/app/ui/Buttons/Buttons";
+import styles from "./march.module.css";
+import Nav from "@/app/ui/navbar/navbar";
+
+export default function Page() {
+    return (
+        <div>
+            <Button
+                color='light'
+                value='GO BACK'
+                href='/'
+            />
+            <div className={styles.header}>
+                <CalendarCard
+                    month='March'
+                    amount='188.90'
+                />
+            </div>
+            <div className={styles.transactionContainer}>
+                <div className={styles.transactionDates}>
+                    <p>March 29th</p>
+                </div>
+                <TransactionCard
+                    time='12:54pm'
+                    category='Dine...'
+                    amount='3.35'
+                    description='BBT'
+                    merchant='Ngon'
+                />
+                <TransactionCard
+                    time='12:34pm'
+                    category='Dine...'
+                    amount='3.35'
+                    description='Cake'
+                    merchant='T&T Supermarket'
+                />
+                <TransactionCard
+                    time='12:26pm'
+                    category='Groc...'
+                    amount='2.68'
+                    description='B-day hat'
+                    merchant='Dollarama'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 26th</p>
+                </div>
+                <TransactionCard
+                    time='10:33am'
+                    category='Dine...'
+                    amount='7.57'
+                    description='McDouble Meal'
+                    merchant='McDonalds'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 24th</p>
+                </div>
+                <TransactionCard
+                    time='3:36pm'
+                    category='Dine...'
+                    amount='1.67'
+                    description='Ice Cream'
+                    merchant='Mcdonalds'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 21th</p>
+                </div>
+                <TransactionCard
+                    time='11:46pm'
+                    category='Dine...'
+                    amount='7.85'
+                    description='Chilli'
+                    merchant='Tim Hortons'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 19th</p>
+                </div>
+                <TransactionCard
+                    time='3:48pm'
+                    category='Dine...'
+                    amount='3.68'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 17th</p>
+                </div>
+                <TransactionCard
+                    time='11:00am'
+                    category='Dine...'
+                    amount='3.68'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+
+                <TransactionCard
+                    time='11:00am'
+                    category='Misc...'
+                    amount='6.87'
+                    description='Paint + Brushes'
+                    merchant='Dollarama'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 16th</p>
+                </div>
+                <TransactionCard
+                    time='12:38am'
+                    category='Online...'
+                    amount='23.87'
+                    description='Spotify Premium'
+                    merchant='Spotify'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 15th</p>
+                </div>
+                <TransactionCard
+                    time='5:37pm'
+                    category='Misc...'
+                    amount='23.87'
+                    description='Shipping Fee'
+                    merchant='Canada Post'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 14th</p>
+                </div>
+                <TransactionCard
+                    time='12:45pm'
+                    category='Misc...'
+                    amount='3.87'
+                    description='bubble mail'
+                    merchant='Shoppers Drug Mart'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 13th</p>
+                </div>
+                <TransactionCard
+                    time='9:35pm'
+                    category='Dine...'
+                    amount='8.87'
+                    description='Matcha Bobo'
+                    merchant='HeyTea'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 12th</p>
+                </div>
+                <TransactionCard
+                    time='8:46pm'
+                    category='Misc...'
+                    amount='8.87'
+                    description='Glue stick'
+                    merchant='Dollarama'
+                />
+                <TransactionCard
+                    time='7:59pm'
+                    category='Misc...'
+                    amount='2.00'
+                    description='Parking fee'
+                    merchant='City of Vancouver'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 11th</p>
+                </div>
+                <TransactionCard
+                    time='10:34pm'
+                    category='Dine...'
+                    amount='7.87'
+                    description='McDouble Meal'
+                    merchant='McDonalds'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 10th</p>
+                </div>
+                <TransactionCard
+                    time='4:05pm'
+                    category='Misc...'
+                    amount='17.00'
+                    description='Photo strips'
+                    merchant='PhotoCrumb'
+                />
+                <TransactionCard
+                    time='1:20pm'
+                    category='Dine...'
+                    amount='18.87'
+                    description='Pho'
+                    merchant='HA Cafe Vietnam'
+                />
+                <TransactionCard
+                    time='2:25am'
+                    category='Online...'
+                    amount='12.87'
+                    description='Pink Ribbons'
+                    merchant='AliExpress'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 6th</p>
+                </div>
+                <TransactionCard
+                    time='12:35pm'
+                    category='Dine...'
+                    amount='3.87'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 5th</p>
+                </div>
+                <TransactionCard
+                    time='4:34pm'
+                    category='Dine...'
+                    amount='7.87'
+                    description='Hojicha milk tea'
+                    merchant='Palgona'
+                />
+                <div className={styles.transactionDates}>
+                    <p>March 3rd</p>
+                </div>
+                <TransactionCard
+                    time='2:34pm'
+                    category='Dine...'
+                    amount='3.87'
+                    description='Ice Coffee'
+                    merchant='Tim Hortons'
+                />
+            </div>
+            <Nav />
+        </div>
+    );
+}

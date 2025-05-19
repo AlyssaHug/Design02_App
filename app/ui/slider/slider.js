@@ -10,39 +10,51 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-export default function Slider({ style, onClick }) {
+export default function Slider({
+    onPlayClick,
+    onPetClick,
+    onFeedClick,
+    onCustomizeClick,
+    onShopClick,
+    activeButton,
+}) {
     return (
         <div className={styles.slider}>
             <Button
                 value='Play'
                 color='light-blue'
-                onClick={onClick}
+                onClick={onPlayClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Play"}
             />
             <Button
                 value='Pet'
                 color='light-blue'
-                onClick={onClick}
+                onClick={onPetClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Pet"}
             />
             <Button
                 value='Feed'
                 color='light-blue'
-                onClick={onClick}
+                onClick={onFeedClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Eat"}
             />
             <Button
                 value='Customize'
                 color='light-blue'
-                onClick={onClick}
+                onClick={onCustomizeClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Customize"}
                 href='/Cow/Customize'
             />
             <Button
                 value='Shop'
                 color='light-blue'
-                onClick={onClick}
+                onClick={onShopClick}
                 customClass={styles.lightBlueOverride}
+                isCowActive={activeButton === "Shop"}
                 href='/Cow/Shop'
             />
         </div>

@@ -25,32 +25,43 @@ export default function Button({
     coins,
     onClick,
     isBought,
+    isCowActive,
     href,
     target = "_self",
     className,
-    customClass, // Add customClass to props
-    isActive = false,
-    activeImageSrc,
+    customClass,
 }) {
-    console.log("Button rendered: ", { value, isBought, type, alt, imageSrc });
+    console.log("Button rendered: ", {
+        value,
+        isBought,
+        type,
+        imageSrc,
+        alt,
+        isCowActive,
+        className,
+        customClass,
+    });
+
     function handleClick() {
         if (href) {
             window.open(href, target);
             return;
         }
-        onClick();
+        onClick && onClick();
     }
+
     const buttonClasses = classNames(
         styles.button,
         quicksand.variable,
         libreFranklin.variable,
-        customClass, // Include customClass here
+        customClass,
         {
             [styles.view]: type === "view",
             [styles.outline]: type === "outline",
             [styles.primary]: type === "primary",
             [styles.close]: type === "close",
-            [styles.lightBlue]: color === "light-blue",
+            [styles.lightBlue]: color === "light-blue" && !isCowActive,
+            [styles.cowActive]: isCowActive,
             [styles.darkBlue]: color === "dark-blue",
             [styles.dark]: color === "dark",
             [styles.light]: color === "light",
@@ -63,9 +74,8 @@ export default function Button({
             [styles.home]: type === "home",
             [styles.caption]: size === "caption",
             [styles.cow]: color === "cow",
-            [styles.cowActive]: color === "cow-active",
             [styles.goalMoo]: type === "goalMoo",
-            [styles.coins]: type === "coins",
+            [styles.coins]: type === "coins" || color === "coin-border",
             [styles.coins]: color === "coin-border",
             [styles.settings]: type === "settings",
             [styles.navActive]: isActive,
@@ -84,50 +94,11 @@ export default function Button({
                     alt={value || "icon"}
                 />
             )}
-
             <span>
                 {coins}
                 {coinValue}
             </span>
             <p>{value}</p>
-        </button>
-    );
-}
-export function SettingButton({
-    type,
-    value,
-    imageSrc,
-    alt,
-    href,
-    target = "_self",
-}) {
-    function handleClick() {
-        if (href) {
-            window.open(href, target);
-            return;
-        }
-        onClick();
-    }
-    const settingButtonClasses = classNames(
-        styles.settingButton,
-        quicksand.variable,
-        libreFranklin.variable,
-        {
-            [styles.settings]: type === "settings",
-        }
-    );
-    return (
-        <button
-            className={settingButtonClasses}
-            value={value}
-            onClick={handleClick}>
-            <p>{value}</p>
-            {imageSrc && (
-                <img
-                    src={imageSrc}
-                    alt={alt}
-                />
-            )}
         </button>
     );
 }
