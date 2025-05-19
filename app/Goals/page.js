@@ -35,11 +35,13 @@ function page() {
                     type='goals'
                     value='Reduce spending by $60!'
                     imageSrc='/right_arrow.svg'
+                    href='/Goals/ViewGoals/Goal1'
                 />
                 <Goals
                     type='goals'
                     value='Add $50 to tuition fund!'
                     imageSrc='/right_arrow.svg'
+                    href='/Goals/ViewGoals/Goal2'
                 />
             </div>
             <div className={styles.subheaderContainer}>

@@ -37,11 +37,14 @@ export default function Page() {
     return (
         <div className={styles.container}>
             <div className={styles.sameRow}>
-                <Button imageSrc="/left_arrow.svg" />
+                <Button
+                    imageSrc='/left_arrow.svg'
+                    onClick={() => router.back()}
+                />
                 <h1 className={styles.header}>MooMoo</h1>
                 <div className={styles.coins}>
                     <Coins
-                        value="Coins: "
+                        value='Coins: '
                         coin={990}
                     />
                 </div>
@@ -50,7 +53,7 @@ export default function Page() {
                 <div className={styles.bg}>
                     <div className={styles.moomoo}>
                         <Moomoo
-                            size="interaction"
+                            size='interaction'
                             src={moomooImage}
                         />
                     </div>

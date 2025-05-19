@@ -30,7 +30,7 @@ export default function Dressmoo() {
                 <div className={styles.arrow}>
                     <Button
                         imageSrc='/left_arrow.svg'
-                        href='/Cow'
+                        onClick={() => router.back()}
                     />
                 </div>
                 <h1 className={styles.header}>Customize</h1>
@@ -45,16 +45,16 @@ export default function Dressmoo() {
                 <div className={styles.cowback}></div>
                 <div className={styles.mooplace}>
                     <Moomoo
-                        size="dressup"
-                        src="/moomoonormal.svg"
+                        size='dressup'
+                        src='/moomoonormal.svg'
                         className={styles.moomooSvg}
                     />
                 </div>
             </div>
             <div className={styles.removebutton}>
                 <Button
-                    color="light-blue"
-                    value="Remove"
+                    color='light-blue'
+                    value='Remove'
                 />
             </div>
             <div className={styles.buyanditems}>
