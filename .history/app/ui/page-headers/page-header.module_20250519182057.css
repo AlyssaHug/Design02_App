@@ -1,0 +1,187 @@
+.new_user_homepage_header {
+    height: 289px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
+
+.homepage_header {
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
+
+
+
+.your_total_balance {
+    font-size: 24px;
+    font-family: Quicksand;
+    font-weight: 600;
+    line-height: 128px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.balance {
+    font-size: 32px;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.header_title {
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-indent: 20px;
+    line-height: 240px;
+}
+
+.expense_homepage_header {
+    height: 430px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 100px 100px;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+}
+
+.add_expense_header {
+    width: 402px;
+    height: 147px;
+    flex-shrink: 0;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+}
+
+.add_expense_header_text {
+    color: var(--secondary-secondary-900, #090f19);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-indent: 20px;
+    line-height: 240px;
+}
+
+.expense_overview_header {
+    width: 402px;
+    height: 101px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 40px 40px;
+    background: var(--Primary-primary-300, #acd39d);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.4);
+}
+
+.income_transfer_header {
+    width: 402px;
+    height: 170px;
+    flex-shrink: 0;
+    fill: var(--Primary-primary-300, #acd39d);
+    filter: drop-shadow(0px 4px 4px rgba(1, 67, 14, 0.4));
+}
+
+.income_transfer_text {
+    width: 273px;
+    height: 39px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090f19);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-indent: 20px;
+}
+
+.add_expense_header {
+    height: 147px;
+    flex-shrink: 0;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
+
+.add_expense_header_text {
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-indent: 20px;
+    line-height: 240px;
+}
+
+.expense_overview_header {
+    height: 101px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 40px 40px;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
+
+.income_transfer_header {
+    height: 170px;
+    flex-shrink: 0;
+    fill: var(--Primary-primary-300, #ACD39D);
+    filter: drop-shadow(0px 4px 4px rgba(1, 67, 14, 0.40));
+}
+
+.income_transfer_text {
+    width: 273px;
+    height: 39px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    text-indent: 20px;
+}
+
+.goal_homepage_header {
+    height: 266px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--accent-blue-accent-blue-100, #E7F2F7);
+    box-shadow: 0px 4px 4px 0px rgba(30, 53, 72, 0.40);
+}
+
+.goal_header {
+    height: 193px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 40px 40px;
+    background: var(--Primary-primary-300, #ACD39D);
+}
+
+.back_button {
+    width: 16px;
+    height: 31.802px;
+    flex-shrink: 0;
+    aspect-ratio: 16.00/31.80;
+    box-sizing: border-box;
+    position: relative;
+    left: 16px;
+    right: 370px;
+    top: 25px;
+    bottom: 863px;
+}
+
+.HomepageBalance {
+    width: 280px;
+    height: 90px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    aspect-ratio: 16.00/31.80;
+    background: var(--secondary-secondary-400, #445063);
+    box-sizing: border-box;
+    position: relative;
+}

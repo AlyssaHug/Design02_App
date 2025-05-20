@@ -1,0 +1,38 @@
+"use client";
+import React from "react";
+import { Libre_Franklin } from "next/font/google";
+import classNames from "classnames";
+import Button from "@/app/ui/Buttons/Buttons";
+import { useState } from "react";
+import Inputs from "@/app/ui/inputs/inputs";
+
+export default function Page() {
+    return (
+        <div className={Styles.homepage}>
+            <p className={Styles.SmallText}>Welcome to</p>
+            <h1 className={Styles.logotext}>MoolahMate</h1>
+            <p className={Styles.SmallText}>Email</p>
+            <Inputs
+                type="text"
+                size="login"
+                color="light"
+            />
+            <p className={Styles.SmallText}>Password</p>
+            <Inputs
+                type="password"
+                size="login"
+                color="light"/>
+            <h1 className={Styles.AlternativeText}>8 or more characters, one number, one uppercase letter, one special case character</h1>
+            <h1 className={Styles.SmallText}>Confirm Password</h1>
+            <Inputs
+                type="password"
+                size="login"
+                color="light"/>
+            <h1 className={styles.SmallText}>Username</h1>
+            <Inputs
+                type="text"
+                size="login"
+                color="light"/>
+        </div>
+    )
+}

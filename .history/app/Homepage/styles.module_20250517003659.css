@@ -1,0 +1,55 @@
+.MainSectionText {
+    width: 284px;
+    height: 20.496px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.logotext {
+    width: 194px;
+    height: 38px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
+    text-align: center;
+}
+
+.ParagraphText {
+    width: 309px;
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+}
+
+.SmallText {
+    width: 309px;
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: left;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+}
+
+.AlternateText {
+    color: var(--secondary-secondary-200, #939AA5);
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}

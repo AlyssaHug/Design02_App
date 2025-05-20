@@ -1,0 +1,178 @@
+.Page {
+    width: 402px;
+    height: 874px;
+    background: var(--accent-white-accent-white-50, #ebfeeb);
+}
+
+.gif {
+    width: 226.8px;
+    height: 189px;
+    flex-shrink: 0;
+    aspect-ratio: 226.80/189.00;
+    margin-left: 80px;
+    
+}
+
+.Homepage {
+    width: 402px;
+    height: 1857px;
+    background: var(--accent-white-accent-white-50, #ebfeeb);
+}
+
+.StartContainer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.SignInContainer {
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.GetStartedButton {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.LogoSignUpContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.MainSectionText {
+    width: 284px;
+    height: 20.496px;
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: "Quicksand";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.HomepageHeader {
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 60px;
+    background: var(--Primary-primary-300, #ACD39D);
+    box-shadow: 0px 4px 4px 0px rgba(1, 67, 14, 0.40);
+}
+
+.LogoText {   
+    flex-shrink: 0;
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: "Quicksand";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.SubText {
+    color: var(--secondary-secondary-900, #090F19);
+    font-family: "Quicksand";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.ParagraphText {
+    width: 309px;
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+}
+
+.SubheadingText {
+    width: 309px;
+    color: var(--secondary-secondary-900, #090F19);
+    text-align: left;
+    font-style: normal;
+    line-height: 20px; 
+    font-size: 16px;
+    font-weight: 600;
+    flex: 0 0 65%;
+    font-family: "Quicksand";
+    padding-left: 64px;
+    margin-bottom: 5px;
+}
+
+.PasswordTextButton {
+    color: var(--secondary-secondary-200, #939AA5);
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    text-align: right;
+    margin-right: 64px;
+}
+
+.AccountTextButton {
+    color: var(--secondary-secondary-200, #939AA5);
+    font-family: "Libre Franklin";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.LoginContainer {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.SignUpContainer {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.Video {
+    width: 242.206px;
+    height: 495px;
+    flex-shrink: 0;
+    aspect-ratio: 242.21/495.00;
+    border-radius: 42px;
+    margin-left: 80px;
+}
+
+.footer {
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 60px 60px 0px 0px;
+    background: var(--Primary-primary-200, #C6E1BB);
+}
+
+.OnboardingNavigation {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;  
+    justify-content: center;
+    gap: 20px; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

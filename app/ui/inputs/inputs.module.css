@@ -5,6 +5,25 @@
 }
 
 .login {
+  justify-content: center;
+  width: 267px;
+  height: 37px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Primary-primary-100, #D9EBD1);
+}
+
+.password {
+  justify-content: center;
+  width: 267px;
+  height: 37px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Primary-primary-100, #D9EBD1);
     width: 267px;
     height: 37px;
     flex-shrink: 0;
@@ -51,7 +70,6 @@
     border-radius: 30px;
     background: var(--Primary-primary-100, #d9ebd1);
 }
-
 .sign-in_input {
     width: 267px;
     padding: 37px;
