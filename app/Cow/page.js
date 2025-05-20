@@ -18,31 +18,50 @@ export default function Page() {
         if (typeof window !== "undefined") {
             const storedCoins = localStorage.getItem("coins");
             setCoins(storedCoins ? parseInt(storedCoins) : 900);
+    const router = useRouter();
+
+    // Load selected accessory SVG from localStorage on mount
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const savedAccessory = localStorage.getItem("selectedMoomooSrc");
+            if (savedAccessory) {
+                console.log("Page: Loaded accessory SVG from localStorage:", savedAccessory);
+                setMoomooImage(savedAccessory);
+            }
         }
     }, []);
 
     const handlePlayClick = () => {
+        console.log("Page: Setting moomooImage to /play.svg");
         setMoomooImage("/play.svg");
         setActiveButton("Play");
     };
 
     const handlePetClick = () => {
+        console.log("Page: Setting moomooImage to /pet.svg");
         setMoomooImage("/pet.svg");
         setActiveButton("Pet");
     };
 
     const handleFeedClick = () => {
+        console.log("Page: Setting moomooImage to /eat.svg");
         setMoomooImage("/eat.svg");
         setActiveButton("Eat");
     };
 
     const handleCustomizeClick = () => {
+        console.log("Page: Navigating to Customize");
         setActiveButton("Customize");
+        router.push("/Cow/Customize");
     };
 
     const handleShopClick = () => {
-        setActiveButton("Shop"); // AAAAA I CANT GET U TO WORK
+        console.log("Page: Navigating to Shop");
+        setActiveButton("Shop");
+        router.push("/Cow/Shop");
     };
+
+    console.log("Page: Rendering Moomoo with src:", moomooImage);
 
     return (
         <div className={styles.container}>
@@ -63,8 +82,8 @@ export default function Page() {
                 <div className={styles.bg}>
                     <div className={styles.moomoo}>
                         <Moomoo
-                            size='interaction'
-                            src={moomooImage}
+                            size="interaction"
+                            src={`${moomooImage}?v=${Date.now()}`}
                         />
                     </div>
                     <div className={styles.sliderContainer}>
