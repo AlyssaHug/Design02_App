@@ -11,7 +11,7 @@ import ProgressBar from '@/app/ui/ProgressBar/ProgressBar';
 
 export default function Page() {
   return (
-        <div className={styles.NewUserHomepage}>
+        <div className={styles.Homepage}>
             <Nav />
             <PageHeader
                 header='homepage_header'

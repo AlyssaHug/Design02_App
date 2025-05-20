@@ -11,7 +11,7 @@ import ProgressBar from '@/app/ui/ProgressBar/ProgressBar';
 
 export default function Page() {
   return (
-        <div className={styles.NewUserHomepage}>
+        <div className={styles.Homepage}>
             <Nav />
             <PageHeader
                 header='homepage_header'
@@ -44,17 +44,18 @@ export default function Page() {
                 <h1 className={styles.MainSectionText}>Goals & Rewards</h1>
                     <div className={styles.HomepageSection}>
                         <h3 className={styles.HeadingText}>Setup your Account:</h3>
-                        <div className={styles.ItemLength}>
+                        
                         <ProgressBar
                             value='Add your First Expense:'
                             progress={0}
                             goal={1}
                             textColor='#4caf50'
                         />
+                        <div className={styles.ItemLength}>
                         <Button
                             value='Start Now'
                             color='light'
-                            href='/Expense/AddExpenses'
+                            href='/Goals/Create'
                             style='round'
                         />
                         </div>
@@ -65,12 +66,6 @@ export default function Page() {
                             goal={1}
                             textColor='#4caf50'
                         />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Goals/Create'
-                            style='round'
-                        />
                         </div>
                         <div className={styles.ItemLength}>
                         <ProgressBar
@@ -78,12 +73,6 @@ export default function Page() {
                             progress={0}
                             goal={1}
                             textColor='#4caf50'
-                        />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Cow/Customize'
-                            style='round'
                         />
                         </div>
                         <button className={styles.MoreDetailsButton}>

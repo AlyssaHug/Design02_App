@@ -11,7 +11,7 @@ import ProgressBar from '@/app/ui/ProgressBar/ProgressBar';
 
 export default function Page() {
   return (
-        <div className={styles.NewUserHomepage}>
+        <div className={styles.Homepage}>
             <Nav />
             <PageHeader
                 header='homepage_header'
@@ -54,7 +54,7 @@ export default function Page() {
                         <Button
                             value='Start Now'
                             color='light'
-                            href='/Expense/AddExpenses'
+                            href='/Goals/Create'
                             style='round'
                         />
                         </div>
@@ -82,7 +82,7 @@ export default function Page() {
                         <Button
                             value='Start Now'
                             color='light'
-                            href='/Cow/Customize'
+                            href='/Goals/Create'
                             style='round'
                         />
                         </div>

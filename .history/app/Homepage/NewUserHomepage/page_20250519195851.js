@@ -11,7 +11,7 @@ import ProgressBar from '@/app/ui/ProgressBar/ProgressBar';
 
 export default function Page() {
   return (
-        <div className={styles.NewUserHomepage}>
+        <div className={styles.Homepage}>
             <Nav />
             <PageHeader
                 header='homepage_header'
@@ -47,7 +47,7 @@ export default function Page() {
                         <div className={styles.ItemLength}>
                         <ProgressBar
                             value='Add your First Expense:'
-                            progress={0}
+                            progress={0.5}
                             goal={1}
                             textColor='#4caf50'
                         />

@@ -19,12 +19,6 @@
     background: var(--accent-white-accent-white-50, #ebfeeb);
 }
 
-.NewUserHomepage {
-    width: 402px;
-    height: 1493px;
-    background: var(--accent-white-accent-white-50, #ebfeeb);
-}
-
 .StartContainer {
     padding-bottom: 100px;
     padding-top: 100px;

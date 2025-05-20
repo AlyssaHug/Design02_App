@@ -11,15 +11,15 @@ import ProgressBar from '@/app/ui/ProgressBar/ProgressBar';
 
 export default function Page() {
   return (
-        <div className={styles.NewUserHomepage}>
+        <div className={styles.Homepage}>
             <Nav />
             <PageHeader
                 header='homepage_header'
                 type='header_title'
-                text='Welcome, Username!'
+                text='Hello, John!'
                 showBackButton={false}
                 showBalance={true}
-                balance="$0.00"
+                balance="$6,234.56"
                 onBack={() => window.history.back()}
             />
             <div className={styles.content}>
@@ -28,13 +28,12 @@ export default function Page() {
                         <h3 className={styles.HeadingText}>No Transactions or Expenses yet</h3>
                             <div className={styles.TransactionList}>
                                 <div className={styles.ItemSpacing}>
-                                    <button className={styles.AddTransactionItem}
-                                    onClick={() => window.location.href = '/Expense/AddExpense'}>
+                                    <div className={styles.TransactionItem}>
                                         <h3 className={styles.SmallText}>Add a transaction or view expense</h3>
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
-                        <h3 className={styles.HeadingText}>Total: $0.00</h3>
+                        <h3 className={styles.HeadingText}>Total this month: $00.00</h3>
                         <button className={styles.MoreDetailsButton}>
                             <h3 className={styles.SmallText}
                             onClick={() => window.location.href = '/Expense'}
@@ -43,47 +42,50 @@ export default function Page() {
                     </div>
                 <h1 className={styles.MainSectionText}>Goals & Rewards</h1>
                     <div className={styles.HomepageSection}>
-                        <h3 className={styles.HeadingText}>Setup your Account:</h3>
+                        <h3 className={styles.HeadingText}>Redeemable Rewards!</h3>
+                        <div className={styles.ItemSpacing}>
+                                <div className={styles.TransactionItem}>
+                                        <h3 className={styles.SmallText}>Daily sign-in</h3>
+                                    </div>
+                                <h3 className={styles.PriceText}>05 Coins</h3>    
+                        </div>
+                        <div className={styles.ItemSpacing}>
+                                <div className={styles.TransactionItem}>
+                                        <h3 className={styles.SmallText}>Check on MooMoo</h3>
+                                    </div>
+                                <h3 className={styles.PriceText}>05 Coins</h3>    
+                        </div>
+                        <div className={styles.ItemSpacing}>
+                        <h3 className={styles.HeadingText}>Goal Progess</h3>
+                            <div className={styles.ButtonLength}>
+                            <Button
+                                className={styles.view}
+                                color='dark'
+                                value='View Goals'
+                                href='Goals/ViewGoals'
+                            />
+                            </div>
+                        </div>
                         <div className={styles.ItemLength}>
                         <ProgressBar
-                            value='Add your First Expense:'
-                            progress={0}
-                            goal={1}
-                            textColor='#4caf50'
-                        />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Expense/AddExpenses'
-                            style='round'
+                            value='Goal 1: Reduce spending by $60!'
+                            progress={90}
+                            goal={100}
                         />
                         </div>
                         <div className={styles.ItemLength}>
                         <ProgressBar
-                            value='Add your First Goal:'
-                            progress={0}
-                            goal={1}
-                            textColor='#4caf50'
-                        />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Goals/Create'
-                            style='round'
+                            value='Goal 2: Add $50 to tuition fund!'
+                            progress={60}
+                            goal={100}
                         />
                         </div>
                         <div className={styles.ItemLength}>
                         <ProgressBar
-                            value='Setup Cow Customization'
-                            progress={0}
-                            goal={1}
+                            value='Goal 3: Save for a car ($39,000)'
+                            progress={30}
+                            goal={100}
                             textColor='#4caf50'
-                        />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Cow/Customize'
-                            style='round'
                         />
                         </div>
                         <button className={styles.MoreDetailsButton}>
@@ -94,7 +96,18 @@ export default function Page() {
                     </div>
                 <h1 className={styles.MainSectionText}>Other Recent Activity</h1>
                     <div className={styles.HomepageSection}>
-                        <h3 className={styles.SmallText}>Here you will see your recent spending's or actions with your MoolahMate account. </h3>
+                        <div className={styles.TransactionItem}>
+                            <h3 className={styles.SmallText}>Added customization to MooMoo</h3>
+                        </div>
+                        <div className={styles.TransactionItem}>
+                            <h3 className={styles.SmallText}>Added $ 2.00 to the total balance</h3>
+                        </div>
+                        <div className={styles.TransactionItem}>
+                            <h3 className={styles.SmallText}>Added a new goal to the list</h3>
+                        </div>
+                        <div className={styles.TransactionItem}>
+                            <h3 className={styles.SmallText}>Added a transfer of $ 20.00</h3>
+                        </div>
                         <button className={styles.MoreDetailsButton}>
                             <h3 className={styles.SmallText}
                                 onClick={() => window.location.href = '/Expense'}

@@ -11,7 +11,7 @@ import ProgressBar from '@/app/ui/ProgressBar/ProgressBar';
 
 export default function Page() {
   return (
-        <div className={styles.NewUserHomepage}>
+        <div className={styles.Homepage}>
             <Nav />
             <PageHeader
                 header='homepage_header'
@@ -28,10 +28,9 @@ export default function Page() {
                         <h3 className={styles.HeadingText}>No Transactions or Expenses yet</h3>
                             <div className={styles.TransactionList}>
                                 <div className={styles.ItemSpacing}>
-                                    <button className={styles.AddTransactionItem}
-                                    onClick={() => window.location.href = '/Expense/AddExpense'}>
+                                    <div className={styles.AddTransactionItem}>
                                         <h3 className={styles.SmallText}>Add a transaction or view expense</h3>
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
                         <h3 className={styles.HeadingText}>Total: $0.00</h3>
@@ -51,12 +50,6 @@ export default function Page() {
                             goal={1}
                             textColor='#4caf50'
                         />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Expense/AddExpenses'
-                            style='round'
-                        />
                         </div>
                         <div className={styles.ItemLength}>
                         <ProgressBar
@@ -65,12 +58,6 @@ export default function Page() {
                             goal={1}
                             textColor='#4caf50'
                         />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Goals/Create'
-                            style='round'
-                        />
                         </div>
                         <div className={styles.ItemLength}>
                         <ProgressBar
@@ -78,12 +65,6 @@ export default function Page() {
                             progress={0}
                             goal={1}
                             textColor='#4caf50'
-                        />
-                        <Button
-                            value='Start Now'
-                            color='light'
-                            href='/Cow/Customize'
-                            style='round'
                         />
                         </div>
                         <button className={styles.MoreDetailsButton}>
