@@ -7,7 +7,7 @@ import styles from "@/app/ui/Dropdown/dropdown.module.css";
 export default function Dropdown({
     options = [],
     onSelect,
-    placeholder = "Select...",
+    placeholder,
     className,
 }) {
     const [isOpen, setIsOpen] = useState(false);

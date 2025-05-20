@@ -1,3 +1,4 @@
+"use client";
 import classNames from "classnames";
 import { Libre_Franklin } from "next/font/google";
 import styles from "@/app/ui/page-headers/page-header.module.css";
@@ -8,7 +9,7 @@ const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
 });
 
-const PageHeader = ({ type, header, text, subtext }) => {
+const PageHeader = ({ type, header, text, subtext, href }) => {
     const router = useRouter();
     const backToOverview = () => {
         router.replace("/Homepage/homepage");
@@ -39,7 +40,7 @@ const PageHeader = ({ type, header, text, subtext }) => {
                 <div className={styles.backArrow}>
                     <Button
                         imageSrc='/left_arrow.svg'
-                        onClick={backToOverview}
+                        onClick={() => router.back()}
                     />
                 </div>
                 <h1 className={headerClasses}>{text}</h1>

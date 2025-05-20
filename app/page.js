@@ -368,7 +368,6 @@ export default function Page() {
                     href='/Rewards'
                 />
                 <Input />
-                <PopUps />
                 <PageHeader />
             </div>
             <Button

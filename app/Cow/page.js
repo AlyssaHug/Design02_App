@@ -11,6 +11,13 @@ import { useRouter } from "next/navigation";
 export default function Page() {
     const [moomooImage, setMoomooImage] = useState("/outfitsmoomoo.svg");
     const [activeButton, setActiveButton] = useState(null);
+    const [coins, setCoins] = useState(900);
+    const router = useRouter();
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const storedCoins = localStorage.getItem("coins");
+            setCoins(storedCoins ? parseInt(storedCoins) : 900);
     const router = useRouter();
 
     // Load selected accessory SVG from localStorage on mount
@@ -59,10 +66,16 @@ export default function Page() {
     return (
         <div className={styles.container}>
             <div className={styles.sameRow}>
-                <Button imageSrc="/left_arrow.svg" href="/Cow" />
+                <Button
+                    imageSrc='/left_arrow.svg'
+                    onClick={() => router.back()}
+                />
                 <h1 className={styles.header}>MooMoo</h1>
                 <div className={styles.coins}>
-                    <Coins value="Coins: " coin={990} />
+                    <Coins
+                        value='Coins: '
+                        coin={coins}
+                    />
                 </div>
             </div>
             <div className={styles.content}>

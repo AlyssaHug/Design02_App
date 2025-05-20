@@ -100,8 +100,7 @@
 }
 /*===Cards with moomoo===*/
 .goalCow {
-    display: inline-block;
-    min-width: 480px;
+    width: 100%;
 }
 .cowContent {
     margin: 8px;
@@ -128,7 +127,7 @@
 
 .container {
     background-color: #dcebf4;
-    margin: 8px;
+
     align-self: center;
     border-radius: 40px;
     padding: 16px;

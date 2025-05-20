@@ -1,12 +1,20 @@
 import styles from "@/app/Rewards/styles.module.css";
 import RewardClaim from "../ui/Reward/Reward";
 import Nav from "../ui/navbar/navbar";
+import PageHeader from "../ui/page-headers/page-header";
 export default function page() {
     return (
         <div className={styles.container}>
             <Nav />
+            <div className={styles.header}>
+                <PageHeader
+                    header='goal_header'
+                    text="Here's your Rewards!"
+                    type='header_title'
+                />
+            </div>
             <div className={styles.claim}>
-                <h1 className={styles.header}>Claimable Rewards</h1>
+                <h1 className={styles.subheader}>Claimable Rewards</h1>
                 <RewardClaim
                     color='light'
                     coin='05'
@@ -21,7 +29,7 @@ export default function page() {
                 />
             </div>
             <div className={styles.new}>
-                <h1 className={styles.header}>New Rewards</h1>
+                <h1 className={styles.subheader}>New Rewards</h1>
                 <RewardClaim
                     coin='90'
                     type='secondary'

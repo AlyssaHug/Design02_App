@@ -10,9 +10,7 @@
 .shopItem {
     padding: 16px 24px;
 }
-.page {
-    margin-bottom: 130px;
-}
+
 .sameRow {
     display: flex;
     flex-direction: row;

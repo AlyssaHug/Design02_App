@@ -1,6 +1,7 @@
 "use client";
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
+import { useRouter } from "next/router";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 import React from "react";
 
@@ -26,6 +27,8 @@ export default function Button({
     onClick,
     isBought,
     isCowActive,
+    isActive,
+    activeImageSrc,
     href,
     target = "_self",
     className,
@@ -41,13 +44,14 @@ export default function Button({
         className,
         customClass,
     });
-
     function handleClick() {
         if (href) {
             window.open(href, target);
             return;
         }
-        onClick && onClick();
+        if (onClick) {
+            onClick();
+        }
     }
 
     const buttonClasses = classNames(
@@ -99,6 +103,44 @@ export default function Button({
                 {coinValue}
             </span>
             <p>{value}</p>
+        </button>
+    );
+}
+export function SettingButton({
+    type,
+    value,
+    imageSrc,
+    href,
+    target = "_self",
+    alt,
+}) {
+    function handleClick() {
+        if (href) {
+            window.open(href, target);
+            return;
+        }
+        onClick();
+    }
+    const buttonClasses = classNames(
+        styles.button,
+        quicksand.variable,
+        libreFranklin.variable,
+        {
+            [styles.settings]: type === "settings",
+        }
+    );
+    return (
+        <button
+            className={buttonClasses}
+            value={value}
+            onClick={handleClick}>
+            <p>{value}</p>
+            {imageSrc && (
+                <img
+                    src={imageSrc}
+                    alt={alt}
+                />
+            )}
         </button>
     );
 }

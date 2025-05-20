@@ -57,7 +57,10 @@ export default function Dressmoo() {
             <Nav />
             <div className={styles.sameRow}>
                 <div className={styles.arrow}>
-                    <Button imageSrc='/left_arrow.svg' href='/Cow' />
+                    <Button
+                        imageSrc='/left_arrow.svg'
+                        onClick={() => router.back()}
+                    />
                 </div>
                 <h1 className={styles.header}>Customize</h1>
                 <div className={styles.coins}>

@@ -62,7 +62,7 @@ export default function GoalProgress({
         </div>
     );
 }
-export function Goals({ value, type, size, imageSrc, desc }) {
+export function Goals({ value, type, size, imageSrc, href, desc }) {
     const goalsClasses = classNames(
         styles.goals,
         quicksand.variable,
@@ -75,9 +75,10 @@ export function Goals({ value, type, size, imageSrc, desc }) {
         <div className={goalsClasses}>
             <div className={styles.goal}>
                 <p className={styles.goalText}>{value}</p>
-                <img
+                <Button
                     className={styles.goalArrow}
-                    src={imageSrc}
+                    imageSrc='/right_arrow.svg'
+                    href={href}
                 />
             </div>
         </div>
@@ -113,7 +114,7 @@ export function GoalRecs({ value, type, size, imageSrc, desc, desc2 }) {
         </div>
     );
 }
-export function GoalCow({ value, type, imageSrc, text, title }) {
+export function GoalCow({ value, type, imageSrc, text, href, title }) {
     const goalCowClasses = classNames(
         styles.goalCow,
         quicksand.variable,
@@ -137,6 +138,7 @@ export function GoalCow({ value, type, imageSrc, text, title }) {
                         className={styles.go}
                         value={text}
                         type='goalMoo'
+                        href={href}
                     />
                 </div>
             </div>

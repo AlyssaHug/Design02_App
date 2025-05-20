@@ -38,7 +38,10 @@ export default function Page() {
                 <div className={styles.dropdownInputs}>
                     <p>What category would you like to add this to?</p>
                 </div>
-                <Dropdown options={categoryOptions} />
+                <Dropdown
+                    options={categoryOptions}
+                    placeholder='Category'
+                />
             </div>
             <div className={styles.expensesAmountContainer}>
                 <div className={styles.amountInputs}>

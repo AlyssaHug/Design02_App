@@ -2,9 +2,12 @@
     font-size: 28px;
     font-weight: 600;
     font-family: var(--font-quicksand);
-    margin-bottom: -20px;
+
     margin-left: 32px;
     margin-right: 16px;
+}
+.header {
+    margin-bottom: 60px;
 }
 .page {
     display: flex;

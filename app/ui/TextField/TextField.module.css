@@ -1,3 +1,6 @@
+.container {
+    width: 100%;
+}
 .input {
     background-color: #d9ebd1;
     padding: 12px;
@@ -5,6 +8,11 @@
     width: 100%;
     font-size: 16px;
     padding-left: 20px;
+}
+.input:focus {
+    border: none;
+    outline: none;
+    background-color: #c6e1bb;
 }
 .title {
     font-family: var(--font-libre-franklin);
@@ -14,4 +22,9 @@
 }
 .round {
     border-radius: 12px;
+}
+.larger {
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
