@@ -1,0 +1,8 @@
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.buttonIncome p {
+    padding: 5px;
+}

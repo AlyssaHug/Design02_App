@@ -12,66 +12,81 @@ const quicksand = Quicksand({
     variable: "--font-quicksand",
 });
 
-// Default accessories (always included)
 const defaultAccessories = [
     {
         imageSrc: "/moomoo-dressup/bow.png",
+        moomooSrc: "/bowmoomoo.svg",
         value: "Bow",
         requiresLarge: false,
         id: "default-bow",
     },
     {
         imageSrc: "/moomoo-dressup/sunglasses.png",
+        moomooSrc: "/sunglassmoomoo.svg",
         value: "Sunglasses",
         requiresLarge: false,
         id: "default-sunglasses",
     },
     {
         imageSrc: "/moomoo-dressup/moustache.png",
+        moomooSrc: "/susmoomoo.svg",
         value: "Dapper",
         requiresLarge: false,
         id: "default-dapper",
     },
 ];
 
-// Map Shop itemId to Customize page image paths in /accessories/
 const imageMap = {
-    flowercrown: "accessories/flowercrown.svg",
-    icecream: "accessories/icecream.svg",
-    dress: "accessories/dress.svg",
-    suit: "accessories/suit.svg", // Adjusted to match likely filename
-    cat: "accessories/cat.svg",
-    dog: "accessories/dog.svg",
+    flowercrown: {
+        imageSrc: "accessories/flowercrown.svg",
+        moomooSrc: "/flowercrown.svg",
+    },
+    icecream: {
+        imageSrc: "accessories/icecream.svg",
+        moomooSrc: "/icecream.svg",
+    },
+    dress: {
+        imageSrc: "accessories/dress.svg",
+        moomooSrc: "/dress.svg",
+    },
+    suit: {
+        imageSrc: "accessories/suit.svg",
+        moomooSrc: "/suit.svg",
+    },
+    cat: {
+        imageSrc: "accessories/cat.svg",
+        moomooSrc: "/cat.svg",
+    },
+    dog: {
+        imageSrc: "accessories/dog.svg",
+        moomooSrc: "/dog.svg",
+    },
 };
-export default function Dressup() {
+
+export default function Dressup({ onSelectAccessory }) {
     const [accessories, setAccessories] = useState(defaultAccessories);
 
-    // Load purchased items from localStorage and combine with default accessories
     useEffect(() => {
         if (typeof window !== "undefined") {
-            let purchasedItems =
-                JSON.parse(localStorage.getItem("purchasedItems")) || [];
-            // Remove duplicates and filter invalid items
+            let purchasedItems = JSON.parse(localStorage.getItem("purchasedItems")) || [];
             purchasedItems = Array.from(
-                new Map(
-                    purchasedItems.map((item) => [item.itemId, item])
-                ).values()
+                new Map(purchasedItems.map((item) => [item.itemId, item])).values()
             ).filter((item) => item.itemId && imageMap[item.itemId]);
-            // Map purchased items to accessories format
             const purchasedAccessories = purchasedItems.map((item) => ({
-                imageSrc: `/${imageMap[item.itemId]}`,
+                imageSrc: `/${imageMap[item.itemId].imageSrc}`,
+                moomooSrc: imageMap[item.itemId].moomooSrc,
                 value: item.name,
                 requiresLarge: item.requiresLarge || false,
                 id: `purchased-${item.itemId}`,
             }));
-            // Combine default and purchased accessories
+            console.log("Dressup: Loaded accessories:", JSON.stringify([...defaultAccessories, ...purchasedAccessories], null, 2));
             setAccessories([...defaultAccessories, ...purchasedAccessories]);
         }
     }, []);
 
-    // Just so I know that the accessory is being clicked it's for my own sake to know they work lol
-    const handleButtonClick = () => {
-        alert(`Accessory selected`);
+    const handleButtonClick = (moomooSrc) => {
+        console.log("Dressup: Button clicked, passing moomooSrc:", moomooSrc);
+        onSelectAccessory(moomooSrc || "/outfitsmoomoo.svg");
     };
 
     return (
@@ -80,19 +95,18 @@ export default function Dressup() {
                 <div
                     key={accessory.id}
                     className={classNames({
-                        [styles.textfix]:
-                            defaultAccessories.includes(accessory),
-                    })}>
+                        [styles.textfix]: defaultAccessories.includes(accessory),
+                    })}
+                >
                     <Button
                         imageSrc={accessory.imageSrc}
                         value={accessory.value}
-                        color='light-blue'
+                        color="light-blue"
                         customClass={classNames({
                             [styles.dressupButton]: !accessory.requiresLarge,
                             [styles.large]: accessory.requiresLarge,
-
                         })}
-                        onClick={() => handleButtonClick()}
+                        onClick={() => handleButtonClick(accessory.moomooSrc)}
                     />
                 </div>
             ))}

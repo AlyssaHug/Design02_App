@@ -26,7 +26,7 @@ export default function Inputs({
         [styles.dark]: color === "dark",
         [styles.light]: color === "light",
         [styles.password]: size === "pass",
-    })
+    });
 
     return (
         <input

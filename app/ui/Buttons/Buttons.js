@@ -1,6 +1,7 @@
 "use client";
 import classNames from "classnames";
 import { Quicksand, Libre_Franklin } from "next/font/google";
+import { useRouter } from "next/router";
 import styles from "@/app/ui/Buttons/Buttons.module.css";
 import React from "react";
 
@@ -26,19 +27,31 @@ export default function Button({
     onClick,
     isBought,
     isCowActive,
+    isActive,
+    activeImageSrc,
     href,
     target = "_self",
     className,
     customClass,
 }) {
-    console.log("Button rendered: ", { value, isBought, type, imageSrc, alt, isCowActive, className, customClass });
-
+    console.log("Button rendered: ", {
+        value,
+        isBought,
+        type,
+        imageSrc,
+        alt,
+        isCowActive,
+        className,
+        customClass,
+    });
     function handleClick() {
         if (href) {
             window.open(href, target);
             return;
         }
-        onClick && onClick();
+        if (onClick) {
+            onClick();
+        }
     }
 
     const buttonClasses = classNames(
@@ -61,7 +74,6 @@ export default function Button({
             [styles.shop]: type === "shop" && !isBought,
             [styles.bought]: isBought,
             [styles.nav]: color === "nav",
-            [styles.navActive]: color === "nav-active",
             [styles.expense]: type === "expense",
             [styles.home]: type === "home",
             [styles.caption]: size === "caption",
@@ -70,6 +82,7 @@ export default function Button({
             [styles.coins]: type === "coins" || color === "coin-border",
             [styles.coins]: color === "coin-border",
             [styles.settings]: type === "settings",
+            [styles.navActive]: isActive,
         }
     );
 
@@ -78,12 +91,11 @@ export default function Button({
             className={buttonClasses}
             value={value}
             onClick={handleClick}
-            disabled={isBought}
-        >
+            disabled={isBought}>
             {imageSrc && (
                 <img
-                    src={imageSrc}
-                    alt={alt}
+                    src={isActive && activeImageSrc ? activeImageSrc : imageSrc}
+                    alt={value || "icon"}
                 />
             )}
             <span>
@@ -98,9 +110,9 @@ export function SettingButton({
     type,
     value,
     imageSrc,
-    alt,
     href,
     target = "_self",
+    alt,
 }) {
     function handleClick() {
         if (href) {
@@ -109,8 +121,8 @@ export function SettingButton({
         }
         onClick();
     }
-    const settingButtonClasses = classNames(
-        styles.settingButton,
+    const buttonClasses = classNames(
+        styles.button,
         quicksand.variable,
         libreFranklin.variable,
         {
@@ -119,7 +131,7 @@ export function SettingButton({
     );
     return (
         <button
-            className={settingButtonClasses}
+            className={buttonClasses}
             value={value}
             onClick={handleClick}>
             <p>{value}</p>

@@ -6,12 +6,18 @@ import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
 import Nav from "../ui/navbar/navbar";
 import React from "react";
 import styles from "@/app/Goals/styles.module.css";
+import PageHeader from "../ui/page-headers/page-header";
 function page() {
     return (
         <div className={styles.page}>
             <Nav />
-            <h1>Welcome to da goals</h1>
-
+            <div className={styles.header}>
+                <PageHeader
+                    header='goal_homepage'
+                    text='Goals'
+                    type='header_title'
+                />
+            </div>
             <GoalProgress
                 value='Goal Progress'
                 type='progress'
@@ -22,6 +28,7 @@ function page() {
                     className={styles.view}
                     color='dark'
                     value='Create Goal'
+                    href='/Goals/Create'
                 />
             </div>
             <div className={styles.goalsContent}>
@@ -29,11 +36,13 @@ function page() {
                     type='goals'
                     value='Reduce spending by $60!'
                     imageSrc='/right_arrow.svg'
+                    href='/Goals/ViewGoals/Goal1'
                 />
                 <Goals
                     type='goals'
                     value='Add $50 to tuition fund!'
                     imageSrc='/right_arrow.svg'
+                    href='/Goals/ViewGoals/Goal2'
                 />
             </div>
             <div className={styles.subheaderContainer}>
@@ -58,6 +67,7 @@ function page() {
                     value='Check on MooMoo!'
                     text='Go!'
                     imageSrc='moomoonormal.svg'
+                    href='/Cow'
                 />
             </div>
         </div>

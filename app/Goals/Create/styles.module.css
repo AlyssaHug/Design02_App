@@ -1,0 +1,28 @@
+.header {
+    margin-bottom: 40px;
+}
+.subheader {
+    font-size: 20px;
+    padding: 12px;
+    font-family: var(--font-libre-franklin);
+}
+.content {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+.drop {
+    flex: 0 0 30%;
+}
+.calc {
+    width: 30%;
+    margin-left: 33.5%;
+    margin-top: 16px;
+}

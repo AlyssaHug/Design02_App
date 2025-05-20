@@ -1,0 +1,11 @@
+.buttonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttonOverview {
+    margin: 5px;
+}
+.buttonOverview p {
+    padding: 50px;
+}

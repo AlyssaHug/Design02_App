@@ -1,0 +1,6 @@
+.toggleButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}

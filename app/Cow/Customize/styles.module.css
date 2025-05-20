@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
-    margin-bottom: 130px;
 }
 
 .sameRow {
@@ -11,7 +10,7 @@
     justify-content: space-between;
     margin: 20px;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .sameRow Button {
@@ -35,7 +34,6 @@
     padding-right: 50px;
 }
 
-
 .cowContainer {
     position: relative;
 }
@@ -43,7 +41,7 @@
 .cowback {
     background-color: #c1ddeb;
     width: 400px;
-    height: 219px;
+    height: 230px;
     border-radius: 40px;
     position: absolute;
     top: 0;
@@ -111,4 +109,3 @@
     justify-content: flex-start;
     height: 40px;
 }
-

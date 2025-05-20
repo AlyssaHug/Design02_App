@@ -129,7 +129,7 @@ export default function Page() {
                 <div className={styles.arrow}>
                     <Button
                         imageSrc='/left_arrow.svg'
-                        href='/Cow/Customize'
+                        onClick={() => router.back()}
                     />
                 </div>
                 <div className={styles.coins}>

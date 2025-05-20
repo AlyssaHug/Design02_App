@@ -8,16 +8,16 @@
     margin-top: 14px;
     margin-bottom: 14px;
 }
-html {
+.header {
+    margin-bottom: 60px;
+}
+.content {
+    margin: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 12px;
 }
 .item {
     margin-top: 28px;
     margin-bottom: 28px;
-}
-.page {
-    margin-bottom: 130px;
 }
