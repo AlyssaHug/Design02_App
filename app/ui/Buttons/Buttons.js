@@ -44,6 +44,7 @@ export default function Button({
         className,
         customClass,
     });
+
     function handleClick() {
         if (href) {
             window.open(href, target);
@@ -144,4 +145,3 @@ export function SettingButton({
         </button>
     );
 }
-

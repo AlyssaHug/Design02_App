@@ -6,6 +6,7 @@ import Nav from "@/app/ui/navbar/navbar";
 import Coins from "@/app/ui/coins/coins";
 import Button from "@/app/ui/Buttons/Buttons";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const shopItems = [
     {
@@ -62,6 +63,7 @@ const imageMap = {
 };
 
 export default function Page() {
+    const router = useRouter();
     const [coins, setCoins] = useState(900);
     const [purchasedItems, setPurchasedItems] = useState([]);
 
