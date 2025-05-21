@@ -86,7 +86,7 @@ export default function Page() {
                     <div className={styles.moomoo}>
                         <Moomoo
                             size='interaction'
-                            src={`${moomooImage}?v=${Date.now()}`}
+                            src={moomooImage}
                         />
                     </div>
                     <div className={styles.sliderContainer}>
