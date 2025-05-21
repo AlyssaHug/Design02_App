@@ -1,24 +1,43 @@
 "use client";
-import Coins from "./ui/coins/coins";
-import Dropdown from "@/app/ui/dropdown/dropdown";
-import ToggleButton from "@/app/ui/Buttons/ToggleButton";
-import GoalProgress from "@/app/ui/GoalCards/GoalCards";
-import { Goals } from "@/app/ui/GoalCards/GoalCards";
-import { GoalRecs } from "@/app/ui/GoalCards/GoalCards";
-import styles from "@/app/ui/GoalCards/GoalCards.module.css";
+import React from "react";
 import Button from "@/app/ui/Buttons/Buttons";
-import { GoalCow } from "@/app/ui/GoalCards/GoalCards";
-import TransactionCard from "@/app/ui/TransactionCards/transactionCard";
-import CalendarCard from "@/app/ui/CalendarCard/calendarCard";
-import Input from "@/app/ui/inputs/inputs";
-import PopUp from "@/app/ui/pop-ups/pop-ups";
-import PageHeader from "./ui/page-headers/page-header";
-import Nav from "./ui/navbar/navbar";
+import { Libre_Franklin } from "next/font/google";
+import classNames from "classnames";
+import styles from "@/app/Homepage/styles.module.css";
 
 export default function Page() {
     return (
-        <div>
-            <Nav />
+        <div className={styles.Page}>
+            <div className={styles.StartContainer}>
+                <div className={styles.cow}>
+                    <img
+                        className={styles.gif}
+                        src='/gifs/moodance.gif'></img>
+                </div>
+                <h1 className={styles.LogoText}>MoolahMate</h1>
+                <p className={styles.SubText}>
+                    Welcome to a new way of money management. An easier, less
+                    stressful alternative made for you!
+                </p>
+                <div className={styles.SignUpContainer}>
+                    <Button
+                        style='round'
+                        type='primary'
+                        color='light'
+                        value='Sign up now!'
+                        href='/Homepage/Sign-up'
+                    />
+                </div>
+            </div>
+            <div className={styles.LoginContainer}>
+                <Button
+                    style='round'
+                    type='primary'
+                    color='dark'
+                    value='Sign in'
+                    onClick={() => (window.location.href = "/Homepage/Sign-In")}
+                />
+            </div>
         </div>
     );
 }
