@@ -66,7 +66,7 @@ export default function Nav({ size, href }) {
                     imageSrc='/navbar-icons/home-icon.svg'
                     size='home'
                     href='/'
-                    isActive={pathname === "/"}
+                    isActive={isActiveRoute(["/Homepage"])}
                     activeImageSrc='/navbar-active/home-active.svg'
                 />
                 <Button
