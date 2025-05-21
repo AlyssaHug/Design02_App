@@ -18,14 +18,17 @@ export default function Page() {
         if (typeof window !== "undefined") {
             const storedCoins = localStorage.getItem("coins");
             setCoins(storedCoins ? parseInt(storedCoins) : 900);
-    const router = useRouter();
-
+        }
+    });
     // Load selected accessory SVG from localStorage on mount
     useEffect(() => {
         if (typeof window !== "undefined") {
             const savedAccessory = localStorage.getItem("selectedMoomooSrc");
             if (savedAccessory) {
-                console.log("Page: Loaded accessory SVG from localStorage:", savedAccessory);
+                console.log(
+                    "Page: Loaded accessory SVG from localStorage:",
+                    savedAccessory
+                );
                 setMoomooImage(savedAccessory);
             }
         }
@@ -82,7 +85,7 @@ export default function Page() {
                 <div className={styles.bg}>
                     <div className={styles.moomoo}>
                         <Moomoo
-                            size="interaction"
+                            size='interaction'
                             src={`${moomooImage}?v=${Date.now()}`}
                         />
                     </div>
