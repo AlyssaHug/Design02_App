@@ -28,7 +28,7 @@ export default function IncomeCard({ month, amount, prevMonth, nextMonth }) {
                 <div className={styles.backButton}>
                     <Button
                         imageSrc='/left_arrow.svg'
-                        onClick={backToOverview}
+                        onClick={() => router.back()}
                     />
                 </div>
             </div>

@@ -1,5 +1,5 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import Nav from "@/app/ui/navbar/navbar";
 import Dropdown from "@/app/ui/dropdown/dropdown";
 import Button from "@/app/ui/Buttons/Buttons";
@@ -8,6 +8,7 @@ import TextField from "@/app/ui/TextField/TextField";
 import PageHeader from "@/app/ui/page-headers/page-header";
 
 export default function Page() {
+    const router = useRouter();
     const interactionOptions = [
         { value: "e-transfer", label: "E-Transfer" },
         { value: "cash", label: "Cash" },
@@ -69,7 +70,7 @@ export default function Page() {
                         value='Cancel'
                         style='round'
                         size='caption'
-                        href='/overview/'
+                        onClick={() => router.back()}
                     />
                     <Button
                         color='light-blue'
@@ -81,7 +82,7 @@ export default function Page() {
                         color='light-blue'
                         value='Add Income'
                         style='round'
-                        href='/Expense/Income/May'
+                        href='/Expense/overview/Income/May'
                     />
                 </div>
                 <Nav />
