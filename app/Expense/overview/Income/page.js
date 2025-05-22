@@ -7,7 +7,7 @@ export default function Income() {
     return (
         <>
             <Nav />
-            <div className={styles.container}>
+            <div>
                 <Calendar />
             </div>
         </>
