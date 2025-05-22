@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import classNames from "classnames";
-import styles from "@/app/ui/Dropdown/dropdown.module.css";
+import styles from "@/app/ui/dropdown/dropdown.module.css";
 
 export default function Dropdown({
     options = [],
