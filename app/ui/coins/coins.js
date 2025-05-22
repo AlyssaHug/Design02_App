@@ -5,10 +5,14 @@ import Button from "@/app/ui/Buttons/Buttons";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 const quicksand = Quicksand({
     variable: "--font-quicksand",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export default function Coins({ type, value, coin, customClass }) {

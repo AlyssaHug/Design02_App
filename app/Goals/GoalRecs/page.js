@@ -6,6 +6,8 @@ import Nav from "@/app/ui/navbar/navbar";
 import PageHeader from "@/app/ui/page-headers/page-header";
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 export default function page() {
     return (

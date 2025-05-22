@@ -6,9 +6,13 @@ import { Quicksand, Libre_Franklin } from "next/font/google";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 const quicksand = Quicksand({
     variable: "--font-quicksand",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export default function ShopItem({

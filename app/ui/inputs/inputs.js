@@ -5,6 +5,8 @@ import React from "react";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export default function Inputs({

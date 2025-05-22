@@ -7,9 +7,13 @@ import Moomoo from "../moomoo/moomoo";
 
 const quicksand = Quicksand({
     variable: "--font-quicksand",
+    subsets: ["latin"],
+    display: "swap",
 });
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export default function GoalProgress({

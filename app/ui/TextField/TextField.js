@@ -6,6 +6,8 @@ import { useState, useEffect, useRef } from "react";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export default function TextField({

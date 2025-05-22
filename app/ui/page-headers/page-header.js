@@ -7,9 +7,19 @@ import { useRouter } from "next/navigation";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
-const PageHeader = ({ type, header, text, showBackButton = false, showBalance = false, balance, onBack }) => {
+const PageHeader = ({
+    type,
+    header,
+    text,
+    showBackButton = false,
+    showBalance = false,
+    balance,
+    onBack,
+}) => {
     const router = useRouter();
     const backToOverview = () => {
         router.replace("/Homepage/homepage");
@@ -29,7 +39,8 @@ const PageHeader = ({ type, header, text, showBackButton = false, showBalance = 
         [styles.goal_homepage_header]: header === "goal_homepage",
         [styles.goal_header]: header === "goal_header",
         [styles.income_history_header]: header === "income_history_header",
-        [styles.transactions_this_month_header]: header === "transactions_this_month_header",
+        [styles.transactions_this_month_header]:
+            header === "transactions_this_month_header",
         [styles.history_subtitle]: header === "history_subtitle",
     });
 
@@ -44,12 +55,13 @@ const PageHeader = ({ type, header, text, showBackButton = false, showBalance = 
                 </div>
                 <h1 className={headerClasses}>{text}</h1>
                 {showBalance && balance !== undefined && (
-                    <div
-                        className={styles.HomepageBalance}>
-                        <h1 className={styles.AccountBalanceText}>Your Total Balance:</h1>
+                    <div className={styles.HomepageBalance}>
+                        <h1 className={styles.AccountBalanceText}>
+                            Your Total Balance:
+                        </h1>
                         <h2 className={styles.AccountBalance}>{balance}</h2>
                     </div>
-                )}  
+                )}
             </header>
         </div>
     );

@@ -7,9 +7,13 @@ import { useState, useEffect } from "react";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 const quicksand = Quicksand({
     variable: "--font-quicksand",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 const defaultAccessories = [
@@ -68,9 +72,12 @@ export default function Dressup({ onSelectAccessory }) {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            let purchasedItems = JSON.parse(localStorage.getItem("purchasedItems")) || [];
+            let purchasedItems =
+                JSON.parse(localStorage.getItem("purchasedItems")) || [];
             purchasedItems = Array.from(
-                new Map(purchasedItems.map((item) => [item.itemId, item])).values()
+                new Map(
+                    purchasedItems.map((item) => [item.itemId, item])
+                ).values()
             ).filter((item) => item.itemId && imageMap[item.itemId]);
             const purchasedAccessories = purchasedItems.map((item) => ({
                 imageSrc: `/${imageMap[item.itemId].imageSrc}`,
@@ -79,7 +86,14 @@ export default function Dressup({ onSelectAccessory }) {
                 requiresLarge: item.requiresLarge || false,
                 id: `purchased-${item.itemId}`,
             }));
-            console.log("Dressup: Loaded accessories:", JSON.stringify([...defaultAccessories, ...purchasedAccessories], null, 2));
+            console.log(
+                "Dressup: Loaded accessories:",
+                JSON.stringify(
+                    [...defaultAccessories, ...purchasedAccessories],
+                    null,
+                    2
+                )
+            );
             setAccessories([...defaultAccessories, ...purchasedAccessories]);
         }
     }, []);
@@ -95,13 +109,13 @@ export default function Dressup({ onSelectAccessory }) {
                 <div
                     key={accessory.id}
                     className={classNames({
-                        [styles.textfix]: defaultAccessories.includes(accessory),
-                    })}
-                >
+                        [styles.textfix]:
+                            defaultAccessories.includes(accessory),
+                    })}>
                     <Button
                         imageSrc={accessory.imageSrc}
                         value={accessory.value}
-                        color="light-blue"
+                        color='light-blue'
                         customClass={classNames({
                             [styles.dressupButton]: !accessory.requiresLarge,
                             [styles.large]: accessory.requiresLarge,

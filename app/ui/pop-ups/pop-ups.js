@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 const PopUp = ({ buttons, message, onClose }) => {

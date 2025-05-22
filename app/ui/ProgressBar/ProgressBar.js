@@ -4,6 +4,8 @@ import styles from "@/app/ui/ProgressBar/ProgressBar.module.css";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 const ProgressBar = ({

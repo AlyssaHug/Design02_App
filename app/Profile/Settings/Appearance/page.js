@@ -8,6 +8,8 @@ import PageHeader from "@/app/ui/page-headers/page-header";
 
 const quicksand = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export default function Page() {

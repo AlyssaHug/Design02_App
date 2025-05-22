@@ -9,6 +9,8 @@ import Button from "@/app/ui/Buttons/Buttons";
 
 const libreFranklin = Libre_Franklin({
     variable: "--font-libre-franklin",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 const dateOptions = [
