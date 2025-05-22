@@ -69,7 +69,7 @@ export default function Nav({ size, href }) {
                     color='nav'
                     imageSrc='/navbar-icons/home-icon.svg'
                     size='home'
-                    href='/'
+                    href='/Homepage'
                     isActive={isActiveRoute(["/Homepage"])}
                     activeImageSrc='/navbar-active/home-active.svg'
                 />
